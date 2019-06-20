@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">FEUP Porto Ambiente</string>
+    <string name="rua_title_text">Rua</string>
+    <string name="rua_hint_text">Escreva aqui a rua</string>
+    <string name="residuos_title_text">Resíduos</string>
+    <string name="residuos_hint_text">Introduza a amostra (ex. Amostra1)</string>
+    <string name="area_title_text">Área</string>
+    <string name="area_hint_text">Introduzir a area em metros quadrados (ex 500)</string>
+    <string name="tipo_header_text">Tipo</string>
+    <string name="pequeno_letra_header">P</string>
+    <string name="medio_letra_header">M</string>
+    <string name="grande_letra_header">G</string>
+    <string name="pea_label_text">PEA</string>
+    <string name="sinal_menos">-</string>
+    <string name="sinal_mais">+</string>
+    <string name="contagem_inicio">0</string>
+</resources>

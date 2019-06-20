@@ -1,0 +1,1601 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TabHost android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TabWidget android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+            <FrameLayout android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/tab1">
+
+                    <TextView
+                        android:id="@+id/titulo_rua"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#8C2D19"
+                        android:text="@string/rua_title_text"
+                        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/editText_rua"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/rua_hint_text" />
+
+                    <TextView
+                        android:id="@+id/titulo_amostra"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#8C2D19"
+                        android:text="@string/residuos_title_text"
+                        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/editText_amostra"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/residuos_hint_text" />
+
+                    <TextView
+                        android:id="@+id/titulo_area"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#8C2D19"
+                        android:text="@string/area_title_text"
+                        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/editText_area"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/area_hint_text" />
+                </LinearLayout>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tab2">
+
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:layout_editor_absoluteX="8dp"
+                        tools:layout_editor_absoluteY="8dp">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/header_tabela_rua"
+                                android:layout_width="0dp"
+                                android:layout_weight=".2"
+                                android:layout_height="match_parent"
+                                android:background="#8C2D19"
+                                android:gravity="center"
+                                android:text="@string/tipo_header_text"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/header_pequeno_rua"
+                                android:layout_width="0dp"
+                                android:layout_weight=".3"
+                                android:layout_height="match_parent"
+                                android:background="#8C2D19"
+                                android:gravity="center"
+                                android:text="@string/pequeno_letra_header"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/header_medio_rua"
+                                android:layout_width="0dp"
+                                android:layout_weight=".3"
+                                android:layout_height="match_parent"
+                                android:background="#8C2D19"
+                                android:gravity="center"
+                                android:text="@string/medio_letra_header"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/header_grande_rua"
+                                android:layout_width="0dp"
+                                android:layout_weight=".3"
+                                android:layout_height="match_parent"
+                                android:background="#8C2D19"
+                                android:gravity="center"
+                                android:text="@string/grande_letra_header"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/tipo_pea_rua"
+                                android:layout_width="0dp"
+                                android:layout_weight=".2"
+                                android:layout_height="match_parent"
+                                android:background="#8C2D19"
+                                android:gravity="center"
+                                android:text="@string/pea_label_text"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold" />
+
+                            <Button
+                                android:id="@+id/minus_pea_pequeno_rua"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:background="#FF2229"
+                                android:onClick="minus_pea_pequeno"
+                                android:text="@string/sinal_menos"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/pea_pequeno_count_rua"
+                                android:layout_width="0.dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:gravity="center|center_vertical"
+                                android:text="@string/contagem_inicio"
+                                android:textSize="24sp" />
+
+                            <Button
+                                android:id="@+id/plus_pea_pequeno_rua"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:background="#89FF00"
+                                android:onClick="plus_pea_pequeno"
+                                android:text="@string/sinal_mais"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000" />
+
+                            <Button
+                                android:id="@+id/minus_pea_medio_rua"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:background="#FF2229"
+                                android:onClick="minus_pea_medio"
+                                android:text="@string/sinal_menos"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/pea_medio_count_rua"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:gravity="center|center_vertical"
+                                android:text="@string/contagem_inicio"
+                                android:textSize="24sp" />
+
+                            <Button
+                                android:id="@+id/plus_pea_medio_rua"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:background="#89FF00"
+                                android:onClick="plus_pea_medio"
+                                android:text="@string/sinal_mais"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000" />
+
+                            <Button
+                                android:id="@+id/minus_pea_grande_rua"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:background="#FF2229"
+                                android:onClick="minus_pea_grande"
+                                android:text="@string/sinal_menos"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/pea_grande_count_rua"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:gravity="center|center_vertical"
+                                android:text="@string/contagem_inicio"
+                                android:textSize="24sp" />
+
+                            <Button
+                                android:id="@+id/plus_pea_grande_rua"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:background="#89FF00"
+                                android:onClick="plus_pea_grande"
+                                android:text="@string/sinal_mais"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000" />
+
+
+                        </TableRow>
+
+
+                        <!-- PENA-->
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/tipo_pena"
+                                android:layout_width="0dp"
+                                android:layout_weight=".2"
+                                android:layout_height="match_parent"
+                                android:background="#8C2D19"
+                                android:gravity="center"
+                                android:text="PENA"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold" />
+
+                            <Button
+                                android:id="@+id/minus_pena_pequeno"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:background="#FF2229"
+                                android:onClick="minus_pena_pequeno"
+                                android:text="-"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000"
+                                android:textSize="8sp" />
+
+                            <TextView
+                                android:id="@+id/pena_pequeno_count"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:gravity="center|center_vertical"
+                                android:text="0"
+                                android:textSize="24sp" />
+
+                            <Button
+                                android:id="@+id/plus_pena_pequeno"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:background="#89FF00"
+                                android:onClick="plus_pena_pequeno"
+                                android:text="+"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000" />
+
+                            <Button
+                                android:id="@+id/minus_pena_medio"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:background="#FF2229"
+                                android:onClick="minus_pena_medio"
+                                android:text="-"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/pena_medio_count"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:gravity="center|center_vertical"
+                                android:text="0"
+                                android:textSize="24sp" />
+
+                            <Button
+                                android:id="@+id/plus_pena_medio"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:background="#89FF00"
+                                android:onClick="plus_pena_medio"
+                                android:text="+"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000" />
+
+                            <Button
+                                android:id="@+id/minus_pena_grande"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:background="#FF2229"
+                                android:onClick="minus_pena_grande"
+                                android:text="-"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/pena_grande_count"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:gravity="center|center_vertical"
+                                android:text="0"
+                                android:textSize="24sp" />
+
+                            <Button
+                                android:id="@+id/plus_pena_grande"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:background="#89FF00"
+                                android:onClick="plus_pena_grande"
+                                android:text="+"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000" />
+
+
+                        </TableRow>
+
+
+
+
+
+
+                        <!-- VIDRO-->
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/header_tabela"
+                                android:layout_width="0dp"
+                                android:layout_weight=".2"
+                                android:layout_height="match_parent"
+                                android:background="#8C2D19"
+                                android:gravity="center"
+                                android:text="Tipo"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/header_pequeno"
+                                android:layout_width="0dp"
+                                android:layout_weight=".3"
+                                android:layout_height="match_parent"
+                                android:background="#8C2D19"
+                                android:gravity="center"
+                                android:text="Pedaços"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/header_medio"
+                                android:layout_width="0dp"
+                                android:layout_weight=".3"
+                                android:layout_height="match_parent"
+                                android:background="#8C2D19"
+                                android:gravity="center"
+                                android:text="Garrafas 25 a 33 cl"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/header_grande"
+                                android:layout_width="0dp"
+                                android:layout_weight=".3"
+                                android:layout_height="match_parent"
+                                android:background="#8C2D19"
+                                android:gravity="center"
+                                android:text="Garrafas 75 cl a 1L"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/tipo_pena"
+                                android:layout_width="0dp"
+                                android:layout_weight=".2"
+                                android:layout_height="match_parent"
+                                android:background="#8C2D19"
+                                android:gravity="center"
+                                android:text="Vidro"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold" />
+
+                            <Button
+                                android:id="@+id/minus_pena_pequeno"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:background="#FF2229"
+                                android:onClick="minus_pena_pequeno"
+                                android:text="-"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000"
+                                android:textSize="8sp" />
+
+                            <TextView
+                                android:id="@+id/pena_pequeno_count"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:gravity="center|center_vertical"
+                                android:text="0"
+                                android:textSize="24sp" />
+
+                            <Button
+                                android:id="@+id/plus_pena_pequeno"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:background="#89FF00"
+                                android:onClick="plus_pena_pequeno"
+                                android:text="+"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000" />
+
+                            <Button
+                                android:id="@+id/minus_pena_medio"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:background="#FF2229"
+                                android:onClick="minus_pena_medio"
+                                android:text="-"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/pena_medio_count"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:gravity="center|center_vertical"
+                                android:text="0"
+                                android:textSize="24sp" />
+
+                            <Button
+                                android:id="@+id/plus_pena_medio"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:background="#89FF00"
+                                android:onClick="plus_pena_medio"
+                                android:text="+"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000" />
+
+                            <Button
+                                android:id="@+id/minus_pena_grande"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:background="#FF2229"
+                                android:onClick="minus_pena_grande"
+                                android:text="-"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/pena_grande_count"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:gravity="center|center_vertical"
+                                android:text="0"
+                                android:textSize="24sp" />
+
+                            <Button
+                                android:id="@+id/plus_pena_grande"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:background="#89FF00"
+                                android:onClick="plus_pena_grande"
+                                android:text="+"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000" />
+
+
+                        </TableRow>
+
+
+
+
+                        <!-- OUTROS -->
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/header_tabela"
+                                android:layout_width="0dp"
+                                android:layout_weight=".2"
+                                android:layout_height="match_parent"
+                                android:background="#8C2D19"
+                                android:gravity="center"
+                                android:text=""
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/header_pequeno"
+                                android:layout_width="0dp"
+                                android:layout_weight=".3"
+                                android:layout_height="match_parent"
+                                android:background="#8C2D19"
+                                android:gravity="center"
+                                android:text="Pontas de Cigarro"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/header_medio"
+                                android:layout_width="0dp"
+                                android:layout_weight=".3"
+                                android:layout_height="match_parent"
+                                android:background="#8C2D19"
+                                android:gravity="center"
+                                android:text="Dejetos Caninos"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/header_grande"
+                                android:layout_width="0dp"
+                                android:layout_weight=".3"
+                                android:layout_height="match_parent"
+                                android:background="#8C2D19"
+                                android:gravity="center"
+                                android:text="Sacos de indiferenciados"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/tipo_pena"
+                                android:layout_width="0dp"
+                                android:layout_weight=".2"
+                                android:layout_height="match_parent"
+                                android:background="#8C2D19"
+                                android:gravity="center"
+                                android:text="PDS"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold" />
+
+                            <Button
+                                android:id="@+id/minus_pena_pequeno"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:background="#FF2229"
+                                android:onClick="minus_pena_pequeno"
+                                android:text="-"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000"
+                                android:textSize="8sp" />
+
+                            <TextView
+                                android:id="@+id/pena_pequeno_count"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:gravity="center|center_vertical"
+                                android:text="0"
+                                android:textSize="24sp" />
+
+                            <Button
+                                android:id="@+id/plus_pena_pequeno"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:background="#89FF00"
+                                android:onClick="plus_pena_pequeno"
+                                android:text="+"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000" />
+
+                            <Button
+                                android:id="@+id/minus_pena_medio"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:background="#FF2229"
+                                android:onClick="minus_pena_medio"
+                                android:text="-"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/pena_medio_count"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:gravity="center|center_vertical"
+                                android:text="0"
+                                android:textSize="24sp" />
+
+                            <Button
+                                android:id="@+id/plus_pena_medio"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:background="#89FF00"
+                                android:onClick="plus_pena_medio"
+                                android:text="+"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000" />
+
+                            <Button
+                                android:id="@+id/minus_pena_grande"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:background="#FF2229"
+                                android:onClick="minus_pena_grande"
+                                android:text="-"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/pena_grande_count"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:gravity="center|center_vertical"
+                                android:text="0"
+                                android:textSize="24sp" />
+
+                            <Button
+                                android:id="@+id/plus_pena_grande"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:background="#89FF00"
+                                android:onClick="plus_pena_grande"
+                                android:text="+"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000" />
+
+
+                        </TableRow>
+
+
+
+
+
+
+
+
+                        <!-- Folhas e Ramagens -->
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/header_tabela"
+                                android:layout_width="0dp"
+                                android:layout_weight=".2"
+                                android:layout_height="match_parent"
+                                android:background="#8C2D19"
+                                android:gravity="center"
+                                android:text=""
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/header_pequeno"
+                                android:layout_width="0dp"
+                                android:layout_weight=".3"
+                                android:layout_height="match_parent"
+                                android:background="#8C2D19"
+                                android:gravity="center"
+                                android:text="Folhas"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/header_medio"
+                                android:layout_width="0dp"
+                                android:layout_weight=".3"
+                                android:layout_height="match_parent"
+                                android:background="#8C2D19"
+                                android:gravity="center"
+                                android:text="Ramagens Pequenas"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/header_grande"
+                                android:layout_width="0dp"
+                                android:layout_weight=".3"
+                                android:layout_height="match_parent"
+                                android:background="#8C2D19"
+                                android:gravity="center"
+                                android:text="Ramagens Grandes"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/tipo_pena"
+                                android:layout_width="0dp"
+                                android:layout_weight=".2"
+                                android:layout_height="match_parent"
+                                android:background="#8C2D19"
+                                android:gravity="center"
+                                android:text="Folhas"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold" />
+
+                            <Button
+                                android:id="@+id/minus_pena_pequeno"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:background="#FF2229"
+                                android:onClick="minus_pena_pequeno"
+                                android:text="-"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000"
+                                android:textSize="8sp" />
+
+                            <TextView
+                                android:id="@+id/pena_pequeno_count"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:gravity="center|center_vertical"
+                                android:text="0"
+                                android:textSize="24sp" />
+
+                            <Button
+                                android:id="@+id/plus_pena_pequeno"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:background="#89FF00"
+                                android:onClick="plus_pena_pequeno"
+                                android:text="+"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000" />
+
+                            <Button
+                                android:id="@+id/minus_pena_medio"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:background="#FF2229"
+                                android:onClick="minus_pena_medio"
+                                android:text="-"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/pena_medio_count"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:gravity="center|center_vertical"
+                                android:text="0"
+                                android:textSize="24sp" />
+
+                            <Button
+                                android:id="@+id/plus_pena_medio"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:background="#89FF00"
+                                android:onClick="plus_pena_medio"
+                                android:text="+"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000" />
+
+                            <Button
+                                android:id="@+id/minus_pena_grande"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:background="#FF2229"
+                                android:onClick="minus_pena_grande"
+                                android:text="-"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/pena_grande_count"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:gravity="center|center_vertical"
+                                android:text="0"
+                                android:textSize="24sp" />
+
+                            <Button
+                                android:id="@+id/plus_pena_grande"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:background="#89FF00"
+                                android:onClick="plus_pena_grande"
+                                android:text="+"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000" />
+
+
+                        </TableRow>
+
+
+
+
+
+
+
+
+                        <!-- PASTILHAS ELASTICAS-->
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/header_tabela"
+                                android:layout_width="0dp"
+                                android:layout_weight=".2"
+                                android:layout_height="match_parent"
+                                android:background="#8C2D19"
+                                android:gravity="center"
+                                android:text=""
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/header_pequeno"
+                                android:layout_width="0dp"
+                                android:layout_weight=".3"
+                                android:layout_height="match_parent"
+                                android:background="#8C2D19"
+                                android:gravity="center"
+                                android:text="Pastilhas elásticas"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/header_medio"
+                                android:layout_width="0dp"
+                                android:layout_weight=".3"
+                                android:layout_height="match_parent"
+                                android:background="#8C2D19"
+                                android:gravity="center"
+                                android:text="Até 500 cm^2"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/header_grande"
+                                android:layout_width="0dp"
+                                android:layout_weight=".3"
+                                android:layout_height="match_parent"
+                                android:background="#8C2D19"
+                                android:gravity="center"
+                                android:text="Maior que 500 cm^2"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/tipo_pena"
+                                android:layout_width="0dp"
+                                android:layout_weight=".2"
+                                android:layout_height="match_parent"
+                                android:background="#8C2D19"
+                                android:gravity="center"
+                                android:text="P-elásticas"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold" />
+
+                            <Button
+                                android:id="@+id/minus_pena_pequeno"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:background="#FF2229"
+                                android:onClick="minus_pena_pequeno"
+                                android:text="-"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000"
+                                android:textSize="8sp" />
+
+                            <TextView
+                                android:id="@+id/pena_pequeno_count"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:gravity="center|center_vertical"
+                                android:text="0"
+                                android:textSize="24sp" />
+
+                            <Button
+                                android:id="@+id/plus_pena_pequeno"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:background="#89FF00"
+                                android:onClick="plus_pena_pequeno"
+                                android:text="+"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000" />
+
+                            <Button
+                                android:id="@+id/minus_pena_medio"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:background="#FF2229"
+                                android:onClick="minus_pena_medio"
+                                android:text="-"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/pena_medio_count"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:gravity="center|center_vertical"
+                                android:text="0"
+                                android:textSize="24sp" />
+
+                            <Button
+                                android:id="@+id/plus_pena_medio"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:background="#89FF00"
+                                android:onClick="plus_pena_medio"
+                                android:text="+"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000" />
+
+                            <Button
+                                android:id="@+id/minus_pena_grande"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:background="#FF2229"
+                                android:onClick="minus_pena_grande"
+                                android:text="-"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/pena_grande_count"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:gravity="center|center_vertical"
+                                android:text="0"
+                                android:textSize="24sp" />
+
+                            <Button
+                                android:id="@+id/plus_pena_grande"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:background="#89FF00"
+                                android:onClick="plus_pena_grande"
+                                android:text="+"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000" />
+
+
+                        </TableRow>
+
+
+
+
+
+
+
+
+
+
+
+                        <!--RA-->
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/header_tabela"
+                                android:layout_width="0dp"
+                                android:layout_weight=".2"
+                                android:layout_height="match_parent"
+                                android:background="#8C2D19"
+                                android:gravity="center"
+                                android:text="Tipo"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/header_pequeno"
+                                android:layout_width="0dp"
+                                android:layout_weight=".3"
+                                android:layout_height="match_parent"
+                                android:background="#8C2D19"
+                                android:gravity="center"
+                                android:text="P"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/header_medio"
+                                android:layout_width="0dp"
+                                android:layout_weight=".3"
+                                android:layout_height="match_parent"
+                                android:background="#8C2D19"
+                                android:gravity="center"
+                                android:text="M"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/header_grande"
+                                android:layout_width="0dp"
+                                android:layout_weight=".3"
+                                android:layout_height="match_parent"
+                                android:background="#8C2D19"
+                                android:gravity="center"
+                                android:text="G"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/tipo_pea"
+                                android:layout_width="0dp"
+                                android:layout_weight=".2"
+                                android:layout_height="match_parent"
+                                android:background="#8C2D19"
+                                android:gravity="center"
+                                android:text="RA"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold" />
+
+                            <Button
+                                android:id="@+id/minus_pea_pequeno"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:background="#FF2229"
+                                android:onClick="minus_pea_pequeno"
+                                android:text="-"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000"
+                                android:textSize="8sp" />
+
+                            <TextView
+                                android:id="@+id/pea_pequeno_count"
+                                android:layout_width="0.dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:gravity="center|center_vertical"
+                                android:text="0"
+                                android:textSize="24sp" />
+
+                            <Button
+                                android:id="@+id/plus_pea_pequeno"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:background="#89FF00"
+                                android:onClick="plus_pea_pequeno"
+                                android:text="+"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000" />
+
+                            <Button
+                                android:id="@+id/minus_pea_medio"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:background="#FF2229"
+                                android:onClick="minus_pea_medio"
+                                android:text="-"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/pea_medio_count"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:gravity="center|center_vertical"
+                                android:text="0"
+                                android:textSize="24sp" />
+
+                            <Button
+                                android:id="@+id/plus_pea_medio"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:background="#89FF00"
+                                android:onClick="plus_pea_medio"
+                                android:text="+"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000" />
+
+                            <Button
+                                android:id="@+id/minus_pea_grande"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:background="#FF2229"
+                                android:onClick="minus_pea_grande"
+                                android:text="-"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/pea_grande_count"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:gravity="center|center_vertical"
+                                android:text="0"
+                                android:textSize="24sp" />
+
+                            <Button
+                                android:id="@+id/plus_pea_grande"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:background="#89FF00"
+                                android:onClick="plus_pea_grande"
+                                android:text="+"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000" />
+
+
+                        </TableRow>
+
+
+
+
+
+
+
+
+                        <!--ORO-->
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/tipo_pea"
+                                android:layout_width="0dp"
+                                android:layout_weight=".2"
+                                android:layout_height="match_parent"
+                                android:background="#8C2D19"
+                                android:gravity="center"
+                                android:text="ORO"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold" />
+
+                            <Button
+                                android:id="@+id/minus_pea_pequeno"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:background="#FF2229"
+                                android:onClick="minus_pea_pequeno"
+                                android:text="-"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000"
+                                android:textSize="8sp" />
+
+                            <TextView
+                                android:id="@+id/pea_pequeno_count"
+                                android:layout_width="0.dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:gravity="center|center_vertical"
+                                android:text="0"
+                                android:textSize="24sp" />
+
+                            <Button
+                                android:id="@+id/plus_pea_pequeno"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:background="#89FF00"
+                                android:onClick="plus_pea_pequeno"
+                                android:text="+"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000" />
+
+                            <Button
+                                android:id="@+id/minus_pea_medio"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:background="#FF2229"
+                                android:onClick="minus_pea_medio"
+                                android:text="-"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/pea_medio_count"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:gravity="center|center_vertical"
+                                android:text="0"
+                                android:textSize="24sp" />
+
+                            <Button
+                                android:id="@+id/plus_pea_medio"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:background="#89FF00"
+                                android:onClick="plus_pea_medio"
+                                android:text="+"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000" />
+
+                            <Button
+                                android:id="@+id/minus_pea_grande"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:background="#FF2229"
+                                android:onClick="minus_pea_grande"
+                                android:text="-"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/pea_grande_count"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:gravity="center|center_vertical"
+                                android:text="0"
+                                android:textSize="24sp" />
+
+                            <Button
+                                android:id="@+id/plus_pea_grande"
+                                android:layout_width="0dp"
+                                android:layout_weight=".1"
+                                android:layout_height="match_parent"
+                                android:background="#89FF00"
+                                android:onClick="plus_pea_grande"
+                                android:text="+"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000" />
+
+
+                        </TableRow>
+
+
+
+
+
+
+                        <!--Metais e Latas-->
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/header_tabela"
+                                android:layout_width="0dp"
+                                android:layout_weight=".2"
+                                android:layout_height="match_parent"
+                                android:background="#8C2D19"
+                                android:gravity="center"
+                                android:text="Tipo"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/header_pequeno"
+                                android:layout_width="0dp"
+                                android:layout_weight=".4"
+                                android:layout_height="match_parent"
+                                android:background="#8C2D19"
+                                android:gravity="center"
+                                android:text="Latas Refrigerantes"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/header_medio"
+                                android:layout_width="0dp"
+                                android:layout_weight=".4"
+                                android:layout_height="match_parent"
+                                android:background="#8C2D19"
+                                android:gravity="center"
+                                android:text="Outros Metais"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold" />
+
+
+                        </TableRow>
+
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/tipo_pea"
+                                android:layout_width="0dp"
+                                android:layout_weight=".2"
+                                android:layout_height="match_parent"
+                                android:background="#8C2D19"
+                                android:gravity="center"
+                                android:text="Metais"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold" />
+
+                            <Button
+                                android:id="@+id/minus_pea_pequeno"
+                                android:layout_width="0dp"
+                                android:layout_weight=".15"
+                                android:layout_height="match_parent"
+                                android:background="#FF2229"
+                                android:onClick="minus_pea_pequeno"
+                                android:text="-"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000"
+                                android:textSize="8sp" />
+
+                            <TextView
+                                android:id="@+id/pea_pequeno_count"
+                                android:layout_width="0.dp"
+                                android:layout_weight=".15"
+                                android:layout_height="match_parent"
+                                android:gravity="center|center_vertical"
+                                android:text="0"
+                                android:textSize="24sp" />
+
+                            <Button
+                                android:id="@+id/plus_pea_pequeno"
+                                android:layout_width="0dp"
+                                android:layout_weight=".15"
+                                android:layout_height="match_parent"
+                                android:background="#89FF00"
+                                android:onClick="plus_pea_pequeno"
+                                android:text="+"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000" />
+
+                            <Button
+                                android:id="@+id/minus_pea_medio"
+                                android:layout_width="0dp"
+                                android:layout_weight=".15"
+                                android:layout_height="match_parent"
+                                android:background="#FF2229"
+                                android:onClick="minus_pea_medio"
+                                android:text="-"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/pea_medio_count"
+                                android:layout_width="0dp"
+                                android:layout_weight=".15"
+                                android:layout_height="match_parent"
+                                android:gravity="center|center_vertical"
+                                android:text="0"
+                                android:textSize="24sp" />
+
+                            <Button
+                                android:id="@+id/plus_pea_medio"
+                                android:layout_width="0dp"
+                                android:layout_weight=".15"
+                                android:layout_height="match_parent"
+                                android:background="#89FF00"
+                                android:onClick="plus_pea_medio"
+                                android:text="+"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="#000000" />
+
+
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </TableLayout>
+
+                </ScrollView>
+
+
+
+
+
+
+
+
+                <!-- TAB 3 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/tab3">
+
+
+
+                    <CheckBox
+                        android:id="@+id/checkBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Placas Ajardinadas"
+                        tools:layout_editor_absoluteX="65dp"
+                        tools:layout_editor_absoluteY="58dp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Caldeiras Floreiras"
+                        tools:layout_editor_absoluteX="65dp"
+                        tools:layout_editor_absoluteY="120dp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bocas Lobo Papeleiras"
+                        tools:layout_editor_absoluteX="65dp"
+                        tools:layout_editor_absoluteY="192dp" />
+
+                    <Button
+                        android:id="@+id/gravar_instancia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#FF2229"
+                        android:onClick="gravar"
+                        android:text="VAMOS TESTAR"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="#000000"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="302dp" />
+
+                    <Button
+                        android:id="@+id/criar_excel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#FF2229"
+                        android:onClick="gravarcsv"
+                        android:text="Criar Ficheiro CSV"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="#000000"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="410dp" />
+                    <Button
+                        android:id="@+id/reset_bdad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#FF2229"
+                        android:onClick="reset"
+                        android:text="Reset Base de dados"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="#000000"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="410dp" />
+                </LinearLayout>
+
+
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>
