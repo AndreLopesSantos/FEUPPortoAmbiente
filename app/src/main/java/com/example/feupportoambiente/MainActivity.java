@@ -9,6 +9,7 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TabHost;
@@ -38,15 +39,213 @@ public class MainActivity extends AppCompatActivity {
     private EditText mResiduos;
     private EditText mAreas;
 
-    //Variáveis para realizar as contagens
-    private int pea_pequeno1 = 0;
-    private int pea_medio1 = 0;
-    private int pea_grande1 = 0;
+    //Bool para checkboxes
+    boolean pa = false;
+    boolean cf = false;
+    boolean bl = false;
+    
+    int pan = 0;
+    int cfn = 0;
+    int bln = 0;
 
-    //Para ver os counters
-    private TextView count_pea_pequeno1;
-    private TextView count_pea_medio1;
-    private TextView count_pea_grande1;
+    //Variáveis para realizar as contagens - RUA
+    private int pea_pequeno_rua = 0;
+    private int pea_medio_rua = 0;
+    private int pea_grande_rua = 0;
+    private int pena_pequeno_rua = 0;
+    private int pena_medio_rua = 0;
+    private int pena_grande_rua = 0;
+    private int pedacos_vidro_rua = 0;
+    private int garrafapeq_vidro_rua = 0;
+    private int garrafagra_vidro_rua = 0;
+    private int cigarros_rua = 0;
+    private int dejetos_rua = 0;
+    private int indiferenciados_rua = 0;
+    private int folhas_rua = 0;
+    private int rampequenas_rua = 0;
+    private int ramgrandes_rua = 0;
+    private int pastilhas_rua = 0;
+    private int past_ate500_rua = 0;
+    private int past_maior500_rua = 0;
+    private int ra_pequeno_rua = 0;
+    private int ra_medio_rua = 0;
+    private int ra_grande_rua = 0;
+    private int oro_pequeno_rua = 0;
+    private int oro_medio_rua = 0;
+    private int oro_grande_rua = 0;
+    private int latas_metais_rua = 0;
+    private int outros_metais_rua = 0;
+
+
+    //Variáveis para realizar as contagens - Placas Ajardinadas PA
+    private int pea_pequeno_pa = 0;
+    private int pea_medio_pa = 0;
+    private int pea_grande_pa = 0;
+    private int pena_pequeno_pa = 0;
+    private int pena_medio_pa = 0;
+    private int pena_grande_pa = 0;
+    private int pedacos_vidro_pa = 0;
+    private int garrafapeq_vidro_pa = 0;
+    private int garrafagra_vidro_pa = 0;
+    private int cigarros_pa = 0;
+    private int dejetos_pa = 0;
+    private int indiferenciados_pa = 0;
+    private int folhas_pa = 0;
+    private int rampequenas_pa = 0;
+    private int ramgrandes_pa = 0;
+    private int pastilhas_pa = 0;
+    private int past_ate500_pa = 0;
+    private int past_maior500_pa = 0;
+    private int ra_pequeno_pa = 0;
+    private int ra_medio_pa = 0;
+    private int ra_grande_pa = 0;
+    private int oro_pequeno_pa = 0;
+    private int oro_medio_pa = 0;
+    private int oro_grande_pa = 0;
+    private int latas_metais_pa = 0;
+    private int outros_metais_pa = 0;
+
+
+    //Variáveis para realizar as contagens - Caldeiras Floreiras CF
+    private int pea_pequeno_cf = 0;
+    private int pea_medio_cf = 0;
+    private int pea_grande_cf = 0;
+    private int pena_pequeno_cf = 0;
+    private int pena_medio_cf = 0;
+    private int pena_grande_cf = 0;
+    private int pedacos_vidro_cf = 0;
+    private int garrafapeq_vidro_cf = 0;
+    private int garrafagra_vidro_cf = 0;
+    private int cigarros_cf = 0;
+    private int dejetos_cf = 0;
+    private int indiferenciados_cf = 0;
+    private int folhas_cf = 0;
+    private int rampequenas_cf = 0;
+    private int ramgrandes_cf = 0;
+    private int pastilhas_cf = 0;
+    private int past_ate500_cf = 0;
+    private int past_maior500_cf = 0;
+    private int ra_pequeno_cf = 0;
+    private int ra_medio_cf = 0;
+    private int ra_grande_cf = 0;
+    private int oro_pequeno_cf = 0;
+    private int oro_medio_cf = 0;
+    private int oro_grande_cf = 0;
+    private int latas_metais_cf = 0;
+    private int outros_metais_cf = 0;
+
+    //Para ver os counters - RUA
+    private TextView count_pea_pequeno_rua;
+    private TextView count_pea_medio_rua;
+    private TextView count_pea_grande_rua;
+    private TextView count_pena_pequeno_rua;
+    private TextView count_pena_medio_rua;
+    private TextView count_pena_grande_rua;
+    private TextView count_pedacos_vidro_rua;
+    private TextView count_garrafapeq_vidro_rua;
+    private TextView count_garrafagra_vidro_rua;
+    private TextView count_cigarros_rua;
+    private TextView count_dejetos_rua;
+    private TextView count_indiferenciados_rua;
+    private TextView count_folhas_rua;
+    private TextView count_rampequenas_rua;
+    private TextView count_ramgrandes_rua;
+    private TextView count_pastilhas_rua;
+    private TextView count_past_ate500_rua;
+    private TextView count_past_maior500_rua;
+    private TextView count_ra_pequeno_rua;
+    private TextView count_ra_medio_rua;
+    private TextView count_ra_grande_rua;
+    private TextView count_oro_pequeno_rua;
+    private TextView count_oro_medio_rua;
+    private TextView count_oro_grande_rua;
+    private TextView count_latas_metais_rua;
+    private TextView count_outros_metais_rua;
+
+
+    //Para ver os counters - Placas ajardinadas PA
+    private TextView count_pea_pequeno_pa;
+    private TextView count_pea_medio_pa;
+    private TextView count_pea_grande_pa;
+    private TextView count_pena_pequeno_pa;
+    private TextView count_pena_medio_pa;
+    private TextView count_pena_grande_pa;
+    private TextView count_pedacos_vidro_pa;
+    private TextView count_garrafapeq_vidro_pa;
+    private TextView count_garrafagra_vidro_pa;
+    private TextView count_cigarros_pa;
+    private TextView count_dejetos_pa;
+    private TextView count_indiferenciados_pa;
+    private TextView count_folhas_pa;
+    private TextView count_rampequenas_pa;
+    private TextView count_ramgrandes_pa;
+    private TextView count_pastilhas_pa;
+    private TextView count_past_ate500_pa;
+    private TextView count_past_maior500_pa;
+    private TextView count_ra_pequeno_pa;
+    private TextView count_ra_medio_pa;
+    private TextView count_ra_grande_pa;
+    private TextView count_oro_pequeno_pa;
+    private TextView count_oro_medio_pa;
+    private TextView count_oro_grande_pa;
+    private TextView count_latas_metais_pa;
+    private TextView count_outros_metais_pa;
+
+
+    //Para ver os counters - Caldeiras Floreiras - CF
+    private TextView count_pea_pequeno_cf;
+    private TextView count_pea_medio_cf;
+    private TextView count_pea_grande_cf;
+    private TextView count_pena_pequeno_cf;
+    private TextView count_pena_medio_cf;
+    private TextView count_pena_grande_cf;
+    private TextView count_pedacos_vidro_cf;
+    private TextView count_garrafapeq_vidro_cf;
+    private TextView count_garrafagra_vidro_cf;
+    private TextView count_cigarros_cf;
+    private TextView count_dejetos_cf;
+    private TextView count_indiferenciados_cf;
+    private TextView count_folhas_cf;
+    private TextView count_rampequenas_cf;
+    private TextView count_ramgrandes_cf;
+    private TextView count_pastilhas_cf;
+    private TextView count_past_ate500_cf;
+    private TextView count_past_maior500_cf;
+    private TextView count_ra_pequeno_cf;
+    private TextView count_ra_medio_cf;
+    private TextView count_ra_grande_cf;
+    private TextView count_oro_pequeno_cf;
+    private TextView count_oro_medio_cf;
+    private TextView count_oro_grande_cf;
+    private TextView count_latas_metais_cf;
+    private TextView count_outros_metais_cf;
+
+
+
+
+
+
+
+
+
+    //Bocas de Lobo e Papeleiras
+    private int bocalobolimpa_bl = 0;
+    private int bocalobosuja_bl = 0;
+    private int bocalobototal_bl = 0;
+    private int papeleirasvazia_bl = 0;
+    private int papeleirascheias_bl = 0;
+    private int papeleirastotal_bl = 0;
+
+
+
+
+    private TextView count_bocalobolimpa_bl;
+    private TextView count_bocalobosuja_bl;
+    private TextView count_bocalobototal_bl;
+    private TextView count_papeleirasvazia_bl;
+    private TextView count_papeleirascheias_bl;
+    private TextView count_papeleirastotal_bl;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,9 +256,126 @@ public class MainActivity extends AppCompatActivity {
         TabHost tabs = (TabHost) findViewById(R.id.tabhost);
         tabs.setup();
 
-        count_pea_pequeno1 = (TextView) findViewById(R.id.pea_pequeno_count);
-        count_pea_medio1 = (TextView) findViewById(R.id.pea_medio_count);
-        count_pea_grande1 = (TextView) findViewById(R.id.pea_grande_count);
+
+        //RUA//
+        count_pea_pequeno_rua = (TextView) findViewById(R.id.pea_pequeno_count_rua);
+        count_pea_medio_rua = (TextView) findViewById(R.id.pea_medio_count_rua);
+        count_pea_grande_rua = (TextView) findViewById(R.id.pea_grande_count_rua);
+
+        count_pena_pequeno_rua = (TextView) findViewById(R.id.pena_pequeno_count_rua);
+        count_pena_medio_rua = (TextView) findViewById(R.id.pena_medio_count_rua);
+        count_pena_grande_rua = (TextView) findViewById(R.id.pena_grande_count_rua);
+
+        count_pedacos_vidro_rua = (TextView) findViewById(R.id.pedacos_vidro_rua);
+        count_garrafapeq_vidro_rua = (TextView) findViewById(R.id.garrafapeq_vidro_rua);
+        count_garrafagra_vidro_rua = (TextView) findViewById(R.id.garrafagra_vidro_rua);
+
+        count_cigarros_rua = (TextView) findViewById(R.id.cigarros_rua);
+        count_dejetos_rua = (TextView) findViewById(R.id.dejetos_rua);
+        count_indiferenciados_rua = (TextView) findViewById(R.id.indiferenciados_rua);
+
+        count_folhas_rua = (TextView) findViewById(R.id.folhas_rua);
+        count_rampequenas_rua = (TextView) findViewById(R.id.rampequenas_rua);
+        count_ramgrandes_rua = (TextView) findViewById(R.id.ramgrandes_rua);
+
+        count_pastilhas_rua = (TextView) findViewById(R.id.pastilhas_rua);
+        count_past_ate500_rua = (TextView) findViewById(R.id.past_ate500_rua);
+        count_past_maior500_rua = (TextView) findViewById(R.id.past_maior500_rua);
+
+        count_ra_pequeno_rua = (TextView) findViewById(R.id.ra_pequeno_rua);
+        count_ra_medio_rua = (TextView) findViewById(R.id.ra_medio_rua);
+        count_ra_grande_rua = (TextView) findViewById(R.id.ra_grande_rua);
+
+        count_oro_pequeno_rua = (TextView) findViewById(R.id.oro_pequeno_rua);
+        count_oro_medio_rua = (TextView) findViewById(R.id.oro_medio_rua);
+        count_oro_grande_rua = (TextView) findViewById(R.id.oro_grande_rua);
+
+        count_latas_metais_rua = (TextView) findViewById(R.id.latas_metais_rua);
+        count_outros_metais_rua = (TextView) findViewById(R.id.outros_metais_rua);
+
+        //PLACAS AJARDINADAS//
+        count_pea_pequeno_pa = (TextView) findViewById(R.id.pea_pequeno_count_pa);
+        count_pea_medio_pa = (TextView) findViewById(R.id.pea_medio_count_pa);
+        count_pea_grande_pa = (TextView) findViewById(R.id.pea_grande_count_pa);
+
+        count_pena_pequeno_pa = (TextView) findViewById(R.id.pena_pequeno_count_pa);
+        count_pena_medio_pa = (TextView) findViewById(R.id.pena_medio_count_pa);
+        count_pena_grande_pa = (TextView) findViewById(R.id.pena_grande_count_pa);
+
+        count_pedacos_vidro_pa = (TextView) findViewById(R.id.pedacos_vidro_pa);
+        count_garrafapeq_vidro_pa = (TextView) findViewById(R.id.garrafapeq_vidro_pa);
+        count_garrafagra_vidro_pa = (TextView) findViewById(R.id.garrafagra_vidro_pa);
+
+        count_cigarros_pa = (TextView) findViewById(R.id.cigarros_pa);
+        count_dejetos_pa = (TextView) findViewById(R.id.dejetos_pa);
+        count_indiferenciados_pa = (TextView) findViewById(R.id.indiferenciados_pa);
+
+        count_folhas_pa = (TextView) findViewById(R.id.folhas_pa);
+        count_rampequenas_pa = (TextView) findViewById(R.id.rampequenas_pa);
+        count_ramgrandes_pa = (TextView) findViewById(R.id.ramgrandes_pa);
+
+        count_pastilhas_pa = (TextView) findViewById(R.id.pastilhas_pa);
+        count_past_ate500_pa = (TextView) findViewById(R.id.past_ate500_pa);
+        count_past_maior500_pa = (TextView) findViewById(R.id.past_maior500_pa);
+
+        count_ra_pequeno_pa = (TextView) findViewById(R.id.ra_pequeno_pa);
+        count_ra_medio_pa = (TextView) findViewById(R.id.ra_medio_pa);
+        count_ra_grande_pa = (TextView) findViewById(R.id.ra_grande_pa);
+
+        count_oro_pequeno_pa = (TextView) findViewById(R.id.oro_pequeno_pa);
+        count_oro_medio_pa = (TextView) findViewById(R.id.oro_medio_pa);
+        count_oro_grande_pa = (TextView) findViewById(R.id.oro_grande_pa);
+
+        count_latas_metais_pa = (TextView) findViewById(R.id.latas_metais_pa);
+        count_outros_metais_pa = (TextView) findViewById(R.id.outros_metais_pa);
+
+
+        //CALDEIRAS FLOREIRAS//
+        count_pea_pequeno_cf = (TextView) findViewById(R.id.pea_pequeno_count_cf);
+        count_pea_medio_cf = (TextView) findViewById(R.id.pea_medio_count_cf);
+        count_pea_grande_cf = (TextView) findViewById(R.id.pea_grande_count_cf);
+
+        count_pena_pequeno_cf = (TextView) findViewById(R.id.pena_pequeno_count_cf);
+        count_pena_medio_cf = (TextView) findViewById(R.id.pena_medio_count_cf);
+        count_pena_grande_cf = (TextView) findViewById(R.id.pena_grande_count_cf);
+
+        count_pedacos_vidro_cf = (TextView) findViewById(R.id.pedacos_vidro_cf);
+        count_garrafapeq_vidro_cf = (TextView) findViewById(R.id.garrafapeq_vidro_cf);
+        count_garrafagra_vidro_cf = (TextView) findViewById(R.id.garrafagra_vidro_cf);
+
+        count_cigarros_cf = (TextView) findViewById(R.id.cigarros_cf);
+        count_dejetos_cf = (TextView) findViewById(R.id.dejetos_cf);
+        count_indiferenciados_cf = (TextView) findViewById(R.id.indiferenciados_cf);
+
+        count_folhas_cf = (TextView) findViewById(R.id.folhas_cf);
+        count_rampequenas_cf = (TextView) findViewById(R.id.rampequenas_cf);
+        count_ramgrandes_cf = (TextView) findViewById(R.id.ramgrandes_cf);
+
+        count_pastilhas_cf = (TextView) findViewById(R.id.pastilhas_cf);
+        count_past_ate500_cf = (TextView) findViewById(R.id.past_ate500_cf);
+        count_past_maior500_cf = (TextView) findViewById(R.id.past_maior500_cf);
+
+        count_ra_pequeno_cf = (TextView) findViewById(R.id.ra_pequeno_cf);
+        count_ra_medio_cf = (TextView) findViewById(R.id.ra_medio_cf);
+        count_ra_grande_cf = (TextView) findViewById(R.id.ra_grande_cf);
+
+        count_oro_pequeno_cf = (TextView) findViewById(R.id.oro_pequeno_cf);
+        count_oro_medio_cf = (TextView) findViewById(R.id.oro_medio_cf);
+        count_oro_grande_cf = (TextView) findViewById(R.id.oro_grande_cf);
+
+        count_latas_metais_cf = (TextView) findViewById(R.id.latas_metais_cf);
+        count_outros_metais_cf = (TextView) findViewById(R.id.outros_metais_cf);
+
+
+
+        //Bocas de Lobo e papeleiras
+
+        count_bocalobolimpa_bl = (TextView) findViewById(R.id.bocalobolimpa_bl);
+        count_bocalobosuja_bl = (TextView) findViewById(R.id.bocalobosuja_bl);
+        count_bocalobototal_bl = (TextView) findViewById(R.id.bocalobototal_bl);
+        count_papeleirasvazia_bl = (TextView) findViewById(R.id.papeleirasvazia_bl);
+        count_papeleirascheias_bl = (TextView) findViewById(R.id.papeleirascheias_bl);
+        count_papeleirastotal_bl = (TextView) findViewById(R.id.papeleirastotal_bl);
 
 
         mRuas = findViewById(R.id.editText_rua);
@@ -75,88 +391,1599 @@ public class MainActivity extends AppCompatActivity {
         spec.setContent(R.id.tab2);
         spec.setIndicator("Rua");
         tabs.addTab(spec);
-        spec = tabs.newTabSpec("tag2");
+        spec = tabs.newTabSpec("tag3");
         spec.setContent(R.id.tab3);
+        spec.setIndicator("PA");
+        tabs.addTab(spec);
+        spec = tabs.newTabSpec("tag4");
+        spec.setContent(R.id.tab4);
+        spec.setIndicator("CF");
+        tabs.addTab(spec);
+        spec = tabs.newTabSpec("tag5");
+        spec.setContent(R.id.tab5);
+        spec.setIndicator("BL/Ppl");
+        tabs.addTab(spec);
+        spec = tabs.newTabSpec("tag6");
+        spec.setContent(R.id.tab6);
         spec.setIndicator("Guardar");
         tabs.addTab(spec);
     }
 
+
+    ////////////////////////////////////////////////////////////////////////////////////
+    ///////////////////////////FUNCOES RUA/////////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////////////////////////
+
+
     // PEA PEQUENO PLUS & MINUS
-    public void minus_pea_pequeno(View view) {
-        pea_pequeno1--;
-        if (count_pea_pequeno1 != null)
-            count_pea_pequeno1.setText(Integer.toString(pea_pequeno1));
+    public void minus_pea_pequeno_rua(View view) {
+        if (pea_pequeno_rua > 0) {
+            pea_pequeno_rua--;
+            if (count_pea_pequeno_rua != null)
+                count_pea_pequeno_rua.setText(Integer.toString(pea_pequeno_rua));
+        }
 
     }
 
-
-    public void plus_pea_pequeno(View view) {
-        pea_pequeno1++;
-        if (count_pea_pequeno1 != null)
-            count_pea_pequeno1.setText(Integer.toString(pea_pequeno1));
+    public void plus_pea_pequeno_rua(View view) {
+        pea_pequeno_rua++;
+        if (count_pea_pequeno_rua != null)
+            count_pea_pequeno_rua.setText(Integer.toString(pea_pequeno_rua));
     }
 
     // PEA MEDIO PLUS & MINUS
-    public void minus_pea_medio(View view) {
-        pea_medio1--;
-        if (count_pea_medio1 != null)
-            count_pea_medio1.setText(Integer.toString(pea_medio1));
+    public void minus_pea_medio_rua(View view) {
+        if (pea_medio_rua > 0) {
+            pea_medio_rua--;
+            if (count_pea_medio_rua != null)
+                count_pea_medio_rua.setText(Integer.toString(pea_medio_rua));
+        }
 
     }
 
-    public void plus_pea_medio(View view) {
-        pea_medio1++;
-        if (count_pea_medio1 != null)
-            count_pea_medio1.setText(Integer.toString(pea_medio1));
+    public void plus_pea_medio_rua(View view) {
+        pea_medio_rua++;
+        if (count_pea_medio_rua != null)
+            count_pea_medio_rua.setText(Integer.toString(pea_medio_rua));
     }
 
     // PEA GRANDE PLUS & MINUS
-    public void minus_pea_grande(View view) {
-        pea_grande1--;
-        if (count_pea_grande1 != null)
-            count_pea_grande1.setText(Integer.toString(pea_grande1));
+    public void minus_pea_grande_rua(View view) {
+        if (pea_grande_rua > 0) {
+            pea_grande_rua--;
+            if (count_pea_grande_rua != null)
+                count_pea_grande_rua.setText(Integer.toString(pea_grande_rua));
+        }
 
     }
 
+    public void plus_pea_grande_rua(View view) {
+        pea_grande_rua++;
+        if (count_pea_grande_rua != null)
+            count_pea_grande_rua.setText(Integer.toString(pea_grande_rua));
+    }
 
-    public void plus_pea_grande(View view) {
-        pea_grande1++;
-        if (count_pea_grande1 != null)
-            count_pea_grande1.setText(Integer.toString(pea_grande1));
+    public void minus_pena_pequeno_rua(View view) {
+        if (pena_pequeno_rua > 0) {
+            pena_pequeno_rua--;
+            if (count_pena_pequeno_rua != null)
+                count_pena_pequeno_rua.setText(Integer.toString(pena_pequeno_rua));
+        }
+    }
+
+    public void plus_pena_pequeno_rua(View view) {
+        pena_pequeno_rua++;
+        if (count_pena_pequeno_rua != null)
+            count_pena_pequeno_rua.setText(Integer.toString(pena_pequeno_rua));
+    }
+
+    public void minus_pena_medio_rua(View view) {
+        if (pena_medio_rua > 0) {
+            pena_medio_rua--;
+            if (count_pena_medio_rua != null)
+                count_pena_medio_rua.setText(Integer.toString(pena_medio_rua));
+        }
+    }
+
+    public void plus_pena_medio_rua(View view) {
+        pena_medio_rua++;
+        if (count_pena_medio_rua != null)
+            count_pena_medio_rua.setText(Integer.toString(pena_medio_rua));
+    }
+
+    public void minus_pena_grande_rua(View view) {
+        if (pena_grande_rua > 0) {
+            pena_grande_rua--;
+            if (count_pena_grande_rua != null)
+                count_pena_grande_rua.setText(Integer.toString(pena_grande_rua));
+        }
+    }
+
+    public void plus_pena_grande_rua(View view) {
+        pena_grande_rua++;
+        if (count_pena_grande_rua != null)
+            count_pena_grande_rua.setText(Integer.toString(pena_grande_rua));
+    }
+
+    public void minus_pedacos_vidro_rua(View view) {
+        if (pedacos_vidro_rua > 0) {
+            pedacos_vidro_rua--;
+            if (count_pedacos_vidro_rua != null)
+                count_pedacos_vidro_rua.setText(Integer.toString(pedacos_vidro_rua));
+        }
+    }
+
+    public void plus_pedacos_vidro_rua(View view) {
+        pedacos_vidro_rua++;
+        if (count_pedacos_vidro_rua != null)
+            count_pedacos_vidro_rua.setText(Integer.toString(pedacos_vidro_rua));
+    }
+
+    public void minus_garrafapeq_vidro_rua(View view) {
+        if (pedacos_vidro_rua > 0 && garrafapeq_vidro_rua > 0) {
+            pedacos_vidro_rua--;
+            garrafapeq_vidro_rua--;
+            if (count_pedacos_vidro_rua != null)
+                count_pedacos_vidro_rua.setText(Integer.toString(pedacos_vidro_rua));
+            if (count_garrafapeq_vidro_rua != null)
+                count_garrafapeq_vidro_rua.setText(Integer.toString(garrafapeq_vidro_rua));
+        }
+    }
+
+    public void plus_garrafapeq_vidro_rua(View view) {
+        pedacos_vidro_rua++;
+        garrafapeq_vidro_rua++;
+        if (count_pedacos_vidro_rua != null)
+            count_pedacos_vidro_rua.setText(Integer.toString(pedacos_vidro_rua));
+        if (count_garrafapeq_vidro_rua != null)
+            count_garrafapeq_vidro_rua.setText(Integer.toString(garrafapeq_vidro_rua));
+    }
+
+    public void minus_garrafagra_vidro_rua(View view) {
+        if (pedacos_vidro_rua > 0 && garrafagra_vidro_rua > 0) {
+            pedacos_vidro_rua--;
+            garrafagra_vidro_rua--;
+            if (count_pedacos_vidro_rua != null)
+                count_pedacos_vidro_rua.setText(Integer.toString(pedacos_vidro_rua));
+            if (count_garrafagra_vidro_rua != null)
+                count_garrafagra_vidro_rua.setText(Integer.toString(garrafagra_vidro_rua));
+        }
+    }
+
+    public void plus_garrafagra_vidro_rua(View view) {
+        pedacos_vidro_rua++;
+        garrafagra_vidro_rua++;
+        if (count_pedacos_vidro_rua != null)
+            count_pedacos_vidro_rua.setText(Integer.toString(pedacos_vidro_rua));
+        if (count_garrafagra_vidro_rua != null)
+            count_garrafagra_vidro_rua.setText(Integer.toString(garrafagra_vidro_rua));
+    }
+
+
+    public void minus_cigarros_rua(View view) {
+        if (cigarros_rua > 0) {
+            cigarros_rua--;
+            if (count_cigarros_rua != null)
+                count_cigarros_rua.setText(Integer.toString(cigarros_rua));
+        }
+    }
+
+    public void plus_cigarros_rua(View view) {
+        cigarros_rua++;
+        if (count_cigarros_rua != null)
+            count_cigarros_rua.setText(Integer.toString(cigarros_rua));
+    }
+
+    public void minus_dejetos_rua(View view) {
+        if (dejetos_rua > 0) {
+            dejetos_rua--;
+            if (count_dejetos_rua != null)
+                count_dejetos_rua.setText(Integer.toString(dejetos_rua));
+        }
+    }
+
+    public void plus_dejetos_rua(View view) {
+        dejetos_rua++;
+        if (count_dejetos_rua != null)
+            count_dejetos_rua.setText(Integer.toString(dejetos_rua));
+    }
+
+    public void minus_indiferenciados_rua(View view) {
+        if (indiferenciados_rua > 0) {
+            indiferenciados_rua--;
+            if (count_indiferenciados_rua != null)
+                count_indiferenciados_rua.setText(Integer.toString(indiferenciados_rua));
+        }
+    }
+
+    public void plus_indiferenciados_rua(View view) {
+        indiferenciados_rua++;
+        if (count_indiferenciados_rua != null)
+            count_indiferenciados_rua.setText(Integer.toString(indiferenciados_rua));
+    }
+
+    public void minus_folhas_rua(View view) {
+        if (folhas_rua > 0) {
+            folhas_rua--;
+            if (count_folhas_rua != null)
+                count_folhas_rua.setText(Integer.toString(folhas_rua));
+        }
+    }
+
+    public void plus_folhas_rua(View view) {
+        folhas_rua++;
+        if (count_folhas_rua != null)
+            count_folhas_rua.setText(Integer.toString(folhas_rua));
+    }
+
+    public void minus_rampequenas_rua(View view) {
+        if (folhas_rua > 0 && rampequenas_rua > 0) {
+            folhas_rua--;
+            rampequenas_rua--;
+            if (count_folhas_rua != null)
+                count_folhas_rua.setText(Integer.toString(folhas_rua));
+            if (count_rampequenas_rua != null)
+                count_rampequenas_rua.setText(Integer.toString(rampequenas_rua));
+        }
+    }
+
+    public void plus_rampequenas_rua(View view) {
+        folhas_rua++;
+        rampequenas_rua++;
+        if (count_folhas_rua != null)
+            count_folhas_rua.setText(Integer.toString(folhas_rua));
+        if (count_rampequenas_rua != null)
+            count_rampequenas_rua.setText(Integer.toString(rampequenas_rua));
+    }
+
+    public void minus_ramgrandes_rua(View view) {
+        if (folhas_rua > 0 && ramgrandes_rua > 0) {
+            folhas_rua--;
+            ramgrandes_rua--;
+            if (count_folhas_rua != null)
+                count_folhas_rua.setText(Integer.toString(folhas_rua));
+            if (count_ramgrandes_rua != null)
+                count_ramgrandes_rua.setText(Integer.toString(ramgrandes_rua));
+        }
+    }
+
+    public void plus_ramgrandes_rua(View view) {
+        folhas_rua++;
+        ramgrandes_rua++;
+        if (count_folhas_rua != null)
+            count_folhas_rua.setText(Integer.toString(folhas_rua));
+        if (count_ramgrandes_rua != null)
+            count_ramgrandes_rua.setText(Integer.toString(ramgrandes_rua));
+    }
+
+    public void minus_pastilhas_rua(View view) {
+        if (pastilhas_rua > 0) {
+            pastilhas_rua--;
+            if (count_pastilhas_rua != null)
+                count_pastilhas_rua.setText(Integer.toString(pastilhas_rua));
+        }
+    }
+
+    public void plus_pastilhas_rua(View view) {
+        pastilhas_rua++;
+        if (count_pastilhas_rua != null)
+            count_pastilhas_rua.setText(Integer.toString(pastilhas_rua));
+    }
+
+    public void minus_past_ate500_rua(View view) {
+        if (past_ate500_rua > 0) {
+            past_ate500_rua--;
+            if (count_past_ate500_rua != null)
+                count_past_ate500_rua.setText(Integer.toString(past_ate500_rua));
+        }
+    }
+
+    public void plus_past_ate500_rua(View view) {
+        past_ate500_rua++;
+        if (count_past_ate500_rua != null)
+            count_past_ate500_rua.setText(Integer.toString(past_ate500_rua));
+
+    }
+
+    public void minus_past_maior500_rua(View view) {
+        if (past_maior500_rua > 0) {
+            past_maior500_rua--;
+            if (count_past_maior500_rua != null)
+                count_past_maior500_rua.setText(Integer.toString(past_maior500_rua));
+        }
+    }
+
+    public void plus_past_maior500_rua(View view) {
+        past_maior500_rua++;
+        if (count_past_maior500_rua != null)
+            count_past_maior500_rua.setText(Integer.toString(past_maior500_rua));
+    }
+
+    public void minus_ra_pequeno_rua(View view) {
+        if (ra_pequeno_rua > 0) {
+            ra_pequeno_rua--;
+            if (count_ra_pequeno_rua != null)
+                count_ra_pequeno_rua.setText(Integer.toString(ra_pequeno_rua));
+        }
+    }
+
+    public void plus_ra_pequeno_rua(View view) {
+        ra_pequeno_rua++;
+        if (count_ra_pequeno_rua != null)
+            count_ra_pequeno_rua.setText(Integer.toString(ra_pequeno_rua));
+    }
+
+    public void minus_ra_medio_rua(View view) {
+        if (ra_medio_rua > 0) {
+            ra_medio_rua--;
+            if (count_ra_medio_rua != null)
+                count_ra_medio_rua.setText(Integer.toString(ra_medio_rua));
+        }
+    }
+
+    public void plus_ra_medio_rua(View view) {
+        ra_medio_rua++;
+        if (count_ra_medio_rua != null)
+            count_ra_medio_rua.setText(Integer.toString(ra_medio_rua));
+    }
+
+    public void minus_ra_grande_rua(View view) {
+        if (ra_grande_rua > 0) {
+            ra_grande_rua--;
+            if (count_ra_grande_rua != null)
+                count_ra_grande_rua.setText(Integer.toString(ra_grande_rua));
+        }
+    }
+
+    public void plus_ra_grande_rua(View view) {
+        ra_grande_rua++;
+        if (count_ra_grande_rua != null)
+            count_ra_grande_rua.setText(Integer.toString(ra_grande_rua));
+    }
+
+    public void minus_oro_pequeno_rua(View view) {
+        if (oro_pequeno_rua > 0) {
+            oro_pequeno_rua--;
+            if (count_oro_pequeno_rua != null)
+                count_oro_pequeno_rua.setText(Integer.toString(oro_pequeno_rua));
+        }
+    }
+
+    public void plus_oro_pequeno_rua(View view) {
+        oro_pequeno_rua++;
+        if (count_oro_pequeno_rua != null)
+            count_oro_pequeno_rua.setText(Integer.toString(oro_pequeno_rua));
+    }
+
+    public void minus_oro_medio_rua(View view) {
+        if (oro_medio_rua > 0) {
+            oro_medio_rua--;
+            if (count_oro_medio_rua != null)
+                count_oro_medio_rua.setText(Integer.toString(oro_medio_rua));
+        }
+    }
+
+    public void plus_oro_medio_rua(View view) {
+        oro_medio_rua++;
+        if (count_oro_medio_rua != null)
+            count_oro_medio_rua.setText(Integer.toString(oro_medio_rua));
+    }
+
+    public void minus_oro_grande_rua(View view) {
+        if (oro_grande_rua > 0) {
+            oro_grande_rua--;
+            if (count_oro_grande_rua != null)
+                count_oro_grande_rua.setText(Integer.toString(oro_grande_rua));
+        }
+    }
+
+    public void plus_oro_grande_rua(View view) {
+        oro_grande_rua++;
+        if (count_oro_grande_rua != null)
+            count_oro_grande_rua.setText(Integer.toString(oro_grande_rua));
+    }
+
+    public void minus_latas_metais_rua(View view) {
+        if (latas_metais_rua > 0) {
+            latas_metais_rua--;
+            if (count_latas_metais_rua != null)
+                count_latas_metais_rua.setText(Integer.toString(latas_metais_rua));
+        }
+    }
+
+    public void plus_latas_metais_rua(View view) {
+        latas_metais_rua++;
+        if (count_latas_metais_rua != null)
+            count_latas_metais_rua.setText(Integer.toString(latas_metais_rua));
+    }
+
+    public void minus_outros_metais_rua(View view) {
+        if (outros_metais_rua > 0) {
+            outros_metais_rua--;
+            if (count_outros_metais_rua != null)
+                count_outros_metais_rua.setText(Integer.toString(outros_metais_rua));
+        }
+    }
+
+    public void plus_outros_metais_rua(View view) {
+        outros_metais_rua++;
+        if (count_outros_metais_rua != null)
+            count_outros_metais_rua.setText(Integer.toString(outros_metais_rua));
+    }
+
+
+    ////////////////////////////////////////////////////////////////////////////////////
+    ///////////////////////////FUNCOES PLACAS AJARDINADAS//////////////////////////////
+    ///////////////////////////////////////////////////////////////////////////////////
+
+
+    // PEA PEQUENO PLUS & MINUS
+    public void minus_pea_pequeno_pa(View view) {
+        if (pea_pequeno_pa > 0) {
+            pea_pequeno_pa--;
+            if (count_pea_pequeno_pa != null)
+                count_pea_pequeno_pa.setText(Integer.toString(pea_pequeno_pa));
+        }
+
+    }
+
+    public void plus_pea_pequeno_pa(View view) {
+        pea_pequeno_pa++;
+        if (count_pea_pequeno_pa != null)
+            count_pea_pequeno_pa.setText(Integer.toString(pea_pequeno_pa));
+    }
+
+    // PEA MEDIO PLUS & MINUS
+    public void minus_pea_medio_pa(View view) {
+        if (pea_medio_pa > 0) {
+            pea_medio_pa--;
+            if (count_pea_medio_pa != null)
+                count_pea_medio_pa.setText(Integer.toString(pea_medio_pa));
+        }
+
+    }
+
+    public void plus_pea_medio_pa(View view) {
+        pea_medio_pa++;
+        if (count_pea_medio_pa != null)
+            count_pea_medio_pa.setText(Integer.toString(pea_medio_pa));
+    }
+
+    // PEA GRANDE PLUS & MINUS
+    public void minus_pea_grande_pa(View view) {
+        if (pea_grande_pa > 0) {
+            pea_grande_pa--;
+            if (count_pea_grande_pa != null)
+                count_pea_grande_pa.setText(Integer.toString(pea_grande_pa));
+        }
+
+    }
+
+    public void plus_pea_grande_pa(View view) {
+        pea_grande_pa++;
+        if (count_pea_grande_pa != null)
+            count_pea_grande_pa.setText(Integer.toString(pea_grande_pa));
+    }
+
+    public void minus_pena_pequeno_pa(View view) {
+        if (pena_pequeno_pa > 0) {
+            pena_pequeno_pa--;
+            if (count_pena_pequeno_pa != null)
+                count_pena_pequeno_pa.setText(Integer.toString(pena_pequeno_pa));
+        }
+    }
+
+    public void plus_pena_pequeno_pa(View view) {
+        pena_pequeno_pa++;
+        if (count_pena_pequeno_pa != null)
+            count_pena_pequeno_pa.setText(Integer.toString(pena_pequeno_pa));
+    }
+
+    public void minus_pena_medio_pa(View view) {
+        if (pena_medio_pa > 0) {
+            pena_medio_pa--;
+            if (count_pena_medio_pa != null)
+                count_pena_medio_pa.setText(Integer.toString(pena_medio_pa));
+        }
+    }
+
+    public void plus_pena_medio_pa(View view) {
+        pena_medio_pa++;
+        if (count_pena_medio_pa != null)
+            count_pena_medio_pa.setText(Integer.toString(pena_medio_pa));
+    }
+
+    public void minus_pena_grande_pa(View view) {
+        if (pena_grande_pa > 0) {
+            pena_grande_pa--;
+            if (count_pena_grande_pa != null)
+                count_pena_grande_pa.setText(Integer.toString(pena_grande_pa));
+        }
+    }
+
+    public void plus_pena_grande_pa(View view) {
+        pena_grande_pa++;
+        if (count_pena_grande_pa != null)
+            count_pena_grande_pa.setText(Integer.toString(pena_grande_pa));
+    }
+
+    public void minus_pedacos_vidro_pa(View view) {
+        if (pedacos_vidro_pa > 0) {
+            pedacos_vidro_pa--;
+            if (count_pedacos_vidro_pa != null)
+                count_pedacos_vidro_pa.setText(Integer.toString(pedacos_vidro_pa));
+        }
+    }
+
+    public void plus_pedacos_vidro_pa(View view) {
+        pedacos_vidro_pa++;
+        if (count_pedacos_vidro_pa != null)
+            count_pedacos_vidro_pa.setText(Integer.toString(pedacos_vidro_pa));
+    }
+
+    public void minus_garrafapeq_vidro_pa(View view) {
+        if (pedacos_vidro_pa > 0 && garrafapeq_vidro_pa > 0) {
+            pedacos_vidro_pa--;
+            garrafapeq_vidro_pa--;
+            if (count_pedacos_vidro_pa != null)
+                count_pedacos_vidro_pa.setText(Integer.toString(pedacos_vidro_pa));
+            if (count_garrafapeq_vidro_pa != null)
+                count_garrafapeq_vidro_pa.setText(Integer.toString(garrafapeq_vidro_pa));
+        }
+    }
+
+    public void plus_garrafapeq_vidro_pa(View view) {
+        pedacos_vidro_pa++;
+        garrafapeq_vidro_pa++;
+        if (count_pedacos_vidro_pa != null)
+            count_pedacos_vidro_pa.setText(Integer.toString(pedacos_vidro_pa));
+        if (count_garrafapeq_vidro_pa != null)
+            count_garrafapeq_vidro_pa.setText(Integer.toString(garrafapeq_vidro_pa));
+    }
+
+    public void minus_garrafagra_vidro_pa(View view) {
+        if (pedacos_vidro_pa > 0 && garrafagra_vidro_pa > 0) {
+            pedacos_vidro_pa--;
+            garrafagra_vidro_pa--;
+            if (count_pedacos_vidro_pa != null)
+                count_pedacos_vidro_pa.setText(Integer.toString(pedacos_vidro_pa));
+            if (count_garrafagra_vidro_pa != null)
+                count_garrafagra_vidro_pa.setText(Integer.toString(garrafagra_vidro_pa));
+        }
+    }
+
+    public void plus_garrafagra_vidro_pa(View view) {
+        pedacos_vidro_pa++;
+        garrafagra_vidro_pa++;
+        if (count_pedacos_vidro_pa != null)
+            count_pedacos_vidro_pa.setText(Integer.toString(pedacos_vidro_pa));
+        if (count_garrafagra_vidro_pa != null)
+            count_garrafagra_vidro_pa.setText(Integer.toString(garrafagra_vidro_pa));
+    }
+
+
+    public void minus_cigarros_pa(View view) {
+        if (cigarros_pa > 0) {
+            cigarros_pa--;
+            if (count_cigarros_pa != null)
+                count_cigarros_pa.setText(Integer.toString(cigarros_pa));
+        }
+    }
+
+    public void plus_cigarros_pa(View view) {
+        cigarros_pa++;
+        if (count_cigarros_pa != null)
+            count_cigarros_pa.setText(Integer.toString(cigarros_pa));
+    }
+
+    public void minus_dejetos_pa(View view) {
+        if (dejetos_pa > 0) {
+            dejetos_pa--;
+            if (count_dejetos_pa != null)
+                count_dejetos_pa.setText(Integer.toString(dejetos_pa));
+        }
+    }
+
+    public void plus_dejetos_pa(View view) {
+        dejetos_pa++;
+        if (count_dejetos_pa != null)
+            count_dejetos_pa.setText(Integer.toString(dejetos_pa));
+    }
+
+    public void minus_indiferenciados_pa(View view) {
+        if (indiferenciados_pa > 0) {
+            indiferenciados_pa--;
+            if (count_indiferenciados_pa != null)
+                count_indiferenciados_pa.setText(Integer.toString(indiferenciados_pa));
+        }
+    }
+
+    public void plus_indiferenciados_pa(View view) {
+        indiferenciados_pa++;
+        if (count_indiferenciados_pa != null)
+            count_indiferenciados_pa.setText(Integer.toString(indiferenciados_pa));
+    }
+
+    public void minus_folhas_pa(View view) {
+        if (folhas_pa > 0) {
+            folhas_pa--;
+            if (count_folhas_pa != null)
+                count_folhas_pa.setText(Integer.toString(folhas_pa));
+        }
+    }
+
+    public void plus_folhas_pa(View view) {
+        folhas_pa++;
+        if (count_folhas_pa != null)
+            count_folhas_pa.setText(Integer.toString(folhas_pa));
+    }
+
+    public void minus_rampequenas_pa(View view) {
+        if (folhas_pa > 0 && rampequenas_pa > 0) {
+            folhas_pa--;
+            rampequenas_pa--;
+            if (count_folhas_pa != null)
+                count_folhas_pa.setText(Integer.toString(folhas_pa));
+            if (count_rampequenas_pa != null)
+                count_rampequenas_pa.setText(Integer.toString(rampequenas_pa));
+        }
+    }
+
+    public void plus_rampequenas_pa(View view) {
+        folhas_pa++;
+        rampequenas_pa++;
+        if (count_folhas_pa != null)
+            count_folhas_pa.setText(Integer.toString(folhas_pa));
+        if (count_rampequenas_pa != null)
+            count_rampequenas_pa.setText(Integer.toString(rampequenas_pa));
+    }
+
+    public void minus_ramgrandes_pa(View view) {
+        if (folhas_pa > 0 && ramgrandes_pa > 0) {
+            folhas_pa--;
+            ramgrandes_pa--;
+            if (count_folhas_pa != null)
+                count_folhas_pa.setText(Integer.toString(folhas_pa));
+            if (count_ramgrandes_pa != null)
+                count_ramgrandes_pa.setText(Integer.toString(ramgrandes_pa));
+        }
+    }
+
+    public void plus_ramgrandes_pa(View view) {
+        folhas_pa++;
+        ramgrandes_pa++;
+        if (count_folhas_pa != null)
+            count_folhas_pa.setText(Integer.toString(folhas_pa));
+        if (count_ramgrandes_pa != null)
+            count_ramgrandes_pa.setText(Integer.toString(ramgrandes_pa));
+    }
+
+    public void minus_pastilhas_pa(View view) {
+        if (pastilhas_pa > 0) {
+            pastilhas_pa--;
+            if (count_pastilhas_pa != null)
+                count_pastilhas_pa.setText(Integer.toString(pastilhas_pa));
+        }
+    }
+
+    public void plus_pastilhas_pa(View view) {
+        pastilhas_pa++;
+        if (count_pastilhas_pa != null)
+            count_pastilhas_pa.setText(Integer.toString(pastilhas_pa));
+    }
+
+    public void minus_past_ate500_pa(View view) {
+        if (past_ate500_pa > 0) {
+            past_ate500_pa--;
+            if (count_past_ate500_pa != null)
+                count_past_ate500_pa.setText(Integer.toString(past_ate500_pa));
+        }
+    }
+
+    public void plus_past_ate500_pa(View view) {
+        past_ate500_pa++;
+        if (count_past_ate500_pa != null)
+            count_past_ate500_pa.setText(Integer.toString(past_ate500_pa));
+
+    }
+
+    public void minus_past_maior500_pa(View view) {
+        if (past_maior500_pa > 0) {
+            past_maior500_pa--;
+            if (count_past_maior500_pa != null)
+                count_past_maior500_pa.setText(Integer.toString(past_maior500_pa));
+        }
+    }
+
+    public void plus_past_maior500_pa(View view) {
+        past_maior500_pa++;
+        if (count_past_maior500_pa != null)
+            count_past_maior500_pa.setText(Integer.toString(past_maior500_pa));
+    }
+
+    public void minus_ra_pequeno_pa(View view) {
+        if (ra_pequeno_pa > 0) {
+            ra_pequeno_pa--;
+            if (count_ra_pequeno_pa != null)
+                count_ra_pequeno_pa.setText(Integer.toString(ra_pequeno_pa));
+        }
+    }
+
+    public void plus_ra_pequeno_pa(View view) {
+        ra_pequeno_pa++;
+        if (count_ra_pequeno_pa != null)
+            count_ra_pequeno_pa.setText(Integer.toString(ra_pequeno_pa));
+    }
+
+    public void minus_ra_medio_pa(View view) {
+        if (ra_medio_pa > 0) {
+            ra_medio_pa--;
+            if (count_ra_medio_pa != null)
+                count_ra_medio_pa.setText(Integer.toString(ra_medio_pa));
+        }
+    }
+
+    public void plus_ra_medio_pa(View view) {
+        ra_medio_pa++;
+        if (count_ra_medio_pa != null)
+            count_ra_medio_pa.setText(Integer.toString(ra_medio_pa));
+    }
+
+    public void minus_ra_grande_pa(View view) {
+        if (ra_grande_pa > 0) {
+            ra_grande_pa--;
+            if (count_ra_grande_pa != null)
+                count_ra_grande_pa.setText(Integer.toString(ra_grande_pa));
+        }
+    }
+
+    public void plus_ra_grande_pa(View view) {
+        ra_grande_pa++;
+        if (count_ra_grande_pa != null)
+            count_ra_grande_pa.setText(Integer.toString(ra_grande_pa));
+    }
+
+    public void minus_oro_pequeno_pa(View view) {
+        if (oro_pequeno_pa > 0) {
+            oro_pequeno_pa--;
+            if (count_oro_pequeno_pa != null)
+                count_oro_pequeno_pa.setText(Integer.toString(oro_pequeno_pa));
+        }
+    }
+
+    public void plus_oro_pequeno_pa(View view) {
+        oro_pequeno_pa++;
+        if (count_oro_pequeno_pa != null)
+            count_oro_pequeno_pa.setText(Integer.toString(oro_pequeno_pa));
+    }
+
+    public void minus_oro_medio_pa(View view) {
+        if (oro_medio_pa > 0) {
+            oro_medio_pa--;
+            if (count_oro_medio_pa != null)
+                count_oro_medio_pa.setText(Integer.toString(oro_medio_pa));
+        }
+    }
+
+    public void plus_oro_medio_pa(View view) {
+        oro_medio_pa++;
+        if (count_oro_medio_pa != null)
+            count_oro_medio_pa.setText(Integer.toString(oro_medio_pa));
+    }
+
+    public void minus_oro_grande_pa(View view) {
+        if (oro_grande_pa > 0) {
+            oro_grande_pa--;
+            if (count_oro_grande_pa != null)
+                count_oro_grande_pa.setText(Integer.toString(oro_grande_pa));
+        }
+    }
+
+    public void plus_oro_grande_pa(View view) {
+        oro_grande_pa++;
+        if (count_oro_grande_pa != null)
+            count_oro_grande_pa.setText(Integer.toString(oro_grande_pa));
+    }
+
+    public void minus_latas_metais_pa(View view) {
+        if (latas_metais_pa > 0) {
+            latas_metais_pa--;
+            if (count_latas_metais_pa != null)
+                count_latas_metais_pa.setText(Integer.toString(latas_metais_pa));
+        }
+    }
+
+    public void plus_latas_metais_pa(View view) {
+        latas_metais_pa++;
+        if (count_latas_metais_pa != null)
+            count_latas_metais_pa.setText(Integer.toString(latas_metais_pa));
+    }
+
+    public void minus_outros_metais_pa(View view) {
+        if (outros_metais_pa > 0) {
+            outros_metais_pa--;
+            if (count_outros_metais_pa != null)
+                count_outros_metais_pa.setText(Integer.toString(outros_metais_pa));
+        }
+    }
+
+    public void plus_outros_metais_pa(View view) {
+        outros_metais_pa++;
+        if (count_outros_metais_pa != null)
+            count_outros_metais_pa.setText(Integer.toString(outros_metais_pa));
+    }
+
+
+    ////////////////////////////////////////////////////////////////////////////////////
+    ///////////////////////////FUNCOES CALDEIRAS FLOREIRAS/////////////////////////////
+    ///////////////////////////////////////////////////////////////////////////////////
+
+
+    // PEA PEQUENO PLUS & MINUS
+    public void minus_pea_pequeno_cf(View view) {
+        if (pea_pequeno_cf > 0) {
+            pea_pequeno_cf--;
+            if (count_pea_pequeno_cf != null)
+                count_pea_pequeno_cf.setText(Integer.toString(pea_pequeno_cf));
+        }
+
+    }
+
+    public void plus_pea_pequeno_cf(View view) {
+        pea_pequeno_cf++;
+        if (count_pea_pequeno_cf != null)
+            count_pea_pequeno_cf.setText(Integer.toString(pea_pequeno_cf));
+    }
+
+    // PEA MEDIO PLUS & MINUS
+    public void minus_pea_medio_cf(View view) {
+        if (pea_medio_cf > 0) {
+            pea_medio_cf--;
+            if (count_pea_medio_cf != null)
+                count_pea_medio_cf.setText(Integer.toString(pea_medio_cf));
+        }
+
+    }
+
+    public void plus_pea_medio_cf(View view) {
+        pea_medio_cf++;
+        if (count_pea_medio_cf != null)
+            count_pea_medio_cf.setText(Integer.toString(pea_medio_cf));
+    }
+
+    // PEA GRANDE PLUS & MINUS
+    public void minus_pea_grande_cf(View view) {
+        if (pea_grande_cf > 0) {
+            pea_grande_cf--;
+            if (count_pea_grande_cf != null)
+                count_pea_grande_cf.setText(Integer.toString(pea_grande_cf));
+        }
+
+    }
+
+    public void plus_pea_grande_cf(View view) {
+        pea_grande_cf++;
+        if (count_pea_grande_cf != null)
+            count_pea_grande_cf.setText(Integer.toString(pea_grande_cf));
+    }
+
+    public void minus_pena_pequeno_cf(View view) {
+        if (pena_pequeno_cf > 0) {
+            pena_pequeno_cf--;
+            if (count_pena_pequeno_cf != null)
+                count_pena_pequeno_cf.setText(Integer.toString(pena_pequeno_cf));
+        }
+    }
+
+    public void plus_pena_pequeno_cf(View view) {
+        pena_pequeno_cf++;
+        if (count_pena_pequeno_cf != null)
+            count_pena_pequeno_cf.setText(Integer.toString(pena_pequeno_cf));
+    }
+
+    public void minus_pena_medio_cf(View view) {
+        if (pena_medio_cf > 0) {
+            pena_medio_cf--;
+            if (count_pena_medio_cf != null)
+                count_pena_medio_cf.setText(Integer.toString(pena_medio_cf));
+        }
+    }
+
+    public void plus_pena_medio_cf(View view) {
+        pena_medio_cf++;
+        if (count_pena_medio_cf != null)
+            count_pena_medio_cf.setText(Integer.toString(pena_medio_cf));
+    }
+
+    public void minus_pena_grande_cf(View view) {
+        if (pena_grande_cf > 0) {
+            pena_grande_cf--;
+            if (count_pena_grande_cf != null)
+                count_pena_grande_cf.setText(Integer.toString(pena_grande_cf));
+        }
+    }
+
+    public void plus_pena_grande_cf(View view) {
+        pena_grande_cf++;
+        if (count_pena_grande_cf != null)
+            count_pena_grande_cf.setText(Integer.toString(pena_grande_cf));
+    }
+
+    public void minus_pedacos_vidro_cf(View view) {
+        if (pedacos_vidro_cf > 0) {
+            pedacos_vidro_cf--;
+            if (count_pedacos_vidro_cf != null)
+                count_pedacos_vidro_cf.setText(Integer.toString(pedacos_vidro_cf));
+        }
+    }
+
+    public void plus_pedacos_vidro_cf(View view) {
+        pedacos_vidro_cf++;
+        if (count_pedacos_vidro_cf != null)
+            count_pedacos_vidro_cf.setText(Integer.toString(pedacos_vidro_cf));
+    }
+
+    public void minus_garrafapeq_vidro_cf(View view) {
+        if (pedacos_vidro_cf > 0 && garrafapeq_vidro_cf > 0) {
+            pedacos_vidro_cf--;
+            garrafapeq_vidro_cf--;
+            if (count_pedacos_vidro_cf != null)
+                count_pedacos_vidro_cf.setText(Integer.toString(pedacos_vidro_cf));
+            if (count_garrafapeq_vidro_cf != null)
+                count_garrafapeq_vidro_cf.setText(Integer.toString(garrafapeq_vidro_cf));
+        }
+    }
+
+    public void plus_garrafapeq_vidro_cf(View view) {
+        pedacos_vidro_cf++;
+        garrafapeq_vidro_cf++;
+        if (count_pedacos_vidro_cf != null)
+            count_pedacos_vidro_cf.setText(Integer.toString(pedacos_vidro_cf));
+        if (count_garrafapeq_vidro_cf != null)
+            count_garrafapeq_vidro_cf.setText(Integer.toString(garrafapeq_vidro_cf));
+    }
+
+    public void minus_garrafagra_vidro_cf(View view) {
+        if (pedacos_vidro_cf > 0 && garrafagra_vidro_cf > 0) {
+            pedacos_vidro_cf--;
+            garrafagra_vidro_cf--;
+            if (count_pedacos_vidro_cf != null)
+                count_pedacos_vidro_cf.setText(Integer.toString(pedacos_vidro_cf));
+            if (count_garrafagra_vidro_cf != null)
+                count_garrafagra_vidro_cf.setText(Integer.toString(garrafagra_vidro_cf));
+        }
+    }
+
+    public void plus_garrafagra_vidro_cf(View view) {
+        pedacos_vidro_cf++;
+        garrafagra_vidro_cf++;
+        if (count_pedacos_vidro_cf != null)
+            count_pedacos_vidro_cf.setText(Integer.toString(pedacos_vidro_cf));
+        if (count_garrafagra_vidro_cf != null)
+            count_garrafagra_vidro_cf.setText(Integer.toString(garrafagra_vidro_cf));
+    }
+
+
+    public void minus_cigarros_cf(View view) {
+        if (cigarros_cf > 0) {
+            cigarros_cf--;
+            if (count_cigarros_cf != null)
+                count_cigarros_cf.setText(Integer.toString(cigarros_cf));
+        }
+    }
+
+    public void plus_cigarros_cf(View view) {
+        cigarros_cf++;
+        if (count_cigarros_cf != null)
+            count_cigarros_cf.setText(Integer.toString(cigarros_cf));
+    }
+
+    public void minus_dejetos_cf(View view) {
+        if (dejetos_cf > 0) {
+            dejetos_cf--;
+            if (count_dejetos_cf != null)
+                count_dejetos_cf.setText(Integer.toString(dejetos_cf));
+        }
+    }
+
+    public void plus_dejetos_cf(View view) {
+        dejetos_cf++;
+        if (count_dejetos_cf != null)
+            count_dejetos_cf.setText(Integer.toString(dejetos_cf));
+    }
+
+    public void minus_indiferenciados_cf(View view) {
+        if (indiferenciados_cf > 0) {
+            indiferenciados_cf--;
+            if (count_indiferenciados_cf != null)
+                count_indiferenciados_cf.setText(Integer.toString(indiferenciados_cf));
+        }
+    }
+
+    public void plus_indiferenciados_cf(View view) {
+        indiferenciados_cf++;
+        if (count_indiferenciados_cf != null)
+            count_indiferenciados_cf.setText(Integer.toString(indiferenciados_cf));
+    }
+
+    public void minus_folhas_cf(View view) {
+        if (folhas_cf > 0) {
+            folhas_cf--;
+            if (count_folhas_cf != null)
+                count_folhas_cf.setText(Integer.toString(folhas_cf));
+        }
+    }
+
+    public void plus_folhas_cf(View view) {
+        folhas_cf++;
+        if (count_folhas_cf != null)
+            count_folhas_cf.setText(Integer.toString(folhas_cf));
+    }
+
+    public void minus_rampequenas_cf(View view) {
+        if (folhas_cf > 0 && rampequenas_cf > 0) {
+            folhas_cf--;
+            rampequenas_cf--;
+            if (count_folhas_cf != null)
+                count_folhas_cf.setText(Integer.toString(folhas_cf));
+            if (count_rampequenas_cf != null)
+                count_rampequenas_cf.setText(Integer.toString(rampequenas_cf));
+        }
+    }
+
+    public void plus_rampequenas_cf(View view) {
+        folhas_cf++;
+        rampequenas_cf++;
+        if (count_folhas_cf != null)
+            count_folhas_cf.setText(Integer.toString(folhas_cf));
+        if (count_rampequenas_cf != null)
+            count_rampequenas_cf.setText(Integer.toString(rampequenas_cf));
+    }
+
+    public void minus_ramgrandes_cf(View view) {
+        if (folhas_cf > 0 && ramgrandes_cf > 0) {
+            folhas_cf--;
+            ramgrandes_cf--;
+            if (count_folhas_cf != null)
+                count_folhas_cf.setText(Integer.toString(folhas_cf));
+            if (count_ramgrandes_cf != null)
+                count_ramgrandes_cf.setText(Integer.toString(ramgrandes_cf));
+        }
+    }
+
+    public void plus_ramgrandes_cf(View view) {
+        folhas_cf++;
+        ramgrandes_cf++;
+        if (count_folhas_cf != null)
+            count_folhas_cf.setText(Integer.toString(folhas_cf));
+        if (count_ramgrandes_cf != null)
+            count_ramgrandes_cf.setText(Integer.toString(ramgrandes_cf));
+    }
+
+    public void minus_pastilhas_cf(View view) {
+        if (pastilhas_cf > 0) {
+            pastilhas_cf--;
+            if (count_pastilhas_cf != null)
+                count_pastilhas_cf.setText(Integer.toString(pastilhas_cf));
+        }
+    }
+
+    public void plus_pastilhas_cf(View view) {
+        pastilhas_cf++;
+        if (count_pastilhas_cf != null)
+            count_pastilhas_cf.setText(Integer.toString(pastilhas_cf));
+    }
+
+    public void minus_past_ate500_cf(View view) {
+        if (past_ate500_cf > 0) {
+            past_ate500_cf--;
+            if (count_past_ate500_cf != null)
+                count_past_ate500_cf.setText(Integer.toString(past_ate500_cf));
+        }
+    }
+
+    public void plus_past_ate500_cf(View view) {
+        past_ate500_cf++;
+        if (count_past_ate500_cf != null)
+            count_past_ate500_cf.setText(Integer.toString(past_ate500_cf));
+
+    }
+
+    public void minus_past_maior500_cf(View view) {
+        if (past_maior500_cf > 0) {
+            past_maior500_cf--;
+            if (count_past_maior500_cf != null)
+                count_past_maior500_cf.setText(Integer.toString(past_maior500_cf));
+        }
+    }
+
+    public void plus_past_maior500_cf(View view) {
+        past_maior500_cf++;
+        if (count_past_maior500_cf != null)
+            count_past_maior500_cf.setText(Integer.toString(past_maior500_cf));
+    }
+
+    public void minus_ra_pequeno_cf(View view) {
+        if (ra_pequeno_cf > 0) {
+            ra_pequeno_cf--;
+            if (count_ra_pequeno_cf != null)
+                count_ra_pequeno_cf.setText(Integer.toString(ra_pequeno_cf));
+        }
+    }
+
+    public void plus_ra_pequeno_cf(View view) {
+        ra_pequeno_cf++;
+        if (count_ra_pequeno_cf != null)
+            count_ra_pequeno_cf.setText(Integer.toString(ra_pequeno_cf));
+    }
+
+    public void minus_ra_medio_cf(View view) {
+        if (ra_medio_cf > 0) {
+            ra_medio_cf--;
+            if (count_ra_medio_cf != null)
+                count_ra_medio_cf.setText(Integer.toString(ra_medio_cf));
+        }
+    }
+
+    public void plus_ra_medio_cf(View view) {
+        ra_medio_cf++;
+        if (count_ra_medio_cf != null)
+            count_ra_medio_cf.setText(Integer.toString(ra_medio_cf));
+    }
+
+    public void minus_ra_grande_cf(View view) {
+        if (ra_grande_cf > 0) {
+            ra_grande_cf--;
+            if (count_ra_grande_cf != null)
+                count_ra_grande_cf.setText(Integer.toString(ra_grande_cf));
+        }
+    }
+
+    public void plus_ra_grande_cf(View view) {
+        ra_grande_cf++;
+        if (count_ra_grande_cf != null)
+            count_ra_grande_cf.setText(Integer.toString(ra_grande_cf));
+    }
+
+    public void minus_oro_pequeno_cf(View view) {
+        if (oro_pequeno_cf > 0) {
+            oro_pequeno_cf--;
+            if (count_oro_pequeno_cf != null)
+                count_oro_pequeno_cf.setText(Integer.toString(oro_pequeno_cf));
+        }
+    }
+
+    public void plus_oro_pequeno_cf(View view) {
+        oro_pequeno_cf++;
+        if (count_oro_pequeno_cf != null)
+            count_oro_pequeno_cf.setText(Integer.toString(oro_pequeno_cf));
+    }
+
+    public void minus_oro_medio_cf(View view) {
+        if (oro_medio_cf > 0) {
+            oro_medio_cf--;
+            if (count_oro_medio_cf != null)
+                count_oro_medio_cf.setText(Integer.toString(oro_medio_cf));
+        }
+    }
+
+    public void plus_oro_medio_cf(View view) {
+        oro_medio_cf++;
+        if (count_oro_medio_cf != null)
+            count_oro_medio_cf.setText(Integer.toString(oro_medio_cf));
+    }
+
+    public void minus_oro_grande_cf(View view) {
+        if (oro_grande_cf > 0) {
+            oro_grande_cf--;
+            if (count_oro_grande_cf != null)
+                count_oro_grande_cf.setText(Integer.toString(oro_grande_cf));
+        }
+    }
+
+    public void plus_oro_grande_cf(View view) {
+        oro_grande_cf++;
+        if (count_oro_grande_cf != null)
+            count_oro_grande_cf.setText(Integer.toString(oro_grande_cf));
+    }
+
+    public void minus_latas_metais_cf(View view) {
+        if (latas_metais_cf > 0) {
+            latas_metais_cf--;
+            if (count_latas_metais_cf != null)
+                count_latas_metais_cf.setText(Integer.toString(latas_metais_cf));
+        }
+    }
+
+    public void plus_latas_metais_cf(View view) {
+        latas_metais_cf++;
+        if (count_latas_metais_cf != null)
+            count_latas_metais_cf.setText(Integer.toString(latas_metais_cf));
+    }
+
+    public void minus_outros_metais_cf(View view) {
+        if (outros_metais_cf > 0) {
+            outros_metais_cf--;
+            if (count_outros_metais_cf != null)
+                count_outros_metais_cf.setText(Integer.toString(outros_metais_cf));
+        }
+    }
+
+    public void plus_outros_metais_cf(View view) {
+        outros_metais_cf++;
+        if (count_outros_metais_cf != null)
+            count_outros_metais_cf.setText(Integer.toString(outros_metais_cf));
+    }
+
+
+    /////////////////////////////////////////////////////////////////
+    ///////////////BOCAS DE LOBO E PAPELEIRAS///////////////////////
+    ///////////////////////////////////////////////////////////////
+
+    public void minus_bocalobolimpa_bl(View view) {
+        if (bocalobototal_bl > 0 && bocalobolimpa_bl > 0) {
+            bocalobototal_bl--;
+            bocalobolimpa_bl--;
+            if (count_bocalobototal_bl != null)
+                count_bocalobototal_bl.setText(Integer.toString(bocalobototal_bl));
+            if (count_bocalobolimpa_bl != null)
+                count_bocalobolimpa_bl.setText(Integer.toString(bocalobolimpa_bl));
+        }
+    }
+
+    public void plus_bocalobolimpa_bl(View view) {
+        bocalobototal_bl++;
+        bocalobolimpa_bl++;
+        if (count_bocalobototal_bl != null)
+            count_bocalobototal_bl.setText(Integer.toString(bocalobototal_bl));
+        if (count_bocalobolimpa_bl != null)
+            count_bocalobolimpa_bl.setText(Integer.toString(bocalobolimpa_bl));
+    }
+
+    public void minus_bocalobosuja_bl(View view) {
+        if (bocalobototal_bl > 0 && bocalobosuja_bl > 0) {
+            bocalobototal_bl--;
+            bocalobosuja_bl--;
+            if (count_bocalobototal_bl != null)
+                count_bocalobototal_bl.setText(Integer.toString(bocalobototal_bl));
+            if (count_bocalobosuja_bl != null)
+                count_bocalobosuja_bl.setText(Integer.toString(bocalobosuja_bl));
+        }
+    }
+
+    public void plus_bocalobosuja_bl(View view) {
+        bocalobototal_bl++;
+        bocalobosuja_bl++;
+        if (count_bocalobototal_bl != null)
+            count_bocalobototal_bl.setText(Integer.toString(bocalobototal_bl));
+        if (count_bocalobosuja_bl != null)
+            count_bocalobosuja_bl.setText(Integer.toString(bocalobosuja_bl));
+    }
+
+    public void minus_papeleirasvazia_bl(View view) {
+        if (papeleirastotal_bl > 0 && papeleirasvazia_bl > 0) {
+            papeleirastotal_bl--;
+            papeleirasvazia_bl--;
+            if (count_papeleirastotal_bl != null)
+                count_papeleirastotal_bl.setText(Integer.toString(papeleirastotal_bl));
+            if (count_papeleirasvazia_bl != null)
+                count_papeleirasvazia_bl.setText(Integer.toString(papeleirasvazia_bl));
+        }
+    }
+
+    public void plus_papeleirasvazia_bl(View view) {
+        papeleirastotal_bl++;
+        papeleirasvazia_bl++;
+        if (count_papeleirastotal_bl != null)
+            count_papeleirastotal_bl.setText(Integer.toString(papeleirastotal_bl));
+        if (count_papeleirasvazia_bl != null)
+            count_papeleirasvazia_bl.setText(Integer.toString(papeleirasvazia_bl));
+    }
+
+    public void minus_papeleirascheias_bl(View view) {
+        if (papeleirastotal_bl > 0 && papeleirascheias_bl > 0) {
+            papeleirastotal_bl--;
+            papeleirascheias_bl--;
+            if (count_papeleirastotal_bl != null)
+                count_papeleirastotal_bl.setText(Integer.toString(papeleirastotal_bl));
+            if (count_papeleirascheias_bl != null)
+                count_papeleirascheias_bl.setText(Integer.toString(papeleirascheias_bl));
+        }
+    }
+
+    public void plus_papeleirascheias_bl(View view) {
+            papeleirastotal_bl++;
+            papeleirascheias_bl++;
+            if (count_papeleirastotal_bl != null)
+                count_papeleirastotal_bl.setText(Integer.toString(papeleirastotal_bl));
+            if (count_papeleirascheias_bl != null)
+                count_papeleirascheias_bl.setText(Integer.toString(papeleirascheias_bl));
+
     }
 
 
     // Função para TOASTmessages
-    private void toastMessage(String message){
-        Toast.makeText(this,message,Toast.LENGTH_SHORT).show();
+    private void toastMessage(String message) {
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 
     //Inserir dados na base de dados
-    public void AddData(String rua, String residuos, String area, int add_peapeq1, int add_peamed1, int add_peagran1){
-        boolean insertData = mDatabaseHelper.addData(rua,residuos,area,add_peapeq1,add_peamed1,add_peagran1);
+    public void AddData(String rua, String residuos, String area, int pea_pequeno_rua,int pea_medio_rua, int pea_grande_rua,int pena_pequeno_rua,int pena_medio_rua,int pena_grande_rua,int pedacos_vidro_rua,
+                        int garrafapeq_vidro_rua,int garrafagra_vidro_rua, int cigarros_rua, int dejetos_rua, int indiferenciados_rua, int folhas_rua, int rampequenas_rua, int ramgrandes_rua,
+                        int pastilhas_rua, int past_ate500_rua, int past_maior500_rua, int ra_pequeno_rua, int ra_medio_rua, int ra_grande_rua, int oro_pequeno_rua, int oro_medio_rua, int oro_grande_rua,
+                        int latas_metais_rua, int outros_metais_rua, int pea_pequeno_pa, int pea_medio_pa, int pea_grande_pa, int pena_pequeno_pa, int pena_medio_pa, int pena_grande_pa,int pedacos_vidro_pa,
+                        int garrafapeq_vidro_pa,int garrafagra_vidro_pa, int cigarros_pa,int dejetos_pa, int indiferenciados_pa, int folhas_pa, int rampequenas_pa, int ramgrandes_pa, int pastilhas_pa,
+                        int past_ate500_pa, int past_maior500_pa, int ra_pequeno_pa,int ra_medio_pa, int ra_grande_pa, int oro_pequeno_pa, int oro_medio_pa, int oro_grande_pa, int latas_metais_pa,
+                        int outros_metais_pa, int pea_pequeno_cf, int pea_medio_cf,int pea_grande_cf, int pena_pequeno_cf, int pena_medio_cf, int pena_grande_cf, int pedacos_vidro_cf, int garrafapeq_vidro_cf,
+                        int garrafagra_vidro_cf, int cigarros_cf, int dejetos_cf,int indiferenciados_cf,int folhas_cf, int rampequenas_cf, int ramgrandes_cf, int pastilhas_cf, int past_ate500_cf,
+                        int past_maior500_cf, int ra_pequeno_cf, int ra_medio_cf,int ra_grande_cf, int oro_pequeno_cf, int oro_medio_cf, int oro_grande_cf, int latas_metais_cf, int outros_metais_cf,
+                        int bocalobolimpa_bl, int bocalobosuja_bl, int bocalobototal_bl, int papeleirasvazia_bl, int papeleirascheias_bl, int papeleirastotal_bl, int pan, int cfn, int bln) {
+        boolean insertData = mDatabaseHelper.addData(rua, residuos, area, pea_pequeno_rua, pea_medio_rua,  pea_grande_rua, pena_pequeno_rua, pena_medio_rua, pena_grande_rua, pedacos_vidro_rua,
+         garrafapeq_vidro_rua, garrafagra_vidro_rua,  cigarros_rua,  dejetos_rua,  indiferenciados_rua,  folhas_rua,  rampequenas_rua,  ramgrandes_rua,
+         pastilhas_rua,  past_ate500_rua,  past_maior500_rua,  ra_pequeno_rua,  ra_medio_rua,  ra_grande_rua,  oro_pequeno_rua,  oro_medio_rua,  oro_grande_rua,
+         latas_metais_rua,  outros_metais_rua,  pea_pequeno_pa,  pea_medio_pa,  pea_grande_pa,  pena_pequeno_pa,  pena_medio_pa,  pena_grande_pa, pedacos_vidro_pa,
+         garrafapeq_vidro_pa, garrafagra_vidro_pa,  cigarros_pa, dejetos_pa,  indiferenciados_pa,  folhas_pa,  rampequenas_pa,  ramgrandes_pa,  pastilhas_pa,
+         past_ate500_pa,  past_maior500_pa,  ra_pequeno_pa, ra_medio_pa,  ra_grande_pa,  oro_pequeno_pa,  oro_medio_pa,  oro_grande_pa,  latas_metais_pa,
+         outros_metais_pa,  pea_pequeno_cf,  pea_medio_cf, pea_grande_cf,  pena_pequeno_cf,  pena_medio_cf,  pena_grande_cf,  pedacos_vidro_cf,  garrafapeq_vidro_cf,
+         garrafagra_vidro_cf,  cigarros_cf,  dejetos_cf, indiferenciados_cf, folhas_cf,  rampequenas_cf,  ramgrandes_cf,  pastilhas_cf,  past_ate500_cf,
+         past_maior500_cf,  ra_pequeno_cf,  ra_medio_cf, ra_grande_cf,  oro_pequeno_cf,  oro_medio_cf,  oro_grande_cf,  latas_metais_cf,  outros_metais_cf,
+         bocalobolimpa_bl,  bocalobosuja_bl,  bocalobototal_bl,  papeleirasvazia_bl,  papeleirascheias_bl,  papeleirastotal_bl, pan, cfn, bln);
 
-        if(insertData){
+        if (insertData) {
             toastMessage("Foi adicionado com sucesso!");
-        }else {
+        } else {
             toastMessage("Algo correu mal");
         }
     }
 
 
-
-
     // Ir buscar dados aos inputs e chamar a função AddData para Gravar na base de dados
     public void gravar(View view) {
-        String rua = mRuas.getText().toString();
-        String residuos = mResiduos.getText().toString();
-        String area = mAreas.getText().toString();
-        AddData(rua,residuos,area,pea_pequeno1,pea_medio1,pea_grande1);
-        pea_pequeno1 = 0;
-        pea_medio1 = 0;
-        pea_grande1 = 0;
-        count_pea_pequeno1.setText(Integer.toString(pea_pequeno1));
-        count_pea_medio1.setText(Integer.toString(pea_medio1));
-        count_pea_grande1.setText(Integer.toString(pea_grande1));
+        int verificapa = pea_pequeno_pa + pea_medio_pa + pea_grande_pa + pena_pequeno_pa + pena_medio_pa + pena_grande_pa + pedacos_vidro_pa + garrafapeq_vidro_pa + garrafagra_vidro_pa + cigarros_pa + dejetos_pa
+                + indiferenciados_pa + folhas_pa + rampequenas_pa + ramgrandes_pa + pastilhas_pa + past_ate500_pa + past_maior500_pa + ra_pequeno_pa + ra_medio_pa + ra_grande_pa + oro_pequeno_pa + oro_medio_pa
+                + oro_grande_pa + latas_metais_pa + outros_metais_pa;
+        int verificacf = pea_pequeno_cf + pea_medio_cf + pea_grande_cf + pena_pequeno_cf + pena_medio_cf + pena_grande_cf + pedacos_vidro_cf + garrafapeq_vidro_cf + garrafagra_vidro_cf + cigarros_cf + dejetos_cf
+                + indiferenciados_cf + folhas_cf + rampequenas_cf + ramgrandes_cf + pastilhas_cf + past_ate500_cf + past_maior500_cf + ra_pequeno_cf + ra_medio_cf + ra_grande_cf + oro_pequeno_cf + oro_medio_cf
+                + oro_grande_cf + latas_metais_cf + outros_metais_cf;
+
+        if(mRuas.getText().toString() == "" || mResiduos.getText().toString() =="" || mAreas.getText().toString() == ""){
+            toastMessage("Tem valores em falta no primeiro tab : Ruas, Amostra ou Area");
+        } else if (pa == false && verificapa >0){
+            toastMessage("Tem valores nas Placas Ajardinadas mas o checkbox não esta ativo");
+            
+        }else if (cf == false && verificacf >0){
+            toastMessage("Tem valores nas Caldeiras Floreiras mas o checkbox não esta ativo");
+        }else if (bl == false && bocalobototal_bl>0){
+            toastMessage("Tem valores nas Bocas de Lobo mas o checkbox não esta ativo");
+        }else if (bl == false && papeleirastotal_bl>0){
+            toastMessage("Tem valores nas Papeleiras mas o checkbox não esta ativo");
+        }else {
+            
+            if (pa){
+                pan = 1;
+            }else{
+                pan = 0;
+            }
+            if (cf){
+                cfn = 1;
+            }else{
+                cfn = 0;
+            }
+
+            if (bl){
+                bln = 1;
+            }else{
+                bln = 0;
+            }
+
+
+            String rua = mRuas.getText().toString();
+            String residuos = mResiduos.getText().toString();
+            String area = mAreas.getText().toString();
+
+
+            AddData(rua, residuos, area, pea_pequeno_rua, pea_medio_rua, pea_grande_rua, pena_pequeno_rua, pena_medio_rua, pena_grande_rua, pedacos_vidro_rua,
+                    garrafapeq_vidro_rua, garrafagra_vidro_rua, cigarros_rua, dejetos_rua, indiferenciados_rua, folhas_rua, rampequenas_rua, ramgrandes_rua,
+                    pastilhas_rua, past_ate500_rua, past_maior500_rua, ra_pequeno_rua, ra_medio_rua, ra_grande_rua, oro_pequeno_rua, oro_medio_rua, oro_grande_rua,
+                    latas_metais_rua, outros_metais_rua, pea_pequeno_pa, pea_medio_pa, pea_grande_pa, pena_pequeno_pa, pena_medio_pa, pena_grande_pa, pedacos_vidro_pa,
+                    garrafapeq_vidro_pa, garrafagra_vidro_pa, cigarros_pa, dejetos_pa, indiferenciados_pa, folhas_pa, rampequenas_pa, ramgrandes_pa, pastilhas_pa,
+                    past_ate500_pa, past_maior500_pa, ra_pequeno_pa, ra_medio_pa, ra_grande_pa, oro_pequeno_pa, oro_medio_pa, oro_grande_pa, latas_metais_pa,
+                    outros_metais_pa, pea_pequeno_cf, pea_medio_cf, pea_grande_cf, pena_pequeno_cf, pena_medio_cf, pena_grande_cf, pedacos_vidro_cf, garrafapeq_vidro_cf,
+                    garrafagra_vidro_cf, cigarros_cf, dejetos_cf, indiferenciados_cf, folhas_cf, rampequenas_cf, ramgrandes_cf, pastilhas_cf, past_ate500_cf,
+                    past_maior500_cf, ra_pequeno_cf, ra_medio_cf, ra_grande_cf, oro_pequeno_cf, oro_medio_cf, oro_grande_cf, latas_metais_cf, outros_metais_cf,
+                    bocalobolimpa_bl, bocalobosuja_bl, bocalobototal_bl, papeleirasvazia_bl, papeleirascheias_bl, papeleirastotal_bl, pan, cfn, bln);
+
+
+            pea_pequeno_rua = 0;
+            pea_medio_rua = 0;
+            pea_grande_rua = 0;
+
+             pena_pequeno_rua = 0;
+             pena_medio_rua = 0;
+             pena_grande_rua = 0;
+             pedacos_vidro_rua = 0;
+             garrafapeq_vidro_rua = 0;
+             garrafagra_vidro_rua = 0;
+             cigarros_rua = 0;
+             dejetos_rua = 0;
+             indiferenciados_rua = 0;
+             folhas_rua = 0;
+             rampequenas_rua = 0;
+             ramgrandes_rua = 0;
+             pastilhas_rua = 0;
+             past_ate500_rua = 0;
+             past_maior500_rua = 0;
+             ra_pequeno_rua = 0;
+             ra_medio_rua = 0;
+             ra_grande_rua = 0;
+             oro_pequeno_rua = 0;
+             oro_medio_rua = 0;
+             oro_grande_rua = 0;
+             latas_metais_rua = 0;
+             outros_metais_rua = 0;
+
+
+           
+             pea_pequeno_pa = 0;
+             pea_medio_pa = 0;
+             pea_grande_pa = 0;
+             pena_pequeno_pa = 0;
+             pena_medio_pa = 0;
+             pena_grande_pa = 0;
+             pedacos_vidro_pa = 0;
+             garrafapeq_vidro_pa = 0;
+             garrafagra_vidro_pa = 0;
+             cigarros_pa = 0;
+             dejetos_pa = 0;
+             indiferenciados_pa = 0;
+             folhas_pa = 0;
+             rampequenas_pa = 0;
+             ramgrandes_pa = 0;
+             pastilhas_pa = 0;
+             past_ate500_pa = 0;
+             past_maior500_pa = 0;
+             ra_pequeno_pa = 0;
+             ra_medio_pa = 0;
+             ra_grande_pa = 0;
+             oro_pequeno_pa = 0;
+             oro_medio_pa = 0;
+             oro_grande_pa = 0;
+             latas_metais_pa = 0;
+             outros_metais_pa = 0;
+
+
+            
+             pea_pequeno_cf = 0;
+             pea_medio_cf = 0;
+             pea_grande_cf = 0;
+             pena_pequeno_cf = 0;
+             pena_medio_cf = 0;
+             pena_grande_cf = 0;
+             pedacos_vidro_cf = 0;
+             garrafapeq_vidro_cf = 0;
+             garrafagra_vidro_cf = 0;
+             cigarros_cf = 0;
+             dejetos_cf = 0;
+             indiferenciados_cf = 0;
+             folhas_cf = 0;
+             rampequenas_cf = 0;
+             ramgrandes_cf = 0;
+             pastilhas_cf = 0;
+             past_ate500_cf = 0;
+             past_maior500_cf = 0;
+             ra_pequeno_cf = 0;
+             ra_medio_cf = 0;
+             ra_grande_cf = 0;
+             oro_pequeno_cf = 0;
+             oro_medio_cf = 0;
+             oro_grande_cf = 0;
+             latas_metais_cf = 0;
+             outros_metais_cf = 0;
+
+           bocalobolimpa_bl = 0;
+           bocalobosuja_bl = 0;
+           bocalobototal_bl = 0;
+           papeleirasvazia_bl = 0;
+           papeleirascheias_bl = 0;
+           papeleirastotal_bl = 0;
+           
+
+
+            count_pea_pequeno_rua.setText(Integer.toString(pea_pequeno_rua));
+            count_pea_medio_rua.setText(Integer.toString(pea_medio_rua));
+            count_pea_grande_rua.setText(Integer.toString(pea_grande_rua));
+            count_pena_pequeno_rua.setText(Integer.toString(pena_pequeno_rua));
+            count_pena_medio_rua.setText(Integer.toString(pena_medio_rua));
+            count_pena_grande_rua.setText(Integer.toString(pena_grande_rua));
+            count_pedacos_vidro_rua.setText(Integer.toString(pedacos_vidro_rua));
+            count_garrafapeq_vidro_rua.setText(Integer.toString(garrafapeq_vidro_rua));
+            count_garrafagra_vidro_rua.setText(Integer.toString(garrafagra_vidro_rua));
+            count_cigarros_rua.setText(Integer.toString(cigarros_rua));
+            count_dejetos_rua.setText(Integer.toString(dejetos_rua));
+            count_indiferenciados_rua.setText(Integer.toString(indiferenciados_rua));
+            count_folhas_rua.setText(Integer.toString(folhas_rua));
+            count_rampequenas_rua.setText(Integer.toString(rampequenas_rua));
+            count_ramgrandes_rua.setText(Integer.toString(ramgrandes_rua));
+            count_pastilhas_rua.setText(Integer.toString(pastilhas_rua));
+            count_past_ate500_rua.setText(Integer.toString(past_ate500_rua));
+            count_past_maior500_rua.setText(Integer.toString(past_maior500_rua));
+            count_ra_pequeno_rua.setText(Integer.toString(ra_pequeno_rua));
+            count_ra_medio_rua.setText(Integer.toString(ra_medio_rua));
+            count_ra_grande_rua.setText(Integer.toString(ra_grande_rua));
+            count_oro_pequeno_rua.setText(Integer.toString(oro_pequeno_rua));
+            count_oro_medio_rua.setText(Integer.toString(oro_medio_rua));
+            count_oro_grande_rua.setText(Integer.toString(oro_grande_rua));
+            count_latas_metais_rua.setText(Integer.toString(latas_metais_rua));
+            count_outros_metais_rua.setText(Integer.toString(outros_metais_rua));
+
+
+
+            count_pea_pequeno_pa.setText(Integer.toString(pea_pequeno_pa));
+            count_pea_medio_pa.setText(Integer.toString(pea_medio_pa));
+            count_pea_grande_pa.setText(Integer.toString(pea_grande_pa));
+            count_pena_pequeno_pa.setText(Integer.toString(pena_pequeno_pa));
+            count_pena_medio_pa.setText(Integer.toString(pena_medio_pa));
+            count_pena_grande_pa.setText(Integer.toString(pena_grande_pa));
+            count_pedacos_vidro_pa.setText(Integer.toString(pedacos_vidro_pa));
+            count_garrafapeq_vidro_pa.setText(Integer.toString(garrafapeq_vidro_pa));
+            count_garrafagra_vidro_pa.setText(Integer.toString(garrafagra_vidro_pa));
+            count_cigarros_pa.setText(Integer.toString(cigarros_pa));
+            count_dejetos_pa.setText(Integer.toString(dejetos_pa));
+            count_indiferenciados_pa.setText(Integer.toString(indiferenciados_pa));
+            count_folhas_pa.setText(Integer.toString(folhas_pa));
+            count_rampequenas_pa.setText(Integer.toString(rampequenas_pa));
+            count_ramgrandes_pa.setText(Integer.toString(ramgrandes_pa));
+            count_pastilhas_pa.setText(Integer.toString(pastilhas_pa));
+            count_past_ate500_pa.setText(Integer.toString(past_ate500_pa));
+            count_past_maior500_pa.setText(Integer.toString(past_maior500_pa));
+            count_ra_pequeno_pa.setText(Integer.toString(ra_pequeno_pa));
+            count_ra_medio_pa.setText(Integer.toString(ra_medio_pa));
+            count_ra_grande_pa.setText(Integer.toString(ra_grande_pa));
+            count_oro_pequeno_pa.setText(Integer.toString(oro_pequeno_pa));
+            count_oro_medio_pa.setText(Integer.toString(oro_medio_pa));
+            count_oro_grande_pa.setText(Integer.toString(oro_grande_pa));
+            count_latas_metais_pa.setText(Integer.toString(latas_metais_pa));
+            count_outros_metais_pa.setText(Integer.toString(outros_metais_pa));
+
+
+
+            count_pea_pequeno_cf.setText(Integer.toString(pea_pequeno_cf));
+            count_pea_medio_cf.setText(Integer.toString(pea_medio_cf));
+            count_pea_grande_cf.setText(Integer.toString(pea_grande_cf));
+            count_pena_pequeno_cf.setText(Integer.toString(pena_pequeno_cf));
+            count_pena_medio_cf.setText(Integer.toString(pena_medio_cf));
+            count_pena_grande_cf.setText(Integer.toString(pena_grande_cf));
+            count_pedacos_vidro_cf.setText(Integer.toString(pedacos_vidro_cf));
+            count_garrafapeq_vidro_cf.setText(Integer.toString(garrafapeq_vidro_cf));
+            count_garrafagra_vidro_cf.setText(Integer.toString(garrafagra_vidro_cf));
+            count_cigarros_cf.setText(Integer.toString(cigarros_cf));
+            count_dejetos_cf.setText(Integer.toString(dejetos_cf));
+            count_indiferenciados_cf.setText(Integer.toString(indiferenciados_cf));
+            count_folhas_cf.setText(Integer.toString(folhas_cf));
+            count_rampequenas_cf.setText(Integer.toString(rampequenas_cf));
+            count_ramgrandes_cf.setText(Integer.toString(ramgrandes_cf));
+            count_pastilhas_cf.setText(Integer.toString(pastilhas_cf));
+            count_past_ate500_cf.setText(Integer.toString(past_ate500_cf));
+            count_past_maior500_cf.setText(Integer.toString(past_maior500_cf));
+            count_ra_pequeno_cf.setText(Integer.toString(ra_pequeno_cf));
+            count_ra_medio_cf.setText(Integer.toString(ra_medio_cf));
+            count_ra_grande_cf.setText(Integer.toString(ra_grande_cf));
+            count_oro_pequeno_cf.setText(Integer.toString(oro_pequeno_cf));
+            count_oro_medio_cf.setText(Integer.toString(oro_medio_cf));
+            count_oro_grande_cf.setText(Integer.toString(oro_grande_cf));
+            count_latas_metais_cf.setText(Integer.toString(latas_metais_cf));
+            count_outros_metais_cf.setText(Integer.toString(outros_metais_cf));
+
+            count_bocalobolimpa_bl.setText(Integer.toString(bocalobolimpa_bl));
+            count_bocalobosuja_bl.setText(Integer.toString(bocalobosuja_bl));
+            count_bocalobototal_bl.setText(Integer.toString(bocalobototal_bl));
+            count_papeleirasvazia_bl.setText(Integer.toString(papeleirasvazia_bl));
+            count_papeleirascheias_bl.setText(Integer.toString(papeleirascheias_bl));
+            count_papeleirastotal_bl.setText(Integer.toString(papeleirastotal_bl));
+
+            mResiduos.setText("");
+
+        }
 
     }
 
@@ -170,18 +1997,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // Verifica se a app tem permissões para escrever na memória
-    public boolean checkPermission (String permission){
-        int check = ContextCompat.checkSelfPermission(this,permission);
+    public boolean checkPermission(String permission) {
+        int check = ContextCompat.checkSelfPermission(this, permission);
         return (check == PackageManager.PERMISSION_GRANTED);
     }
 
 
     //Faz Reset à base de dados
-    public void reset (View view){
+    public void reset(View view) {
         mDatabaseHelper.deleteData();
         toastMessage("Base de Dados Limpa!");
     }
-
 
 
     public void gravarcsv(View view) {
@@ -193,18 +2019,18 @@ public class MainActivity extends AppCompatActivity {
         String fileName = "residuos_" + formatter.format(now) + ".csv";
         StringBuilder bld = new StringBuilder();
 
-        if(isExternalStorageWritable() && checkPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
+        if (isExternalStorageWritable() && checkPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
 
             if (cursor.moveToFirst()) {
                 do {
                     String Rua = cursor.getString(cursor.getColumnIndex("rua"));
                     String Residuos = cursor.getString(cursor.getColumnIndex("residuos"));
                     String Area = cursor.getString(cursor.getColumnIndex("area"));
-                    String PeaPequeno1 = Integer.toString(cursor.getInt(cursor.getColumnIndex("pea_pequeno_1")));
-                    String PeaMedio1 = Integer.toString(cursor.getInt(cursor.getColumnIndex("pea_medio_1")));
-                    String PeaGrande1 = Integer.toString(cursor.getInt(cursor.getColumnIndex("pea_grande_1")));
+                    String PeaPequenoRua = Integer.toString(cursor.getInt(cursor.getColumnIndex("pea_pequeno_rua")));
+                    String PeaMedioRua = Integer.toString(cursor.getInt(cursor.getColumnIndex("pea_medio_rua")));
+                    String PeaGrandeRua = Integer.toString(cursor.getInt(cursor.getColumnIndex("pea_grande_rua")));
 
-                    bld.append(Rua + "," + Residuos + "," + Area + "," + PeaPequeno1 + "," + PeaMedio1 + "," + PeaGrande1 + "\n");
+                    bld.append(Rua + "," + Residuos + "," + Area + "," + PeaPequenoRua + "," + PeaMedioRua + "," + PeaGrandeRua + "\n");
 
 
                 } while (cursor.moveToNext());
@@ -216,7 +2042,7 @@ public class MainActivity extends AppCompatActivity {
             cursor.close();
 
 
-            File textFile = new File (Environment.getExternalStorageDirectory(),fileName);
+            File textFile = new File(Environment.getExternalStorageDirectory(), fileName);
             FileOutputStream fos = null;
 
             try {
@@ -238,14 +2064,45 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
             }
-        }else{
+        } else {
             Toast.makeText(this, "Não consegue escrever no Armazenamento externo",
                     Toast.LENGTH_LONG).show();
         }
 
 
+    }
 
 
+    public void onCheckboxClicked(View view) {
+        // Is the view now checked?
+        boolean checked = ((CheckBox) view).isChecked();
+
+        // Check which checkbox was clicked
+        switch(view.getId()) {
+
+            case R.id.checkBox:
+                if (checked)
+                pa = true;
+            else
+                pa = false;
+                break;
+            case R.id.checkBox2:
+                if (checked)
+               cf = true;
+            else
+                cf = false;
+                break;
+            case R.id.checkBox3:
+                if (checked)
+                bl = true;
+            else
+                bl = false;
+                break;
+
+        }
 
     }
 }
+
+
+
