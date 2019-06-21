@@ -1746,7 +1746,11 @@ public class MainActivity extends AppCompatActivity {
                 + indiferenciados_cf + folhas_cf + rampequenas_cf + ramgrandes_cf + pastilhas_cf + past_ate500_cf + past_maior500_cf + ra_pequeno_cf + ra_medio_cf + ra_grande_cf + oro_pequeno_cf + oro_medio_cf
                 + oro_grande_cf + latas_metais_cf + outros_metais_cf;
 
-        if(mRuas.getText().toString() == "" || mResiduos.getText().toString() =="" || mAreas.getText().toString() == ""){
+        String trua = mRuas.getText().toString();
+        String tresiduos = mResiduos.getText().toString();
+        String tarea = mAreas.getText().toString();
+
+        if(trua.isEmpty() || tresiduos.isEmpty() || tarea.isEmpty()){
             toastMessage("Tem valores em falta no primeiro tab : Ruas, Amostra ou Area");
         } else if (pa == false && verificapa >0){
             toastMessage("Tem valores nas Placas Ajardinadas mas o checkbox não esta ativo");
@@ -2029,8 +2033,177 @@ public class MainActivity extends AppCompatActivity {
                     String PeaPequenoRua = Integer.toString(cursor.getInt(cursor.getColumnIndex("pea_pequeno_rua")));
                     String PeaMedioRua = Integer.toString(cursor.getInt(cursor.getColumnIndex("pea_medio_rua")));
                     String PeaGrandeRua = Integer.toString(cursor.getInt(cursor.getColumnIndex("pea_grande_rua")));
+                    String spena_pequeno_rua = Integer.toString(cursor.getInt(cursor.getColumnIndex( "pena_pequeno_rua")));
+                    String spena_medio_rua = Integer.toString(cursor.getInt(cursor.getColumnIndex("pena_medio_rua")));
+                    String spena_grande_rua= Integer.toString(cursor.getInt(cursor.getColumnIndex("pena_grande_rua")));
+                    String spedacos_vidro_rua= Integer.toString(cursor.getInt(cursor.getColumnIndex("pedacos_vidro_rua")));
+                    String sgarrafapeq_vidro_rua= Integer.toString(cursor.getInt(cursor.getColumnIndex("garrafapeq_vidro_rua")));
+                    String sgarrafagra_vidro_rua= Integer.toString(cursor.getInt(cursor.getColumnIndex("garrafagra_vidro_rua")));
+                    String scigarros_rua= Integer.toString(cursor.getInt(cursor.getColumnIndex("cigarros_rua")));
+                    String sdejetos_rua= Integer.toString(cursor.getInt(cursor.getColumnIndex("dejetos_rua")));
+                    String sindiferenciados_rua= Integer.toString(cursor.getInt(cursor.getColumnIndex("indiferenciados_rua")));
+                    String sfolhas_rua = Integer.toString(cursor.getInt(cursor.getColumnIndex("folhas_rua")));
+                    String srampequenas_rua= Integer.toString(cursor.getInt(cursor.getColumnIndex("rampequenas_rua")));
+                    String sramgrandes_rua= Integer.toString(cursor.getInt(cursor.getColumnIndex("ramgrandes_rua")));
+                    String spastilhas_rua= Integer.toString(cursor.getInt(cursor.getColumnIndex("pastilhas_rua")));
+                    String spast_ate500_rua = Integer.toString(cursor.getInt(cursor.getColumnIndex("past_ate500_rua")));
+                    String spast_maior500_rua= Integer.toString(cursor.getInt(cursor.getColumnIndex("past_maior500_rua")));
+                    String sra_pequeno_rua= Integer.toString(cursor.getInt(cursor.getColumnIndex("ra_pequeno_rua")));
+                    String sra_medio_rua= Integer.toString(cursor.getInt(cursor.getColumnIndex("ra_medio_rua")));
+                    String sra_grande_rua= Integer.toString(cursor.getInt(cursor.getColumnIndex("ra_grande_rua")));
+                    String soro_pequeno_rua= Integer.toString(cursor.getInt(cursor.getColumnIndex("oro_pequeno_rua")));
+                    String soro_medio_rua= Integer.toString(cursor.getInt(cursor.getColumnIndex("oro_medio_rua")));
+                    String soro_grande_rua= Integer.toString(cursor.getInt(cursor.getColumnIndex("oro_grande_rua")));
+                    String slatas_metais_rua= Integer.toString(cursor.getInt(cursor.getColumnIndex("latas_metais_rua")));
+                    String soutros_metais_rua= Integer.toString(cursor.getInt(cursor.getColumnIndex("outros_metais_rua")));
 
-                    bld.append(Rua + "," + Residuos + "," + Area + "," + PeaPequenoRua + "," + PeaMedioRua + "," + PeaGrandeRua + "\n");
+                    String spea_pequeno_pa= Integer.toString(cursor.getInt(cursor.getColumnIndex("pea_pequeno_pa")));
+                    String spea_medio_pa= Integer.toString(cursor.getInt(cursor.getColumnIndex("pea_medio_pa")));
+                    String spea_grande_pa= Integer.toString(cursor.getInt(cursor.getColumnIndex("pea_grande_pa")));
+                    String spena_pequeno_pa= Integer.toString(cursor.getInt(cursor.getColumnIndex("pena_pequeno_pa")));
+                    String spena_medio_pa= Integer.toString(cursor.getInt(cursor.getColumnIndex("pena_medio_pa")));
+                    String spena_grande_pa= Integer.toString(cursor.getInt(cursor.getColumnIndex("pena_grande_pa")));
+                    String spedacos_vidro_pa= Integer.toString(cursor.getInt(cursor.getColumnIndex("pedacos_vidro_pa")));
+                    String sgarrafapeq_vidro_pa= Integer.toString(cursor.getInt(cursor.getColumnIndex("garrafapeq_vidro_pa")));
+                    String sgarrafagra_vidro_pa= Integer.toString(cursor.getInt(cursor.getColumnIndex("garrafagra_vidro_pa")));
+                    String scigarros_pa= Integer.toString(cursor.getInt(cursor.getColumnIndex("cigarros_pa")));
+                    String sdejetos_pa= Integer.toString(cursor.getInt(cursor.getColumnIndex("dejetos_pa")));
+                    String sindiferenciados_pa= Integer.toString(cursor.getInt(cursor.getColumnIndex("indiferenciados_pa")));
+                    String sfolhas_pa= Integer.toString(cursor.getInt(cursor.getColumnIndex("folhas_pa")));
+                    String srampequenas_pa= Integer.toString(cursor.getInt(cursor.getColumnIndex("rampequenas_pa")));
+                    String sramgrandes_pa = Integer.toString(cursor.getInt(cursor.getColumnIndex("ramgrandes_pa")));
+                    String spastilhas_pa= Integer.toString(cursor.getInt(cursor.getColumnIndex("pastilhas_pa")));
+                    String spast_ate500_pa= Integer.toString(cursor.getInt(cursor.getColumnIndex("past_ate500_pa")));
+                    String spast_maior500_pa= Integer.toString(cursor.getInt(cursor.getColumnIndex("past_maior500_pa")));
+                    String sra_pequeno_pa= Integer.toString(cursor.getInt(cursor.getColumnIndex("ra_pequeno_pa")));
+                    String sra_medio_pa= Integer.toString(cursor.getInt(cursor.getColumnIndex("ra_medio_pa")));
+                    String sra_grande_pa= Integer.toString(cursor.getInt(cursor.getColumnIndex("ra_grande_pa")));
+                    String soro_pequeno_pa= Integer.toString(cursor.getInt(cursor.getColumnIndex("oro_pequeno_pa")));
+                    String soro_medio_pa= Integer.toString(cursor.getInt(cursor.getColumnIndex("oro_medio_pa")));
+                    String soro_grande_pa= Integer.toString(cursor.getInt(cursor.getColumnIndex( "oro_grande_pa")));
+                    String slatas_metais_pa= Integer.toString(cursor.getInt(cursor.getColumnIndex("latas_metais_pa")));
+                    String soutros_metais_pa= Integer.toString(cursor.getInt(cursor.getColumnIndex( "outros_metais_pa")));
+
+                    String spea_pequeno_cf = Integer.toString(cursor.getInt(cursor.getColumnIndex( "pea_pequeno_cf")));
+                    String spea_medio_cf= Integer.toString(cursor.getInt(cursor.getColumnIndex("pea_medio_cf")));
+                    String spea_grande_cf= Integer.toString(cursor.getInt(cursor.getColumnIndex("pea_grande_cf")));
+                    String spena_pequeno_cf= Integer.toString(cursor.getInt(cursor.getColumnIndex("pena_pequeno_cf")));
+                    String spena_medio_cf= Integer.toString(cursor.getInt(cursor.getColumnIndex("pena_medio_cf")));
+                    String spena_grande_cf= Integer.toString(cursor.getInt(cursor.getColumnIndex("pena_grande_cf")));
+                    String spedacos_vidro_cf= Integer.toString(cursor.getInt(cursor.getColumnIndex("pedacos_vidro_cf")));
+                    String sgarrafapeq_vidro_cf= Integer.toString(cursor.getInt(cursor.getColumnIndex("garrafapeq_vidro_cf")));
+                    String sgarrafagra_vidro_cf= Integer.toString(cursor.getInt(cursor.getColumnIndex("garrafagra_vidro_cf")));
+                    String scigarros_cf= Integer.toString(cursor.getInt(cursor.getColumnIndex("cigarros_cf")));
+                    String sdejetos_cf= Integer.toString(cursor.getInt(cursor.getColumnIndex("dejetos_cf")));
+                    String sindiferenciados_cf= Integer.toString(cursor.getInt(cursor.getColumnIndex("indiferenciados_cf")));
+                    String sfolhas_cf= Integer.toString(cursor.getInt(cursor.getColumnIndex("folhas_cf")));
+                    String srampequenas_cf= Integer.toString(cursor.getInt(cursor.getColumnIndex("rampequenas_cf")));
+                    String sramgrandes_cf= Integer.toString(cursor.getInt(cursor.getColumnIndex("ramgrandes_cf")));
+                    String spastilhas_cf= Integer.toString(cursor.getInt(cursor.getColumnIndex( "pastilhas_cf")));
+                    String spast_ate500_cf= Integer.toString(cursor.getInt(cursor.getColumnIndex("past_ate500_cf")));
+                    String spast_maior500_cf= Integer.toString(cursor.getInt(cursor.getColumnIndex("past_maior500_cf")));
+                    String sra_pequeno_cf = Integer.toString(cursor.getInt(cursor.getColumnIndex("ra_pequeno_cf")));
+                    String sra_medio_cf= Integer.toString(cursor.getInt(cursor.getColumnIndex( "ra_medio_cf")));
+                    String sra_grande_cf= Integer.toString(cursor.getInt(cursor.getColumnIndex("ra_grande_cf")));
+                    String soro_pequeno_cf= Integer.toString(cursor.getInt(cursor.getColumnIndex( "oro_pequeno_cf")));
+                    String soro_medio_cf= Integer.toString(cursor.getInt(cursor.getColumnIndex( "oro_medio_cf")));
+                    String soro_grande_cf= Integer.toString(cursor.getInt(cursor.getColumnIndex( "oro_grande_cf")));
+                    String slatas_metais_cf= Integer.toString(cursor.getInt(cursor.getColumnIndex( "latas_metais_cf")));
+                    String soutros_metais_cf= Integer.toString(cursor.getInt(cursor.getColumnIndex( "outros_metais_cf")));
+
+                    String sbocalobolimpa_bl= Integer.toString(cursor.getInt(cursor.getColumnIndex( "bocalobolimpa_bl")));
+                    String sbocalobosuja_bl= Integer.toString(cursor.getInt(cursor.getColumnIndex( "bocalobosuja_bl")));
+                    String sbocalobototal_bl= Integer.toString(cursor.getInt(cursor.getColumnIndex( "bocalobototal_bl")));
+                    String spapeleirasvazia_bl= Integer.toString(cursor.getInt(cursor.getColumnIndex( "papeleirasvazia_bl")));
+                    String spapeleirascheias_bl= Integer.toString(cursor.getInt(cursor.getColumnIndex( "papeleirascheias_bl")));
+                    String spapeleirastotal_bl= Integer.toString(cursor.getInt(cursor.getColumnIndex( "papeleirastotal_bl")));
+                    int spa= cursor.getInt(cursor.getColumnIndex( "pa"));
+                    int scf= cursor.getInt(cursor.getColumnIndex( "cf"));
+                    int sbl= cursor.getInt(cursor.getColumnIndex( "bl"));
+                    
+                    
+                    if (spa == 0){
+                        spea_pequeno_pa= "";
+                        spea_medio_pa= "";
+                        spea_grande_pa= "";
+                        spena_pequeno_pa= "";
+                        spena_medio_pa= "";
+                        spena_grande_pa= "";
+                        spedacos_vidro_pa= "";
+                        sgarrafapeq_vidro_pa= "";
+                        sgarrafagra_vidro_pa= "";
+                        scigarros_pa= "";
+                        sdejetos_pa= "";
+                        sindiferenciados_pa= "";
+                        sfolhas_pa= "";
+                        srampequenas_pa= "";
+                        sramgrandes_pa = "";
+                        spastilhas_pa= "";
+                        spast_ate500_pa= "";
+                        spast_maior500_pa= "";
+                        sra_pequeno_pa= "";
+                        sra_medio_pa= "";
+                        sra_grande_pa= "";
+                        soro_pequeno_pa= "";
+                        soro_medio_pa= "";
+                        soro_grande_pa= "";
+                        slatas_metais_pa= "";
+                        soutros_metais_pa= "";
+                    }
+                    
+                    if (scf == 0){
+                        spea_pequeno_cf = "";
+                        spea_medio_cf= "";
+                        spea_grande_cf= "";
+                        spena_pequeno_cf= "";
+                        spena_medio_cf= "";
+                        spena_grande_cf= "";
+                        spedacos_vidro_cf= "";
+                        sgarrafapeq_vidro_cf= "";
+                        sgarrafagra_vidro_cf= "";
+                        scigarros_cf= "";
+                        sdejetos_cf= "";
+                        sindiferenciados_cf= "";
+                        sfolhas_cf= "";
+                        srampequenas_cf= "";
+                        sramgrandes_cf= "";
+                        spastilhas_cf= "";
+                        spast_ate500_cf= "";
+                        spast_maior500_cf= "";
+                        sra_pequeno_cf = "";
+                        sra_medio_cf= "";
+                        sra_grande_cf= "";
+                        soro_pequeno_cf= "";
+                        soro_medio_cf= "";
+                        soro_grande_cf= "";
+                        slatas_metais_cf= "";
+                        soutros_metais_cf= "";
+                    }
+                    
+                    if (sbl == 0){
+                        sbocalobolimpa_bl= "";
+                        sbocalobosuja_bl= "";
+                        sbocalobototal_bl= "";
+                        spapeleirasvazia_bl= "";
+                        spapeleirascheias_bl= "";
+                        spapeleirastotal_bl= "";    
+                    }
+                    
+                    
+
+                    bld.append(Rua + "," + Residuos + "," + Area + "," + PeaPequenoRua + "," + PeaMedioRua + "," + PeaGrandeRua + "," + spena_pequeno_rua + "," + spena_medio_rua + "," +
+                                    spena_grande_rua+ "," + spedacos_vidro_rua+ "," +  sgarrafapeq_vidro_rua+ "," +  sgarrafagra_vidro_rua+ "," + scigarros_rua+ "," + sdejetos_rua+ "," +
+                                    sindiferenciados_rua+ "," + sfolhas_rua + "," + srampequenas_rua+ "," + sramgrandes_rua+ "," + spastilhas_rua+ "," + spast_ate500_rua+ "," +
+                                    spast_maior500_rua+ "," + sra_pequeno_rua+ "," + sra_medio_rua+ "," + sra_grande_rua+ "," + soro_pequeno_rua+ "," + soro_medio_rua+ "," +
+                                    soro_grande_rua+ "," + slatas_metais_rua+ "," + soutros_metais_rua+ "," + spea_pequeno_pa+ "," + spea_medio_pa+ "," + spea_grande_pa+ "," +
+                                    spena_pequeno_pa+ "," +spena_medio_pa+ "," + spena_grande_pa+ "," +  spedacos_vidro_pa+ "," + sgarrafapeq_vidro_pa+ "," + sgarrafagra_vidro_pa+ "," +
+                                    scigarros_pa+ "," +  sdejetos_pa+ "," + sindiferenciados_pa+ "," + sfolhas_pa+ "," + srampequenas_pa+ "," + sramgrandes_pa+ "," + spastilhas_pa+ "," +
+                            spast_ate500_pa+ "," + spast_maior500_pa+ "," + sra_pequeno_pa+ "," + sra_medio_pa+ "," + sra_grande_pa+ "," + soro_pequeno_pa+ "," + soro_medio_pa+ "," +
+                            soro_grande_pa+ "," +  slatas_metais_pa+ "," + soutros_metais_pa+ "," + spea_pequeno_cf+ "," + spea_medio_cf+ "," +   spea_grande_cf+ "," + spena_pequeno_cf+ "," +
+                            spena_medio_cf+ "," +  spena_grande_cf+ "," + spedacos_vidro_cf+ "," + sgarrafapeq_vidro_cf+ "," +  sgarrafagra_vidro_cf+ "," + scigarros_cf+ "," + sdejetos_cf+ "," +
+                            sindiferenciados_cf+ "," + sfolhas_cf+ "," + srampequenas_cf+ "," + sramgrandes_cf+ "," + spastilhas_cf+ "," + spast_ate500_cf+ "," + spast_maior500_cf+ "," +
+                            sra_pequeno_cf + "," + sra_medio_cf+ "," + sra_grande_cf+ "," + soro_pequeno_cf+ "," +  soro_medio_cf+ "," +  soro_grande_cf+ "," + slatas_metais_cf+ "," + soutros_metais_cf+ "," +
+                            sbocalobototal_bl+ "," + sbocalobolimpa_bl + "," +spapeleirastotal_bl + "," + spapeleirasvazia_bl + "\n");
 
 
                 } while (cursor.moveToNext());
