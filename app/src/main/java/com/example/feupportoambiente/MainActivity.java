@@ -1948,7 +1948,18 @@ public class MainActivity extends AppCompatActivity {
         String fileName = "residuos_" + formatter.format(now) + ".csv";
         StringBuilder bld = new StringBuilder();
 
-        String header = "Rua" + "," + "Resíduos" + "," + "Área (m2)" + "," + "PEA pequeno" + "," + "PEA médio" + "," + "PEA grande" + "," + "PENA pequeno" + "," + "PENA médio" + "," + "PENA grande";
+        String header = "Rua" + "," + "Residuos" + "," + "Area (m2)" + "," + "PEA pequeno" + "," + "PEA medio" + "," + "PEA grande" + "," + "PENA pequeno" + "," + "PENA medio" + "," + "PENA grande" + ","+
+                "Pedacos vidro"+ "," + "Garrafas de 25 a 33 cL"+ "," +"Garrafas de 75 cL a 1 L"+ "," +"Pontas de cigarro" + "," +"Dejetos caninos" + "," +"Sacos de indiferenciados" + "," +"Folhas"+ "," +"Ramagens pequenas"
+                + "," +"Ramagens grandes"+ "," +"Pastilhas elasticas"+ "," +"Até 500 cm2" + "," +"Maior que 500 cm2" + "," +"RA pequeno" + "," +"RA medio" + "," + "RA grande" + "," +"ORO pequeno" + "," +"ORO medio"+ "," +
+                "ORO grande" + "," +"Latas refrigerantes"+ "," +"Outros metais" + "," +"PEA pequeno" + "," + "PEA medio" + "," + "PEA grande" + "," + "PENA pequeno" + "," + "PENA medio" + "," + "PENA grande" + ","+
+                "Pedacos vidro"+ "," + "Garrafas de 25 a 33 cL"+ "," +"Garrafas de 75 cL a 1 L"+ "," +"Pontas de cigarro" + "," +"Dejetos caninos" + "," +"Sacos de indiferenciados" + "," +"Folhas"+ "," +"Ramagens pequenas"
+                + "," +"Ramagens grandes"+ "," +"Pastilhas elasticas"+ "," +"Até 500 cm2" + "," +"Maior que 500 cm2" + "," +"RA pequeno" + "," +"RA medio" + "," + "RA grande" + "," +"ORO pequeno" + "," +"ORO medio"+ "," +
+                "ORO grande" + "," +"Latas refrigerantes"+ "," +"Outros metais" + "," +"PEA pequeno" + "," + "PEA medio" + "," + "PEA grande" + "," + "PENA pequeno" + "," + "PENA medio" + "," + "PENA grande" + ","+
+                "Pedacos vidro"+ "," + "Garrafas de 25 a 33 cL"+ "," +"Garrafas de 75 cL a 1 L"+ "," +"Pontas de cigarro" + "," +"Dejetos caninos" + "," +"Sacos de indiferenciados" + "," +"Folhas"+ "," +"Ramagens pequenas"
+                + "," +"Ramagens grandes"+ "," +"Pastilhas elasticas"+ "," +"Até 500 cm2" + "," +"Maior que 500 cm2" + "," +"RA pequeno" + "," +"RA medio" + "," + "RA grande" + "," +"ORO pequeno" + "," +"ORO medio"+ "," +
+                "ORO grande" + "," +"Latas refrigerantes"+ "," +"Outros metais" + "," + "Bocas de lobo totais" + "," +"Bocas de lobo limpas" + "," +"Papeleiras" + "," +"Papeleiras vazias" + "\n";
+
+        bld.append(header);
 
         if (isExternalStorageWritable() && checkPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
 
