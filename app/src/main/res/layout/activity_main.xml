@@ -72,6 +72,70 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="@string/area_hint_text" />
+
+
+                    <CheckBox
+                        android:id="@+id/checkBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/placas_ajardinadas_checkbox"
+                        android:onClick="onCheckboxClicked"
+                        tools:layout_editor_absoluteX="65dp"
+                        tools:layout_editor_absoluteY="58dp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/caldeiras_floreiras_checkbox"
+                        android:onClick="onCheckboxClicked"
+                        tools:layout_editor_absoluteX="65dp"
+                        tools:layout_editor_absoluteY="120dp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bocas_lobo_papeleiras_checkbox"
+                        android:onClick="onCheckboxClicked"
+                        tools:layout_editor_absoluteX="65dp"
+                        tools:layout_editor_absoluteY="192dp" />
+
+                    <Button
+                        android:id="@+id/gravar_instancia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#FF2229"
+                        android:onClick="gravar"
+                        android:text="@string/gravar_base_dados_botao"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="#000000"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="302dp" />
+
+                    <Button
+                        android:id="@+id/criar_excel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#FF2229"
+                        android:onClick="gravarcsv"
+                        android:text="@string/criar_ficheiro_csv_botao"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="#000000"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="410dp" />
+                    <Button
+                        android:id="@+id/reset_bdad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#FF2229"
+                        android:onClick="reset"
+                        android:text="@string/reset_base_de_dados_botao"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="#000000"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="410dp" />
+
                 </LinearLayout>
 
                 <ScrollView
@@ -1241,7 +1305,7 @@
                                 android:layout_height="match_parent"
                                 android:background="#89FF00"
                                 android:onClick="plus_ra_grande_rua"
-                                android:text="@string/contagem_inicio"
+                                android:text="@string/sinal_mais"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
                                 android:textColor="#000000" />
 
@@ -1362,7 +1426,7 @@
                                 android:layout_height="match_parent"
                                 android:background="#89FF00"
                                 android:onClick="plus_oro_grande_rua"
-                                android:text="@string/contagem_inicio"
+                                android:text="@string/sinal_mais"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
                                 android:textColor="#000000" />
 
@@ -2695,7 +2759,7 @@
                                 android:layout_height="match_parent"
                                 android:background="#89FF00"
                                 android:onClick="plus_ra_grande_pa"
-                                android:text="@string/contagem_inicio"
+                                android:text="@string/sinal_mais"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
                                 android:textColor="#000000" />
 
@@ -2816,7 +2880,7 @@
                                 android:layout_height="match_parent"
                                 android:background="#89FF00"
                                 android:onClick="plus_oro_grande_pa"
-                                android:text="@string/contagem_inicio"
+                                android:text="@string/sinal_mais"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
                                 android:textColor="#000000" />
 
@@ -4157,7 +4221,7 @@
                                 android:layout_height="match_parent"
                                 android:background="#89FF00"
                                 android:onClick="plus_ra_grande_cf"
-                                android:text="@string/contagem_inicio"
+                                android:text="@string/sinal_mais"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
                                 android:textColor="#000000" />
 
@@ -4278,7 +4342,7 @@
                                 android:layout_height="match_parent"
                                 android:background="#89FF00"
                                 android:onClick="plus_oro_grande_cf"
-                                android:text="@string/contagem_inicio"
+                                android:text="@string/sinal_mais"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
                                 android:textColor="#000000" />
 
@@ -4785,83 +4849,6 @@
 
 
 
-
-
-
-
-
-                <!-- TAB 6 -->
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:id="@+id/tab6">
-
-
-
-                    <CheckBox
-                        android:id="@+id/checkBox"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/placas_ajardinadas_checkbox"
-                        android:onClick="onCheckboxClicked"
-                        tools:layout_editor_absoluteX="65dp"
-                        tools:layout_editor_absoluteY="58dp" />
-
-                    <CheckBox
-                        android:id="@+id/checkBox2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/caldeiras_floreiras_checkbox"
-                        android:onClick="onCheckboxClicked"
-                        tools:layout_editor_absoluteX="65dp"
-                        tools:layout_editor_absoluteY="120dp" />
-
-                    <CheckBox
-                        android:id="@+id/checkBox3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/bocas_lobo_papeleiras_checkbox"
-                        android:onClick="onCheckboxClicked"
-                        tools:layout_editor_absoluteX="65dp"
-                        tools:layout_editor_absoluteY="192dp" />
-
-                    <Button
-                        android:id="@+id/gravar_instancia"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="#FF2229"
-                        android:onClick="gravar"
-                        android:text="@string/gravar_base_dados_botao"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                        android:textColor="#000000"
-                        tools:layout_editor_absoluteX="0dp"
-                        tools:layout_editor_absoluteY="302dp" />
-
-                    <Button
-                        android:id="@+id/criar_excel"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="#FF2229"
-                        android:onClick="gravarcsv"
-                        android:text="@string/criar_ficheiro_csv_botao"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                        android:textColor="#000000"
-                        tools:layout_editor_absoluteX="0dp"
-                        tools:layout_editor_absoluteY="410dp" />
-                    <Button
-                        android:id="@+id/reset_bdad"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="#FF2229"
-                        android:onClick="reset"
-                        android:text="@string/reset_base_de_dados_botao"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                        android:textColor="#000000"
-                        tools:layout_editor_absoluteX="0dp"
-                        tools:layout_editor_absoluteY="410dp" />
-                </LinearLayout>
 
 
 
