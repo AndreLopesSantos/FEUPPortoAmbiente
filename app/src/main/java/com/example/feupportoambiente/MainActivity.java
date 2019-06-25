@@ -1642,7 +1642,7 @@ public class MainActivity extends AppCompatActivity {
                         int outros_metais_pa, int pea_pequeno_cf, int pea_medio_cf,int pea_grande_cf, int pena_pequeno_cf, int pena_medio_cf, int pena_grande_cf, int pedacos_vidro_cf, int garrafapeq_vidro_cf,
                         int garrafagra_vidro_cf, int cigarros_cf, int dejetos_cf,int indiferenciados_cf,int folhas_cf, int rampequenas_cf, int ramgrandes_cf, int pastilhas_cf, int past_ate500_cf,
                         int past_maior500_cf, int ra_pequeno_cf, int ra_medio_cf,int ra_grande_cf, int oro_pequeno_cf, int oro_medio_cf, int oro_grande_cf, int latas_metais_cf, int outros_metais_cf,
-                        int bocalobolimpa_bl, int bocalobosuja_bl, int bocalobototal_bl, int papeleirasvazia_bl, int papeleirascheias_bl, int papeleirastotal_bl, int pan, int cfn, int bln) {
+                        int bocalobolimpa_bl, int bocalobosuja_bl, int bocalobototal_bl, int papeleirasvazia_bl, int papeleirascheias_bl, int papeleirastotal_bl, int pan, int cfn, int bln, String datahora) {
         boolean insertData = mDatabaseHelper.addData(rua, residuos, area, pea_pequeno_rua, pea_medio_rua,  pea_grande_rua, pena_pequeno_rua, pena_medio_rua, pena_grande_rua, pedacos_vidro_rua,
          garrafapeq_vidro_rua, garrafagra_vidro_rua,  cigarros_rua,  dejetos_rua,  indiferenciados_rua,  folhas_rua,  rampequenas_rua,  ramgrandes_rua,
          pastilhas_rua,  past_ate500_rua,  past_maior500_rua,  ra_pequeno_rua,  ra_medio_rua,  ra_grande_rua,  oro_pequeno_rua,  oro_medio_rua,  oro_grande_rua,
@@ -1652,7 +1652,7 @@ public class MainActivity extends AppCompatActivity {
          outros_metais_pa,  pea_pequeno_cf,  pea_medio_cf, pea_grande_cf,  pena_pequeno_cf,  pena_medio_cf,  pena_grande_cf,  pedacos_vidro_cf,  garrafapeq_vidro_cf,
          garrafagra_vidro_cf,  cigarros_cf,  dejetos_cf, indiferenciados_cf, folhas_cf,  rampequenas_cf,  ramgrandes_cf,  pastilhas_cf,  past_ate500_cf,
          past_maior500_cf,  ra_pequeno_cf,  ra_medio_cf, ra_grande_cf,  oro_pequeno_cf,  oro_medio_cf,  oro_grande_cf,  latas_metais_cf,  outros_metais_cf,
-         bocalobolimpa_bl,  bocalobosuja_bl,  bocalobototal_bl,  papeleirasvazia_bl,  papeleirascheias_bl,  papeleirastotal_bl, pan, cfn, bln);
+         bocalobolimpa_bl,  bocalobosuja_bl,  bocalobototal_bl,  papeleirasvazia_bl,  papeleirascheias_bl,  papeleirastotal_bl, pan, cfn, bln, datahora);
 
         if (insertData) {
             toastMessage("Foi adicionado com sucesso!");
@@ -1674,6 +1674,10 @@ public class MainActivity extends AppCompatActivity {
         String trua = mRuas.getText().toString();
         String tresiduos = mResiduos.getText().toString();
         String tarea = mAreas.getText().toString();
+
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss", Locale.US);
+        Date now = new Date();
+        String datahora = formatter.format(now);
 
         if(trua.isEmpty() || tresiduos.isEmpty() || tarea.isEmpty()){
             toastMessage("Tem valores em falta no primeiro tab : Ruas, Amostra ou Area");
@@ -1720,7 +1724,7 @@ public class MainActivity extends AppCompatActivity {
                     outros_metais_pa, pea_pequeno_cf, pea_medio_cf, pea_grande_cf, pena_pequeno_cf, pena_medio_cf, pena_grande_cf, pedacos_vidro_cf, garrafapeq_vidro_cf,
                     garrafagra_vidro_cf, cigarros_cf, dejetos_cf, indiferenciados_cf, folhas_cf, rampequenas_cf, ramgrandes_cf, pastilhas_cf, past_ate500_cf,
                     past_maior500_cf, ra_pequeno_cf, ra_medio_cf, ra_grande_cf, oro_pequeno_cf, oro_medio_cf, oro_grande_cf, latas_metais_cf, outros_metais_cf,
-                    bocalobolimpa_bl, bocalobosuja_bl, bocalobototal_bl, papeleirasvazia_bl, papeleirascheias_bl, papeleirastotal_bl, pan, cfn, bln);
+                    bocalobolimpa_bl, bocalobosuja_bl, bocalobototal_bl, papeleirasvazia_bl, papeleirascheias_bl, papeleirastotal_bl, pan, cfn, bln, datahora);
 
 
             pea_pequeno_rua = 0;
@@ -1948,15 +1952,15 @@ public class MainActivity extends AppCompatActivity {
         String fileName = "residuos_" + formatter.format(now) + ".csv";
         StringBuilder bld = new StringBuilder();
 
-        String header = "Rua" + "," + "Residuos" + "," + "Area (m2)" + "," + "PEA pequeno" + "," + "PEA medio" + "," + "PEA grande" + "," + "PENA pequeno" + "," + "PENA medio" + "," + "PENA grande" + ","+
+        String header = "Data e Hora" + "," + "Rua" + "," + "Residuos" + "," + "Area (m2)" + "," + "PEA pequeno" + "," + "PEA medio" + "," + "PEA grande" + "," + "PENA pequeno" + "," + "PENA medio" + "," + "PENA grande" + ","+
                 "Pedacos vidro"+ "," + "Garrafas de 25 a 33 cL"+ "," +"Garrafas de 75 cL a 1 L"+ "," +"Pontas de cigarro" + "," +"Dejetos caninos" + "," +"Sacos de indiferenciados" + "," +"Folhas"+ "," +"Ramagens pequenas"
-                + "," +"Ramagens grandes"+ "," +"Pastilhas elasticas"+ "," +"Até 500 cm2" + "," +"Maior que 500 cm2" + "," +"RA pequeno" + "," +"RA medio" + "," + "RA grande" + "," +"ORO pequeno" + "," +"ORO medio"+ "," +
+                + "," +"Ramagens grandes"+ "," +"Pastilhas elasticas"+ "," +"Ate 500 cm2" + "," +"Maior que 500 cm2" + "," +"RA pequeno" + "," +"RA medio" + "," + "RA grande" + "," +"ORO pequeno" + "," +"ORO medio"+ "," +
                 "ORO grande" + "," +"Latas refrigerantes"+ "," +"Outros metais" + "," +"PEA pequeno" + "," + "PEA medio" + "," + "PEA grande" + "," + "PENA pequeno" + "," + "PENA medio" + "," + "PENA grande" + ","+
                 "Pedacos vidro"+ "," + "Garrafas de 25 a 33 cL"+ "," +"Garrafas de 75 cL a 1 L"+ "," +"Pontas de cigarro" + "," +"Dejetos caninos" + "," +"Sacos de indiferenciados" + "," +"Folhas"+ "," +"Ramagens pequenas"
-                + "," +"Ramagens grandes"+ "," +"Pastilhas elasticas"+ "," +"Até 500 cm2" + "," +"Maior que 500 cm2" + "," +"RA pequeno" + "," +"RA medio" + "," + "RA grande" + "," +"ORO pequeno" + "," +"ORO medio"+ "," +
+                + "," +"Ramagens grandes"+ "," +"Pastilhas elasticas"+ "," +"Ate 500 cm2" + "," +"Maior que 500 cm2" + "," +"RA pequeno" + "," +"RA medio" + "," + "RA grande" + "," +"ORO pequeno" + "," +"ORO medio"+ "," +
                 "ORO grande" + "," +"Latas refrigerantes"+ "," +"Outros metais" + "," +"PEA pequeno" + "," + "PEA medio" + "," + "PEA grande" + "," + "PENA pequeno" + "," + "PENA medio" + "," + "PENA grande" + ","+
                 "Pedacos vidro"+ "," + "Garrafas de 25 a 33 cL"+ "," +"Garrafas de 75 cL a 1 L"+ "," +"Pontas de cigarro" + "," +"Dejetos caninos" + "," +"Sacos de indiferenciados" + "," +"Folhas"+ "," +"Ramagens pequenas"
-                + "," +"Ramagens grandes"+ "," +"Pastilhas elasticas"+ "," +"Até 500 cm2" + "," +"Maior que 500 cm2" + "," +"RA pequeno" + "," +"RA medio" + "," + "RA grande" + "," +"ORO pequeno" + "," +"ORO medio"+ "," +
+                + "," +"Ramagens grandes"+ "," +"Pastilhas elasticas"+ "," +"Ate 500 cm2" + "," +"Maior que 500 cm2" + "," +"RA pequeno" + "," +"RA medio" + "," + "RA grande" + "," +"ORO pequeno" + "," +"ORO medio"+ "," +
                 "ORO grande" + "," +"Latas refrigerantes"+ "," +"Outros metais" + "," + "Bocas de lobo totais" + "," +"Bocas de lobo limpas" + "," +"Papeleiras" + "," +"Papeleiras vazias" + "\n";
 
         bld.append(header);
@@ -1965,6 +1969,7 @@ public class MainActivity extends AppCompatActivity {
 
             if (cursor.moveToFirst()) {
                 do {
+                    String dataHora = cursor.getString(cursor.getColumnIndex("data"));
                     String Rua = cursor.getString(cursor.getColumnIndex("rua"));
                     String Residuos = cursor.getString(cursor.getColumnIndex("residuos"));
                     String Area = cursor.getString(cursor.getColumnIndex("area"));
@@ -2132,7 +2137,7 @@ public class MainActivity extends AppCompatActivity {
                     
                     
 
-                    bld.append(Rua + "," + Residuos + "," + Area + "," + PeaPequenoRua + "," + PeaMedioRua + "," + PeaGrandeRua + "," + spena_pequeno_rua + "," + spena_medio_rua + "," +
+                    bld.append(dataHora + "," + Rua + "," + Residuos + "," + Area + "," + PeaPequenoRua + "," + PeaMedioRua + "," + PeaGrandeRua + "," + spena_pequeno_rua + "," + spena_medio_rua + "," +
                                     spena_grande_rua+ "," + spedacos_vidro_rua+ "," +  sgarrafapeq_vidro_rua+ "," +  sgarrafagra_vidro_rua+ "," + scigarros_rua+ "," + sdejetos_rua+ "," +
                                     sindiferenciados_rua+ "," + sfolhas_rua + "," + srampequenas_rua+ "," + sramgrandes_rua+ "," + spastilhas_rua+ "," + spast_ate500_rua+ "," +
                                     spast_maior500_rua+ "," + sra_pequeno_rua+ "," + sra_medio_rua+ "," + sra_grande_rua+ "," + soro_pequeno_rua+ "," + soro_medio_rua+ "," +
