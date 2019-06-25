@@ -200,37 +200,40 @@
                             <TextView
                                 android:id="@+id/header_pequeno_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#706E6B"
                                 android:gravity="center"
                                 android:text="@string/pequeno_letra_header"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/header_medio_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#706E6B"
                                 android:gravity="center"
                                 android:text="@string/medio_letra_header"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/header_grande_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#706E6B"
                                 android:gravity="center"
                                 android:text="@string/grande_letra_header"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
                         </TableRow>
 
@@ -489,37 +492,40 @@
                             <TextView
                                 android:id="@+id/header_pedacos_vidro_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#706E6B"
                                 android:gravity="center"
                                 android:text="@string/pedacos_label_text"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/header_garrafapeq_vidro_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#706E6B"
                                 android:gravity="center"
                                 android:text="@string/garrafas_pequenas_label"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/header_garrafagra_vidro_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#706E6B"
                                 android:gravity="center"
                                 android:text="@string/garrafas_grandes_label"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
                         </TableRow>
 
@@ -663,37 +669,40 @@
                             <TextView
                                 android:id="@+id/header_cigarro_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#706E6B"
                                 android:gravity="center"
                                 android:text="@string/cigarro_label"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/header_dejetos_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#706E6B"
                                 android:gravity="center"
                                 android:text="@string/dejetos_label"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/header_indiferenciados_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#706E6B"
                                 android:gravity="center"
                                 android:text="@string/indiferenciados_label"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
                         </TableRow>
 
@@ -839,37 +848,40 @@
                             <TextView
                                 android:id="@+id/header_folhas_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#706E6B"
                                 android:gravity="center"
                                 android:text="@string/folhas_label"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/header_rampequenas_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#706E6B"
                                 android:gravity="center"
                                 android:text="@string/ramagens_pequenas_label"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/header_ramgrandes_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#706E6B"
                                 android:gravity="center"
                                 android:text="@string/ramagens_grandes_label"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
                         </TableRow>
 
@@ -1015,37 +1027,40 @@
                             <TextView
                                 android:id="@+id/header_pastilhas_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#706E6B"
                                 android:gravity="center"
                                 android:text="@string/pastilhas_elasticas_label"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/header_past_ate_500_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#706E6B"
                                 android:gravity="center"
                                 android:text="@string/ate_500_label"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/header_past_maior_500_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#706E6B"
                                 android:gravity="center"
                                 android:text="@string/maior_500_label"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
                         </TableRow>
 
@@ -1057,13 +1072,14 @@
                             <TextView
                                 android:id="@+id/tipo_pastilhas_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".2"
                                 android:background="#706E6B"
                                 android:gravity="center"
                                 android:text="@string/pastilas_elasticas_label"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                                 android:textColor="@android:color/white"
+                                android:textSize="12sp"
                                 android:textStyle="bold" />
 
                             <Button
@@ -1193,37 +1209,40 @@
                             <TextView
                                 android:id="@+id/header_pequeno_ra_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#706E6B"
                                 android:gravity="center"
                                 android:text="@string/pequeno_letra_header"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/header_medio_ra_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#706E6B"
                                 android:gravity="center"
                                 android:text="@string/medio_letra_header"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/header_grande_ra_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#706E6B"
                                 android:gravity="center"
                                 android:text="@string/grande_letra_header"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
                         </TableRow>
 
@@ -1488,25 +1507,27 @@
                             <TextView
                                 android:id="@+id/header_latas_metlat_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".4"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".4"
                                 android:background="#706E6B"
                                 android:gravity="center"
                                 android:text="@string/latas_label"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/header__outros_metlat_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".4"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".4"
                                 android:background="#706E6B"
                                 android:gravity="center"
                                 android:text="@string/outros_metais_label"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
 
@@ -1595,9 +1616,6 @@
 
 
                         </TableRow>
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent" />
                     </TableLayout>
 
                 </ScrollView>
@@ -1654,37 +1672,40 @@
                             <TextView
                                 android:id="@+id/header_pequeno_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#43A047"
                                 android:gravity="center"
                                 android:text="@string/pequeno_letra_header"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/header_medio_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#43A047"
                                 android:gravity="center"
                                 android:text="@string/medio_letra_header"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/header_grande_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#43A047"
                                 android:gravity="center"
                                 android:text="@string/grande_letra_header"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
                         </TableRow>
 
@@ -1943,37 +1964,40 @@
                             <TextView
                                 android:id="@+id/header_pedacos_vidro_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#43A047"
                                 android:gravity="center"
                                 android:text="@string/pedacos_label_text"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/header_garrafapeq_vidro_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#43A047"
                                 android:gravity="center"
                                 android:text="@string/garrafas_pequenas_label"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/header_garrafagra_vidro_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#43A047"
                                 android:gravity="center"
                                 android:text="@string/garrafas_grandes_label"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
                         </TableRow>
 
@@ -2117,37 +2141,40 @@
                             <TextView
                                 android:id="@+id/header_cigarro_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#43A047"
                                 android:gravity="center"
                                 android:text="@string/cigarro_label"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/header_dejetos_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#43A047"
                                 android:gravity="center"
                                 android:text="@string/dejetos_label"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/header_indiferenciados_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#43A047"
                                 android:gravity="center"
                                 android:text="@string/indiferenciados_label"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
                         </TableRow>
 
@@ -2293,37 +2320,40 @@
                             <TextView
                                 android:id="@+id/header_folhas_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#43A047"
                                 android:gravity="center"
                                 android:text="@string/folhas_label"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/header_rampequenas_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#43A047"
                                 android:gravity="center"
                                 android:text="@string/ramagens_pequenas_label"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/header_ramgrandes_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#43A047"
                                 android:gravity="center"
                                 android:text="@string/ramagens_grandes_label"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
                         </TableRow>
 
@@ -2469,37 +2499,40 @@
                             <TextView
                                 android:id="@+id/header_pastilhas_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#43A047"
                                 android:gravity="center"
                                 android:text="@string/pastilhas_elasticas_label"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/header_past_ate_500_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#43A047"
                                 android:gravity="center"
                                 android:text="@string/ate_500_label"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/header_past_maior_500_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#43A047"
                                 android:gravity="center"
                                 android:text="@string/maior_500_label"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
                         </TableRow>
 
@@ -2511,13 +2544,14 @@
                             <TextView
                                 android:id="@+id/tipo_pastilhas_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".2"
                                 android:background="#43A047"
                                 android:gravity="center"
                                 android:text="@string/pastilas_elasticas_label"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                                 android:textColor="@android:color/white"
+                                android:textSize="12sp"
                                 android:textStyle="bold" />
 
                             <Button
@@ -2647,37 +2681,40 @@
                             <TextView
                                 android:id="@+id/header_pequeno_ra_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#43A047"
                                 android:gravity="center"
                                 android:text="@string/pequeno_letra_header"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/header_medio_ra_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#43A047"
                                 android:gravity="center"
                                 android:text="@string/medio_letra_header"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/header_grande_ra_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#43A047"
                                 android:gravity="center"
                                 android:text="@string/grande_letra_header"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
                         </TableRow>
 
@@ -2942,25 +2979,27 @@
                             <TextView
                                 android:id="@+id/header_latas_metlat_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".4"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".4"
                                 android:background="#43A047"
                                 android:gravity="center"
                                 android:text="@string/latas_label"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/header__outros_metlat_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".4"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".4"
                                 android:background="#43A047"
                                 android:gravity="center"
                                 android:text="@string/outros_metais_label"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
 
@@ -3049,9 +3088,6 @@
 
 
                         </TableRow>
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent" />
                     </TableLayout>
 
                 </ScrollView>
@@ -3116,37 +3152,40 @@
                             <TextView
                                 android:id="@+id/header_pequeno_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#039BE5"
                                 android:gravity="center"
                                 android:text="@string/pequeno_letra_header"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/header_medio_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#039BE5"
                                 android:gravity="center"
                                 android:text="@string/medio_letra_header"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/header_grande_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#039BE5"
                                 android:gravity="center"
                                 android:text="@string/grande_letra_header"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
                         </TableRow>
 
@@ -3405,37 +3444,40 @@
                             <TextView
                                 android:id="@+id/header_pedacos_vidro_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#039BE5"
                                 android:gravity="center"
                                 android:text="@string/pedacos_label_text"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/header_garrafapeq_vidro_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#039BE5"
                                 android:gravity="center"
                                 android:text="@string/garrafas_pequenas_label"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/header_garrafagra_vidro_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#039BE5"
                                 android:gravity="center"
                                 android:text="@string/garrafas_grandes_label"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
                         </TableRow>
 
@@ -3579,37 +3621,40 @@
                             <TextView
                                 android:id="@+id/header_cigarro_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#039BE5"
                                 android:gravity="center"
                                 android:text="@string/cigarro_label"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/header_dejetos_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#039BE5"
                                 android:gravity="center"
                                 android:text="@string/dejetos_label"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/header_indiferenciados_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#039BE5"
                                 android:gravity="center"
                                 android:text="@string/indiferenciados_label"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
                         </TableRow>
 
@@ -3755,37 +3800,40 @@
                             <TextView
                                 android:id="@+id/header_folhas_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#039BE5"
                                 android:gravity="center"
                                 android:text="@string/folhas_label"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/header_rampequenas_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#039BE5"
                                 android:gravity="center"
                                 android:text="@string/ramagens_pequenas_label"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/header_ramgrandes_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#039BE5"
                                 android:gravity="center"
                                 android:text="@string/ramagens_grandes_label"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
                         </TableRow>
 
@@ -3931,37 +3979,40 @@
                             <TextView
                                 android:id="@+id/header_pastilhas_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#039BE5"
                                 android:gravity="center"
                                 android:text="@string/pastilhas_elasticas_label"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/header_past_ate_500_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#039BE5"
                                 android:gravity="center"
                                 android:text="@string/ate_500_label"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/header_past_maior_500_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#039BE5"
                                 android:gravity="center"
                                 android:text="@string/maior_500_label"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
                         </TableRow>
 
@@ -3973,13 +4024,14 @@
                             <TextView
                                 android:id="@+id/tipo_pastilhas_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".2"
                                 android:background="#039BE5"
                                 android:gravity="center"
                                 android:text="@string/pastilas_elasticas_label"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                                 android:textColor="@android:color/white"
+                                android:textSize="12sp"
                                 android:textStyle="bold" />
 
                             <Button
@@ -4109,37 +4161,40 @@
                             <TextView
                                 android:id="@+id/header_pequeno_ra_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#039BE5"
                                 android:gravity="center"
                                 android:text="@string/pequeno_letra_header"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/header_medio_ra_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#039BE5"
                                 android:gravity="center"
                                 android:text="@string/medio_letra_header"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/header_grande_ra_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".3"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".3"
                                 android:background="#039BE5"
                                 android:gravity="center"
                                 android:text="@string/grande_letra_header"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
                         </TableRow>
 
@@ -4404,25 +4459,27 @@
                             <TextView
                                 android:id="@+id/header_latas_metlat_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".4"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".4"
                                 android:background="#039BE5"
                                 android:gravity="center"
                                 android:text="@string/latas_label"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/header__outros_metlat_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".4"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".4"
                                 android:background="#039BE5"
                                 android:gravity="center"
                                 android:text="@string/outros_metais_label"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
 
@@ -4511,9 +4568,6 @@
 
 
                         </TableRow>
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent" />
                     </TableLayout>
 
                 </ScrollView>
@@ -4587,25 +4641,27 @@
                             <TextView
                                 android:id="@+id/header_limpa_bl"
                                 android:layout_width="0dp"
-                                android:layout_weight=".4"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".4"
                                 android:background="#8C2D19"
                                 android:gravity="center"
                                 android:text="@string/vazia_limpa_label"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/header_suja_bl"
                                 android:layout_width="0dp"
-                                android:layout_weight=".4"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".4"
                                 android:background="#8C2D19"
                                 android:gravity="center"
                                 android:text="@string/cheia_suja_label"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
 
@@ -4631,13 +4687,14 @@
                             <TextView
                                 android:id="@+id/tipo_bocalobolimpa_bl"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".2"
                                 android:background="#8C2D19"
                                 android:gravity="center"
                                 android:text="@string/boca_de_lobo_label"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                             <Button
@@ -4714,17 +4771,18 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1">
 
-                        <TextView
-                            android:id="@+id/tipo_bocalobototal_bl"
-                            android:layout_width="0dp"
-                            android:layout_weight=".5"
-                            android:layout_height="match_parent"
-                            android:background="#8C2D19"
-                            android:gravity="center"
-                            android:text="@string/bocas_de_lobo_totais"
-                            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
-                            android:textColor="@android:color/white"
-                            android:textStyle="bold" />
+                            <TextView
+                                android:id="@+id/tipo_bocalobototal_bl"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".5"
+                                android:background="#8C2D19"
+                                android:gravity="center"
+                                android:text="@string/bocas_de_lobo_totais"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                                android:textColor="@android:color/white"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/bocalobototal_bl"
@@ -4747,13 +4805,14 @@
                             <TextView
                                 android:id="@+id/tipo_papeleira_bl"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".2"
                                 android:background="#8C2D19"
                                 android:gravity="center"
                                 android:text="@string/papeleiras_label"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                             <Button
@@ -4833,13 +4892,14 @@
                             <TextView
                                 android:id="@+id/tipo_papeleirastotal_bl"
                                 android:layout_width="0dp"
-                                android:layout_weight=".5"
                                 android:layout_height="match_parent"
+                                android:layout_weight=".5"
                                 android:background="#8C2D19"
                                 android:gravity="center"
                                 android:text="@string/papeleiras_totais"
                                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                                 android:textColor="@android:color/white"
+                                android:textSize="14sp"
                                 android:textStyle="bold" />
 
                             <TextView
@@ -4854,11 +4914,6 @@
                         </TableRow>
 
 
-
-
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent" />
                     </TableLayout>
 
                 </ScrollView>

@@ -7,9 +7,9 @@
     <string name="area_title_text">Área</string>
     <string name="area_hint_text">Introduzir a area em metros quadrados (ex 500)</string>
     <string name="tipo_header_text">Tipo</string>
-    <string name="pequeno_letra_header">P</string>
-    <string name="medio_letra_header">M</string>
-    <string name="grande_letra_header">G</string>
+    <string name="pequeno_letra_header">Pequeno</string>
+    <string name="medio_letra_header">Médio</string>
+    <string name="grande_letra_header">Grande</string>
     <string name="pea_label_text">PEA</string>
     <string name="sinal_menos">-</string>
     <string name="sinal_mais">+</string>
@@ -28,8 +28,8 @@
     <string name="ramagens_pequenas_label">Ramagens Pequenas</string>
     <string name="ramagens_grandes_label">Ramagens Grandes</string>
     <string name="pastilhas_elasticas_label">Pastilhas elásticas</string>
-    <string name="ate_500_label">Até 500 cm^2</string>
-    <string name="maior_500_label">Maior que 500 cm^2</string>
+    <string name="ate_500_label">Até 500 cm2</string>
+    <string name="maior_500_label">Maior que 500 cm2</string>
     <string name="pastilas_elasticas_label">Incrustações</string>
     <string name="ra_label">RA</string>
     <string name="oro_label">ORO</string>
