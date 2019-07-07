@@ -3,6 +3,7 @@ package com.example.feupportoambiente;
 import android.Manifest;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.v4.content.ContextCompat;
@@ -246,6 +247,10 @@ public class MainActivity extends AppCompatActivity {
     private TextView count_papeleirascheias_bl;
     private TextView count_papeleirastotal_bl;
 
+    //SONS
+    private MediaPlayer positivo;
+    private MediaPlayer negativo;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -255,6 +260,13 @@ public class MainActivity extends AppCompatActivity {
         mDatabaseHelper = new DatabaseHelper(this);
         TabHost tabs = (TabHost) findViewById(R.id.tabhost);
         tabs.setup();
+
+        //SONS
+         positivo = MediaPlayer.create(this, R.raw.plus);
+         negativo = MediaPlayer.create(this, R.raw.minus);
+
+
+
 
 
         //RUA//
@@ -383,6 +395,8 @@ public class MainActivity extends AppCompatActivity {
         mAreas = findViewById(R.id.editText_area);
 
 
+
+
         TabHost.TabSpec spec = tabs.newTabSpec("tag1");
         spec.setContent(R.id.tab1);
         spec.setIndicator("Dados");
@@ -419,6 +433,7 @@ public class MainActivity extends AppCompatActivity {
             if (count_pea_pequeno_rua != null)
                 count_pea_pequeno_rua.setText(Integer.toString(pea_pequeno_rua));
         }
+        negativo.start();
 
     }
 
@@ -426,6 +441,7 @@ public class MainActivity extends AppCompatActivity {
         pea_pequeno_rua++;
         if (count_pea_pequeno_rua != null)
             count_pea_pequeno_rua.setText(Integer.toString(pea_pequeno_rua));
+        positivo.start();
     }
 
     // PEA MEDIO PLUS & MINUS
@@ -435,6 +451,7 @@ public class MainActivity extends AppCompatActivity {
             if (count_pea_medio_rua != null)
                 count_pea_medio_rua.setText(Integer.toString(pea_medio_rua));
         }
+        negativo.start();
 
     }
 
@@ -442,6 +459,7 @@ public class MainActivity extends AppCompatActivity {
         pea_medio_rua++;
         if (count_pea_medio_rua != null)
             count_pea_medio_rua.setText(Integer.toString(pea_medio_rua));
+        positivo.start();
     }
 
     // PEA GRANDE PLUS & MINUS
@@ -451,6 +469,7 @@ public class MainActivity extends AppCompatActivity {
             if (count_pea_grande_rua != null)
                 count_pea_grande_rua.setText(Integer.toString(pea_grande_rua));
         }
+        negativo.start();
 
     }
 
@@ -458,6 +477,7 @@ public class MainActivity extends AppCompatActivity {
         pea_grande_rua++;
         if (count_pea_grande_rua != null)
             count_pea_grande_rua.setText(Integer.toString(pea_grande_rua));
+        positivo.start();
     }
 
     public void minus_pena_pequeno_rua(View view) {
@@ -466,12 +486,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_pena_pequeno_rua != null)
                 count_pena_pequeno_rua.setText(Integer.toString(pena_pequeno_rua));
         }
+        negativo.start();
     }
 
     public void plus_pena_pequeno_rua(View view) {
         pena_pequeno_rua++;
         if (count_pena_pequeno_rua != null)
             count_pena_pequeno_rua.setText(Integer.toString(pena_pequeno_rua));
+        positivo.start();
     }
 
     public void minus_pena_medio_rua(View view) {
@@ -480,12 +502,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_pena_medio_rua != null)
                 count_pena_medio_rua.setText(Integer.toString(pena_medio_rua));
         }
+        negativo.start();
     }
 
     public void plus_pena_medio_rua(View view) {
         pena_medio_rua++;
         if (count_pena_medio_rua != null)
             count_pena_medio_rua.setText(Integer.toString(pena_medio_rua));
+        positivo.start();
     }
 
     public void minus_pena_grande_rua(View view) {
@@ -494,12 +518,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_pena_grande_rua != null)
                 count_pena_grande_rua.setText(Integer.toString(pena_grande_rua));
         }
+        negativo.start();
     }
 
     public void plus_pena_grande_rua(View view) {
         pena_grande_rua++;
         if (count_pena_grande_rua != null)
             count_pena_grande_rua.setText(Integer.toString(pena_grande_rua));
+        positivo.start();
     }
 
     public void minus_pedacos_vidro_rua(View view) {
@@ -508,12 +534,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_pedacos_vidro_rua != null)
                 count_pedacos_vidro_rua.setText(Integer.toString(pedacos_vidro_rua));
         }
+        negativo.start();
     }
 
     public void plus_pedacos_vidro_rua(View view) {
         pedacos_vidro_rua++;
         if (count_pedacos_vidro_rua != null)
             count_pedacos_vidro_rua.setText(Integer.toString(pedacos_vidro_rua));
+        positivo.start();
     }
 
     public void minus_garrafapeq_vidro_rua(View view) {
@@ -522,12 +550,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_garrafapeq_vidro_rua != null)
                 count_garrafapeq_vidro_rua.setText(Integer.toString(garrafapeq_vidro_rua));
         }
+        negativo.start();
     }
 
     public void plus_garrafapeq_vidro_rua(View view) {
         garrafapeq_vidro_rua++;
         if (count_garrafapeq_vidro_rua != null)
             count_garrafapeq_vidro_rua.setText(Integer.toString(garrafapeq_vidro_rua));
+        positivo.start();
     }
 
     public void minus_garrafagra_vidro_rua(View view) {
@@ -536,12 +566,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_garrafagra_vidro_rua != null)
                 count_garrafagra_vidro_rua.setText(Integer.toString(garrafagra_vidro_rua));
         }
+        negativo.start();
     }
 
     public void plus_garrafagra_vidro_rua(View view) {
         garrafagra_vidro_rua++;
         if (count_garrafagra_vidro_rua != null)
             count_garrafagra_vidro_rua.setText(Integer.toString(garrafagra_vidro_rua));
+        positivo.start();
     }
 
 
@@ -551,12 +583,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_cigarros_rua != null)
                 count_cigarros_rua.setText(Integer.toString(cigarros_rua));
         }
+        negativo.start();
     }
 
     public void plus_cigarros_rua(View view) {
         cigarros_rua++;
         if (count_cigarros_rua != null)
             count_cigarros_rua.setText(Integer.toString(cigarros_rua));
+        positivo.start();
     }
 
     public void minus_dejetos_rua(View view) {
@@ -565,12 +599,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_dejetos_rua != null)
                 count_dejetos_rua.setText(Integer.toString(dejetos_rua));
         }
+        negativo.start();
     }
 
     public void plus_dejetos_rua(View view) {
         dejetos_rua++;
         if (count_dejetos_rua != null)
             count_dejetos_rua.setText(Integer.toString(dejetos_rua));
+        positivo.start();
     }
 
     public void minus_indiferenciados_rua(View view) {
@@ -579,26 +615,30 @@ public class MainActivity extends AppCompatActivity {
             if (count_indiferenciados_rua != null)
                 count_indiferenciados_rua.setText(Integer.toString(indiferenciados_rua));
         }
+        negativo.start();
     }
 
     public void plus_indiferenciados_rua(View view) {
         indiferenciados_rua++;
         if (count_indiferenciados_rua != null)
             count_indiferenciados_rua.setText(Integer.toString(indiferenciados_rua));
+        positivo.start();
     }
 
     public void minus_folhas_rua(View view) {
-        if (folhas_rua > 0) {
-            folhas_rua--;
+        if (folhas_rua > 4) {
+            folhas_rua-=5;
             if (count_folhas_rua != null)
                 count_folhas_rua.setText(Integer.toString(folhas_rua));
         }
+        negativo.start();
     }
 
     public void plus_folhas_rua(View view) {
-        folhas_rua++;
+        folhas_rua+= 5;
         if (count_folhas_rua != null)
             count_folhas_rua.setText(Integer.toString(folhas_rua));
+        positivo.start();
     }
 
     public void minus_rampequenas_rua(View view) {
@@ -607,12 +647,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_rampequenas_rua != null)
                 count_rampequenas_rua.setText(Integer.toString(rampequenas_rua));
         }
+        negativo.start();
     }
 
     public void plus_rampequenas_rua(View view) {
         rampequenas_rua++;
         if (count_rampequenas_rua != null)
             count_rampequenas_rua.setText(Integer.toString(rampequenas_rua));
+        positivo.start();
     }
 
     public void minus_ramgrandes_rua(View view) {
@@ -621,26 +663,30 @@ public class MainActivity extends AppCompatActivity {
             if (count_ramgrandes_rua != null)
                 count_ramgrandes_rua.setText(Integer.toString(ramgrandes_rua));
         }
+        negativo.start();
     }
 
     public void plus_ramgrandes_rua(View view) {
         ramgrandes_rua++;
         if (count_ramgrandes_rua != null)
             count_ramgrandes_rua.setText(Integer.toString(ramgrandes_rua));
+        positivo.start();
     }
 
     public void minus_pastilhas_rua(View view) {
-        if (pastilhas_rua > 0) {
-            pastilhas_rua--;
+        if (pastilhas_rua > 4) {
+            pastilhas_rua-=5;
             if (count_pastilhas_rua != null)
                 count_pastilhas_rua.setText(Integer.toString(pastilhas_rua));
         }
+        negativo.start();
     }
 
     public void plus_pastilhas_rua(View view) {
-        pastilhas_rua++;
+        pastilhas_rua+=5;
         if (count_pastilhas_rua != null)
             count_pastilhas_rua.setText(Integer.toString(pastilhas_rua));
+        positivo.start();
     }
 
     public void minus_past_ate500_rua(View view) {
@@ -649,12 +695,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_past_ate500_rua != null)
                 count_past_ate500_rua.setText(Integer.toString(past_ate500_rua));
         }
+        negativo.start();
     }
 
     public void plus_past_ate500_rua(View view) {
         past_ate500_rua++;
         if (count_past_ate500_rua != null)
             count_past_ate500_rua.setText(Integer.toString(past_ate500_rua));
+        positivo.start();
 
     }
 
@@ -664,12 +712,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_past_maior500_rua != null)
                 count_past_maior500_rua.setText(Integer.toString(past_maior500_rua));
         }
+        negativo.start();
     }
 
     public void plus_past_maior500_rua(View view) {
         past_maior500_rua++;
         if (count_past_maior500_rua != null)
             count_past_maior500_rua.setText(Integer.toString(past_maior500_rua));
+        positivo.start();
     }
 
     public void minus_ra_pequeno_rua(View view) {
@@ -678,12 +728,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_ra_pequeno_rua != null)
                 count_ra_pequeno_rua.setText(Integer.toString(ra_pequeno_rua));
         }
+        negativo.start();
     }
 
     public void plus_ra_pequeno_rua(View view) {
         ra_pequeno_rua++;
         if (count_ra_pequeno_rua != null)
             count_ra_pequeno_rua.setText(Integer.toString(ra_pequeno_rua));
+        positivo.start();
     }
 
     public void minus_ra_medio_rua(View view) {
@@ -692,12 +744,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_ra_medio_rua != null)
                 count_ra_medio_rua.setText(Integer.toString(ra_medio_rua));
         }
+        negativo.start();
     }
 
     public void plus_ra_medio_rua(View view) {
         ra_medio_rua++;
         if (count_ra_medio_rua != null)
             count_ra_medio_rua.setText(Integer.toString(ra_medio_rua));
+        positivo.start();
     }
 
     public void minus_ra_grande_rua(View view) {
@@ -706,12 +760,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_ra_grande_rua != null)
                 count_ra_grande_rua.setText(Integer.toString(ra_grande_rua));
         }
+        negativo.start();
     }
 
     public void plus_ra_grande_rua(View view) {
         ra_grande_rua++;
         if (count_ra_grande_rua != null)
             count_ra_grande_rua.setText(Integer.toString(ra_grande_rua));
+        positivo.start();
     }
 
     public void minus_oro_pequeno_rua(View view) {
@@ -720,12 +776,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_oro_pequeno_rua != null)
                 count_oro_pequeno_rua.setText(Integer.toString(oro_pequeno_rua));
         }
+        negativo.start();
     }
 
     public void plus_oro_pequeno_rua(View view) {
         oro_pequeno_rua++;
         if (count_oro_pequeno_rua != null)
             count_oro_pequeno_rua.setText(Integer.toString(oro_pequeno_rua));
+        positivo.start();
     }
 
     public void minus_oro_medio_rua(View view) {
@@ -734,12 +792,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_oro_medio_rua != null)
                 count_oro_medio_rua.setText(Integer.toString(oro_medio_rua));
         }
+        negativo.start();
     }
 
     public void plus_oro_medio_rua(View view) {
         oro_medio_rua++;
         if (count_oro_medio_rua != null)
             count_oro_medio_rua.setText(Integer.toString(oro_medio_rua));
+        positivo.start();
     }
 
     public void minus_oro_grande_rua(View view) {
@@ -748,12 +808,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_oro_grande_rua != null)
                 count_oro_grande_rua.setText(Integer.toString(oro_grande_rua));
         }
+        negativo.start();
     }
 
     public void plus_oro_grande_rua(View view) {
         oro_grande_rua++;
         if (count_oro_grande_rua != null)
             count_oro_grande_rua.setText(Integer.toString(oro_grande_rua));
+        positivo.start();
     }
 
     public void minus_latas_metais_rua(View view) {
@@ -762,12 +824,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_latas_metais_rua != null)
                 count_latas_metais_rua.setText(Integer.toString(latas_metais_rua));
         }
+        negativo.start();
     }
 
     public void plus_latas_metais_rua(View view) {
         latas_metais_rua++;
         if (count_latas_metais_rua != null)
             count_latas_metais_rua.setText(Integer.toString(latas_metais_rua));
+        positivo.start();
     }
 
     public void minus_outros_metais_rua(View view) {
@@ -776,12 +840,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_outros_metais_rua != null)
                 count_outros_metais_rua.setText(Integer.toString(outros_metais_rua));
         }
+        negativo.start();
     }
 
     public void plus_outros_metais_rua(View view) {
         outros_metais_rua++;
         if (count_outros_metais_rua != null)
             count_outros_metais_rua.setText(Integer.toString(outros_metais_rua));
+        positivo.start();
     }
 
 
@@ -797,6 +863,7 @@ public class MainActivity extends AppCompatActivity {
             if (count_pea_pequeno_pa != null)
                 count_pea_pequeno_pa.setText(Integer.toString(pea_pequeno_pa));
         }
+        negativo.start();
 
     }
 
@@ -804,6 +871,7 @@ public class MainActivity extends AppCompatActivity {
         pea_pequeno_pa++;
         if (count_pea_pequeno_pa != null)
             count_pea_pequeno_pa.setText(Integer.toString(pea_pequeno_pa));
+        positivo.start();
     }
 
     // PEA MEDIO PLUS & MINUS
@@ -813,6 +881,7 @@ public class MainActivity extends AppCompatActivity {
             if (count_pea_medio_pa != null)
                 count_pea_medio_pa.setText(Integer.toString(pea_medio_pa));
         }
+        negativo.start();
 
     }
 
@@ -820,6 +889,7 @@ public class MainActivity extends AppCompatActivity {
         pea_medio_pa++;
         if (count_pea_medio_pa != null)
             count_pea_medio_pa.setText(Integer.toString(pea_medio_pa));
+        positivo.start();
     }
 
     // PEA GRANDE PLUS & MINUS
@@ -829,6 +899,7 @@ public class MainActivity extends AppCompatActivity {
             if (count_pea_grande_pa != null)
                 count_pea_grande_pa.setText(Integer.toString(pea_grande_pa));
         }
+        negativo.start();
 
     }
 
@@ -836,6 +907,7 @@ public class MainActivity extends AppCompatActivity {
         pea_grande_pa++;
         if (count_pea_grande_pa != null)
             count_pea_grande_pa.setText(Integer.toString(pea_grande_pa));
+        positivo.start();
     }
 
     public void minus_pena_pequeno_pa(View view) {
@@ -844,12 +916,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_pena_pequeno_pa != null)
                 count_pena_pequeno_pa.setText(Integer.toString(pena_pequeno_pa));
         }
+        negativo.start();
     }
 
     public void plus_pena_pequeno_pa(View view) {
         pena_pequeno_pa++;
         if (count_pena_pequeno_pa != null)
             count_pena_pequeno_pa.setText(Integer.toString(pena_pequeno_pa));
+        positivo.start();
     }
 
     public void minus_pena_medio_pa(View view) {
@@ -858,12 +932,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_pena_medio_pa != null)
                 count_pena_medio_pa.setText(Integer.toString(pena_medio_pa));
         }
+        negativo.start();
     }
 
     public void plus_pena_medio_pa(View view) {
         pena_medio_pa++;
         if (count_pena_medio_pa != null)
             count_pena_medio_pa.setText(Integer.toString(pena_medio_pa));
+        positivo.start();
     }
 
     public void minus_pena_grande_pa(View view) {
@@ -872,12 +948,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_pena_grande_pa != null)
                 count_pena_grande_pa.setText(Integer.toString(pena_grande_pa));
         }
+        negativo.start();
     }
 
     public void plus_pena_grande_pa(View view) {
         pena_grande_pa++;
         if (count_pena_grande_pa != null)
             count_pena_grande_pa.setText(Integer.toString(pena_grande_pa));
+        positivo.start();
     }
 
     public void minus_pedacos_vidro_pa(View view) {
@@ -886,12 +964,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_pedacos_vidro_pa != null)
                 count_pedacos_vidro_pa.setText(Integer.toString(pedacos_vidro_pa));
         }
+        negativo.start();
     }
 
     public void plus_pedacos_vidro_pa(View view) {
         pedacos_vidro_pa++;
         if (count_pedacos_vidro_pa != null)
             count_pedacos_vidro_pa.setText(Integer.toString(pedacos_vidro_pa));
+        positivo.start();
     }
 
     public void minus_garrafapeq_vidro_pa(View view) {
@@ -900,12 +980,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_garrafapeq_vidro_pa != null)
                 count_garrafapeq_vidro_pa.setText(Integer.toString(garrafapeq_vidro_pa));
         }
+        negativo.start();
     }
 
     public void plus_garrafapeq_vidro_pa(View view) {
         garrafapeq_vidro_pa++;
         if (count_garrafapeq_vidro_pa != null)
             count_garrafapeq_vidro_pa.setText(Integer.toString(garrafapeq_vidro_pa));
+        positivo.start();
     }
 
     public void minus_garrafagra_vidro_pa(View view) {
@@ -914,12 +996,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_garrafagra_vidro_pa != null)
                 count_garrafagra_vidro_pa.setText(Integer.toString(garrafagra_vidro_pa));
         }
+        negativo.start();
     }
 
     public void plus_garrafagra_vidro_pa(View view) {
         garrafagra_vidro_pa++;
         if (count_garrafagra_vidro_pa != null)
             count_garrafagra_vidro_pa.setText(Integer.toString(garrafagra_vidro_pa));
+        positivo.start();
     }
 
 
@@ -929,12 +1013,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_cigarros_pa != null)
                 count_cigarros_pa.setText(Integer.toString(cigarros_pa));
         }
+        negativo.start();
     }
 
     public void plus_cigarros_pa(View view) {
         cigarros_pa++;
         if (count_cigarros_pa != null)
             count_cigarros_pa.setText(Integer.toString(cigarros_pa));
+        positivo.start();
     }
 
     public void minus_dejetos_pa(View view) {
@@ -943,12 +1029,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_dejetos_pa != null)
                 count_dejetos_pa.setText(Integer.toString(dejetos_pa));
         }
+        negativo.start();
     }
 
     public void plus_dejetos_pa(View view) {
         dejetos_pa++;
         if (count_dejetos_pa != null)
             count_dejetos_pa.setText(Integer.toString(dejetos_pa));
+        positivo.start();
     }
 
     public void minus_indiferenciados_pa(View view) {
@@ -957,26 +1045,30 @@ public class MainActivity extends AppCompatActivity {
             if (count_indiferenciados_pa != null)
                 count_indiferenciados_pa.setText(Integer.toString(indiferenciados_pa));
         }
+        negativo.start();
     }
 
     public void plus_indiferenciados_pa(View view) {
         indiferenciados_pa++;
         if (count_indiferenciados_pa != null)
             count_indiferenciados_pa.setText(Integer.toString(indiferenciados_pa));
+        positivo.start();
     }
 
     public void minus_folhas_pa(View view) {
-        if (folhas_pa > 0) {
-            folhas_pa--;
+        if (folhas_pa > 4) {
+            folhas_pa-=5;
             if (count_folhas_pa != null)
                 count_folhas_pa.setText(Integer.toString(folhas_pa));
         }
+        negativo.start();
     }
 
     public void plus_folhas_pa(View view) {
-        folhas_pa++;
+        folhas_pa+=5;
         if (count_folhas_pa != null)
             count_folhas_pa.setText(Integer.toString(folhas_pa));
+        positivo.start();
     }
 
     public void minus_rampequenas_pa(View view) {
@@ -985,12 +1077,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_rampequenas_pa != null)
                 count_rampequenas_pa.setText(Integer.toString(rampequenas_pa));
         }
+        negativo.start();
     }
 
     public void plus_rampequenas_pa(View view) {
         rampequenas_pa++;
         if (count_rampequenas_pa != null)
             count_rampequenas_pa.setText(Integer.toString(rampequenas_pa));
+        positivo.start();
     }
 
     public void minus_ramgrandes_pa(View view) {
@@ -999,26 +1093,30 @@ public class MainActivity extends AppCompatActivity {
             if (count_ramgrandes_pa != null)
                 count_ramgrandes_pa.setText(Integer.toString(ramgrandes_pa));
         }
+        negativo.start();
     }
 
     public void plus_ramgrandes_pa(View view) {
         ramgrandes_pa++;
         if (count_ramgrandes_pa != null)
             count_ramgrandes_pa.setText(Integer.toString(ramgrandes_pa));
+        positivo.start();
     }
 
     public void minus_pastilhas_pa(View view) {
-        if (pastilhas_pa > 0) {
-            pastilhas_pa--;
+        if (pastilhas_pa > 4) {
+            pastilhas_pa-=5;
             if (count_pastilhas_pa != null)
                 count_pastilhas_pa.setText(Integer.toString(pastilhas_pa));
         }
+        negativo.start();
     }
 
     public void plus_pastilhas_pa(View view) {
-        pastilhas_pa++;
+        pastilhas_pa+=5;
         if (count_pastilhas_pa != null)
             count_pastilhas_pa.setText(Integer.toString(pastilhas_pa));
+        positivo.start();
     }
 
     public void minus_past_ate500_pa(View view) {
@@ -1027,12 +1125,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_past_ate500_pa != null)
                 count_past_ate500_pa.setText(Integer.toString(past_ate500_pa));
         }
+        negativo.start();
     }
 
     public void plus_past_ate500_pa(View view) {
         past_ate500_pa++;
         if (count_past_ate500_pa != null)
             count_past_ate500_pa.setText(Integer.toString(past_ate500_pa));
+        positivo.start();
 
     }
 
@@ -1042,12 +1142,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_past_maior500_pa != null)
                 count_past_maior500_pa.setText(Integer.toString(past_maior500_pa));
         }
+        negativo.start();
     }
 
     public void plus_past_maior500_pa(View view) {
         past_maior500_pa++;
         if (count_past_maior500_pa != null)
             count_past_maior500_pa.setText(Integer.toString(past_maior500_pa));
+        positivo.start();
     }
 
     public void minus_ra_pequeno_pa(View view) {
@@ -1056,12 +1158,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_ra_pequeno_pa != null)
                 count_ra_pequeno_pa.setText(Integer.toString(ra_pequeno_pa));
         }
+        negativo.start();
     }
 
     public void plus_ra_pequeno_pa(View view) {
         ra_pequeno_pa++;
         if (count_ra_pequeno_pa != null)
             count_ra_pequeno_pa.setText(Integer.toString(ra_pequeno_pa));
+        positivo.start();
     }
 
     public void minus_ra_medio_pa(View view) {
@@ -1070,12 +1174,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_ra_medio_pa != null)
                 count_ra_medio_pa.setText(Integer.toString(ra_medio_pa));
         }
+        negativo.start();
     }
 
     public void plus_ra_medio_pa(View view) {
         ra_medio_pa++;
         if (count_ra_medio_pa != null)
             count_ra_medio_pa.setText(Integer.toString(ra_medio_pa));
+        positivo.start();
     }
 
     public void minus_ra_grande_pa(View view) {
@@ -1084,12 +1190,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_ra_grande_pa != null)
                 count_ra_grande_pa.setText(Integer.toString(ra_grande_pa));
         }
+        negativo.start();
     }
 
     public void plus_ra_grande_pa(View view) {
         ra_grande_pa++;
         if (count_ra_grande_pa != null)
             count_ra_grande_pa.setText(Integer.toString(ra_grande_pa));
+        positivo.start();
     }
 
     public void minus_oro_pequeno_pa(View view) {
@@ -1098,12 +1206,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_oro_pequeno_pa != null)
                 count_oro_pequeno_pa.setText(Integer.toString(oro_pequeno_pa));
         }
+        negativo.start();
     }
 
     public void plus_oro_pequeno_pa(View view) {
         oro_pequeno_pa++;
         if (count_oro_pequeno_pa != null)
             count_oro_pequeno_pa.setText(Integer.toString(oro_pequeno_pa));
+        positivo.start();
     }
 
     public void minus_oro_medio_pa(View view) {
@@ -1112,12 +1222,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_oro_medio_pa != null)
                 count_oro_medio_pa.setText(Integer.toString(oro_medio_pa));
         }
+        negativo.start();
     }
 
     public void plus_oro_medio_pa(View view) {
         oro_medio_pa++;
         if (count_oro_medio_pa != null)
             count_oro_medio_pa.setText(Integer.toString(oro_medio_pa));
+        positivo.start();
     }
 
     public void minus_oro_grande_pa(View view) {
@@ -1126,12 +1238,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_oro_grande_pa != null)
                 count_oro_grande_pa.setText(Integer.toString(oro_grande_pa));
         }
+        negativo.start();
     }
 
     public void plus_oro_grande_pa(View view) {
         oro_grande_pa++;
         if (count_oro_grande_pa != null)
             count_oro_grande_pa.setText(Integer.toString(oro_grande_pa));
+        positivo.start();
     }
 
     public void minus_latas_metais_pa(View view) {
@@ -1140,12 +1254,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_latas_metais_pa != null)
                 count_latas_metais_pa.setText(Integer.toString(latas_metais_pa));
         }
+        negativo.start();
     }
 
     public void plus_latas_metais_pa(View view) {
         latas_metais_pa++;
         if (count_latas_metais_pa != null)
             count_latas_metais_pa.setText(Integer.toString(latas_metais_pa));
+        positivo.start();
     }
 
     public void minus_outros_metais_pa(View view) {
@@ -1154,12 +1270,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_outros_metais_pa != null)
                 count_outros_metais_pa.setText(Integer.toString(outros_metais_pa));
         }
+        negativo.start();
     }
 
     public void plus_outros_metais_pa(View view) {
         outros_metais_pa++;
         if (count_outros_metais_pa != null)
             count_outros_metais_pa.setText(Integer.toString(outros_metais_pa));
+        positivo.start();
     }
 
 
@@ -1175,6 +1293,7 @@ public class MainActivity extends AppCompatActivity {
             if (count_pea_pequeno_cf != null)
                 count_pea_pequeno_cf.setText(Integer.toString(pea_pequeno_cf));
         }
+        negativo.start();
 
     }
 
@@ -1182,6 +1301,7 @@ public class MainActivity extends AppCompatActivity {
         pea_pequeno_cf++;
         if (count_pea_pequeno_cf != null)
             count_pea_pequeno_cf.setText(Integer.toString(pea_pequeno_cf));
+        positivo.start();
     }
 
     // PEA MEDIO PLUS & MINUS
@@ -1191,6 +1311,7 @@ public class MainActivity extends AppCompatActivity {
             if (count_pea_medio_cf != null)
                 count_pea_medio_cf.setText(Integer.toString(pea_medio_cf));
         }
+        negativo.start();
 
     }
 
@@ -1198,6 +1319,7 @@ public class MainActivity extends AppCompatActivity {
         pea_medio_cf++;
         if (count_pea_medio_cf != null)
             count_pea_medio_cf.setText(Integer.toString(pea_medio_cf));
+        positivo.start();
     }
 
     // PEA GRANDE PLUS & MINUS
@@ -1207,6 +1329,7 @@ public class MainActivity extends AppCompatActivity {
             if (count_pea_grande_cf != null)
                 count_pea_grande_cf.setText(Integer.toString(pea_grande_cf));
         }
+        negativo.start();
 
     }
 
@@ -1214,6 +1337,7 @@ public class MainActivity extends AppCompatActivity {
         pea_grande_cf++;
         if (count_pea_grande_cf != null)
             count_pea_grande_cf.setText(Integer.toString(pea_grande_cf));
+        positivo.start();
     }
 
     public void minus_pena_pequeno_cf(View view) {
@@ -1222,12 +1346,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_pena_pequeno_cf != null)
                 count_pena_pequeno_cf.setText(Integer.toString(pena_pequeno_cf));
         }
+        negativo.start();
     }
 
     public void plus_pena_pequeno_cf(View view) {
         pena_pequeno_cf++;
         if (count_pena_pequeno_cf != null)
             count_pena_pequeno_cf.setText(Integer.toString(pena_pequeno_cf));
+        positivo.start();
     }
 
     public void minus_pena_medio_cf(View view) {
@@ -1236,12 +1362,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_pena_medio_cf != null)
                 count_pena_medio_cf.setText(Integer.toString(pena_medio_cf));
         }
+        negativo.start();
     }
 
     public void plus_pena_medio_cf(View view) {
         pena_medio_cf++;
         if (count_pena_medio_cf != null)
             count_pena_medio_cf.setText(Integer.toString(pena_medio_cf));
+        positivo.start();
     }
 
     public void minus_pena_grande_cf(View view) {
@@ -1250,12 +1378,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_pena_grande_cf != null)
                 count_pena_grande_cf.setText(Integer.toString(pena_grande_cf));
         }
+        negativo.start();
     }
 
     public void plus_pena_grande_cf(View view) {
         pena_grande_cf++;
         if (count_pena_grande_cf != null)
             count_pena_grande_cf.setText(Integer.toString(pena_grande_cf));
+        positivo.start();
     }
 
     public void minus_pedacos_vidro_cf(View view) {
@@ -1264,12 +1394,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_pedacos_vidro_cf != null)
                 count_pedacos_vidro_cf.setText(Integer.toString(pedacos_vidro_cf));
         }
+        negativo.start();
     }
 
     public void plus_pedacos_vidro_cf(View view) {
         pedacos_vidro_cf++;
         if (count_pedacos_vidro_cf != null)
             count_pedacos_vidro_cf.setText(Integer.toString(pedacos_vidro_cf));
+        positivo.start();
     }
 
     public void minus_garrafapeq_vidro_cf(View view) {
@@ -1278,12 +1410,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_garrafapeq_vidro_cf != null)
                 count_garrafapeq_vidro_cf.setText(Integer.toString(garrafapeq_vidro_cf));
         }
+        negativo.start();
     }
 
     public void plus_garrafapeq_vidro_cf(View view) {
         garrafapeq_vidro_cf++;
         if (count_garrafapeq_vidro_cf != null)
             count_garrafapeq_vidro_cf.setText(Integer.toString(garrafapeq_vidro_cf));
+        positivo.start();
     }
 
     public void minus_garrafagra_vidro_cf(View view) {
@@ -1292,12 +1426,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_garrafagra_vidro_cf != null)
                 count_garrafagra_vidro_cf.setText(Integer.toString(garrafagra_vidro_cf));
         }
+        negativo.start();
     }
 
     public void plus_garrafagra_vidro_cf(View view) {
         garrafagra_vidro_cf++;
         if (count_garrafagra_vidro_cf != null)
             count_garrafagra_vidro_cf.setText(Integer.toString(garrafagra_vidro_cf));
+        positivo.start();
     }
 
 
@@ -1307,12 +1443,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_cigarros_cf != null)
                 count_cigarros_cf.setText(Integer.toString(cigarros_cf));
         }
+        negativo.start();
     }
 
     public void plus_cigarros_cf(View view) {
         cigarros_cf++;
         if (count_cigarros_cf != null)
             count_cigarros_cf.setText(Integer.toString(cigarros_cf));
+        positivo.start();
     }
 
     public void minus_dejetos_cf(View view) {
@@ -1321,12 +1459,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_dejetos_cf != null)
                 count_dejetos_cf.setText(Integer.toString(dejetos_cf));
         }
+        negativo.start();
     }
 
     public void plus_dejetos_cf(View view) {
         dejetos_cf++;
         if (count_dejetos_cf != null)
             count_dejetos_cf.setText(Integer.toString(dejetos_cf));
+        positivo.start();
     }
 
     public void minus_indiferenciados_cf(View view) {
@@ -1335,26 +1475,30 @@ public class MainActivity extends AppCompatActivity {
             if (count_indiferenciados_cf != null)
                 count_indiferenciados_cf.setText(Integer.toString(indiferenciados_cf));
         }
+        negativo.start();
     }
 
     public void plus_indiferenciados_cf(View view) {
         indiferenciados_cf++;
         if (count_indiferenciados_cf != null)
             count_indiferenciados_cf.setText(Integer.toString(indiferenciados_cf));
+        positivo.start();
     }
 
     public void minus_folhas_cf(View view) {
-        if (folhas_cf > 0) {
-            folhas_cf--;
+        if (folhas_cf > 4) {
+            folhas_cf-=5;
             if (count_folhas_cf != null)
                 count_folhas_cf.setText(Integer.toString(folhas_cf));
         }
+        negativo.start();
     }
 
     public void plus_folhas_cf(View view) {
-        folhas_cf++;
+        folhas_cf+=5;
         if (count_folhas_cf != null)
             count_folhas_cf.setText(Integer.toString(folhas_cf));
+        positivo.start();
     }
 
     public void minus_rampequenas_cf(View view) {
@@ -1363,12 +1507,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_rampequenas_cf != null)
                 count_rampequenas_cf.setText(Integer.toString(rampequenas_cf));
         }
+        negativo.start();
     }
 
     public void plus_rampequenas_cf(View view) {
         rampequenas_cf++;
         if (count_rampequenas_cf != null)
             count_rampequenas_cf.setText(Integer.toString(rampequenas_cf));
+        positivo.start();
     }
 
     public void minus_ramgrandes_cf(View view) {
@@ -1377,26 +1523,30 @@ public class MainActivity extends AppCompatActivity {
             if (count_ramgrandes_cf != null)
                 count_ramgrandes_cf.setText(Integer.toString(ramgrandes_cf));
         }
+        negativo.start();
     }
 
     public void plus_ramgrandes_cf(View view) {
         ramgrandes_cf++;
         if (count_ramgrandes_cf != null)
             count_ramgrandes_cf.setText(Integer.toString(ramgrandes_cf));
+        positivo.start();
     }
 
     public void minus_pastilhas_cf(View view) {
-        if (pastilhas_cf > 0) {
-            pastilhas_cf--;
+        if (pastilhas_cf > 4) {
+            pastilhas_cf-=5;
             if (count_pastilhas_cf != null)
                 count_pastilhas_cf.setText(Integer.toString(pastilhas_cf));
         }
+        negativo.start();
     }
 
     public void plus_pastilhas_cf(View view) {
-        pastilhas_cf++;
+        pastilhas_cf+=5;
         if (count_pastilhas_cf != null)
             count_pastilhas_cf.setText(Integer.toString(pastilhas_cf));
+        positivo.start();
     }
 
     public void minus_past_ate500_cf(View view) {
@@ -1405,12 +1555,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_past_ate500_cf != null)
                 count_past_ate500_cf.setText(Integer.toString(past_ate500_cf));
         }
+        negativo.start();
     }
 
     public void plus_past_ate500_cf(View view) {
         past_ate500_cf++;
         if (count_past_ate500_cf != null)
             count_past_ate500_cf.setText(Integer.toString(past_ate500_cf));
+        positivo.start();
 
     }
 
@@ -1420,12 +1572,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_past_maior500_cf != null)
                 count_past_maior500_cf.setText(Integer.toString(past_maior500_cf));
         }
+        negativo.start();
     }
 
     public void plus_past_maior500_cf(View view) {
         past_maior500_cf++;
         if (count_past_maior500_cf != null)
             count_past_maior500_cf.setText(Integer.toString(past_maior500_cf));
+        positivo.start();
     }
 
     public void minus_ra_pequeno_cf(View view) {
@@ -1434,12 +1588,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_ra_pequeno_cf != null)
                 count_ra_pequeno_cf.setText(Integer.toString(ra_pequeno_cf));
         }
+        negativo.start();
     }
 
     public void plus_ra_pequeno_cf(View view) {
         ra_pequeno_cf++;
         if (count_ra_pequeno_cf != null)
             count_ra_pequeno_cf.setText(Integer.toString(ra_pequeno_cf));
+        positivo.start();
     }
 
     public void minus_ra_medio_cf(View view) {
@@ -1448,12 +1604,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_ra_medio_cf != null)
                 count_ra_medio_cf.setText(Integer.toString(ra_medio_cf));
         }
+        negativo.start();
     }
 
     public void plus_ra_medio_cf(View view) {
         ra_medio_cf++;
         if (count_ra_medio_cf != null)
             count_ra_medio_cf.setText(Integer.toString(ra_medio_cf));
+        positivo.start();
     }
 
     public void minus_ra_grande_cf(View view) {
@@ -1462,12 +1620,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_ra_grande_cf != null)
                 count_ra_grande_cf.setText(Integer.toString(ra_grande_cf));
         }
+        negativo.start();
     }
 
     public void plus_ra_grande_cf(View view) {
         ra_grande_cf++;
         if (count_ra_grande_cf != null)
             count_ra_grande_cf.setText(Integer.toString(ra_grande_cf));
+        positivo.start();
     }
 
     public void minus_oro_pequeno_cf(View view) {
@@ -1476,12 +1636,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_oro_pequeno_cf != null)
                 count_oro_pequeno_cf.setText(Integer.toString(oro_pequeno_cf));
         }
+        negativo.start();
     }
 
     public void plus_oro_pequeno_cf(View view) {
         oro_pequeno_cf++;
         if (count_oro_pequeno_cf != null)
             count_oro_pequeno_cf.setText(Integer.toString(oro_pequeno_cf));
+        positivo.start();
     }
 
     public void minus_oro_medio_cf(View view) {
@@ -1490,12 +1652,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_oro_medio_cf != null)
                 count_oro_medio_cf.setText(Integer.toString(oro_medio_cf));
         }
+        negativo.start();
     }
 
     public void plus_oro_medio_cf(View view) {
         oro_medio_cf++;
         if (count_oro_medio_cf != null)
             count_oro_medio_cf.setText(Integer.toString(oro_medio_cf));
+        positivo.start();
     }
 
     public void minus_oro_grande_cf(View view) {
@@ -1504,12 +1668,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_oro_grande_cf != null)
                 count_oro_grande_cf.setText(Integer.toString(oro_grande_cf));
         }
+        negativo.start();
     }
 
     public void plus_oro_grande_cf(View view) {
         oro_grande_cf++;
         if (count_oro_grande_cf != null)
             count_oro_grande_cf.setText(Integer.toString(oro_grande_cf));
+        positivo.start();
     }
 
     public void minus_latas_metais_cf(View view) {
@@ -1518,12 +1684,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_latas_metais_cf != null)
                 count_latas_metais_cf.setText(Integer.toString(latas_metais_cf));
         }
+        negativo.start();
     }
 
     public void plus_latas_metais_cf(View view) {
         latas_metais_cf++;
         if (count_latas_metais_cf != null)
             count_latas_metais_cf.setText(Integer.toString(latas_metais_cf));
+        positivo.start();
     }
 
     public void minus_outros_metais_cf(View view) {
@@ -1532,12 +1700,14 @@ public class MainActivity extends AppCompatActivity {
             if (count_outros_metais_cf != null)
                 count_outros_metais_cf.setText(Integer.toString(outros_metais_cf));
         }
+        negativo.start();
     }
 
     public void plus_outros_metais_cf(View view) {
         outros_metais_cf++;
         if (count_outros_metais_cf != null)
             count_outros_metais_cf.setText(Integer.toString(outros_metais_cf));
+        positivo.start();
     }
 
 
@@ -1554,6 +1724,7 @@ public class MainActivity extends AppCompatActivity {
             if (count_bocalobolimpa_bl != null)
                 count_bocalobolimpa_bl.setText(Integer.toString(bocalobolimpa_bl));
         }
+        negativo.start();
     }
 
     public void plus_bocalobolimpa_bl(View view) {
@@ -1563,6 +1734,7 @@ public class MainActivity extends AppCompatActivity {
             count_bocalobototal_bl.setText(Integer.toString(bocalobototal_bl));
         if (count_bocalobolimpa_bl != null)
             count_bocalobolimpa_bl.setText(Integer.toString(bocalobolimpa_bl));
+        positivo.start();
     }
 
     public void minus_bocalobosuja_bl(View view) {
@@ -1574,6 +1746,7 @@ public class MainActivity extends AppCompatActivity {
             if (count_bocalobosuja_bl != null)
                 count_bocalobosuja_bl.setText(Integer.toString(bocalobosuja_bl));
         }
+        negativo.start();
     }
 
     public void plus_bocalobosuja_bl(View view) {
@@ -1583,6 +1756,7 @@ public class MainActivity extends AppCompatActivity {
             count_bocalobototal_bl.setText(Integer.toString(bocalobototal_bl));
         if (count_bocalobosuja_bl != null)
             count_bocalobosuja_bl.setText(Integer.toString(bocalobosuja_bl));
+        positivo.start();
     }
 
     public void minus_papeleirasvazia_bl(View view) {
@@ -1594,6 +1768,7 @@ public class MainActivity extends AppCompatActivity {
             if (count_papeleirasvazia_bl != null)
                 count_papeleirasvazia_bl.setText(Integer.toString(papeleirasvazia_bl));
         }
+        negativo.start();
     }
 
     public void plus_papeleirasvazia_bl(View view) {
@@ -1603,6 +1778,7 @@ public class MainActivity extends AppCompatActivity {
             count_papeleirastotal_bl.setText(Integer.toString(papeleirastotal_bl));
         if (count_papeleirasvazia_bl != null)
             count_papeleirasvazia_bl.setText(Integer.toString(papeleirasvazia_bl));
+        positivo.start();
     }
 
     public void minus_papeleirascheias_bl(View view) {
@@ -1614,6 +1790,7 @@ public class MainActivity extends AppCompatActivity {
             if (count_papeleirascheias_bl != null)
                 count_papeleirascheias_bl.setText(Integer.toString(papeleirascheias_bl));
         }
+        negativo.start();
     }
 
     public void plus_papeleirascheias_bl(View view) {
@@ -1623,6 +1800,7 @@ public class MainActivity extends AppCompatActivity {
                 count_papeleirastotal_bl.setText(Integer.toString(papeleirastotal_bl));
             if (count_papeleirascheias_bl != null)
                 count_papeleirascheias_bl.setText(Integer.toString(papeleirascheias_bl));
+        positivo.start();
 
     }
 
@@ -2221,6 +2399,8 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
+
+
 }
 
 

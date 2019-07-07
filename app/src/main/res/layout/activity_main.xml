@@ -909,7 +909,7 @@
                                 android:layout_height="match_parent"
                                 android:background="#FF2229"
                                 android:onClick="minus_folhas_rua"
-                                android:text="@string/sinal_menos"
+                                android:text="@string/menos_cinco"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
                                 android:textColor="#000000" />
 
@@ -929,7 +929,7 @@
                                 android:layout_height="match_parent"
                                 android:background="#89FF00"
                                 android:onClick="plus_folhas_rua"
-                                android:text="@string/sinal_mais"
+                                android:text="@string/mais_cinco"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
                                 android:textColor="#000000" />
 
@@ -1089,7 +1089,7 @@
                                 android:layout_height="match_parent"
                                 android:background="#FF2229"
                                 android:onClick="minus_pastilhas_rua"
-                                android:text="@string/sinal_menos"
+                                android:text="@string/menos_cinco"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
                                 android:textColor="#000000" />
 
@@ -1109,7 +1109,7 @@
                                 android:layout_height="match_parent"
                                 android:background="#89FF00"
                                 android:onClick="plus_pastilhas_rua"
-                                android:text="@string/sinal_mais"
+                                android:text="@string/mais_cinco"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
                                 android:textColor="#000000" />
 
@@ -2381,7 +2381,7 @@
                                 android:layout_height="match_parent"
                                 android:background="#FF2229"
                                 android:onClick="minus_folhas_pa"
-                                android:text="@string/sinal_menos"
+                                android:text="@string/menos_cinco"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
                                 android:textColor="#000000" />
 
@@ -2401,7 +2401,7 @@
                                 android:layout_height="match_parent"
                                 android:background="#89FF00"
                                 android:onClick="plus_folhas_pa"
-                                android:text="@string/sinal_mais"
+                                android:text="@string/mais_cinco"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
                                 android:textColor="#000000" />
 
@@ -2561,7 +2561,7 @@
                                 android:layout_height="match_parent"
                                 android:background="#FF2229"
                                 android:onClick="minus_pastilhas_pa"
-                                android:text="@string/sinal_menos"
+                                android:text="@string/menos_cinco"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
                                 android:textColor="#000000" />
 
@@ -2581,7 +2581,7 @@
                                 android:layout_height="match_parent"
                                 android:background="#89FF00"
                                 android:onClick="plus_pastilhas_pa"
-                                android:text="@string/sinal_mais"
+                                android:text="@string/mais_cinco"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
                                 android:textColor="#000000" />
 
@@ -3861,7 +3861,7 @@
                                 android:layout_height="match_parent"
                                 android:background="#FF2229"
                                 android:onClick="minus_folhas_cf"
-                                android:text="@string/sinal_menos"
+                                android:text="@string/menos_cinco"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
                                 android:textColor="#000000" />
 
@@ -3881,7 +3881,7 @@
                                 android:layout_height="match_parent"
                                 android:background="#89FF00"
                                 android:onClick="plus_folhas_cf"
-                                android:text="@string/sinal_mais"
+                                android:text="@string/mais_cinco"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
                                 android:textColor="#000000" />
 
@@ -4041,7 +4041,7 @@
                                 android:layout_height="match_parent"
                                 android:background="#FF2229"
                                 android:onClick="minus_pastilhas_cf"
-                                android:text="@string/sinal_menos"
+                                android:text="@string/menos_cinco"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
                                 android:textColor="#000000" />
 
@@ -4061,7 +4061,7 @@
                                 android:layout_height="match_parent"
                                 android:background="#89FF00"
                                 android:onClick="plus_pastilhas_cf"
-                                android:text="@string/sinal_mais"
+                                android:text="@string/mais_cinco"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
                                 android:textColor="#000000" />
 
