@@ -19,11 +19,15 @@
             <FrameLayout android:id="@android:id/tabcontent"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent">
-                <LinearLayout
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tab1">
+                    <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:id="@+id/tab1">
+                    android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/titulo_rua"
@@ -166,6 +170,7 @@
 
 
                 </LinearLayout>
+                </ScrollView>
 
                 <ScrollView
                     android:layout_width="match_parent"
