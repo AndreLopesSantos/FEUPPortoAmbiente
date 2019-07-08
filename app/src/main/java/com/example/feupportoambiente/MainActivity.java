@@ -251,6 +251,14 @@ public class MainActivity extends AppCompatActivity {
     private MediaPlayer positivo;
     private MediaPlayer negativo;
 
+    // NUMERO DE CALDEIRAS FLOREIRAS E DE PLACAS AJARDINADAS
+    private int caldeiras_cf = 0;
+    private int ajardinadas_pa = 0;
+
+    private TextView count_caldeiras_cf;
+    private TextView count_ajardinadas_pa;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -306,6 +314,7 @@ public class MainActivity extends AppCompatActivity {
         count_outros_metais_rua = (TextView) findViewById(R.id.outros_metais_rua);
 
         //PLACAS AJARDINADAS//
+        count_ajardinadas_pa = (TextView) findViewById(R.id.numero_placas_count_pa);
         count_pea_pequeno_pa = (TextView) findViewById(R.id.pea_pequeno_count_pa);
         count_pea_medio_pa = (TextView) findViewById(R.id.pea_medio_count_pa);
         count_pea_grande_pa = (TextView) findViewById(R.id.pea_grande_count_pa);
@@ -343,6 +352,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         //CALDEIRAS FLOREIRAS//
+        count_caldeiras_cf = (TextView) findViewById(R.id.numero_caldeiras_count_cf);
         count_pea_pequeno_cf = (TextView) findViewById(R.id.pea_pequeno_count_cf);
         count_pea_medio_cf = (TextView) findViewById(R.id.pea_medio_count_cf);
         count_pea_grande_cf = (TextView) findViewById(R.id.pea_grande_count_cf);
@@ -856,6 +866,25 @@ public class MainActivity extends AppCompatActivity {
     ///////////////////////////////////////////////////////////////////////////////////
 
 
+    //NUMERO PLACAS AJARDINADAS
+
+    public void minus_ajardinadas_pa (View view) {
+        if (ajardinadas_pa > 0) {
+            ajardinadas_pa--;
+            if (count_ajardinadas_pa != null)
+                count_ajardinadas_pa.setText(Integer.toString(ajardinadas_pa));
+        }
+        negativo.start();
+    }
+
+    public void plus_ajardinadas_pa (View view) {
+        ajardinadas_pa++;
+        if (count_ajardinadas_pa != null)
+            count_ajardinadas_pa.setText(Integer.toString(ajardinadas_pa));
+        positivo.start();
+    }
+
+
     // PEA PEQUENO PLUS & MINUS
     public void minus_pea_pequeno_pa(View view) {
         if (pea_pequeno_pa > 0) {
@@ -1285,6 +1314,25 @@ public class MainActivity extends AppCompatActivity {
     ///////////////////////////FUNCOES CALDEIRAS FLOREIRAS/////////////////////////////
     ///////////////////////////////////////////////////////////////////////////////////
 
+
+
+    //NUMERO CALDEIRAS/FLOREIRAS
+
+    public void minus_caldeiras_cf (View view) {
+        if (caldeiras_cf > 0) {
+            caldeiras_cf--;
+            if (count_caldeiras_cf != null)
+                count_caldeiras_cf.setText(Integer.toString(caldeiras_cf));
+        }
+        negativo.start();
+    }
+
+    public void plus_caldeiras_cf (View view) {
+        caldeiras_cf++;
+        if (count_caldeiras_cf != null)
+            count_caldeiras_cf.setText(Integer.toString(caldeiras_cf));
+        positivo.start();
+    }
 
     // PEA PEQUENO PLUS & MINUS
     public void minus_pea_pequeno_cf(View view) {
@@ -1820,7 +1868,7 @@ public class MainActivity extends AppCompatActivity {
                         int outros_metais_pa, int pea_pequeno_cf, int pea_medio_cf,int pea_grande_cf, int pena_pequeno_cf, int pena_medio_cf, int pena_grande_cf, int pedacos_vidro_cf, int garrafapeq_vidro_cf,
                         int garrafagra_vidro_cf, int cigarros_cf, int dejetos_cf,int indiferenciados_cf,int folhas_cf, int rampequenas_cf, int ramgrandes_cf, int pastilhas_cf, int past_ate500_cf,
                         int past_maior500_cf, int ra_pequeno_cf, int ra_medio_cf,int ra_grande_cf, int oro_pequeno_cf, int oro_medio_cf, int oro_grande_cf, int latas_metais_cf, int outros_metais_cf,
-                        int bocalobolimpa_bl, int bocalobosuja_bl, int bocalobototal_bl, int papeleirasvazia_bl, int papeleirascheias_bl, int papeleirastotal_bl, int pan, int cfn, int bln, String datahora) {
+                        int bocalobolimpa_bl, int bocalobosuja_bl, int bocalobototal_bl, int papeleirasvazia_bl, int papeleirascheias_bl, int papeleirastotal_bl, int pan, int cfn, int bln, String datahora, int ajardinadas_pa, int caldeiras_cf) {
         boolean insertData = mDatabaseHelper.addData(rua, residuos, area, pea_pequeno_rua, pea_medio_rua,  pea_grande_rua, pena_pequeno_rua, pena_medio_rua, pena_grande_rua, pedacos_vidro_rua,
          garrafapeq_vidro_rua, garrafagra_vidro_rua,  cigarros_rua,  dejetos_rua,  indiferenciados_rua,  folhas_rua,  rampequenas_rua,  ramgrandes_rua,
          pastilhas_rua,  past_ate500_rua,  past_maior500_rua,  ra_pequeno_rua,  ra_medio_rua,  ra_grande_rua,  oro_pequeno_rua,  oro_medio_rua,  oro_grande_rua,
@@ -1830,7 +1878,7 @@ public class MainActivity extends AppCompatActivity {
          outros_metais_pa,  pea_pequeno_cf,  pea_medio_cf, pea_grande_cf,  pena_pequeno_cf,  pena_medio_cf,  pena_grande_cf,  pedacos_vidro_cf,  garrafapeq_vidro_cf,
          garrafagra_vidro_cf,  cigarros_cf,  dejetos_cf, indiferenciados_cf, folhas_cf,  rampequenas_cf,  ramgrandes_cf,  pastilhas_cf,  past_ate500_cf,
          past_maior500_cf,  ra_pequeno_cf,  ra_medio_cf, ra_grande_cf,  oro_pequeno_cf,  oro_medio_cf,  oro_grande_cf,  latas_metais_cf,  outros_metais_cf,
-         bocalobolimpa_bl,  bocalobosuja_bl,  bocalobototal_bl,  papeleirasvazia_bl,  papeleirascheias_bl,  papeleirastotal_bl, pan, cfn, bln, datahora);
+         bocalobolimpa_bl,  bocalobosuja_bl,  bocalobototal_bl,  papeleirasvazia_bl,  papeleirascheias_bl,  papeleirastotal_bl, pan, cfn, bln, datahora, ajardinadas_pa, caldeiras_cf);
 
         if (insertData) {
             toastMessage("Foi adicionado com sucesso!");
@@ -1844,10 +1892,10 @@ public class MainActivity extends AppCompatActivity {
     public void gravar(View view) {
         int verificapa = pea_pequeno_pa + pea_medio_pa + pea_grande_pa + pena_pequeno_pa + pena_medio_pa + pena_grande_pa + pedacos_vidro_pa + garrafapeq_vidro_pa + garrafagra_vidro_pa + cigarros_pa + dejetos_pa
                 + indiferenciados_pa + folhas_pa + rampequenas_pa + ramgrandes_pa + pastilhas_pa + past_ate500_pa + past_maior500_pa + ra_pequeno_pa + ra_medio_pa + ra_grande_pa + oro_pequeno_pa + oro_medio_pa
-                + oro_grande_pa + latas_metais_pa + outros_metais_pa;
+                + oro_grande_pa + latas_metais_pa + outros_metais_pa + ajardinadas_pa;
         int verificacf = pea_pequeno_cf + pea_medio_cf + pea_grande_cf + pena_pequeno_cf + pena_medio_cf + pena_grande_cf + pedacos_vidro_cf + garrafapeq_vidro_cf + garrafagra_vidro_cf + cigarros_cf + dejetos_cf
                 + indiferenciados_cf + folhas_cf + rampequenas_cf + ramgrandes_cf + pastilhas_cf + past_ate500_cf + past_maior500_cf + ra_pequeno_cf + ra_medio_cf + ra_grande_cf + oro_pequeno_cf + oro_medio_cf
-                + oro_grande_cf + latas_metais_cf + outros_metais_cf;
+                + oro_grande_cf + latas_metais_cf + outros_metais_cf + caldeiras_cf;
 
         String trua = mRuas.getText().toString();
         String tresiduos = mResiduos.getText().toString();
@@ -1902,7 +1950,7 @@ public class MainActivity extends AppCompatActivity {
                     outros_metais_pa, pea_pequeno_cf, pea_medio_cf, pea_grande_cf, pena_pequeno_cf, pena_medio_cf, pena_grande_cf, pedacos_vidro_cf, garrafapeq_vidro_cf,
                     garrafagra_vidro_cf, cigarros_cf, dejetos_cf, indiferenciados_cf, folhas_cf, rampequenas_cf, ramgrandes_cf, pastilhas_cf, past_ate500_cf,
                     past_maior500_cf, ra_pequeno_cf, ra_medio_cf, ra_grande_cf, oro_pequeno_cf, oro_medio_cf, oro_grande_cf, latas_metais_cf, outros_metais_cf,
-                    bocalobolimpa_bl, bocalobosuja_bl, bocalobototal_bl, papeleirasvazia_bl, papeleirascheias_bl, papeleirastotal_bl, pan, cfn, bln, datahora);
+                    bocalobolimpa_bl, bocalobosuja_bl, bocalobototal_bl, papeleirasvazia_bl, papeleirascheias_bl, papeleirastotal_bl, pan, cfn, bln, datahora, ajardinadas_pa, caldeiras_cf);
 
 
             pea_pequeno_rua = 0;
@@ -1934,7 +1982,7 @@ public class MainActivity extends AppCompatActivity {
              outros_metais_rua = 0;
 
 
-           
+             ajardinadas_pa = 0;
              pea_pequeno_pa = 0;
              pea_medio_pa = 0;
              pea_grande_pa = 0;
@@ -1964,6 +2012,7 @@ public class MainActivity extends AppCompatActivity {
 
 
             
+             caldeiras_cf = 0;
              pea_pequeno_cf = 0;
              pea_medio_cf = 0;
              pea_grande_cf = 0;
@@ -2029,6 +2078,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+            count_ajardinadas_pa.setText(Integer.toString(ajardinadas_pa));
             count_pea_pequeno_pa.setText(Integer.toString(pea_pequeno_pa));
             count_pea_medio_pa.setText(Integer.toString(pea_medio_pa));
             count_pea_grande_pa.setText(Integer.toString(pea_grande_pa));
@@ -2058,6 +2108,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+            count_caldeiras_cf.setText(Integer.toString(caldeiras_cf));
             count_pea_pequeno_cf.setText(Integer.toString(pea_pequeno_cf));
             count_pea_medio_cf.setText(Integer.toString(pea_medio_cf));
             count_pea_grande_cf.setText(Integer.toString(pea_grande_cf));
@@ -2133,10 +2184,10 @@ public class MainActivity extends AppCompatActivity {
         String header = "Data e Hora" + "," + "Rua" + "," + "Residuos" + "," + "Area (m2)" + "," + "PEA pequeno" + "," + "PEA medio" + "," + "PEA grande" + "," + "PENA pequeno" + "," + "PENA medio" + "," + "PENA grande" + ","+
                 "Pedacos vidro"+ "," + "Garrafas de 25 a 33 cL"+ "," +"Garrafas de 75 cL a 1 L"+ "," +"Pontas de cigarro" + "," +"Dejetos caninos" + "," +"Sacos de indiferenciados" + "," +"Folhas"+ "," +"Ramagens pequenas"
                 + "," +"Ramagens grandes"+ "," +"Pastilhas elasticas"+ "," +"Ate 500 cm2" + "," +"Maior que 500 cm2" + "," +"RA pequeno" + "," +"RA medio" + "," + "RA grande" + "," +"ORO pequeno" + "," +"ORO medio"+ "," +
-                "ORO grande" + "," +"Latas refrigerantes"+ "," +"Outros metais" + "," +"PEA pequeno" + "," + "PEA medio" + "," + "PEA grande" + "," + "PENA pequeno" + "," + "PENA medio" + "," + "PENA grande" + ","+
+                "ORO grande" + "," +"Latas refrigerantes"+ "," +"Outros metais" + "," + "Numero de placas ajardinadas" + "," + "PEA pequeno" + "," + "PEA medio" + "," + "PEA grande" + "," + "PENA pequeno" + "," + "PENA medio" + "," + "PENA grande" + ","+
                 "Pedacos vidro"+ "," + "Garrafas de 25 a 33 cL"+ "," +"Garrafas de 75 cL a 1 L"+ "," +"Pontas de cigarro" + "," +"Dejetos caninos" + "," +"Sacos de indiferenciados" + "," +"Folhas"+ "," +"Ramagens pequenas"
                 + "," +"Ramagens grandes"+ "," +"Pastilhas elasticas"+ "," +"Ate 500 cm2" + "," +"Maior que 500 cm2" + "," +"RA pequeno" + "," +"RA medio" + "," + "RA grande" + "," +"ORO pequeno" + "," +"ORO medio"+ "," +
-                "ORO grande" + "," +"Latas refrigerantes"+ "," +"Outros metais" + "," +"PEA pequeno" + "," + "PEA medio" + "," + "PEA grande" + "," + "PENA pequeno" + "," + "PENA medio" + "," + "PENA grande" + ","+
+                "ORO grande" + "," +"Latas refrigerantes"+ "," +"Outros metais" + "," + "Numero de caldeiras/floreiras" + "," + "PEA pequeno" + "," + "PEA medio" + "," + "PEA grande" + "," + "PENA pequeno" + "," + "PENA medio" + "," + "PENA grande" + ","+
                 "Pedacos vidro"+ "," + "Garrafas de 25 a 33 cL"+ "," +"Garrafas de 75 cL a 1 L"+ "," +"Pontas de cigarro" + "," +"Dejetos caninos" + "," +"Sacos de indiferenciados" + "," +"Folhas"+ "," +"Ramagens pequenas"
                 + "," +"Ramagens grandes"+ "," +"Pastilhas elasticas"+ "," +"Ate 500 cm2" + "," +"Maior que 500 cm2" + "," +"RA pequeno" + "," +"RA medio" + "," + "RA grande" + "," +"ORO pequeno" + "," +"ORO medio"+ "," +
                 "ORO grande" + "," +"Latas refrigerantes"+ "," +"Outros metais" + "," + "Bocas de lobo totais" + "," +"Bocas de lobo limpas" + "," +"Papeleiras" + "," +"Papeleiras vazias" + "\n";
@@ -2178,6 +2229,7 @@ public class MainActivity extends AppCompatActivity {
                     String slatas_metais_rua= Integer.toString(cursor.getInt(cursor.getColumnIndex("latas_metais_rua")));
                     String soutros_metais_rua= Integer.toString(cursor.getInt(cursor.getColumnIndex("outros_metais_rua")));
 
+                    String sajardinadas_pa= Integer.toString(cursor.getInt(cursor.getColumnIndex("ajardinadas_pa")));
                     String spea_pequeno_pa= Integer.toString(cursor.getInt(cursor.getColumnIndex("pea_pequeno_pa")));
                     String spea_medio_pa= Integer.toString(cursor.getInt(cursor.getColumnIndex("pea_medio_pa")));
                     String spea_grande_pa= Integer.toString(cursor.getInt(cursor.getColumnIndex("pea_grande_pa")));
@@ -2205,6 +2257,7 @@ public class MainActivity extends AppCompatActivity {
                     String slatas_metais_pa= Integer.toString(cursor.getInt(cursor.getColumnIndex("latas_metais_pa")));
                     String soutros_metais_pa= Integer.toString(cursor.getInt(cursor.getColumnIndex( "outros_metais_pa")));
 
+                    String scaldeiras_cf = Integer.toString(cursor.getInt(cursor.getColumnIndex( "caldeiras_cf")));
                     String spea_pequeno_cf = Integer.toString(cursor.getInt(cursor.getColumnIndex( "pea_pequeno_cf")));
                     String spea_medio_cf= Integer.toString(cursor.getInt(cursor.getColumnIndex("pea_medio_cf")));
                     String spea_grande_cf= Integer.toString(cursor.getInt(cursor.getColumnIndex("pea_grande_cf")));
@@ -2244,6 +2297,7 @@ public class MainActivity extends AppCompatActivity {
                     
                     
                     if (spa == 0){
+                        sajardinadas_pa= "";
                         spea_pequeno_pa= "";
                         spea_medio_pa= "";
                         spea_grande_pa= "";
@@ -2273,6 +2327,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                     
                     if (scf == 0){
+                        scaldeiras_cf = "";
                         spea_pequeno_cf = "";
                         spea_medio_cf= "";
                         spea_grande_cf= "";
@@ -2319,11 +2374,11 @@ public class MainActivity extends AppCompatActivity {
                                     spena_grande_rua+ "," + spedacos_vidro_rua+ "," +  sgarrafapeq_vidro_rua+ "," +  sgarrafagra_vidro_rua+ "," + scigarros_rua+ "," + sdejetos_rua+ "," +
                                     sindiferenciados_rua+ "," + sfolhas_rua + "," + srampequenas_rua+ "," + sramgrandes_rua+ "," + spastilhas_rua+ "," + spast_ate500_rua+ "," +
                                     spast_maior500_rua+ "," + sra_pequeno_rua+ "," + sra_medio_rua+ "," + sra_grande_rua+ "," + soro_pequeno_rua+ "," + soro_medio_rua+ "," +
-                                    soro_grande_rua+ "," + slatas_metais_rua+ "," + soutros_metais_rua+ "," + spea_pequeno_pa+ "," + spea_medio_pa+ "," + spea_grande_pa+ "," +
+                                    soro_grande_rua+ "," + slatas_metais_rua+ "," + soutros_metais_rua+ "," + sajardinadas_pa + "," + spea_pequeno_pa+ "," + spea_medio_pa+ "," + spea_grande_pa+ "," +
                                     spena_pequeno_pa+ "," +spena_medio_pa+ "," + spena_grande_pa+ "," +  spedacos_vidro_pa+ "," + sgarrafapeq_vidro_pa+ "," + sgarrafagra_vidro_pa+ "," +
                                     scigarros_pa+ "," +  sdejetos_pa+ "," + sindiferenciados_pa+ "," + sfolhas_pa+ "," + srampequenas_pa+ "," + sramgrandes_pa+ "," + spastilhas_pa+ "," +
                             spast_ate500_pa+ "," + spast_maior500_pa+ "," + sra_pequeno_pa+ "," + sra_medio_pa+ "," + sra_grande_pa+ "," + soro_pequeno_pa+ "," + soro_medio_pa+ "," +
-                            soro_grande_pa+ "," +  slatas_metais_pa+ "," + soutros_metais_pa+ "," + spea_pequeno_cf+ "," + spea_medio_cf+ "," +   spea_grande_cf+ "," + spena_pequeno_cf+ "," +
+                            soro_grande_pa+ "," +  slatas_metais_pa+ "," + soutros_metais_pa+ "," + scaldeiras_cf + "," + spea_pequeno_cf+ "," + spea_medio_cf+ "," +   spea_grande_cf+ "," + spena_pequeno_cf+ "," +
                             spena_medio_cf+ "," +  spena_grande_cf+ "," + spedacos_vidro_cf+ "," + sgarrafapeq_vidro_cf+ "," +  sgarrafagra_vidro_cf+ "," + scigarros_cf+ "," + sdejetos_cf+ "," +
                             sindiferenciados_cf+ "," + sfolhas_cf+ "," + srampequenas_cf+ "," + sramgrandes_cf+ "," + spastilhas_cf+ "," + spast_ate500_cf+ "," + spast_maior500_cf+ "," +
                             sra_pequeno_cf + "," + sra_medio_cf+ "," + sra_grande_cf+ "," + soro_pequeno_cf+ "," +  soro_medio_cf+ "," +  soro_grande_cf+ "," + slatas_metais_cf+ "," + soutros_metais_cf+ "," +

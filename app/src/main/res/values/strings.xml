@@ -40,8 +40,8 @@
     <string name="placas_ajardinadas_text">Placas Ajardinadas</string>
     <string name="caldeiras_floreiras_text">Caldeiras/Floreiras</string>
     <string name="bocas_de_lobo_papeleiras_text">Bocas de Lobo / Papeleiras</string>
-    <string name="vazia_limpa_label">Vazia/Limpa</string>
-    <string name="cheia_suja_label">Cheia/Suja</string>
+    <string name="vazia_limpa_label">Limpa/Vazia</string>
+    <string name="cheia_suja_label">Suja/Cheia</string>
     <string name="boca_de_lobo_label">Boca de Lobo</string>
     <string name="bocas_de_lobo_totais">Bocas de Lobo Totais:</string>
     <string name="papeleiras_label">Papeleiras</string>
@@ -54,4 +54,6 @@
     <string name="reset_base_de_dados_botao">Reset Base de dados</string>
     <string name="menos_cinco">-5</string>
     <string name="mais_cinco">+5</string>
+    <string name="num_ajardinadas_label">Número de Placas Ajardinadas</string>
+    <string name="num_caldeiras_label">Número de Caldeiras/Floreiras</string>
 </resources>
