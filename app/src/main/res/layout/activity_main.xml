@@ -172,6 +172,7 @@
                 </LinearLayout>
                 </ScrollView>
 
+                <!-- TAB2 - RUAS (ou passeios Guia)-->
                 <ScrollView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -278,7 +279,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_pea_pequeno_rua"
@@ -309,7 +310,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_pea_medio_rua"
@@ -340,7 +341,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_pea_grande_rua"
@@ -393,7 +394,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_pena_pequeno_rua"
@@ -424,7 +425,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_pena_medio_rua"
@@ -455,7 +456,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_pena_grande_rua"
@@ -571,7 +572,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_pedacos_vidro_rua"
@@ -602,7 +603,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_garrafapeq_vidro_rua"
@@ -633,7 +634,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_garrafagra_vidro_rua"
@@ -746,7 +747,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_cigarros_rua"
@@ -777,7 +778,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_dejetos_rua"
@@ -808,7 +809,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_indiferenciados_rua"
@@ -925,7 +926,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_folhas_rua"
@@ -956,7 +957,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_rampequenas_rua"
@@ -987,7 +988,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_ramgrandes_rua"
@@ -1105,7 +1106,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_pastilhas_rua"
@@ -1136,7 +1137,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_past_ate500_rua"
@@ -1167,7 +1168,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_past_maior500_rua"
@@ -1287,7 +1288,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_ra_pequeno_rua"
@@ -1318,7 +1319,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_ra_medio_rua"
@@ -1349,7 +1350,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_ra_grande_rua"
@@ -1408,7 +1409,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_oro_pequeno_rua"
@@ -1439,7 +1440,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_oro_medio_rua"
@@ -1470,7 +1471,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_oro_grande_rua"
@@ -1574,7 +1575,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_latas_metais_rua"
@@ -1605,7 +1606,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_outros_metais_rua"
@@ -1695,7 +1696,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_grande" />
 
                             <Button
                                 android:id="@+id/plus_numero_placas_pa"
@@ -1806,7 +1807,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_pea_pequeno_pa"
@@ -1837,7 +1838,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_pea_medio_pa"
@@ -1868,7 +1869,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_pea_grande_pa"
@@ -1921,7 +1922,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_pena_pequeno_pa"
@@ -1952,7 +1953,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_pena_medio_pa"
@@ -1983,7 +1984,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_pena_grande_pa"
@@ -2099,7 +2100,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_pedacos_vidro_pa"
@@ -2130,7 +2131,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_garrafapeq_vidro_pa"
@@ -2161,7 +2162,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_garrafagra_vidro_pa"
@@ -2274,7 +2275,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_cigarros_pa"
@@ -2305,7 +2306,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_dejetos_pa"
@@ -2336,7 +2337,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_indiferenciados_pa"
@@ -2453,7 +2454,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_folhas_pa"
@@ -2484,7 +2485,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_rampequenas_pa"
@@ -2515,7 +2516,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_ramgrandes_pa"
@@ -2633,7 +2634,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_pastilhas_pa"
@@ -2664,7 +2665,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_past_ate500_pa"
@@ -2695,7 +2696,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_past_maior500_pa"
@@ -2815,7 +2816,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_ra_pequeno_pa"
@@ -2846,7 +2847,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_ra_medio_pa"
@@ -2877,7 +2878,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_ra_grande_pa"
@@ -2936,7 +2937,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size"/>
 
                             <Button
                                 android:id="@+id/plus_oro_pequeno_pa"
@@ -2967,7 +2968,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_oro_medio_pa"
@@ -2998,7 +2999,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_oro_grande_pa"
@@ -3102,7 +3103,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_latas_metais_pa"
@@ -3133,7 +3134,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_outros_metais_pa"
@@ -3230,7 +3231,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize= "@dimen/contagem_grande" />
 
                             <Button
                                 android:id="@+id/plus_numero_caldeiras_cf"
@@ -3341,7 +3342,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_pea_pequeno_cf"
@@ -3372,7 +3373,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_pea_medio_cf"
@@ -3403,7 +3404,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_pea_grande_cf"
@@ -3456,7 +3457,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_pena_pequeno_cf"
@@ -3487,7 +3488,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_pena_medio_cf"
@@ -3518,7 +3519,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_pena_grande_cf"
@@ -3634,7 +3635,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_pedacos_vidro_cf"
@@ -3665,7 +3666,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_garrafapeq_vidro_cf"
@@ -3696,7 +3697,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_garrafagra_vidro_cf"
@@ -3809,7 +3810,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_cigarros_cf"
@@ -3840,7 +3841,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_dejetos_cf"
@@ -3871,7 +3872,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_indiferenciados_cf"
@@ -3988,7 +3989,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_folhas_cf"
@@ -4019,7 +4020,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_rampequenas_cf"
@@ -4050,7 +4051,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_ramgrandes_cf"
@@ -4168,7 +4169,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_pastilhas_cf"
@@ -4199,7 +4200,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_past_ate500_cf"
@@ -4230,7 +4231,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_past_maior500_cf"
@@ -4350,7 +4351,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_ra_pequeno_cf"
@@ -4381,7 +4382,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_ra_medio_cf"
@@ -4412,7 +4413,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_ra_grande_cf"
@@ -4471,7 +4472,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_oro_pequeno_cf"
@@ -4502,7 +4503,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_oro_medio_cf"
@@ -4533,7 +4534,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_oro_grande_cf"
@@ -4637,7 +4638,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_latas_metais_cf"
@@ -4668,7 +4669,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_outros_metais_cf"
@@ -4831,7 +4832,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_bocalobolimpa_bl"
@@ -4862,7 +4863,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_bocalobosuja_bl"
@@ -4907,7 +4908,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                         </TableRow>
 
@@ -4949,7 +4950,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_papeleirasvazia_bl"
@@ -4980,7 +4981,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                             <Button
                                 android:id="@+id/plus_papeleirascheias_bl"
@@ -5025,7 +5026,7 @@
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
-                                android:textSize="24sp" />
+                                android:textSize="@dimen/contagem_size" />
 
                         </TableRow>
 
