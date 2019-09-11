@@ -61,15 +61,15 @@
                         android:layout_height="wrap_content"
                         android:hint="@string/residuos_hint_text" />
 
-                    <TextView
-                        android:id="@+id/titulo_area"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="#8C2D19"
-                        android:text="@string/area_title_text"
-                        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
-                        android:textColor="@android:color/white"
-                        android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/titulo_area"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/porto_ambiente"
+                            android:text="@string/area_title_text"
+                            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold" />
 
                     <EditText
                         android:id="@+id/editText_area"
@@ -1625,20 +1625,6 @@
                     </TableLayout>
 
                 </ScrollView>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
