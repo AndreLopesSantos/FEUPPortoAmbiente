@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">FEUP Porto Ambiente</string>
     <string name="rua_title_text">Rua</string>
-    <string name="rua_hint_text">Escreva aqui a rua</string>
+    <string name="rua_hint_text">Nome da rua</string>
     <string name="residuos_title_text">Amostra</string>
-    <string name="residuos_hint_text">Introduza a amostra (ex. Amostra1)</string>
+    <string name="residuos_hint_text">Introduzir o nº da amostra (Ex: Amostra 1)</string>
     <string name="area_title_text">Área</string>
-    <string name="area_hint_text">Introduzir a area em metros quadrados (ex 500)</string>
+    <string name="area_hint_text">Introduzir a área em m2 (Ex: 500 m2)</string>
     <string name="tipo_header_text">Tipo</string>
     <string name="pequeno_letra_header">Pequeno</string>
     <string name="medio_letra_header">Médio</string>
@@ -47,8 +47,8 @@
     <string name="papeleiras_label">Papeleiras</string>
     <string name="papeleiras_totais">Papeleiras Totais:</string>
     <string name="placas_ajardinadas_checkbox">Placas Ajardinadas</string>
-    <string name="caldeiras_floreiras_checkbox">Caldeiras Floreiras</string>
-    <string name="bocas_lobo_papeleiras_checkbox">Bocas Lobo Papeleiras</string>
+    <string name="caldeiras_floreiras_checkbox">Caldeiras/Floreiras</string>
+    <string name="bocas_lobo_papeleiras_checkbox">Bocas de Lobo/Papeleiras</string>
     <string name="gravar_base_dados_botao">Adicionar Dados</string>
     <string name="criar_ficheiro_csv_botao">Criar Ficheiro CSV</string>
     <string name="reset_base_de_dados_botao">Reset Base de dados</string>
