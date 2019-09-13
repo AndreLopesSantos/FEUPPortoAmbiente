@@ -2,4 +2,9 @@
 <resources>
     <dimen name="contagem_size">16sp</dimen>
     <dimen name="contagem_grande">24sp</dimen>
+    <dimen name="sigla_lateral">22sp</dimen>
+    <dimen name="texto_tabela">14sp</dimen>
+    <dimen name="elemento_tabela">20sp</dimen>
+    <dimen name="margin_tabela">16sp</dimen>
+
 </resources>

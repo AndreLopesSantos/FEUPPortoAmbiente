@@ -3,6 +3,7 @@ package com.example.feupportoambiente;
 import android.Manifest;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
+import android.graphics.Color;
 import android.graphics.Typeface;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -10,6 +11,7 @@ import android.os.Environment;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TabHost;
@@ -266,8 +268,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mDatabaseHelper = new DatabaseHelper(this);
-        TabHost tabs = (TabHost) findViewById(R.id.tabhost);
+        final TabHost tabs = (TabHost) findViewById(R.id.tabhost);
         tabs.setup();
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
 
 
 
@@ -401,27 +404,57 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
+        //TABS
+        // TAB1
         TabHost.TabSpec spec = tabs.newTabSpec("tag1");
         spec.setContent(R.id.tab1);
-        spec.setIndicator("Dados");
+        spec.setIndicator("",getDrawable(R.drawable.dados));
         tabs.addTab(spec);
+        tabs.getTabWidget().getChildAt(tabs.getCurrentTab()).setBackgroundColor(Color.parseColor("#C3C3C3"));
+
+        //TAB2 - Passeios Guia
         spec = tabs.newTabSpec("tag2");
         spec.setContent(R.id.tab2);
-        spec.setIndicator("PG");
+        spec.setIndicator("",getDrawable(R.drawable.passeio));
         tabs.addTab(spec);
+
+        //TAB 3 - Caldeiras/Floreiras
         spec = tabs.newTabSpec("tag3");
         spec.setContent(R.id.tab3);
-        spec.setIndicator("PA");
+        spec.setIndicator("",getDrawable(R.drawable.floreira));
         tabs.addTab(spec);
+
+        //TAB 4  - Placas Ajardinadas
         spec = tabs.newTabSpec("tag4");
         spec.setContent(R.id.tab4);
-        spec.setIndicator("CF");
+        spec.setIndicator("",getDrawable(R.drawable.ajardinada));
         tabs.addTab(spec);
+
+        //TAB 5  - Papeleiras
         spec = tabs.newTabSpec("tag5");
         spec.setContent(R.id.tab5);
-        spec.setIndicator("BL/Ppl");
+        spec.setIndicator("",getDrawable(R.drawable.papeleiras));
         tabs.addTab(spec);
+
+
+
+       tabs.setOnTabChangedListener(new TabHost.OnTabChangeListener(){
+            @Override
+            public void onTabChanged(String tabId) {
+                int tab = tabs.getCurrentTab();
+                for (int i = 0; i < tabs.getTabWidget().getChildCount(); i++) {
+                    // When tab is not selected
+                    tabs.getTabWidget().getChildAt(i).setBackgroundColor(Color.parseColor("#FFFFFF"));
+                    //TextView tv = (TextView) tabs.getTabWidget().getChildAt(i).findViewById(android.R.id.title);
+                    //tv.setTextColor(Color.parseColor("#0F2F7F"));
+                }
+                // When tab is selected
+                tabs.getTabWidget().getChildAt(tabs.getCurrentTab()).setBackgroundColor(Color.parseColor("#C3C3C3"));
+                //TextView tv = (TextView)tabs.getTabWidget().getChildAt(tab).findViewById(android.R.id.title);
+                //tv.setTextColor(Color.parseColor("#FFFFFF"));
+            }
+        });
+
 
     }
 

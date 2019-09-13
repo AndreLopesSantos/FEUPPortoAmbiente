@@ -4,4 +4,7 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="porto_ambiente">#0F2F7F</color>
+    <color name="branco">#FFFFFF</color>
+    <color name="cinza">#C3C3C3</color>
+    <color name="azul_claro">#9ec9e9</color>
 </resources>
