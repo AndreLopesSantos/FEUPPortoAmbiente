@@ -5,7 +5,7 @@
     <string name="residuos_title_text">Amostra</string>
     <string name="residuos_hint_text">Introduzir o nº da amostra (Ex: Amostra 1)</string>
     <string name="area_title_text">Área</string>
-    <string name="area_hint_text">Introduzir a área em m2 (Ex: 500 m2)</string>
+    <string name="area_hint_text">Introduzir a área em m<sup><small>2</small></sup> (Ex: 500 m<sup><small>2</small></sup>)</string>
     <string name="tipo_header_text"></string>
     <string name="pequeno_letra_header">Pequeno</string>
     <string name="medio_letra_header">Médio</string>
@@ -28,8 +28,8 @@
     <string name="ramagens_pequenas_label">Ramagens Pequenas</string>
     <string name="ramagens_grandes_label">Ramagens Grandes</string>
     <string name="pastilhas_elasticas_label">Pastilhas elásticas</string>
-    <string name="ate_500_label">Até 500 cm2</string>
-    <string name="maior_500_label">Maior 500 cm2</string>
+    <string name="ate_500_label">Até 500 cm<sup><small>2</small></sup></string>
+    <string name="maior_500_label">Maior 500 cm<sup><small>2</small></sup></string>
     <string name="pastilas_elasticas_label">I</string>
     <string name="ra_label">RA</string>
     <string name="oro_label">ORO</string>
@@ -40,8 +40,8 @@
     <string name="placas_ajardinadas_text">Placas Ajardinadas</string>
     <string name="caldeiras_floreiras_text">Caldeiras/Floreiras</string>
     <string name="bocas_de_lobo_papeleiras_text">Bocas de Lobo / Papeleiras</string>
-    <string name="vazia_limpa_label">Limpa/Vazia</string>
-    <string name="cheia_suja_label">Suja/Cheia</string>
+    <string name="vazia_limpa_label">Sem resíduos</string>
+    <string name="cheia_suja_label">Com resíduos</string>
     <string name="boca_de_lobo_label">BL</string>
     <string name="bocas_de_lobo_totais">Nº Bocas de Lobo Totais</string>
     <string name="papeleiras_label">P</string>
@@ -57,4 +57,7 @@
     <string name="num_ajardinadas_label">Nº Placas Ajardinadas</string>
     <string name="num_caldeiras_label">Nº Caldeiras/Floreiras</string>
     <string name="sigla_folhas">FR</string>
+    <string name="papeleira_vazia">Vazia</string>
+    <string name="papeleira_cheia">Cheia</string>
+    <string name="title_bar"><b>Porto Ambiente</b></string>
 </resources>

@@ -6,5 +6,6 @@
     <dimen name="texto_tabela">14sp</dimen>
     <dimen name="elemento_tabela">20sp</dimen>
     <dimen name="margin_tabela">16sp</dimen>
+    <dimen name="tamanho_botoes">35dp</dimen>
 
 </resources>

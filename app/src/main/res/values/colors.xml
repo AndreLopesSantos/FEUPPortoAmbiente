@@ -3,8 +3,8 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
-    <color name="porto_ambiente">#0F2F7F</color>
-    <color name="branco">#FFFFFF</color>
-    <color name="cinza">#C3C3C3</color>
-    <color name="azul_claro">#9ec9e9</color>
+    <color name="porto_ambiente">#0F2F7F</color> <!-- Cor azul escura padrão da Porto ambiente-->
+    <color name="branco">#FFFFFF</color> <!-- Cor branca padrão-->
+    <color name="cinza">#C3C3C3</color> <!-- Cor cinza do botão "-" (menos) -->
+    <color name="azul_claro">#9ec9e9</color> <!-- Cor azul clara do botão "+" (mais) -->
 </resources>
