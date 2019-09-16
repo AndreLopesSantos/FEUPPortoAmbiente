@@ -2234,13 +2234,13 @@ public class MainActivity extends AppCompatActivity {
         StringBuilder bld = new StringBuilder();
 
         String header = "Data e Hora" + "," + "Rua" + "," + "Residuos" + "," + "Area (m2)" + "," + "PEA pequeno" + "," + "PEA medio" + "," + "PEA grande" + "," + "PENA pequeno" + "," + "PENA medio" + "," + "PENA grande" + ","+
-                "Pedacos vidro"+ "," + "Garrafas de 25 a 33 cL"+ "," +"Garrafas de 75 cL a 1 L"+ "," +"Pontas de cigarro" + "," +"Dejetos caninos" + "," +"Sacos de indiferenciados" + "," +"Folhas"+ "," +"Ramagens pequenas"
+                "Pedacos vidro"+ "," + "Garrafas de 25 a 50 cL"+ "," +"Garrafas de 75 cL a 1 L"+ "," +"Pontas de cigarro" + "," +"Dejetos caninos" + "," +"Sacos de indiferenciados" + "," +"Folhas"+ "," +"Ramagens pequenas"
                 + "," +"Ramagens grandes"+ "," +"Pastilhas elasticas"+ "," +"Ate 500 cm2" + "," +"Maior que 500 cm2" + "," +"RA pequeno" + "," +"RA medio" + "," + "RA grande" + "," +"ORO pequeno" + "," +"ORO medio"+ "," +
                 "ORO grande" + "," +"Latas refrigerantes"+ "," +"Outros metais" + "," + "PEA pequeno" + "," + "PEA medio" + "," + "PEA grande" + "," + "PENA pequeno" + "," + "PENA medio" + "," + "PENA grande" + ","+
-                "Pedacos vidro"+ "," + "Garrafas de 25 a 33 cL"+ "," +"Garrafas de 75 cL a 1 L"+ "," +"Pontas de cigarro" + "," +"Dejetos caninos" + "," +"Sacos de indiferenciados" + "," +"Folhas"+ "," +"Ramagens pequenas"
+                "Pedacos vidro"+ "," + "Garrafas de 25 a 50 cL"+ "," +"Garrafas de 75 cL a 1 L"+ "," +"Pontas de cigarro" + "," +"Dejetos caninos" + "," +"Sacos de indiferenciados" + "," +"Folhas"+ "," +"Ramagens pequenas"
                 + "," +"Ramagens grandes"+ "," +"Pastilhas elasticas"+ "," +"Ate 500 cm2" + "," +"Maior que 500 cm2" + "," +"RA pequeno" + "," +"RA medio" + "," + "RA grande" + "," +"ORO pequeno" + "," +"ORO medio"+ "," +
                 "ORO grande" + "," +"Latas refrigerantes"+ "," +"Outros metais" + "," + "PEA pequeno" + "," + "PEA medio" + "," + "PEA grande" + "," + "PENA pequeno" + "," + "PENA medio" + "," + "PENA grande" + ","+
-                "Pedacos vidro"+ "," + "Garrafas de 25 a 33 cL"+ "," +"Garrafas de 75 cL a 1 L"+ "," +"Pontas de cigarro" + "," +"Dejetos caninos" + "," +"Sacos de indiferenciados" + "," +"Folhas"+ "," +"Ramagens pequenas"
+                "Pedacos vidro"+ "," + "Garrafas de 25 a 50 cL"+ "," +"Garrafas de 75 cL a 1 L"+ "," +"Pontas de cigarro" + "," +"Dejetos caninos" + "," +"Sacos de indiferenciados" + "," +"Folhas"+ "," +"Ramagens pequenas"
                 + "," +"Ramagens grandes"+ "," +"Pastilhas elasticas"+ "," +"Ate 500 cm2" + "," +"Maior que 500 cm2" + "," +"RA pequeno" + "," +"RA medio" + "," + "RA grande" + "," +"ORO pequeno" + "," +"ORO medio"+ "," +
                 "ORO grande" + "," +"Latas refrigerantes"+ "," +"Outros metais" + "," + "Bocas de lobo totais" + "," +"Bocas de lobo limpas" + "," +"Papeleiras" + "," +"Papeleiras vazias" + "," + "Numero de placas ajardinadas" + "," + "Numero de caldeiras/floreiras" + "\n";
 
@@ -2426,14 +2426,14 @@ public class MainActivity extends AppCompatActivity {
                                     spena_grande_rua+ "," + spedacos_vidro_rua+ "," +  sgarrafapeq_vidro_rua+ "," +  sgarrafagra_vidro_rua+ "," + scigarros_rua+ "," + sdejetos_rua+ "," +
                                     sindiferenciados_rua+ "," + sfolhas_rua + "," + srampequenas_rua+ "," + sramgrandes_rua+ "," + spastilhas_rua+ "," + spast_ate500_rua+ "," +
                                     spast_maior500_rua+ "," + sra_pequeno_rua+ "," + sra_medio_rua+ "," + sra_grande_rua+ "," + soro_pequeno_rua+ "," + soro_medio_rua+ "," +
-                                    soro_grande_rua+ "," + slatas_metais_rua+ "," + soutros_metais_rua+  "," + spea_pequeno_pa+ "," + spea_medio_pa+ "," + spea_grande_pa+ "," +
-                                    spena_pequeno_pa+ "," +spena_medio_pa+ "," + spena_grande_pa+ "," +  spedacos_vidro_pa+ "," + sgarrafapeq_vidro_pa+ "," + sgarrafagra_vidro_pa+ "," +
-                                    scigarros_pa+ "," +  sdejetos_pa+ "," + sindiferenciados_pa+ "," + sfolhas_pa+ "," + srampequenas_pa+ "," + sramgrandes_pa+ "," + spastilhas_pa+ "," +
-                            spast_ate500_pa+ "," + spast_maior500_pa+ "," + sra_pequeno_pa+ "," + sra_medio_pa+ "," + sra_grande_pa+ "," + soro_pequeno_pa+ "," + soro_medio_pa+ "," +
-                            soro_grande_pa+ "," +  slatas_metais_pa+ "," + soutros_metais_pa+  "," + spea_pequeno_cf+ "," + spea_medio_cf+ "," +   spea_grande_cf+ "," + spena_pequeno_cf+ "," +
-                            spena_medio_cf+ "," +  spena_grande_cf+ "," + spedacos_vidro_cf+ "," + sgarrafapeq_vidro_cf+ "," +  sgarrafagra_vidro_cf+ "," + scigarros_cf+ "," + sdejetos_cf+ "," +
-                            sindiferenciados_cf+ "," + sfolhas_cf+ "," + srampequenas_cf+ "," + sramgrandes_cf+ "," + spastilhas_cf+ "," + spast_ate500_cf+ "," + spast_maior500_cf+ "," +
-                            sra_pequeno_cf + "," + sra_medio_cf+ "," + sra_grande_cf+ "," + soro_pequeno_cf+ "," +  soro_medio_cf+ "," +  soro_grande_cf+ "," + slatas_metais_cf+ "," + soutros_metais_cf+ "," +
+                                    soro_grande_rua+ "," + slatas_metais_rua+ "," + soutros_metais_rua+  "," + spea_pequeno_cf+ "," + spea_medio_cf+ "," + spea_grande_cf+ "," +
+                                    spena_pequeno_cf+ "," +spena_medio_cf+ "," + spena_grande_cf+ "," +  spedacos_vidro_cf+ "," + sgarrafapeq_vidro_cf+ "," + sgarrafagra_vidro_cf+ "," +
+                                    scigarros_cf+ "," +  sdejetos_cf+ "," + sindiferenciados_cf+ "," + sfolhas_cf+ "," + srampequenas_cf+ "," + sramgrandes_cf+ "," + spastilhas_cf+ "," +
+                            spast_ate500_cf+ "," + spast_maior500_cf+ "," + sra_pequeno_cf+ "," + sra_medio_cf+ "," + sra_grande_cf+ "," + soro_pequeno_cf+ "," + soro_medio_cf+ "," +
+                            soro_grande_cf+ "," +  slatas_metais_cf+ "," + soutros_metais_cf+  "," + spea_pequeno_pa+ "," + spea_medio_pa+ "," +   spea_grande_pa+ "," + spena_pequeno_pa+ "," +
+                            spena_medio_pa+ "," +  spena_grande_pa+ "," + spedacos_vidro_pa+ "," + sgarrafapeq_vidro_pa+ "," +  sgarrafagra_vidro_pa+ "," + scigarros_pa+ "," + sdejetos_pa+ "," +
+                            sindiferenciados_pa+ "," + sfolhas_pa+ "," + srampequenas_pa+ "," + sramgrandes_pa+ "," + spastilhas_pa+ "," + spast_ate500_pa+ "," + spast_maior500_pa+ "," +
+                            sra_pequeno_pa + "," + sra_medio_pa+ "," + sra_grande_pa+ "," + soro_pequeno_pa+ "," +  soro_medio_pa+ "," +  soro_grande_pa+ "," + slatas_metais_pa+ "," + soutros_metais_pa+ "," +
                             sbocalobototal_bl+ "," + sbocalobolimpa_bl + "," +spapeleirastotal_bl + "," + spapeleirasvazia_bl + "," + sajardinadas_pa + "," + scaldeiras_cf +"\n");
 
 
