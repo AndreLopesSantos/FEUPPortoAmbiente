@@ -451,7 +451,7 @@ public class MainActivity extends AppCompatActivity {
                     //tv.setTextColor(Color.parseColor("#0F2F7F"));
                 }
                 // When tab is selected
-                tabs.getTabWidget().getChildAt(tabs.getCurrentTab()).setBackgroundColor(Color.parseColor("#C3C3C3"));
+                tabs.getTabWidget().getChildAt(tabs.getCurrentTab()).setBackgroundColor(Color.parseColor("#A3A3A3"));
                 //TextView tv = (TextView)tabs.getTabWidget().getChildAt(tab).findViewById(android.R.id.title);
                 //tv.setTextColor(Color.parseColor("#FFFFFF"));
             }
