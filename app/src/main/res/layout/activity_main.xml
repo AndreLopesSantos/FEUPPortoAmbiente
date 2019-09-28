@@ -212,7 +212,7 @@
                             <TextView
                                 android:id="@+id/header_tabela_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -272,7 +272,7 @@
                             <TextView
                                 android:id="@+id/tipo_pea_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -299,7 +299,7 @@
                             <TextView
                                 android:id="@+id/pea_pequeno_count_rua"
                                 android:layout_width="0.dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -339,7 +339,7 @@
                             <TextView
                                 android:id="@+id/pea_medio_count_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -379,7 +379,7 @@
                             <TextView
                                 android:id="@+id/pea_grande_count_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -414,7 +414,7 @@
                             <TextView
                                 android:id="@+id/header_tabela_rua2"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -473,7 +473,7 @@
                             <TextView
                                 android:id="@+id/tipo_pena_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -500,7 +500,7 @@
                             <TextView
                                 android:id="@+id/pena_pequeno_count_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -540,7 +540,7 @@
                             <TextView
                                 android:id="@+id/pena_medio_count_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -580,7 +580,7 @@
                             <TextView
                                 android:id="@+id/pena_grande_count_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -619,7 +619,7 @@
                             <TextView
                                 android:id="@+id/header_tabela_vidro_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -680,7 +680,7 @@
                             <TextView
                                 android:id="@+id/tipo_vidro_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -707,7 +707,7 @@
                             <TextView
                                 android:id="@+id/pedacos_vidro_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -746,7 +746,7 @@
                             <TextView
                                 android:id="@+id/garrafapeq_vidro_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -786,7 +786,7 @@
                             <TextView
                                 android:id="@+id/garrafagra_vidro_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -824,7 +824,7 @@
                             <TextView
                                 android:id="@+id/header_tabela_outros_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -883,7 +883,7 @@
                             <TextView
                                 android:id="@+id/tipo_pds_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -910,7 +910,7 @@
                             <TextView
                                 android:id="@+id/cigarros_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -950,7 +950,7 @@
                             <TextView
                                 android:id="@+id/dejetos_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -990,7 +990,7 @@
                             <TextView
                                 android:id="@+id/indiferenciados_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -1032,7 +1032,7 @@
                             <TextView
                                 android:id="@+id/header_tabela_folhas_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -1091,7 +1091,7 @@
                             <TextView
                                 android:id="@+id/tipo_folhas_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -1118,7 +1118,7 @@
                             <TextView
                                 android:id="@+id/folhas_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -1158,7 +1158,7 @@
                             <TextView
                                 android:id="@+id/rampequenas_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -1198,7 +1198,7 @@
                             <TextView
                                 android:id="@+id/ramgrandes_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -1240,7 +1240,7 @@
                             <TextView
                                 android:id="@+id/header_tabela_pastilhas_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -1300,7 +1300,7 @@
                                 android:id="@+id/tipo_pastilhas_rua"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
                                 android:text="@string/pastilas_elasticas_label"
@@ -1326,7 +1326,7 @@
                             <TextView
                                 android:id="@+id/pastilhas_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -1366,7 +1366,7 @@
                             <TextView
                                 android:id="@+id/past_ate500_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -1406,7 +1406,7 @@
                             <TextView
                                 android:id="@+id/past_maior500_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -1450,7 +1450,7 @@
                             <TextView
                                 android:id="@+id/header_tabela_ra_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -1510,7 +1510,7 @@
                             <TextView
                                 android:id="@+id/tipo_ra_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -1536,7 +1536,7 @@
                             <TextView
                                 android:id="@+id/ra_pequeno_rua"
                                 android:layout_width="0.dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -1576,7 +1576,7 @@
                             <TextView
                                 android:id="@+id/ra_medio_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -1616,7 +1616,7 @@
                             <TextView
                                 android:id="@+id/ra_grande_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -1658,7 +1658,7 @@
                             <TextView
                                 android:id="@+id/header_tabela_oro_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -1717,7 +1717,7 @@
                             <TextView
                                 android:id="@+id/tipo_oro_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -1744,7 +1744,7 @@
                             <TextView
                                 android:id="@+id/oro_pequeno_rua"
                                 android:layout_width="0.dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -1784,7 +1784,7 @@
                             <TextView
                                 android:id="@+id/oro_medio_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -1824,7 +1824,7 @@
                             <TextView
                                 android:id="@+id/oro_grande_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -1863,7 +1863,7 @@
                             <TextView
                                 android:id="@+id/header_tabela_metlat_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -1911,7 +1911,7 @@
                             <TextView
                                 android:id="@+id/tipo_metais_rua"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -1925,7 +1925,7 @@
                                 android:id="@+id/minus_latas_metais_rua"
                                 android:layout_width="0dp"
                                 android:layout_weight=".15"
-                                android:layout_height="match_parent"
+                                android:layout_height="@dimen/tamanho_botoes"
                                 android:background="@color/cinza"
                                 android:onClick="minus_latas_metais_rua"
                                 android:text="@string/sinal_menos"
@@ -1938,7 +1938,7 @@
                                 android:id="@+id/latas_metais_rua"
                                 android:layout_width="0.dp"
                                 android:layout_weight=".15"
-                                android:layout_height="match_parent"
+                                android:layout_height="@dimen/tamanho_botoes"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
                                 android:textColor="@android:color/white"
@@ -1949,7 +1949,7 @@
                                 android:id="@+id/plus_latas_metais_rua"
                                 android:layout_width="0dp"
                                 android:layout_weight=".15"
-                                android:layout_height="match_parent"
+                                android:layout_height="@dimen/tamanho_botoes"
                                 android:background="@color/azul_claro"
                                 android:onClick="plus_latas_metais_rua"
                                 android:text="@string/sinal_mais"
@@ -1963,7 +1963,7 @@
                                 android:id="@+id/minus_outros_metais_rua"
                                 android:layout_width="0dp"
                                 android:layout_weight=".15"
-                                android:layout_height="match_parent"
+                                android:layout_height="@dimen/tamanho_botoes"
                                 android:background="@color/cinza"
                                 android:onClick="minus_outros_metais_rua"
                                 android:text="@string/sinal_menos"
@@ -1976,7 +1976,7 @@
                                 android:id="@+id/outros_metais_rua"
                                 android:layout_width="0dp"
                                 android:layout_weight=".15"
-                                android:layout_height="match_parent"
+                                android:layout_height="@dimen/tamanho_botoes"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
                                 android:textColor="@android:color/white"
@@ -1987,7 +1987,7 @@
                                 android:id="@+id/plus_outros_metais_rua"
                                 android:layout_width="0dp"
                                 android:layout_weight=".15"
-                                android:layout_height="match_parent"
+                                android:layout_height="@dimen/tamanho_botoes"
                                 android:background="@color/azul_claro"
                                 android:onClick="plus_outros_metais_rua"
                                 android:text="@string/sinal_mais"
@@ -2003,15 +2003,7 @@
 
                 </ScrollView>
 
-
-
-
-
-
-
-
-
-
+                
 
                 <!--TAB3 CALDEIRAS FLOREIRAS-->
                 <ScrollView
@@ -2051,7 +2043,7 @@
                             <Button
                                 android:id="@+id/minus_numero_caldeiras_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/cinza"
                                 android:onClick="minus_caldeiras_cf"
@@ -2064,7 +2056,7 @@
                             <TextView
                                 android:id="@+id/numero_caldeiras_count_cf"
                                 android:layout_width="0.dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -2075,7 +2067,7 @@
                             <Button
                                 android:id="@+id/plus_numero_caldeiras_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/azul_claro"
                                 android:onClick="plus_caldeiras_cf"
@@ -2098,7 +2090,7 @@
                             <TextView
                                 android:id="@+id/header_tabela_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -2158,7 +2150,7 @@
                             <TextView
                                 android:id="@+id/tipo_pea_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -2185,7 +2177,7 @@
                             <TextView
                                 android:id="@+id/pea_pequeno_count_cf"
                                 android:layout_width="0.dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -2225,7 +2217,7 @@
                             <TextView
                                 android:id="@+id/pea_medio_count_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -2265,7 +2257,7 @@
                             <TextView
                                 android:id="@+id/pea_grande_count_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -2300,7 +2292,7 @@
                             <TextView
                                 android:id="@+id/header_tabela_cf2"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -2359,7 +2351,7 @@
                             <TextView
                                 android:id="@+id/tipo_pena_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -2386,7 +2378,7 @@
                             <TextView
                                 android:id="@+id/pena_pequeno_count_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -2426,7 +2418,7 @@
                             <TextView
                                 android:id="@+id/pena_medio_count_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -2466,7 +2458,7 @@
                             <TextView
                                 android:id="@+id/pena_grande_count_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -2505,7 +2497,7 @@
                             <TextView
                                 android:id="@+id/header_tabela_vidro_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -2566,7 +2558,7 @@
                             <TextView
                                 android:id="@+id/tipo_vidro_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -2593,7 +2585,7 @@
                             <TextView
                                 android:id="@+id/pedacos_vidro_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -2633,7 +2625,7 @@
                             <TextView
                                 android:id="@+id/garrafapeq_vidro_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -2673,7 +2665,7 @@
                             <TextView
                                 android:id="@+id/garrafagra_vidro_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -2711,7 +2703,7 @@
                             <TextView
                                 android:id="@+id/header_tabela_outros_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -2770,7 +2762,7 @@
                             <TextView
                                 android:id="@+id/tipo_pds_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -2797,7 +2789,7 @@
                             <TextView
                                 android:id="@+id/cigarros_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -2837,7 +2829,7 @@
                             <TextView
                                 android:id="@+id/dejetos_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -2877,7 +2869,7 @@
                             <TextView
                                 android:id="@+id/indiferenciados_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -2919,7 +2911,7 @@
                             <TextView
                                 android:id="@+id/header_tabela_folhas_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -2978,7 +2970,7 @@
                             <TextView
                                 android:id="@+id/tipo_folhas_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -3005,7 +2997,7 @@
                             <TextView
                                 android:id="@+id/folhas_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -3045,7 +3037,7 @@
                             <TextView
                                 android:id="@+id/rampequenas_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -3085,7 +3077,7 @@
                             <TextView
                                 android:id="@+id/ramgrandes_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -3127,7 +3119,7 @@
                             <TextView
                                 android:id="@+id/header_tabela_pastilhas_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -3187,7 +3179,7 @@
                                 android:id="@+id/tipo_pastilhas_cf"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
                                 android:text="@string/pastilas_elasticas_label"
@@ -3213,7 +3205,7 @@
                             <TextView
                                 android:id="@+id/pastilhas_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -3253,7 +3245,7 @@
                             <TextView
                                 android:id="@+id/past_ate500_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -3293,7 +3285,7 @@
                             <TextView
                                 android:id="@+id/past_maior500_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -3337,7 +3329,7 @@
                             <TextView
                                 android:id="@+id/header_tabela_ra_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -3397,7 +3389,7 @@
                             <TextView
                                 android:id="@+id/tipo_ra_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -3423,7 +3415,7 @@
                             <TextView
                                 android:id="@+id/ra_pequeno_cf"
                                 android:layout_width="0.dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -3463,7 +3455,7 @@
                             <TextView
                                 android:id="@+id/ra_medio_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -3503,7 +3495,7 @@
                             <TextView
                                 android:id="@+id/ra_grande_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -3544,7 +3536,7 @@
                         <TextView
                             android:id="@+id/header_tabela_ra_cf2"
                             android:layout_width="0dp"
-                            android:layout_weight=".2"
+                            android:layout_weight=".15"
                             android:layout_height="match_parent"
                             android:background="@color/porto_ambiente"
                             android:gravity="center"
@@ -3603,7 +3595,7 @@
                             <TextView
                                 android:id="@+id/tipo_oro_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -3630,7 +3622,7 @@
                             <TextView
                                 android:id="@+id/oro_pequeno_cf"
                                 android:layout_width="0.dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -3670,7 +3662,7 @@
                             <TextView
                                 android:id="@+id/oro_medio_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -3710,7 +3702,7 @@
                             <TextView
                                 android:id="@+id/oro_grande_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -3749,7 +3741,7 @@
                             <TextView
                                 android:id="@+id/header_tabela_metlat_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -3797,7 +3789,7 @@
                             <TextView
                                 android:id="@+id/tipo_metais_cf"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -3811,7 +3803,7 @@
                                 android:id="@+id/minus_latas_metais_cf"
                                 android:layout_width="0dp"
                                 android:layout_weight=".15"
-                                android:layout_height="match_parent"
+                                android:layout_height="@dimen/tamanho_botoes"
                                 android:background="@color/cinza"
                                 android:onClick="minus_latas_metais_cf"
                                 android:text="@string/sinal_menos"
@@ -3824,7 +3816,7 @@
                                 android:id="@+id/latas_metais_cf"
                                 android:layout_width="0.dp"
                                 android:layout_weight=".15"
-                                android:layout_height="match_parent"
+                                android:layout_height="@dimen/tamanho_botoes"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
                                 android:textColor="@android:color/white"
@@ -3835,7 +3827,7 @@
                                 android:id="@+id/plus_latas_metais_cf"
                                 android:layout_width="0dp"
                                 android:layout_weight=".15"
-                                android:layout_height="match_parent"
+                                android:layout_height="@dimen/tamanho_botoes"
                                 android:background="@color/azul_claro"
                                 android:onClick="plus_latas_metais_cf"
                                 android:text="@string/sinal_mais"
@@ -3849,7 +3841,7 @@
                                 android:id="@+id/minus_outros_metais_cf"
                                 android:layout_width="0dp"
                                 android:layout_weight=".15"
-                                android:layout_height="match_parent"
+                                android:layout_height="@dimen/tamanho_botoes"
                                 android:background="@color/cinza"
                                 android:onClick="minus_outros_metais_cf"
                                 android:text="@string/sinal_menos"
@@ -3862,7 +3854,7 @@
                                 android:id="@+id/outros_metais_cf"
                                 android:layout_width="0dp"
                                 android:layout_weight=".15"
-                                android:layout_height="match_parent"
+                                android:layout_height="@dimen/tamanho_botoes"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
                                 android:textColor="@android:color/white"
@@ -3873,7 +3865,7 @@
                                 android:id="@+id/plus_outros_metais_cf"
                                 android:layout_width="0dp"
                                 android:layout_weight=".15"
-                                android:layout_height="match_parent"
+                                android:layout_height="@dimen/tamanho_botoes"
                                 android:background="@color/azul_claro"
                                 android:onClick="plus_outros_metais_cf"
                                 android:text="@string/sinal_mais"
@@ -3929,7 +3921,7 @@
                             <Button
                                 android:id="@+id/minus_numero_placas_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/cinza"
                                 android:onClick="minus_ajardinadas_pa"
@@ -3942,7 +3934,7 @@
                             <TextView
                                 android:id="@+id/numero_placas_count_pa"
                                 android:layout_width="0.dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -3953,7 +3945,7 @@
                             <Button
                                 android:id="@+id/plus_numero_placas_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/azul_claro"
                                 android:onClick="plus_ajardinadas_pa"
@@ -3976,7 +3968,7 @@
                             <TextView
                                 android:id="@+id/header_tabela_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -4036,7 +4028,7 @@
                             <TextView
                                 android:id="@+id/tipo_pea_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -4063,7 +4055,7 @@
                             <TextView
                                 android:id="@+id/pea_pequeno_count_pa"
                                 android:layout_width="0.dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -4103,7 +4095,7 @@
                             <TextView
                                 android:id="@+id/pea_medio_count_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -4143,7 +4135,7 @@
                             <TextView
                                 android:id="@+id/pea_grande_count_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -4179,7 +4171,7 @@
                             <TextView
                                 android:id="@+id/header_tabela_pa2"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -4238,7 +4230,7 @@
                             <TextView
                                 android:id="@+id/tipo_pena_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -4265,7 +4257,7 @@
                             <TextView
                                 android:id="@+id/pena_pequeno_count_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -4305,7 +4297,7 @@
                             <TextView
                                 android:id="@+id/pena_medio_count_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -4345,7 +4337,7 @@
                             <TextView
                                 android:id="@+id/pena_grande_count_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -4384,7 +4376,7 @@
                             <TextView
                                 android:id="@+id/header_tabela_vidro_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -4445,7 +4437,7 @@
                             <TextView
                                 android:id="@+id/tipo_vidro_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -4472,7 +4464,7 @@
                             <TextView
                                 android:id="@+id/pedacos_vidro_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -4512,7 +4504,7 @@
                             <TextView
                                 android:id="@+id/garrafapeq_vidro_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -4552,7 +4544,7 @@
                             <TextView
                                 android:id="@+id/garrafagra_vidro_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -4590,7 +4582,7 @@
                             <TextView
                                 android:id="@+id/header_tabela_outros_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -4649,7 +4641,7 @@
                             <TextView
                                 android:id="@+id/tipo_pds_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -4676,7 +4668,7 @@
                             <TextView
                                 android:id="@+id/cigarros_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -4716,7 +4708,7 @@
                             <TextView
                                 android:id="@+id/dejetos_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -4756,7 +4748,7 @@
                             <TextView
                                 android:id="@+id/indiferenciados_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -4798,7 +4790,7 @@
                             <TextView
                                 android:id="@+id/header_tabela_folhas_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -4857,7 +4849,7 @@
                             <TextView
                                 android:id="@+id/tipo_folhas_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -4884,7 +4876,7 @@
                             <TextView
                                 android:id="@+id/folhas_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -4924,7 +4916,7 @@
                             <TextView
                                 android:id="@+id/rampequenas_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -4964,7 +4956,7 @@
                             <TextView
                                 android:id="@+id/ramgrandes_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -5006,7 +4998,7 @@
                             <TextView
                                 android:id="@+id/header_tabela_pastilhas_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -5066,7 +5058,7 @@
                                 android:id="@+id/tipo_pastilhas_pa"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
                                 android:text="@string/pastilas_elasticas_label"
@@ -5092,7 +5084,7 @@
                             <TextView
                                 android:id="@+id/pastilhas_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -5132,7 +5124,7 @@
                             <TextView
                                 android:id="@+id/past_ate500_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -5172,7 +5164,7 @@
                             <TextView
                                 android:id="@+id/past_maior500_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -5216,7 +5208,7 @@
                             <TextView
                                 android:id="@+id/header_tabela_ra_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -5276,7 +5268,7 @@
                             <TextView
                                 android:id="@+id/tipo_ra_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -5303,7 +5295,7 @@
                             <TextView
                                 android:id="@+id/ra_pequeno_pa"
                                 android:layout_width="0.dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -5343,7 +5335,7 @@
                             <TextView
                                 android:id="@+id/ra_medio_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -5383,7 +5375,7 @@
                             <TextView
                                 android:id="@+id/ra_grande_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -5424,7 +5416,7 @@
                             <TextView
                                 android:id="@+id/header_tabela_oro_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -5483,7 +5475,7 @@
                             <TextView
                                 android:id="@+id/tipo_oro_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -5510,7 +5502,7 @@
                             <TextView
                                 android:id="@+id/oro_pequeno_pa"
                                 android:layout_width="0.dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -5550,7 +5542,7 @@
                             <TextView
                                 android:id="@+id/oro_medio_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -5590,7 +5582,7 @@
                             <TextView
                                 android:id="@+id/oro_grande_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".1"
+                                android:layout_weight=".12"
                                 android:layout_height="match_parent"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
@@ -5629,7 +5621,7 @@
                             <TextView
                                 android:id="@+id/header_tabela_metlat_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -5677,7 +5669,7 @@
                             <TextView
                                 android:id="@+id/tipo_metais_pa"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -5691,7 +5683,7 @@
                                 android:id="@+id/minus_latas_metais_pa"
                                 android:layout_width="0dp"
                                 android:layout_weight=".15"
-                                android:layout_height="match_parent"
+                                android:layout_height="@dimen/tamanho_botoes"
                                 android:background="@color/cinza"
                                 android:onClick="minus_latas_metais_pa"
                                 android:text="@string/sinal_menos"
@@ -5704,7 +5696,7 @@
                                 android:id="@+id/latas_metais_pa"
                                 android:layout_width="0.dp"
                                 android:layout_weight=".15"
-                                android:layout_height="match_parent"
+                                android:layout_height="@dimen/tamanho_botoes"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
                                 android:textColor="@android:color/white"
@@ -5715,7 +5707,7 @@
                                 android:id="@+id/plus_latas_metais_pa"
                                 android:layout_width="0dp"
                                 android:layout_weight=".15"
-                                android:layout_height="match_parent"
+                                android:layout_height="@dimen/tamanho_botoes"
                                 android:background="@color/azul_claro"
                                 android:onClick="plus_latas_metais_pa"
                                 android:text="@string/sinal_mais"
@@ -5729,7 +5721,7 @@
                                 android:id="@+id/minus_outros_metais_pa"
                                 android:layout_width="0dp"
                                 android:layout_weight=".15"
-                                android:layout_height="match_parent"
+                                android:layout_height="@dimen/tamanho_botoes"
                                 android:background="@color/cinza"
                                 android:onClick="minus_outros_metais_pa"
                                 android:text="@string/sinal_menos"
@@ -5742,7 +5734,7 @@
                                 android:id="@+id/outros_metais_pa"
                                 android:layout_width="0dp"
                                 android:layout_weight=".15"
-                                android:layout_height="match_parent"
+                                android:layout_height="@dimen/tamanho_botoes"
                                 android:gravity="center|center_vertical"
                                 android:text="@string/contagem_inicio"
                                 android:textColor="@android:color/white"
@@ -5753,7 +5745,7 @@
                                 android:id="@+id/plus_outros_metais_pa"
                                 android:layout_width="0dp"
                                 android:layout_weight=".15"
-                                android:layout_height="match_parent"
+                                android:layout_height="@dimen/tamanho_botoes"
                                 android:background="@color/azul_claro"
                                 android:onClick="plus_outros_metais_pa"
                                 android:text="@string/sinal_mais"
@@ -5794,7 +5786,7 @@
                             <TextView
                                 android:id="@+id/header_tabela_bl"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -5856,7 +5848,7 @@
                                 android:id="@+id/tipo_bocalobolimpa_bl"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
                                 android:text="@string/boca_de_lobo_label"
@@ -5995,7 +5987,7 @@
                             <TextView
                                 android:id="@+id/header_tabela_pap"
                                 android:layout_width="0dp"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:layout_height="match_parent"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
@@ -6047,7 +6039,7 @@
                                 android:id="@+id/tipo_papeleira_bl"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_weight=".2"
+                                android:layout_weight=".15"
                                 android:background="@color/porto_ambiente"
                                 android:gravity="center"
                                 android:text="@string/papeleiras_label"
