@@ -5,7 +5,7 @@
     <string name="residuos_title_text">Amostra</string>
     <string name="residuos_hint_text">Introduzir o nº da amostra (Ex: Amostra 1)</string>
     <string name="area_title_text">Área</string>
-    <string name="area_hint_text">Introduzir a área em m<sup><small>2</small></sup> (Ex: 500 m<sup><small>2</small></sup>)</string>
+    <string name="area_hint_text">Introduzir a área em m<sup><small>2</small></sup> (Ex: 500)</string>
     <string name="tipo_header_text"></string>
     <string name="pequeno_letra_header">Pequeno</string>
     <string name="medio_letra_header">Médio</string>
@@ -60,4 +60,21 @@
     <string name="papeleira_vazia">Vazia</string>
     <string name="papeleira_cheia">Cheia</string>
     <string name="title_bar"><b>Contabilização de resíduos</b></string>
+
+
+    <string-array name="mobile_manufacturers">
+        <item>Select one Item</item>
+        <item>Samsung</item>
+        <item>Foxconn</item>
+        <item>Apple</item>
+        <item>Oppo</item>
+        <item>Nokia</item>
+        <item>LYF</item>
+        <item>Xiaomi</item>
+        <item>Huawei</item>
+        <item>Asus</item>
+        <item>Lenovo</item>
+    </string-array>
+
+
 </resources>

@@ -1,6 +1,7 @@
 package com.example.feupportoambiente;
 
 import android.Manifest;
+import android.content.DialogInterface;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.graphics.Color;
@@ -9,6 +10,7 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.v4.content.ContextCompat;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.WindowManager;
@@ -19,6 +21,13 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
+
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
+
+
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -27,7 +36,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
 
 
     private static final String LOG_TAG = "Teste";
@@ -274,6 +283,16 @@ public class MainActivity extends AppCompatActivity {
         tabs.setup();
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
 
+        Spinner spinner = (Spinner) findViewById(R.id.spinner_search);
+        // Creating ArrayAdapter using the string array and default spinner layout
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+                R.array.mobile_manufacturers, android.R.layout.simple_spinner_item);
+        // Specify layout to be used when list of choices appears
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        // Applying the adapter to our spinner
+        spinner.setAdapter(adapter);
+        spinner.setOnItemSelectedListener(this);
+
 
 
 
@@ -459,6 +478,51 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+        String selectedItem = parent.getItemAtPosition(position).toString();
+        switch (selectedItem) {
+            case "Select one Item":
+                break;
+            case "Samsung":
+                Toast.makeText(getApplicationContext(), selectedItem + " in Korean means 3 Stars!", Toast.LENGTH_SHORT).show();
+                break;
+            case "Foxconn":
+                Toast.makeText(getApplicationContext(), selectedItem + " is world's largest contract electronics manufacturer", Toast.LENGTH_SHORT).show();
+                break;
+            case "Apple":
+                Toast.makeText(getApplicationContext(), selectedItem + " was founded in 1976!", Toast.LENGTH_SHORT).show();
+                break;
+            case "Oppo":
+                Toast.makeText(getApplicationContext(), selectedItem + " made first phone that can make 50MP photos", Toast.LENGTH_SHORT).show();
+                break;
+            case "Nokia":
+                Toast.makeText(getApplicationContext(), selectedItem + " was founded 151 years ago!", Toast.LENGTH_SHORT).show();
+                break;
+            case "LYF":
+                Toast.makeText(getApplicationContext(), selectedItem + " is an Indian Mobile Handset company", Toast.LENGTH_SHORT).show();
+                break;
+            case "Xiaomi":
+                Toast.makeText(getApplicationContext(), selectedItem + " is world's 4th largest smartphone maker!", Toast.LENGTH_SHORT).show();
+                break;
+            case "Huawei":
+                Toast.makeText(getApplicationContext(), selectedItem + " is largest telecommunications equipment manufacturer in the World! ", Toast.LENGTH_SHORT).show();
+                break;
+            case "Asus":
+                Toast.makeText(getApplicationContext(), selectedItem + " name came from word PEGASUS", Toast.LENGTH_SHORT).show();
+                break;
+            case "Lenovo":
+                Toast.makeText(getApplicationContext(), selectedItem + " is largest PC vendor by unit sales", Toast.LENGTH_SHORT).show();
+                break;
+        }
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> parent) {
+
+    }
+
 
     public void stopPlaying(){
         if (mp != null){
@@ -2005,6 +2069,38 @@ public class MainActivity extends AppCompatActivity {
                     bocalobolimpa_bl, bocalobosuja_bl, bocalobototal_bl, papeleirasvazia_bl, papeleirascheias_bl, papeleirastotal_bl, pan, cfn, bln, datahora, ajardinadas_pa, caldeiras_cf);
 
 
+            Double areanum = Double.parseDouble(area);
+
+            double il = CalculoIl(areanum, pea_pequeno_rua, pea_medio_rua, pea_grande_rua, pena_pequeno_rua, pena_medio_rua, pena_grande_rua, pedacos_vidro_rua,
+                    garrafapeq_vidro_rua, garrafagra_vidro_rua, cigarros_rua, dejetos_rua, indiferenciados_rua, folhas_rua, rampequenas_rua, ramgrandes_rua,
+                    pastilhas_rua, past_ate500_rua, past_maior500_rua, ra_pequeno_rua, ra_medio_rua, ra_grande_rua, oro_pequeno_rua, oro_medio_rua, oro_grande_rua,
+                    latas_metais_rua, outros_metais_rua, pea_pequeno_pa, pea_medio_pa, pea_grande_pa, pena_pequeno_pa, pena_medio_pa, pena_grande_pa, pedacos_vidro_pa,
+                    garrafapeq_vidro_pa, garrafagra_vidro_pa, cigarros_pa, dejetos_pa, indiferenciados_pa, folhas_pa, rampequenas_pa, ramgrandes_pa, pastilhas_pa,
+                    past_ate500_pa, past_maior500_pa, ra_pequeno_pa, ra_medio_pa, ra_grande_pa, oro_pequeno_pa, oro_medio_pa, oro_grande_pa, latas_metais_pa,
+                    outros_metais_pa, pea_pequeno_cf, pea_medio_cf, pea_grande_cf, pena_pequeno_cf, pena_medio_cf, pena_grande_cf, pedacos_vidro_cf, garrafapeq_vidro_cf,
+                    garrafagra_vidro_cf, cigarros_cf, dejetos_cf, indiferenciados_cf, folhas_cf, rampequenas_cf, ramgrandes_cf, pastilhas_cf, past_ate500_cf,
+                    past_maior500_cf, ra_pequeno_cf, ra_medio_cf, ra_grande_cf, oro_pequeno_cf, oro_medio_cf, oro_grande_cf, latas_metais_cf, outros_metais_cf,
+                    bocalobolimpa_bl, bocalobosuja_bl, bocalobototal_bl, papeleirasvazia_bl, papeleirascheias_bl, papeleirastotal_bl, pan, cfn, bln);
+
+
+            //Caixa de Dialogo para mostrar Indice de Limpeza
+            AlertDialog.Builder indice = new AlertDialog.Builder(this);
+            indice.setTitle("Indice de Limpeza:")
+                    .setMessage("O indice de limpeza é: " + il)
+                    .setPositiveButton("ok", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+
+                        }
+                    });
+
+            indice.show();
+            // FIM CAIXA DIALOGO
+
+
+
+
+
             pea_pequeno_rua = 0;
             pea_medio_rua = 0;
             pea_grande_rua = 0;
@@ -2196,6 +2292,10 @@ public class MainActivity extends AppCompatActivity {
             count_papeleirastotal_bl.setText(Integer.toString(papeleirastotal_bl));
 
             mResiduos.setText("");
+
+
+
+
 
         }
 
@@ -2477,6 +2577,308 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    public double calculoFactor(double pea, double pena, double ra, double oro, double cigarros, double dejetos, double indiferenciados, double folhas, double incrustacoes, double vidro, double metais, boolean pg){
+        double li_pea=0;
+        double li_pena=0;
+        double li_ra=0;
+        double li_oro=0;
+        double li_cigarros=0;
+        double li_dejetos=0;
+        double li_indiferenciados=0;
+        double li_folhas=0;
+        double li_incrustacoes=0;
+        double li_vidro=0;
+        double li_metais=0;
+
+        double wi_pea;
+        double wi_pena;
+        double wi_ra;
+        double wi_oro;
+        double wi_cigarros;
+        double wi_dejetos;
+        double wi_indiferenciados;
+        double wi_folhas;
+        double wi_incrustacoes;
+        double wi_vidro;
+        double wi_metais;
+
+        if(pg){
+            wi_pea = 0.092;
+            wi_pena = 0.083;
+            wi_ra = 0.097;
+            wi_oro = 0.094;
+            wi_cigarros = 0.085;
+            wi_dejetos = 0.114;
+            wi_indiferenciados = 0.099;
+            wi_folhas = 0.060;
+            wi_incrustacoes = 0.078;
+            wi_vidro = 0.105;
+            wi_metais = 0.093;
+        }else{
+            wi_pea = 0.107;
+            wi_pena = 0.096;
+            wi_ra = 0.113;
+            wi_oro = 0.109;
+            wi_cigarros = 0.099;
+            wi_dejetos = 0.131;
+            wi_indiferenciados = 0.115;
+            wi_folhas = 1;
+            wi_incrustacoes = 1;
+            wi_vidro = 0.122;
+            wi_metais = 0.108;
+        }
+
+
+        if (pea > 3 && pea < 22){
+            li_pea = (-5.3 * pea) + 115.8;
+        }else if (pea <= 3){
+            li_pea = 3;
+        }else if (pea >= 22 ){
+            li_pea = 22;
+        }
+
+        if (pena > 5 && pena < 30){
+            li_pena = (-4 * pena) + 120;
+        }else if (pena <= 5){
+            li_pena = 5;
+        }else if (pena >= 30 ){
+            li_pena = 30;
+        }
+
+        if (ra > 1 && ra < 6){
+            li_ra = (-20 * ra) + 120;
+        }else if (ra <= 1){
+            li_ra = 1;
+        }else if (ra >= 6 ){
+            li_ra = 6;
+        }
+
+        if (oro > 1 && oro < 4){
+            li_oro = (-33.3 * oro) + 133.3;
+        }else if (oro <= 1){
+            li_oro = 1;
+        }else if (oro >= 4 ){
+            li_oro = 4;
+        }
+
+        if (cigarros > 40 && cigarros < 300){
+            li_cigarros = (-0.4 * cigarros) + 115.4;
+        }else if (cigarros <= 40){
+            li_cigarros = 40;
+        }else if (cigarros >= 300 ){
+            li_cigarros = 300;
+        }
+
+        if (dejetos > 0 && dejetos < 2){
+            li_dejetos = (-50 * dejetos) + 100;
+        }else if (dejetos <= 0){
+            li_dejetos = 0;
+        }else if (dejetos >= 2 ){
+            li_dejetos = 2;
+        }
+
+        if (indiferenciados > 0 && indiferenciados < 2){
+            li_indiferenciados = (-50 * indiferenciados) + 100;
+        }else if (indiferenciados <= 0){
+            li_indiferenciados = 0;
+        }else if (indiferenciados >= 2 ){
+            li_indiferenciados = 2;
+        }
+
+        if (folhas > 80 && folhas < 200){
+            li_folhas = (-0.8 * folhas) + 166.7;
+        }else if (folhas <= 80){
+            li_folhas = 80;
+        }else if (folhas >= 200 ){
+            li_folhas = 200;
+        }
+
+        if (incrustacoes > 100 && incrustacoes < 900){
+            li_incrustacoes = (-0.1 * incrustacoes) + 112.5;
+        }else if (incrustacoes <= 100){
+            li_incrustacoes = 100;
+        }else if (incrustacoes >= 900 ){
+            li_incrustacoes = 900;
+        }
+
+        if (vidro > 10 && vidro < 60){
+            li_vidro = (-2 * vidro) + 120;
+        }else if (vidro <= 10){
+            li_vidro = 10;
+        }else if (vidro >= 60 ){
+            li_vidro = 60;
+        }
+
+        if (metais > 5 && metais < 18){
+            li_metais = (-7.7 * metais) + 138.56;
+        }else if (metais <= 5){
+            li_metais = 5;
+        }else if (metais >= 18 ){
+            li_metais = 18;
+        }
+
+        double factor;
+
+        factor = Math.pow(li_pea,wi_pea) * Math.pow(li_pena,wi_pena) * Math.pow(li_ra,wi_ra) * Math.pow(li_oro,wi_oro) * Math.pow(li_cigarros,wi_cigarros) * Math.pow(li_dejetos,wi_dejetos) *
+                Math.pow(li_indiferenciados,wi_indiferenciados) * Math.pow(li_folhas,wi_folhas) * Math.pow(li_incrustacoes,wi_incrustacoes) * Math.pow(li_vidro,wi_vidro) * Math.pow(li_metais,wi_metais);
+
+
+        return factor;
+        
+    }
+
+    // Função para calcular Indice de Limpeza (Il)
+    public double CalculoIl(double area, int pea_pequeno_rua, int pea_medio_rua, int pea_grande_rua, int pena_pequeno_rua, int pena_medio_rua, int pena_grande_rua, int pedacos_vidro_rua,
+                          int garrafapeq_vidro_rua, int garrafagra_vidro_rua, int cigarros_rua, int dejetos_rua, int indiferenciados_rua, int folhas_rua, int rampequenas_rua, int ramgrandes_rua,
+                          int pastilhas_rua, int past_ate500_rua, int past_maior500_rua, int ra_pequeno_rua, int ra_medio_rua, int ra_grande_rua, int oro_pequeno_rua, int oro_medio_rua, int oro_grande_rua,
+                          int latas_metais_rua, int outros_metais_rua, int pea_pequeno_pa, int pea_medio_pa, int pea_grande_pa, int pena_pequeno_pa, int pena_medio_pa, int pena_grande_pa, int pedacos_vidro_pa,
+                          int garrafapeq_vidro_pa, int garrafagra_vidro_pa, int cigarros_pa, int dejetos_pa, int indiferenciados_pa, int folhas_pa, int rampequenas_pa, int ramgrandes_pa, int pastilhas_pa,
+                          int past_ate500_pa, int past_maior500_pa, int ra_pequeno_pa, int ra_medio_pa, int ra_grande_pa, int oro_pequeno_pa, int oro_medio_pa, int oro_grande_pa, int latas_metais_pa,
+                          int outros_metais_pa, int pea_pequeno_cf, int pea_medio_cf, int pea_grande_cf, int pena_pequeno_cf, int pena_medio_cf, int pena_grande_cf, int pedacos_vidro_cf, int garrafapeq_vidro_cf,
+                          int garrafagra_vidro_cf, int cigarros_cf, int dejetos_cf, int indiferenciados_cf, int folhas_cf, int rampequenas_cf, int ramgrandes_cf, int pastilhas_cf, int past_ate500_cf,
+                          int past_maior500_cf, int ra_pequeno_cf, int ra_medio_cf, int ra_grande_cf, int oro_pequeno_cf, int oro_medio_cf, int oro_grande_cf, int latas_metais_cf, int outros_metais_cf,
+                          int bocalobolimpa_bl, int bocalobosuja_bl, int bocalobototal_bl, int papeleirasvazia_bl, int papeleirascheias_bl, int papeleirastotal_bl, int pan, int cfn, int bln){
+
+        //valores normalizados (Ri) dos residuos - Rua
+        double pea_rua;
+        double pena_rua;
+        double ra_rua;
+        double oro_rua;
+        double cigarros_rua_norm;
+        double dejetos_rua_norm;
+        double indiferenciados_rua_norm;
+        double folhas_rua_norm;
+        double incrustacoes_rua;
+        double vidro_rua;
+        double metais_rua;
+
+        //valores normalizados(Ri) dos residuos - Placas ajardinadas
+        double pea_pa;
+        double pena_pa;
+        double ra_pa;
+        double oro_pa;
+        double cigarros_pa_norm;
+        double dejetos_pa_norm;
+        double indiferenciados_pa_norm;
+        double folhas_pa_norm;
+        double incrustacoes_pa;
+        double vidro_pa;
+        double metais_pa;
+
+        //valores normalizados(Ri) dos residuos - Caldeiras/Floreiras
+        double pea_cf;
+        double pena_cf;
+        double ra_cf;
+        double oro_cf;
+        double cigarros_cf_norm;
+        double dejetos_cf_norm;
+        double indiferenciados_cf_norm;
+        double folhas_cf_norm;
+        double incrustacoes_cf;
+        double vidro_cf;
+        double metais_cf;
+
+        pea_rua = pea_pequeno_rua + (pea_medio_rua * 3) + (pea_grande_rua * 9) / (area/100);
+        pena_rua = pena_pequeno_rua + (pena_medio_rua * 3) + (pena_grande_rua * 9) / (area/100);
+        ra_rua = ra_pequeno_rua + (ra_medio_rua * 3) + (ra_grande_rua *9) / (area/100);
+        oro_rua = oro_pequeno_rua + (oro_medio_rua *3) + (oro_grande_rua * 9) / (area/100);
+        cigarros_rua_norm = cigarros_rua / (area/100);
+        dejetos_rua_norm = dejetos_rua / (area/100);
+        indiferenciados_rua_norm = indiferenciados_rua / (area/100);
+        folhas_rua_norm = folhas_rua + rampequenas_rua + ramgrandes_rua / (area/100);
+        incrustacoes_rua = (pastilhas_rua * 0.5) + (past_ate500_rua * 0.8) + past_maior500_rua / (area/100);
+        vidro_rua = pedacos_vidro_rua + (garrafapeq_vidro_rua * 6) + (garrafagra_vidro_rua * 9) / (area/100);
+        metais_rua = (latas_metais_rua * 6) + outros_metais_rua / (area/100);
+
+        pea_pa = pea_pequeno_pa + (pea_medio_pa * 3) + (pea_grande_pa * 9) / (area/100);
+        pena_pa = pena_pequeno_pa + (pena_medio_pa * 3) + (pena_grande_pa * 9) / (area/100);
+        ra_pa = ra_pequeno_pa + (ra_medio_pa * 3) + (ra_grande_pa *9) / (area/100);
+        oro_pa = oro_pequeno_pa + (oro_medio_pa *3) + (oro_grande_pa * 9) / (area/100);
+        cigarros_pa_norm = cigarros_pa / (area/100);
+        dejetos_pa_norm = dejetos_pa / (area/100);
+        indiferenciados_pa_norm = indiferenciados_pa / (area/100);
+        folhas_pa_norm = folhas_pa + rampequenas_pa + ramgrandes_pa / (area/100);
+        incrustacoes_pa = (pastilhas_pa * 0.5) + (past_ate500_pa * 0.8) + past_maior500_pa / (area/100);
+        vidro_pa = pedacos_vidro_pa + (garrafapeq_vidro_pa * 6) + (garrafagra_vidro_pa * 9) / (area/100);
+        metais_pa = (latas_metais_pa * 6) + outros_metais_pa / (area/100);
+
+        pea_cf = pea_pequeno_cf + (pea_medio_cf * 3) + (pea_grande_cf * 9) / (area/100);
+        pena_cf = pena_pequeno_cf + (pena_medio_cf * 3) + (pena_grande_cf * 9) / (area/100);
+        ra_cf = ra_pequeno_cf + (ra_medio_cf * 3) + (ra_grande_cf *9) / (area/100);
+        oro_cf = oro_pequeno_cf + (oro_medio_cf *3) + (oro_grande_cf * 9) / (area/100);
+        cigarros_cf_norm = cigarros_cf / (area/100);
+        dejetos_cf_norm = dejetos_cf / (area/100);
+        indiferenciados_cf_norm = indiferenciados_cf / (area/100);
+        folhas_cf_norm = folhas_cf + rampequenas_cf + ramgrandes_cf / (area/100);
+        incrustacoes_cf = (pastilhas_cf * 0.5) + (past_ate500_cf * 0.8) + past_maior500_cf / (area/100);
+        vidro_cf = pedacos_vidro_cf + (garrafapeq_vidro_cf * 6) + (garrafagra_vidro_cf * 9) / (area/100);
+        metais_cf = (latas_metais_cf * 6) + outros_metais_cf / (area/100);
+        
+        double pgfactor = calculoFactor(pea_rua, pena_rua, ra_rua, oro_rua, cigarros_rua_norm, dejetos_rua_norm, indiferenciados_rua_norm, folhas_rua_norm, incrustacoes_rua, vidro_rua, metais_rua,true);
+
+        double pafactor = calculoFactor(pea_pa, pena_pa, ra_pa, oro_pa, cigarros_pa_norm, dejetos_pa_norm, indiferenciados_pa_norm, folhas_pa_norm, incrustacoes_pa, vidro_pa, metais_pa, false);
+
+        double cffactor = calculoFactor(pea_cf, pena_cf, ra_cf, oro_cf, cigarros_cf_norm, dejetos_cf_norm, indiferenciados_cf_norm, folhas_cf_norm, incrustacoes_cf, vidro_cf, metais_cf, false);
+
+
+        double blfactor = 0;
+
+        double papfactor = 0;
+
+        double Ppg=0;
+        double Ppa=0;
+        double Pcf=0;
+        double Pbl=0;
+        double Pp=0;
+
+        if(pan == 1 && cfn == 1 && bln == 1){
+            Ppg = 0.029;
+            Ppa = 0.192;
+            Pcf = 0.150;
+            Pbl = 0.150;
+            Pp = 0.279;
+            blfactor = (bocalobolimpa_bl/bocalobototal_bl)*100;
+            papfactor = (papeleirasvazia_bl/papeleirastotal_bl) * 100;
+        }else if (pan == 0 && cfn == 0 && bln == 1){
+            Ppg = 0.348;
+            Ppa = 0.000;
+            Pcf = 0.000;
+            Pbl = 0.228;
+            Pp = 0.424;
+            blfactor = (bocalobolimpa_bl/bocalobototal_bl)*100;
+            papfactor = (papeleirasvazia_bl/papeleirastotal_bl) * 100;
+        }else if (pan == 0 && cfn == 1 && bln == 1){
+            Ppg = 0.283;
+            Ppa = 0.000;
+            Pcf = 0.186;
+            Pbl = 0.186;
+            Pp = 0.345;
+            blfactor = (bocalobolimpa_bl/bocalobototal_bl)*100;
+            papfactor = (papeleirasvazia_bl/papeleirastotal_bl) * 100;
+        }else if (pan == 0 && cfn == 0 && bocalobototal_bl == 0 && papeleirastotal_bl > 0){
+            Ppg = 0.451;
+            Ppa = 0.000;
+            Pcf = 0.000;
+            Pbl = 0.000;
+            Pp = 0.549;
+            papfactor = (papeleirasvazia_bl/papeleirastotal_bl) * 100;
+        }else if (pan == 0 && cfn == 0 && bln == 0) {
+            Ppg = 1;
+            Ppa = 0.000;
+            Pcf = 0.000;
+            Pbl = 0.000;
+            Pp = 0.000;
+        }
+
+        double il = (pgfactor*Ppg) + (pafactor * Ppa) + (cffactor * Pcf) + (blfactor * Pbl) + (papfactor* Pp);
+
+        return il;
+
+
+
+    }
+
+
     public void onCheckboxClicked(View view) {
         // Is the view now checked?
         boolean checked = ((CheckBox) view).isChecked();
@@ -2506,6 +2908,8 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
+
+
 
 
 }

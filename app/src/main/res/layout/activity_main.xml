@@ -48,6 +48,11 @@
                         android:hint="@string/rua_hint_text"
                         android:background="@color/branco"/>
 
+                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                            android:id="@+id/spinner_search"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp" />
+
                     <TextView
                         android:id="@+id/titulo_amostra"
                         android:layout_width="match_parent"
