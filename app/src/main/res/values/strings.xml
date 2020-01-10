@@ -62,18 +62,2173 @@
     <string name="title_bar"><b>Contabilização de resíduos</b></string>
 
 
-    <string-array name="mobile_manufacturers">
-        <item>Select one Item</item>
-        <item>Samsung</item>
-        <item>Foxconn</item>
-        <item>Apple</item>
-        <item>Oppo</item>
-        <item>Nokia</item>
-        <item>LYF</item>
-        <item>Xiaomi</item>
-        <item>Huawei</item>
-        <item>Asus</item>
-        <item>Lenovo</item>
+    <string-array name="ruas">
+        <item>Escolha uma Rua:</item>
+        <item>2ª Rua Particular do Castelo do Queijo	</item>
+        <item>	Acesso Norte ao Túnel das Antas I 	</item>
+        <item>	Acesso Sul ao Túnel das Antas I	</item>
+        <item>	Alameda Basilio Teles	</item>
+        <item>	Alameda da Cruz Vermelha Portuguesa	</item>
+        <item>	Alameda das Antas	</item>
+        <item>	Alameda das Fontainhas	</item>
+        <item>	Alameda de 25 de Abril	</item>
+        <item>	Alameda de Aquilino Ribeiro	</item>
+        <item>	Alameda de Cartes	</item>
+        <item>	Alameda de Claudio Carneiro	</item>
+        <item>	Alameda de Eça de Queiroz	</item>
+        <item>	Alameda de Manuel de Arriaga	</item>
+        <item>	Alameda do Arquitecto Carlos Ramos	</item>
+        <item>	Alameda do Dr. António Macedo	</item>
+        <item>	Alameda do Dr. Fernando Azeredo Antas	</item>
+        <item>	Alameda do Professor Hernâni Monteiro	</item>
+        <item>	Alameda do Professor Ruy Luís Gomes	</item>
+        <item>	Alameda dos Capitães de Abril	</item>
+        <item>	Arruamento interior - Igreja de Campanhã	</item>
+        <item>	Arruamento interior - Marina do Freixo	</item>
+        <item>	Arruamento interior do Bairro do Amial	</item>
+        <item>	Auto Estrada A3	</item>
+        <item>	Avenida 25 de Abril	</item>
+        <item>	Avenida Artur de Andrade	</item>
+        <item>	Avenida D. João II	</item>
+        <item>	Avenida D. Pedro IV	</item>
+        <item>	Avenida da Associação Empresarial de Portugal	</item>
+        <item>	Avenida da Boavista	</item>
+        <item>	Avenida da Cidade de Léon	</item>
+        <item>	Avenida da Cidade de Xangai	</item>
+        <item>	Avenida da França	</item>
+        <item>	Avenida das Congostas	</item>
+        <item>	Avenida de Camilo	</item>
+        <item>	Avenida de D. Afonso Henriques	</item>
+        <item>	Avenida de D. Carlos I	</item>
+        <item>	Avenida de Fernão de Magalhães	</item>
+        <item>	Avenida de Fontes Pereira de Melo	</item>
+        <item>	Avenida de Gustavo Eiffel	</item>
+        <item>	Avenida de Montevideu	</item>
+        <item>	Avenida de Paiva Couceiro	</item>
+        <item>	Avenida de Rodrigues de Freitas	</item>
+        <item>	Avenida de Sidónio Pais	</item>
+        <item>	Avenida de Vímara Peres	</item>
+        <item>	Avenida de Vasco da Gama	</item>
+        <item>	Avenida do Bessa	</item>
+        <item>	Avenida do Brasil	</item>
+        <item>	Avenida do Conselho da Europa	</item>
+        <item>	Avenida do Dr. Antunes Guimarães	</item>
+        <item>	Avenida do Marechal Gomes da Costa	</item>
+        <item>	Avenida do Parque	</item>
+        <item>	Avenida dos Aliados	</item>
+        <item>	Avenida dos Combatentes da Grande Guerra	</item>
+        <item>	Avenida Flor da Rosa	</item>
+        <item>	Avenida Francisco Xavier Esteves 	</item>
+        <item>	Avenida José Domingues dos Santos	</item>
+        <item>	Bairro do Leal	</item>
+        <item>	Bairro Herculano	</item>
+        <item>	Beco Central	</item>
+        <item>	Beco da Bela Vista	</item>
+        <item>	Beco da Beneditina	</item>
+        <item>	Beco da Senhora da Luz	</item>
+        <item>	Beco das Navas de Tolosa	</item>
+        <item>	Beco de Bonjoia	</item>
+        <item>	Beco de Carreiras	</item>
+        <item>	Beco de Passos Manuel	</item>
+        <item>	Beco de Redemoinhos	</item>
+        <item>	Beco de S. João da Foz	</item>
+        <item>	Beco de S. Macário	</item>
+        <item>	Beco de S. Marçal	</item>
+        <item>	Beco do Arrabalde	</item>
+        <item>	Beco do Campo	</item>
+        <item>	Beco do Campo Alegre	</item>
+        <item>	Beco do Machado	</item>
+        <item>	Beco do Meiral	</item>
+        <item>	Beco do Monte da Bela	</item>
+        <item>	Beco do Outeiro	</item>
+        <item>	Beco do Paço	</item>
+        <item>	Beco do Pedregulho	</item>
+        <item>	Beco do Preto	</item>
+        <item>	Cais da Estiva	</item>
+        <item>	Cais da Ribeira	</item>
+        <item>	Cais das Pedras	</item>
+        <item>	Cais do Bicalho	</item>
+        <item>	Cais dos Guindais	</item>
+        <item>	Calçada da Arrábida	</item>
+        <item>	Calçada da Boa Viagem	</item>
+        <item>	Calçada da Maceda	</item>
+        <item>	Calçada da Póvoa	</item>
+        <item>	Calçada da Ranha	</item>
+        <item>	Calçada da Serrúbia	</item>
+        <item>	Calçada das Carquejeiras	</item>
+        <item>	Calçada das Laranjeiras	</item>
+        <item>	Calçada das Virtudes	</item>
+        <item>	Calçada de Chaves de Oliveira	</item>
+        <item>	Calçada de D. Pedro Pitões	</item>
+        <item>	Calçada de Godim	</item>
+        <item>	Calçada de João do Carmo	</item>
+        <item>	Calçada de Monchique	</item>
+        <item>	Calçada de Nova Sintra	</item>
+        <item>	Calçada de S. Pedro	</item>
+        <item>	Calçada de Sobre-o-Douro	</item>
+        <item>	Calçada de Vandoma	</item>
+        <item>	Calçada do Calvário	</item>
+        <item>	Calçada do Carregal	</item>
+        <item>	Calçada do Forno Velho	</item>
+        <item>	Calçada do Leal	</item>
+        <item>	Calçada do Monte da Lapa	</item>
+        <item>	Calçada do Monte de S. João	</item>
+        <item>	Calçada do Ouro	</item>
+        <item>	Calçada do Rêgo Lameiro	</item>
+        <item>	Calçada dos Ingleses	</item>
+        <item>	Calçada Marques Marinho	</item>
+        <item>	Caminho da Aldeia	</item>
+        <item>	Caminho da Asprela	</item>
+        <item>	Caminho da Bela	</item>
+        <item>	Caminho da Fonte de Cima	</item>
+        <item>	Campo de Vinte e Quatro de Agosto	</item>
+        <item>	Campo do Rou	</item>
+        <item>	Campo dos Mártires da Pátria	</item>
+        <item>	Colónia de Antero de Quental	</item>
+        <item>	Escadas Bairro Antas	</item>
+        <item>	Escadas Carolina  Michaelis de Vasconcelos	</item>
+        <item>	Escadas da Igreja	</item>
+        <item>	Escadas da Sé	</item>
+        <item>	Escadas da Vitória	</item>
+        <item>	Escadas das Sereias	</item>
+        <item>	Escadas das Verdades	</item>
+        <item>	Escadas de S. Francisco de Borja	</item>
+        <item>	Escadas do Adro	</item>
+        <item>	Escadas do Barredo	</item>
+        <item>	Escadas do Caminho Novo	</item>
+        <item>	Escadas do Cidral de Baixo	</item>
+        <item>	Escadas do Cidral de Cima	</item>
+        <item>	Escadas do Codeçal	</item>
+        <item>	Escadas do Colégio	</item>
+        <item>	Escadas do Monte Cativo	</item>
+        <item>	Escadas do Monte dos Judeus	</item>
+        <item>	Escadas do Pinheiro	</item>
+        <item>	Escadas do Recanto	</item>
+        <item>	Escadas do Roleto	</item>
+        <item>	Escadas dos Armazéns	</item>
+        <item>	Escadas dos Guindais	</item>
+        <item>	Escadas Garcia de Orta	</item>
+        <item>	Esplanada do Castelo	</item>
+        <item>	Esplanada do Molhe	</item>
+        <item>	Estrada da Circunvalação	</item>
+        <item>	Estrada Nacional 108	</item>
+        <item>	Estrada Nacional 209	</item>
+        <item>	Itinerário Complementar IC29	</item>
+        <item>	Jardim Antero de Figueiredo	</item>
+        <item>	Jardim Arnaldo Gama	</item>
+        <item>	Jardim de Belém	</item>
+        <item>	Jardim de Carrilho Videira	</item>
+        <item>	Jardim de Guedes de Oliveira	</item>
+        <item>	Jardim de Marques de Oliveira	</item>
+        <item>	Jardim de Sophia	</item>
+        <item>	Jardim de Teófilo Braga	</item>
+        <item>	Jardim do Moreda	</item>
+        <item>	Jardim do Passeio Alegre	</item>
+        <item>	Jardim João Chagas	</item>
+        <item>	Jardim José Roquette	</item>
+        <item>	Jardim Machado de Assis	</item>
+        <item>	Jardim Paulo Vallada	</item>
+        <item>	Jardim Severo Portela	</item>
+        <item>	Largo Amor de Perdição 	</item>
+        <item>	Largo da Alfândega	</item>
+        <item>	Largo da Beneditina	</item>
+        <item>	Largo da Carvalhosa	</item>
+        <item>	Largo da Costa Nova	</item>
+        <item>	Largo da Cruz	</item>
+        <item>	Largo da Fontinha	</item>
+        <item>	Largo da Igreja	</item>
+        <item>	Largo da Igreja de Paranhos	</item>
+        <item>	Largo da Lapa	</item>
+        <item>	Largo da Maceda	</item>
+        <item>	Largo da Maternidade de Júlio Dinis	</item>
+        <item>	Largo da Noeda	</item>
+        <item>	Largo da Póvoa de Varzim	</item>
+        <item>	Largo da Paz	</item>
+        <item>	Largo da Pena Ventosa	</item>
+        <item>	Largo da Ramada Alta	</item>
+        <item>	Largo da Ramadinha	</item>
+        <item>	Largo da Saudade	</item>
+        <item>	Largo de Alberto Pimentel	</item>
+        <item>	Largo de Alexandre Sá Pinto	</item>
+        <item>	Largo de António Cálem	</item>
+        <item>	Largo de António Ramalho	</item>
+        <item>	Largo de Artur Arcos	</item>
+        <item>	Largo de Chaves de Oliveira	</item>
+        <item>	Largo de D. João III	</item>
+        <item>	Largo de Diogo Gomes	</item>
+        <item>	Largo de Ferreira Lapa	</item>
+        <item>	Largo de Godim	</item>
+        <item>	Largo de José Moreira da Silva	</item>
+        <item>	Largo de Luis Braille	</item>
+        <item>	Largo de Mazagão	</item>
+        <item>	Largo de Mira	</item>
+        <item>	Largo de Mompilher	</item>
+        <item>	Largo de Nevogilde	</item>
+        <item>	Largo de Pinto Correia	</item>
+        <item>	Largo de Primeiro de Dezembro	</item>
+        <item>	Largo de S. Dinis	</item>
+        <item>	Largo de S. Domingos	</item>
+        <item>	Largo de S. João Novo	</item>
+        <item>	Largo de S. Pedro	</item>
+        <item>	Largo de S. Pedro de Miragaia	</item>
+        <item>	Largo de Santa Catarina	</item>
+        <item>	Largo de Soares dos Reis	</item>
+        <item>	Largo de Tomé Pires	</item>
+        <item>	Largo de Valverde	</item>
+        <item>	Largo do Actor Dias	</item>
+        <item>	Largo do Adro	</item>
+        <item>	Largo do Bom Sucesso	</item>
+        <item>	Largo do Camarão	</item>
+        <item>	Largo do Campo Lindo	</item>
+        <item>	Largo do Capitão Pinheiro Torres de Meireles	</item>
+        <item>	Largo do Colégio	</item>
+        <item>	Largo do Cruzinho	</item>
+        <item>	Largo do Curso Silva Monteiro	</item>
+        <item>	Largo do Dr. Pedro Vitorino	</item>
+        <item>	Largo do Dr. Tito Fontes	</item>
+        <item>	Largo do Engenheiro António de Almeida	</item>
+        <item>	Largo do Leal	</item>
+        <item>	Largo do Maestro Miguel Ângelo	</item>
+        <item>	Largo do Moinho de Vento	</item>
+        <item>	Largo do Padrão	</item>
+        <item>	Largo do Padre Américo	</item>
+        <item>	Largo do Padre Baltazar Guedes	</item>
+        <item>	Largo do Padre José de Oliveira	</item>
+        <item>	Largo do Priorado	</item>
+        <item>	Largo do Professor Abel Salazar	</item>
+        <item>	Largo do Rio da Bica	</item>
+        <item>	Largo do Terreirinho	</item>
+        <item>	Largo do Terreiro	</item>
+        <item>	Largo do Viriato	</item>
+        <item>	Largo dos Afectos	</item>
+        <item>	Largo dos Arcos da Ribeira	</item>
+        <item>	Largo dos Cisnes	</item>
+        <item>	Largo dos Lóios	</item>
+        <item>	Largo Duque da Ribeira	</item>
+        <item>	Largo Padre Inácio Gomes	</item>
+        <item>	Largo Palmira Melheiro	</item>
+        <item>	Largo Três de Fevereiro	</item>
+        <item>	Monte da Luz	</item>
+        <item>	Muro dos Bacalhoeiros	</item>
+        <item>	Nó das Areias	</item>
+        <item>	Nó do Mercado Abastecedor	</item>
+        <item>	Nova Travessa de Vale Formoso	</item>
+        <item>	Pátio das Escadas do Monte dos Judeus	</item>
+        <item>	Pátio das Japoneiras	</item>
+        <item>	Pátio de S. Dionísio	</item>
+        <item>	Pátio de S. Salvador	</item>
+        <item>	Pátio do Bolhão	</item>
+        <item>	Pátio do Bonjardim	</item>
+        <item>	Parque de Estaciomento do Altis	</item>
+        <item>	Parque de Estacionamento da Avenida do Parque	</item>
+        <item>	Parque de Estacionamento da Rua Afonso Lopes Vieira	</item>
+        <item>	Parque de estacionamento da Rua do Alto	</item>
+        <item>	Parque de Estacionamento da Rua do Ouro	</item>
+        <item>	Parque de Estacionamento da Torrinha	</item>
+        <item>	Parque de Estacionamento das Águas Ferreas	</item>
+        <item>	Parque de Estacionamento das Camélias	</item>
+        <item>	Parque de Estacionamento de Capitães de Abril	</item>
+        <item>	Parque de Estacionamento de Cedofeita	</item>
+        <item>	Parque de Estacionamento de Coronel Pacheco	</item>
+        <item>	Parque de Estacionamento do Campo Alegre	</item>
+        <item>	Parque de Estacionamento do Fluvial	</item>
+        <item>	Parque de Estacionamento do Priorado	</item>
+        <item>	Parque de Estacionamento do Régulo Megauanha	</item>
+        <item>	Parque Residencial do Lima	</item>
+        <item>	Parque S. Bartolomeu	</item>
+        <item>	Passagem Pedonal ao Elevador da Lada	</item>
+        <item>	Passagem Pedonal da AEP	</item>
+        <item>	Passagem Pedonal da Cantareira	</item>
+        <item>	Passagem Pedonal da Frente Maritima	</item>
+        <item>	Passagem Pedonal da Lada	</item>
+        <item>	Passagem Pedonal da Telheira	</item>
+        <item>	Passagem Pedonal de Alvaro Castelões	</item>
+        <item>	Passagem Pedonal de Santa Luzia	</item>
+        <item>	Passagem Pedonal do Castelo do Queijo	</item>
+        <item>	Passagem Pedonal do Edificio Transparente	</item>
+        <item>	Passagem Pedonal do Metro - Francos	</item>
+        <item>	Passagem Pedonal do Metro - Ramalde	</item>
+        <item>	Passagem Pedonal do Molhe	</item>
+        <item>	Passeio das Fontaínhas	</item>
+        <item>	Passeio das Virtudes	</item>
+        <item>	Passeio de S. Lázaro	</item>
+        <item>	Ponte da Arrábida	</item>
+        <item>	Ponte de S. João	</item>
+        <item>	Ponte do Freixo	</item>
+        <item>	Ponte do Infante	</item>
+        <item>	Ponte Luiz I	</item>
+        <item>	Ponte Maria Pia	</item>
+        <item>	Postigo do Carvão	</item>
+        <item>	Praça Armando Pimentel	</item>
+        <item>	Praça Artur Santos Silva	</item>
+        <item>	Praça da Alegria	</item>
+        <item>	Praça da Batalha	</item>
+        <item>	Praça da Cidade do Salvador	</item>
+        <item>	Praça da Corujeira	</item>
+        <item>	Praça da Galiza	</item>
+        <item>	Praça da Ilha Brava	</item>
+        <item>	Praça da Liberdade	</item>
+        <item>	Praça da Pedra Verde	</item>
+        <item>	Praça da Rainha D. Amélia	</item>
+        <item>	Praça da República	</item>
+        <item>	Praça da Ribeira	</item>
+        <item>	Praça da Trindade	</item>
+        <item>	Praça das Flores	</item>
+        <item>	Praça das Gardénias	</item>
+        <item>	Praça das Violetas	</item>
+        <item>	Praça de Afonso Pinto de Magalhães	</item>
+        <item>	Praça de Afranio Peixoto	</item>
+        <item>	Praça de Almeida Garrett	</item>
+        <item>	Praça de Carlos Alberto	</item>
+        <item>	Praça de D. Afonso V	</item>
+        <item>	Praça de D. Filipa de Lencastre	</item>
+        <item>	Praça de D. João I	</item>
+        <item>	Praça de Francisco Sá Carneiro	</item>
+        <item>	Praça de Goa	</item>
+        <item>	Praça de Gomes Teixeira	</item>
+        <item>	Praça de Gonçalves Zarco	</item>
+        <item>	Praça de Guilherme Gomes Fernandes	</item>
+        <item>	Praça de Liége	</item>
+        <item>	Praça de Lisboa	</item>
+        <item>	Praça de Mouzinho de Albuquerque	</item>
+        <item>	Praça de Nove de Abril	</item>
+        <item>	Praça de Parada Leitão	</item>
+        <item>	Praça de Pedro Nunes	</item>
+        <item>	Praça de Teixeira de Pascoais	</item>
+        <item>	Praça de Teixeira Lopes	</item>
+        <item>	Praça do Bom Sucesso	</item>
+        <item>	Praça do Cávado	</item>
+        <item>	Praça do Campo Grande	</item>
+        <item>	Praça do Conde de Samodães	</item>
+        <item>	Praça do Coronel Pacheco	</item>
+        <item>	Praça do Exército Libertador	</item>
+        <item>	Praça do General Humberto Delgado	</item>
+        <item>	Praça do Império	</item>
+        <item>	Praça do Infante D. Henrique	</item>
+        <item>	Praça do Marquês de Pombal	</item>
+        <item>	Praça do Rosmaninho	</item>
+        <item>	Praça dos Álamos	</item>
+        <item>	Praça dos Poveiros	</item>
+        <item>	Praça Revista O Tripeiro	</item>
+        <item>	Praça Rotary Internacional	</item>
+        <item>	Praceta Banda de Ramalde	</item>
+        <item>	Praceta Bernarda Ferreira Lacerda	</item>
+        <item>	Praceta Cidade da Praia	</item>
+        <item>	Praceta das Mimosas	</item>
+        <item>	Praceta de Adelino Amaro da Costa	</item>
+        <item>	Praceta de Augusto Gomes	</item>
+        <item>	Praceta de Eduardo Soares	</item>
+        <item>	Praceta de Elaine Sanceau	</item>
+        <item>	Praceta de Francisco Borges	</item>
+        <item>	Praceta de Irene de Castro	</item>
+        <item>	Praceta de João Augusto Ribeiro	</item>
+        <item>	Praceta de José Régio	</item>
+        <item>	Praceta de José Serra	</item>
+        <item>	Praceta de Luis António Verney	</item>
+        <item>	Praceta de Públia Hortência	</item>
+        <item>	Praceta de Ribeiro Sanches	</item>
+        <item>	Praceta de S. Mamede	</item>
+        <item>	Praceta do Dr. Jaime Cortesão	</item>
+        <item>	Praceta do Maestro Afonso Valentim	</item>
+        <item>	Praceta do Maestro Resende Dias	</item>
+        <item>	Praceta do Mestre de Avis	</item>
+        <item>	Praceta do Professor Egas Moniz	</item>
+        <item>	Praceta Egito Gonçalves	</item>
+        <item>	Praceta Ernesto Veiga de Oliveira	</item>
+        <item>	Praceta Gonçalves Coelho	</item>
+        <item>	Praceta Irene Vilar	</item>
+        <item>	Praceta João Glama	</item>
+        <item>	Praceta José Luis Nunes	</item>
+        <item>	Praceta Manuel Gonçalves Moreira	</item>
+        <item>	Praceta Orfeão da Foz	</item>
+        <item>	Praia dos Ingleses	</item>
+        <item>	Rampa da Igreja	</item>
+        <item>	Rotunda Artur Cupertino de Miranda	</item>
+        <item>	Rotunda Associação Empresarial de Portugal	</item>
+        <item>	Rotunda de Cartes	</item>
+        <item>	Rotunda do Bessa	</item>
+        <item>	Rotunda do Casal	</item>
+        <item>	Rotunda do Freixo	</item>
+        <item>	Rotunda do Giestal	</item>
+        <item>	Rotunda do Mercado Abastecedor	</item>
+        <item>	Rotunda do Ribeirinho	</item>
+        <item>	Rotunda Hugo Rocha	</item>
+        <item>	Rotunda Joaquim Cardoso Vila Nova	</item>
+        <item>	Rotunda Manuel Pinto de Azevedo Júnior	</item>
+        <item>	Rotunda \'Orfeão Universitário do Porto\'	</item>
+        <item>	Rotunda Orlando Ribeiro	</item>
+        <item>	Rua 1 do Bairro da Rainha D. Leonor	</item>
+        <item>	Rua 1 do Bairro de Casas Economicas de Ramalde	</item>
+        <item>	Rua 1 do Bairro de S. João de Deus	</item>
+        <item>	Rua 1 do Bairro de S. Vicente Paulo	</item>
+        <item>	Rua 10 do Bairro da Rainha D. Leonor	</item>
+        <item>	Rua 10 do Bairro de S. Vicente Paulo	</item>
+        <item>	Rua 11 do Bairro da Rainha D. Leonor	</item>
+        <item>	Rua 11 do Bairro de S. Vicente Paulo	</item>
+        <item>	Rua 12 do Bairro da Rainha D. Leonor	</item>
+        <item>	Rua 13 do Bairro da Rainha D. Leonor	</item>
+        <item>	Rua 13 do Bairro de S. Vicente Paulo	</item>
+        <item>	Rua 14 do Bairro da Rainha D. Leonor	</item>
+        <item>	Rua 15 do Bairro da Rainha D. Leonor	</item>
+        <item>	Rua 2 do Bairro da Rainha D. Leonor	</item>
+        <item>	Rua 2 do Bairro de Casas Economicas de Ramalde	</item>
+        <item>	Rua 2 do Bairro de S. João de Deus	</item>
+        <item>	Rua 2 do Bairro de S. Vicente Paulo	</item>
+        <item>	Rua 25 de Julho	</item>
+        <item>	Rua 3 do Bairro da Rainha D. Leonor	</item>
+        <item>	Rua 3 do Bairro de Casas Economicas de Ramalde	</item>
+        <item>	Rua 3 do Bairro de S. João de Deus	</item>
+        <item>	Rua 3 do Bairro de S. Vicente Paulo	</item>
+        <item>	Rua 4 do Bairro da Rainha D. Leonor	</item>
+        <item>	Rua 4 do Bairro de S. João de Deus	</item>
+        <item>	Rua 4 do Bairro de S. Vicente Paulo	</item>
+        <item>	Rua 5 do Bairro da Rainha D. Leonor	</item>
+        <item>	Rua 5 do Bairro de S. João de Deus	</item>
+        <item>	Rua 5 do Bairro de S. Vicente Paulo	</item>
+        <item>	Rua 6 do Bairro da Rainha D. Leonor	</item>
+        <item>	Rua 6 do Bairro de S. João de Deus	</item>
+        <item>	Rua 6 do Bairro de S. Vicente Paulo	</item>
+        <item>	Rua 7 do Bairro da Rainha D. Leonor	</item>
+        <item>	Rua 7 do Bairro de S. Vicente Paulo	</item>
+        <item>	Rua 8 do Bairro da Rainha D. Leonor	</item>
+        <item>	Rua 8 do Bairro de S. Vicente Paulo	</item>
+        <item>	Rua 9 do Bairro de S. Vicente Paulo	</item>
+        <item>	Rua 9 do Bairro Rainha D. Leonor	</item>
+        <item>	Rua a Voz dos Ridiculos	</item>
+        <item>	Rua Abelaird Gomes da Silva	</item>
+        <item>	Rua Actor João Guedes	</item>
+        <item>	Rua Agostinho José Freire	</item>
+        <item>	Rua Agostinho Ricca	</item>
+        <item>	Rua Airosa	</item>
+        <item>	Rua Albertina de Sousa Paraíso	</item>
+        <item>	Rua Alberto José Guimarães	</item>
+        <item>	Rua Alegre	</item>
+        <item>	Rua Alfredo Allen	</item>
+        <item>	Rua Alfredo Ferreira Faria	</item>
+        <item>	Rua Amândio Galhano	</item>
+        <item>	Rua Amorim de Carvalho	</item>
+        <item>	Rua Ana Plácido	</item>
+        <item>	Rua Ancira	</item>
+        <item>	Rua António Correia da Silva	</item>
+        <item>	Rua António da Silva Cunha	</item>
+        <item>	Rua António Maria de Sena	</item>
+        <item>	Rua António Nicolau D\' Almeida 	</item>
+        <item>	Rua António Pinheiro Caldas	</item>
+        <item>	Rua António Ricca Gonçalves	</item>
+        <item>	Rua António Salgado Júnior	</item>
+        <item>	Rua Antonio de Sousa e Silva	</item>
+        <item>	Rua Arístides de Sousa Mendes	</item>
+        <item>	Rua Arménia	</item>
+        <item>	Rua Armando Campos	</item>
+        <item>	Rua Armando Laroze Rocha	</item>
+        <item>	Rua Artur Brás 	</item>
+        <item>	Rua Artur Maia Mendes	</item>
+        <item>	Rua Artur Oliveira Valença	</item>
+        <item>	Rua Beija - Flor	</item>
+        <item>	Rua Bela	</item>
+        <item>	Rua Bela da Fontinha	</item>
+        <item>	Rua Berta Alves de Sousa	</item>
+        <item>	Rua Bouça Ribas	</item>
+        <item>	Rua Brigadeiro Nunes da Ponte	</item>
+        <item>	Rua Burgal de Baixo	</item>
+        <item>	Rua Burgal de Cima	</item>
+        <item>	Rua César das Neves	</item>
+        <item>	Rua Candida Alves	</item>
+        <item>	Rua Carlos Carneiro	</item>
+        <item>	Rua Carlos Graça	</item>
+        <item>	Rua Carrington da Costa	</item>
+        <item>	Rua Cecília Meireles	</item>
+        <item>	Rua Central da Corujeira	</item>
+        <item>	Rua Central de Francos	</item>
+        <item>	Rua Central do Viso	</item>
+        <item>	Rua Chã	</item>
+        <item>	Rua Conde D\' Aurora	</item>
+        <item>	Rua Conde de Campo Bello	</item>
+        <item>	Rua Conde de Castro	</item>
+        <item>	Rua Conde de Silva Monteiro	</item>
+        <item>	Rua Cruz Caldas	</item>
+        <item>	Rua D. Frei Vicente da Soledade e Castro	</item>
+        <item>	Rua D. Maria Borges	</item>
+        <item>	Rua D. Sebastião de Resende	</item>
+        <item>	Rua da Agra	</item>
+        <item>	Rua da Agra de Ramalde	</item>
+        <item>	Rua da Agra do Amial	</item>
+        <item>	Rua da Aguda	</item>
+        <item>	Rua da Ajuda	</item>
+        <item>	Rua da Albufeira	</item>
+        <item>	Rua da Aldeia	</item>
+        <item>	Rua da Alegria	</item>
+        <item>	Rua da Alfândega	</item>
+        <item>	Rua da Aliança	</item>
+        <item>	Rua da Amieira	</item>
+        <item>	Rua da Arada	</item>
+        <item>	Rua da Areosa	</item>
+        <item>	Rua da Argentina	</item>
+        <item>	Rua da Arrábida	</item>
+        <item>	Rua da Arroteia	</item>
+        <item>	Rua da Asprela	</item>
+        <item>	Rua da Asseiceira	</item>
+        <item>	Rua da Associação de Moradores de S. Victor	</item>
+        <item>	Rua da Assunção	</item>
+        <item>	Rua da Atafona	</item>
+        <item>	Rua da Azenha	</item>
+        <item>	Rua da Azinhaga do Monte	</item>
+        <item>	Rua da Bainharia	</item>
+        <item>	Rua da Balsamina	</item>
+        <item>	Rua da Bandeirinha	</item>
+        <item>	Rua da Bataria	</item>
+        <item>	Rua da Bataria da Vitória	</item>
+        <item>	Rua da Beata D. Mafalda	</item>
+        <item>	Rua da Beneditina	</item>
+        <item>	Rua da Boa Hora	</item>
+        <item>	Rua da Boa Nova	</item>
+        <item>	Rua da Boa Viagem	</item>
+        <item>	Rua da Boavista	</item>
+        <item>	Rua da Bolsa	</item>
+        <item>	Rua da Bouça	</item>
+        <item>	Rua da Calçada	</item>
+        <item>	Rua da Cerca	</item>
+        <item>	Rua da China	</item>
+        <item>	Rua da Cidade da Beira	</item>
+        <item>	Rua da Cidade das Neves	</item>
+        <item>	Rua da Cidade de Bristol	</item>
+        <item>	Rua da Cidade de Iena	</item>
+        <item>	Rua da Cidade de Luanda	</item>
+        <item>	Rua da Cidade de NDola	</item>
+        <item>	Rua da Cidade de Vigo	</item>
+        <item>	Rua da Cidade do Mindelo	</item>
+        <item>	Rua da Cidade do Recife	</item>
+        <item>	Rua da Conceição	</item>
+        <item>	Rua da Constituição	</item>
+        <item>	Rua da Cooperativa da Zona da Boavista	</item>
+        <item>	Rua da Cooperativa de Pêgo Negro	</item>
+        <item>	Rua da Cooperativa do Povo Portuense	</item>
+        <item>	Rua da Cordoaria Velha de Lordelo	</item>
+        <item>	Rua da Corticeira	</item>
+        <item>	Rua da Corujeira de Baixo	</item>
+        <item>	Rua da Costa Nova	</item>
+        <item>	Rua da Cruz	</item>
+        <item>	Rua da Encarnação	</item>
+        <item>	Rua da Ericeira	</item>
+        <item>	Rua da Escola	</item>
+        <item>	Rua da Escola Normal	</item>
+        <item>	Rua da Estação	</item>
+        <item>	Rua da Estação de Contumil	</item>
+        <item>	Rua da Fábrica	</item>
+        <item>	Rua da Fábrica A Invencível	</item>
+        <item>	Rua da Fábrica Social	</item>
+        <item>	Rua da Faia	</item>
+        <item>	Rua da Figueira da Foz	</item>
+        <item>	Rua da Firmeza	</item>
+        <item>	Rua da Flôr de Liz	</item>
+        <item>	Rua da Flora	</item>
+        <item>	Rua da Florinha da Abrigada	</item>
+        <item>	Rua da Fonte da Luz	</item>
+        <item>	Rua da Fonte da Moura	</item>
+        <item>	Rua da Fonte de Contumil	</item>
+        <item>	Rua da Fonte de Massarelos	</item>
+        <item>	Rua da Fonte do Outeiro	</item>
+        <item>	Rua da Fonte Taurina	</item>
+        <item>	Rua da Fonte Velha	</item>
+        <item>	Rua da Fontinha	</item>
+        <item>	Rua da Formiga	</item>
+        <item>	Rua da Galeria de Paris	</item>
+        <item>	Rua da Gazeta Literária	</item>
+        <item>	Rua da Glória	</item>
+        <item>	Rua da Graciosa	</item>
+        <item>	Rua da Granja	</item>
+        <item>	Rua da Granja de Lordelo	</item>
+        <item>	Rua da Guiné	</item>
+        <item>	Rua da Igreja da Areosa	</item>
+        <item>	Rua da Igreja de Campanhã	</item>
+        <item>	Rua da Igreja de Cedofeita	</item>
+        <item>	Rua da Igreja de Paranhos	</item>
+        <item>	Rua da Igreja de Ramalde	</item>
+        <item>	Rua da Ilha Terceira	</item>
+        <item>	Rua da Ilha Verde	</item>
+        <item>	Rua da India	</item>
+        <item>	Rua da Infanta D. Maria	</item>
+        <item>	Rua da Lada	</item>
+        <item>	Rua da Laje	</item>
+        <item>	Rua da Lameira de Baixo	</item>
+        <item>	Rua da Lapa	</item>
+        <item>	Rua da Levada	</item>
+        <item>	Rua da Liberdade	</item>
+        <item>	Rua da Lomba	</item>
+        <item>	Rua da Maceda	</item>
+        <item>	Rua da Macieirinha	</item>
+        <item>	Rua da Madeira	</item>
+        <item>	Rua da Maia	</item>
+        <item>	Rua da Maternidade	</item>
+        <item>	Rua da Meditação	</item>
+        <item>	Rua da Mocidade da Arrábida	</item>
+        <item>	Rua da Mouteira	</item>
+        <item>	Rua da Natária	</item>
+        <item>	Rua da Nau S. Gabriel	</item>
+        <item>	Rua da Nau S. Rafael	</item>
+        <item>	Rua da Nau Trindade	</item>
+        <item>	Rua da Nau Vitória	</item>
+        <item>	Rua da Noeda	</item>
+        <item>	Rua da Póvoa	</item>
+        <item>	Rua da Palheta	</item>
+        <item>	Rua da Pasteleira	</item>
+        <item>	Rua da Paz	</item>
+        <item>	Rua da Pena	</item>
+        <item>	Rua da Peneda	</item>
+        <item>	Rua da Picaria	</item>
+        <item>	Rua da Piedade	</item>
+        <item>	Rua da Ponte do Gato	</item>
+        <item>	Rua da Ponte Nova	</item>
+        <item>	Rua da Porta do Sol	</item>
+        <item>	Rua da Praia	</item>
+        <item>	Rua da Preciosa	</item>
+        <item>	Rua da Prelada	</item>
+        <item>	Rua da Presa de Contumil	</item>
+        <item>	Rua da Presa Velha	</item>
+        <item>	Rua da Quinta	</item>
+        <item>	Rua da Quinta Amarela	</item>
+        <item>	Rua da Rainha D. Estefânia	</item>
+        <item>	Rua da Ranha	</item>
+        <item>	Rua da Reboleira	</item>
+        <item>	Rua da Regeneração	</item>
+        <item>	Rua da Restauração	</item>
+        <item>	Rua da Revista ""A Águia""	</item>
+        <item>	Rua da Ribeira Grande	</item>
+        <item>	Rua da Ribeira Negra	</item>
+        <item>	Rua da Roliça	</item>
+        <item>	Rua da Saudade	</item>
+        <item>	Rua da Senhora da Ajuda	</item>
+        <item>	Rua da Senhora da Hora	</item>
+        <item>	Rua da Senhora da Lapa	</item>
+        <item>	Rua da Senhora da Luz	</item>
+        <item>	Rua da Senhora das Dores	</item>
+        <item>	Rua da Senhora das Verdades	</item>
+        <item>	Rua da Senhora de Campanhã	</item>
+        <item>	Rua da Senhora do Porto	</item>
+        <item>	Rua da Sociedade Nacional dos Fósforos	</item>
+        <item>	Rua da Sociedade Protectora dos Animais	</item>
+        <item>	Rua da Telheira	</item>
+        <item>	Rua da Torreira	</item>
+        <item>	Rua da Torrinha	</item>
+        <item>	Rua da Travagem	</item>
+        <item>	Rua da Trindade	</item>
+        <item>	Rua da Trinitária	</item>
+        <item>	Rua da Venezuela	</item>
+        <item>	Rua da Via-Sacra	</item>
+        <item>	Rua da Videira	</item>
+        <item>	Rua da Vigorosa	</item>
+        <item>	Rua da Vilarinha	</item>
+        <item>	Rua da Vitória	</item>
+        <item>	Rua Daniel Constant	</item>
+        <item>	Rua das Águas Férreas	</item>
+        <item>	Rua das Águas Férreas de Campanhã	</item>
+        <item>	Rua das Açucenas	</item>
+        <item>	Rua das Acácias	</item>
+        <item>	Rua das Aldas	</item>
+        <item>	Rua das Amendoeiras	</item>
+        <item>	Rua das Anémonas	</item>
+        <item>	Rua das Andorinhas	</item>
+        <item>	Rua das Andrezas	</item>
+        <item>	Rua das Antas	</item>
+        <item>	Rua das Areias	</item>
+        <item>	Rua das Artes	</item>
+        <item>	Rua das Artes Gráficas	</item>
+        <item>	Rua das Azáleas	</item>
+        <item>	Rua das Barrocas	</item>
+        <item>	Rua das Begónias	</item>
+        <item>	Rua das Berlengas	</item>
+        <item>	Rua das Camélias	</item>
+        <item>	Rua das Campinas	</item>
+        <item>	Rua das Carmelitas	</item>
+        <item>	Rua das Carvalheiras	</item>
+        <item>	Rua das Cavadas	</item>
+        <item>	Rua das Cegonhas	</item>
+        <item>	Rua das Classes Obreiras	</item>
+        <item>	Rua das Coelhas	</item>
+        <item>	Rua das Condominhas	</item>
+        <item>	Rua das Cotovias	</item>
+        <item>	Rua das Cravinas	</item>
+        <item>	Rua das Cruzes	</item>
+        <item>	Rua das Dálias	</item>
+        <item>	Rua das Desertas	</item>
+        <item>	Rua das Doze Casas	</item>
+        <item>	Rua das Eirinhas	</item>
+        <item>	Rua das Escolas	</item>
+        <item>	Rua das Estrelas	</item>
+        <item>	Rua das Figueiras	</item>
+        <item>	Rua das Flores	</item>
+        <item>	Rua das Fontaínhas	</item>
+        <item>	Rua das Gaivotas	</item>
+        <item>	Rua das Glicínias	</item>
+        <item>	Rua das Goelas de Pau	</item>
+        <item>	Rua das Heras	</item>
+        <item>	Rua das Hortênsias	</item>
+        <item>	Rua das Laranjeiras	</item>
+        <item>	Rua das Linhas de Elvas	</item>
+        <item>	Rua das Linhas de Torres	</item>
+        <item>	Rua das Macieiras	</item>
+        <item>	Rua das Madressilvas	</item>
+        <item>	Rua das Magnólias	</item>
+        <item>	Rua das Margaridas	</item>
+        <item>	Rua das Mercês	</item>
+        <item>	Rua das Motas	</item>
+        <item>	Rua das Musas	</item>
+        <item>	Rua das Nogueiras	</item>
+        <item>	Rua das Oliveiras	</item>
+        <item>	Rua das Oliveirinhas	</item>
+        <item>	Rua das Orquideas	</item>
+        <item>	Rua das Palmeiras	</item>
+        <item>	Rua das Papoilas	</item>
+        <item>	Rua das Pereiras	</item>
+        <item>	Rua das Rolas	</item>
+        <item>	Rua das Rosas	</item>
+        <item>	Rua das Sécias	</item>
+        <item>	Rua das Sobreiras	</item>
+        <item>	Rua das Taipas	</item>
+        <item>	Rua das Tílias	</item>
+        <item>	Rua das Túlipas	</item>
+        <item>	Rua das Virtudes	</item>
+        <item>	Rua das Zínias	</item>
+        <item>	Rua de ""A GRINALDA""	</item>
+        <item>	Rua de ""A Renascença Portuguesa""	</item>
+        <item>	Rua de 14 de Agosto	</item>
+        <item>	Rua de 31 de Janeiro	</item>
+        <item>	Rua de Âncora	</item>
+        <item>	Rua de Óscar da Silva	</item>
+        <item>	Rua de Álvares Cabral	</item>
+        <item>	Rua de Álvaro Castelões	</item>
+        <item>	Rua de Álvaro Ferreira Alves	</item>
+        <item>	Rua de Álvaro Gomes	</item>
+        <item>	Rua de Álvaro Rodrigues	</item>
+        <item>	Rua de Acácio Lino	</item>
+        <item>	Rua de Adelaide Estrada	</item>
+        <item>	Rua de Adolfo Casais Monteiro	</item>
+        <item>	Rua de Adriano Correia de Oliveira	</item>
+        <item>	Rua de Afonso Baldaia	</item>
+        <item>	Rua de Afonso de Albuquerque	</item>
+        <item>	Rua de Afonso de Aveiro	</item>
+        <item>	Rua de Afonso de Paiva	</item>
+        <item>	Rua de Afonso Lopes Vieira	</item>
+        <item>	Rua de Afonso Martins Alho	</item>
+        <item>	Rua de Agostinho de Campos	</item>
+        <item>	Rua de Agramonte	</item>
+        <item>	Rua de Aires de Ornelas	</item>
+        <item>	Rua de Alberto Aires de Gouveia	</item>
+        <item>	Rua de Alberto Carlos Correia da Silva	</item>
+        <item>	Rua de Alberto de Serpa	</item>
+        <item>	Rua de Alberto Oliveira	</item>
+        <item>	Rua de Alberto Sampaio	</item>
+        <item>	Rua de Alcácer Ceguér	</item>
+        <item>	Rua de Alcântara	</item>
+        <item>	Rua de Aleixo Mota	</item>
+        <item>	Rua de Alexandre Braga	</item>
+        <item>	Rua de Alexandre Fleming	</item>
+        <item>	Rua de Alexandre Herculano	</item>
+        <item>	Rua de Alferes Malheiro	</item>
+        <item>	Rua de Alfredo Keil	</item>
+        <item>	Rua de Alfredo Nunes de Matos	</item>
+        <item>	Rua de Algés	</item>
+        <item>	Rua de Alijó	</item>
+        <item>	Rua de Aljubarrota	</item>
+        <item>	Rua de Almoster	</item>
+        <item>	Rua de Alvalade	</item>
+        <item>	Rua de Alves Redol	</item>
+        <item>	Rua de Amália Luazes	</item>
+        <item>	Rua de Amândio Tavares	</item>
+        <item>	Rua de Américo Gomes	</item>
+        <item>	Rua de Amadeu de Sousa Cardoso	</item>
+        <item>	Rua de Amarante	</item>
+        <item>	Rua de Ameixial	</item>
+        <item>	Rua de AnÍbal Cunha	</item>
+        <item>	Rua de Anastácio Ramos	</item>
+        <item>	Rua de André Álvares de Almada	</item>
+        <item>	Rua de André de Rezende	</item>
+        <item>	Rua de Angêlo Frondoni	</item>
+        <item>	Rua de Angola	</item>
+        <item>	Rua de Anselmo Braamcamp	</item>
+        <item>	Rua de António Arroio	</item>
+        <item>	Rua de António Augusto Pinto Felix	</item>
+        <item>	Rua de António Bessa Leite	</item>
+        <item>	Rua de António Borges	</item>
+        <item>	Rua de António Cândido	</item>
+        <item>	Rua de António Cardoso	</item>
+        <item>	Rua de António Carneiro	</item>
+        <item>	Rua de António da Silva Marinho	</item>
+        <item>	Rua de António Enes	</item>
+        <item>	Rua de António Galvão	</item>
+        <item>	Rua de António Granjo	</item>
+        <item>	Rua de António José Costa	</item>
+        <item>	Rua de António José da Silva	</item>
+        <item>	Rua de António José de Almeida	</item>
+        <item>	Rua de António Mariz Carneiro	</item>
+        <item>	Rua de António Nobre	</item>
+        <item>	Rua de António PatrÍcio	</item>
+        <item>	Rua de António Pedro	</item>
+        <item>	Rua de António Pinto Machado	</item>
+        <item>	Rua de António Sérgio	</item>
+        <item>	Rua de António Saldanha	</item>
+        <item>	Rua de Antero Antunes de Albuquerque	</item>
+        <item>	Rua de Antero de Araújo	</item>
+        <item>	Rua de Antero de Quental	</item>
+        <item>	Rua de Arménio Losa	</item>
+        <item>	Rua de Armando Cardoso	</item>
+        <item>	Rua de Arnaldo Gama	</item>
+        <item>	Rua de Arnaldo Leite	</item>
+        <item>	Rua de Arroios	</item>
+        <item>	Rua de Artur de Paiva	</item>
+        <item>	Rua de Artur de Sousa	</item>
+        <item>	Rua de Artur Loureiro	</item>
+        <item>	Rua de Artur Napoleão	</item>
+        <item>	Rua de Arzila	</item>
+        <item>	Rua de Assis Vaz	</item>
+        <item>	Rua de Augusto Gil	</item>
+        <item>	Rua de Augusto Lessa	</item>
+        <item>	Rua de Augusto Luso	</item>
+        <item>	Rua de Augusto Rosa	</item>
+        <item>	Rua de Aurélia de Sousa	</item>
+        <item>	Rua de Aurélio da Paz dos Reis	</item>
+        <item>	Rua de Aval de Baixo	</item>
+        <item>	Rua de Aval de Cima	</item>
+        <item>	Rua de Avelar Brotero	</item>
+        <item>	Rua de Avelino Ribeiro	</item>
+        <item>	Rua de Avis	</item>
+        <item>	Rua de Azevedo	</item>
+        <item>	Rua de Azevedo Coutinho	</item>
+        <item>	Rua de Azevedo de Albuquerque	</item>
+        <item>	Rua de Baião	</item>
+        <item>	Rua de Baixo	</item>
+        <item>	Rua de Baixo do Souto	</item>
+        <item>	Rua de Baltazar Falcão	</item>
+        <item>	Rua de Barata Feyo	</item>
+        <item>	Rua de Barbosa du Bocage	</item>
+        <item>	Rua de Barros Lima	</item>
+        <item>	Rua de Bartolomeu Dias	</item>
+        <item>	Rua de Bartolomeu Velho	</item>
+        <item>	Rua de Belém	</item>
+        <item>	Rua de Belomonte	</item>
+        <item>	Rua de Belos Ares	</item>
+        <item>	Rua de Benfica	</item>
+        <item>	Rua de Benjamim Gouveia	</item>
+        <item>	Rua de Bento Carqueja	</item>
+        <item>	Rua de Bento Júnior	</item>
+        <item>	Rua de Bernardim Ribeiro	</item>
+        <item>	Rua de Bernardino Machado	</item>
+        <item>	Rua de Bitarães	</item>
+        <item>	Rua de Bonjóia	</item>
+        <item>	Rua de Bordeaux	</item>
+        <item>	Rua de Bouças	</item>
+        <item>	Rua de Brás Cubas	</item>
+        <item>	Rua de Brito Capelo	</item>
+        <item>	Rua de Bulhão Pato	</item>
+        <item>	Rua de Câmara Pestana	</item>
+        <item>	Rua de Cândida Sá de Albergaria	</item>
+        <item>	Rua de Cândido dos Reis	</item>
+        <item>	Rua de César Abbott	</item>
+        <item>	Rua de Cabinda	</item>
+        <item>	Rua de Cabo Verde	</item>
+        <item>	Rua de Cadouços	</item>
+        <item>	Rua de Caldas Xavier	</item>
+        <item>	Rua de Calouste Gulbenkian	</item>
+        <item>	Rua de Camões	</item>
+        <item>	Rua de Camilo Pessanha	</item>
+        <item>	Rua de Campolide	</item>
+        <item>	Rua de Campos Monteiro	</item>
+        <item>	Rua de Candemil	</item>
+        <item>	Rua de Carlos da Maia	</item>
+        <item>	Rua de Carlos Dubini	</item>
+        <item>	Rua de Carlos Malheiro Dias	</item>
+        <item>	Rua de Carnide	</item>
+        <item>	Rua de Carvalho Araújo	</item>
+        <item>	Rua de Carvalho Barbosa	</item>
+        <item>	Rua de Cascais	</item>
+        <item>	Rua de Cassiano Branco	</item>
+        <item>	Rua de Castelo Rodrigo	</item>
+        <item>	Rua de Cedofeita	</item>
+        <item>	Rua de Cerneja	</item>
+        <item>	Rua de Cervantes	</item>
+        <item>	Rua de Ceuta	</item>
+        <item>	Rua de Chaimite	</item>
+        <item>	Rua de Chaves de Oliveira	</item>
+        <item>	Rua de Cidália Meireles	</item>
+        <item>	Rua de Cima	</item>
+        <item>	Rua de Cima do Muro	</item>
+        <item>	Rua de Cimo de Vila	</item>
+        <item>	Rua de Cinco de Outubro	</item>
+        <item>	Rua de Ciríaco Cardoso	</item>
+        <item>	Rua de Clemente Menéres	</item>
+        <item>	Rua de Coelho Lousada	</item>
+        <item>	Rua de Coelho Neto	</item>
+        <item>	Rua de Contumil	</item>
+        <item>	Rua de Coolela	</item>
+        <item>	Rua de Correia de Sá	</item>
+        <item>	Rua de Corte Real	</item>
+        <item>	Rua de Costa Barreto	</item>
+        <item>	Rua de Costa Cabral	</item>
+        <item>	Rua de Costa e Almeida	</item>
+        <item>	Rua de Costa Júnior	</item>
+        <item>	Rua de Coutinho de Azevedo	</item>
+        <item>	Rua de Cunha  Espinheira	</item>
+        <item>	Rua de Cunha Júnior	</item>
+        <item>	Rua de Currais	</item>
+        <item>	Rua de D. Agostinho de Jesus e Sousa	</item>
+        <item>	Rua de D. António Barroso	</item>
+        <item>	Rua de D. António Ferreira Gomes	</item>
+        <item>	Rua de D. António Meireles	</item>
+        <item>	Rua de D. Cristovão da Gama	</item>
+        <item>	Rua de D. Domingos Pinho Brandão	</item>
+        <item>	Rua de D. Estevão da Gama	</item>
+        <item>	Rua de D. Francisco de Almeida	</item>
+        <item>	Rua de D. Hugo	</item>
+        <item>	Rua de D. Jerónimo de Azevedo	</item>
+        <item>	Rua de D. João Coutinho	</item>
+        <item>	Rua de D. João de Azevedo	</item>
+        <item>	Rua de D. João de Castro	</item>
+        <item>	Rua de D. João de Mascarenhas	</item>
+        <item>	Rua de D. João IV	</item>
+        <item>	Rua de D. João Peculiar	</item>
+        <item>	Rua de D. Lopo de Almeida	</item>
+        <item>	Rua de D. Luís de Ataíde	</item>
+        <item>	Rua de D. Luís Filipe	</item>
+        <item>	Rua de D. Manuel II	</item>
+        <item>	Rua de D. Miguel da Silva	</item>
+        <item>	Rua de D. Nicolau Monteiro	</item>
+        <item>	Rua de D. Pedro de Meneses	</item>
+        <item>	Rua de D. Pedro V	</item>
+        <item>	Rua de Dâmaso Carreiro	</item>
+        <item>	Rua de Dórdio Gomes	</item>
+        <item>	Rua de Damão	</item>
+        <item>	Rua de Damião de Góis	</item>
+        <item>	Rua de Daniel Filipe	</item>
+        <item>	Rua de Delfim Ferreira	</item>
+        <item>	Rua de Delfim Maia	</item>
+        <item>	Rua de Diogo Afonso	</item>
+        <item>	Rua de Diogo Botelho	</item>
+        <item>	Rua de Diogo Brandão	</item>
+        <item>	Rua de Diogo Cão	</item>
+        <item>	Rua de Diogo de Noronha	</item>
+        <item>	Rua de Diogo do Couto	</item>
+        <item>	Rua de Diogo Macedo	</item>
+        <item>	Rua de Dionísio dos Santos Silva	</item>
+        <item>	Rua de Diu	</item>
+        <item>	Rua de Domingos Alvão	</item>
+        <item>	Rua de Domingos Machado	</item>
+        <item>	Rua de Domingos Sequeira	</item>
+        <item>	Rua de Dominguez Alvarez	</item>
+        <item>	Rua de Duarte Barbosa	</item>
+        <item>	Rua de Duarte de Almeida	</item>
+        <item>	Rua de Duarte Lopes	</item>
+        <item>	Rua de Duarte Pacheco Pereira	</item>
+        <item>	Rua de Eduardo Allen	</item>
+        <item>	Rua de Egas Moniz	</item>
+        <item>	Rua de Elísio de Melo	</item>
+        <item>	Rua de Entre Campos	</item>
+        <item>	Rua de Entre Quintas	</item>
+        <item>	Rua de Entreparedes	</item>
+        <item>	Rua de Espinho	</item>
+        <item>	Rua de Esposende	</item>
+        <item>	Rua de Estevão Gomes	</item>
+        <item>	Rua de Eugénio de Castro	</item>
+        <item>	Rua de Faria Guimarães	</item>
+        <item>	Rua de Felgueiras	</item>
+        <item>	Rua de Feliciano de Castilho	</item>
+        <item>	Rua de Felicidade Brown	</item>
+        <item>	Rua de Felizardo de Lima	</item>
+        <item>	Rua de Fernão Lopes	</item>
+        <item>	Rua de Fernão Lopes de Castanheda	</item>
+        <item>	Rua de Fernão Mendes Pinto	</item>
+        <item>	Rua de Fernão Vaz Dourado	</item>
+        <item>	Rua de Fernandes Costa	</item>
+        <item>	Rua de Fernandes Tomás	</item>
+        <item>	Rua de Fernando de Bulhões	</item>
+        <item>	Rua de Fernando Lopes Graça	</item>
+        <item>	Rua de Fernando Pessoa	</item>
+        <item>	Rua de Ferreira Borges	</item>
+        <item>	Rua de Ferreira Cardoso	</item>
+        <item>	Rua de Ferreira de Castro	</item>
+        <item>	Rua de Fez	</item>
+        <item>	Rua de Firmino Pereira	</item>
+        <item>	Rua de Fonseca Cardoso	</item>
+        <item>	Rua de Francisco Barreto	</item>
+        <item>	Rua de Francisco Carqueja	</item>
+        <item>	Rua de Francisco da Rocha Soares	</item>
+        <item>	Rua de Francisco Oliveira Ferreira	</item>
+        <item>	Rua de Francisco Sanches	</item>
+        <item>	Rua de Francos	</item>
+        <item>	Rua de Frederico Ozanam	</item>
+        <item>	Rua de Frei Heitor Pinto	</item>
+        <item>	Rua de Freire de Andrade	</item>
+        <item>	Rua de Furamontes	</item>
+        <item>	Rua de Gabriel Soares de Sousa	</item>
+        <item>	Rua de Gama Barros	</item>
+        <item>	Rua de Garcia D\'Orta	</item>
+        <item>	Rua de Gaspar Coelho	</item>
+        <item>	Rua de Gaspar Correia	</item>
+        <item>	Rua de Gestaçô	</item>
+        <item>	Rua de Gil Eanes	</item>
+        <item>	Rua de Gil Vicente	</item>
+        <item>	Rua de Godim	</item>
+        <item>	Rua de Gomes Eanes de Azurara	</item>
+        <item>	Rua de Gomes Freire	</item>
+        <item>	Rua de Gomes Leal	</item>
+        <item>	Rua de Gonçalo Cristóvão	</item>
+        <item>	Rua de Gonçalo Nunes de Faria	</item>
+        <item>	Rua de Gonçalo Pires Bandeira	</item>
+        <item>	Rua de Gonçalo Sampaio	</item>
+        <item>	Rua de Gonçalo Velho	</item>
+        <item>	Rua de Gondarém	</item>
+        <item>	Rua de Grijó	</item>
+        <item>	Rua de Guedes de Azevedo	</item>
+        <item>	Rua de Guerra Junqueiro	</item>
+        <item>	Rua de Guilherme Braga	</item>
+        <item>	Rua de Guilherme da Costa  Carvalho	</item>
+        <item>	Rua de Guilhermina Suggia	</item>
+        <item>	Rua de Heitor Campos Monteiro	</item>
+        <item>	Rua de Henrique Alegria	</item>
+        <item>	Rua de Henrique de Medina	</item>
+        <item>	Rua de Henrique Lopes de Mendonça	</item>
+        <item>	Rua de Henrique Moreira	</item>
+        <item>	Rua de Henrique Pousão	</item>
+        <item>	Rua de Heróis de Mucaba	</item>
+        <item>	Rua de Honório Barreto	</item>
+        <item>	Rua de Honório de Lima	</item>
+        <item>	Rua de Inácio Alberto de Sousa	</item>
+        <item>	Rua de Januário Godinho	</item>
+        <item>	Rua de Júlio Brandão	</item>
+        <item>	Rua de Júlio Dantas	</item>
+        <item>	Rua de Júlio de Brito	</item>
+        <item>	Rua de Júlio Dinis	</item>
+        <item>	Rua de Júlio Ramos	</item>
+        <item>	Rua de Jerónimo Mendonça	</item>
+        <item>	Rua de João Baptista Lavanha	</item>
+        <item>	Rua de João Corregedor da Fonseca	</item>
+        <item>	Rua de João das Regras	</item>
+        <item>	Rua de João de Barros	</item>
+        <item>	Rua de João de Deus	</item>
+        <item>	Rua de João de Lisboa	</item>
+        <item>	Rua de João dos Santos Ferreira	</item>
+        <item>	Rua de João Espregueira Mendes	</item>
+        <item>	Rua de João Grave	</item>
+        <item>	Rua de João Martins Branco	</item>
+        <item>	Rua de João Oliveira Ramos	</item>
+        <item>	Rua de João Paulo Freire	</item>
+        <item>	Rua de João Pedro Ribeiro	</item>
+        <item>	Rua de João Queirós	</item>
+        <item>	Rua de João Ramalho	</item>
+        <item>	Rua de João Roby	</item>
+        <item>	Rua de João Rodrigues Cabrilho	</item>
+        <item>	Rua de João Sá Peixoto	</item>
+        <item>	Rua de Joaquim Alves Teixeira	</item>
+        <item>	Rua de Joaquim António de Aguiar	</item>
+        <item>	Rua de Joaquim Kopke	</item>
+        <item>	Rua de Joaquim Leitão	</item>
+        <item>	Rua de Joaquim Lopes	</item>
+        <item>	Rua de Joaquim Urbano	</item>
+        <item>	Rua de Joaquim Vitorino Ribeiro	</item>
+        <item>	Rua de Jorge Gigante	</item>
+        <item>	Rua de Jorge Reinel	</item>
+        <item>	Rua de Jorge Viterbo Ferreira	</item>
+        <item>	Rua de José Augusto de Castro	</item>
+        <item>	Rua de José Conceição Sousa	</item>
+        <item>	Rua de José da Silva	</item>
+        <item>	Rua de José de Brito	</item>
+        <item>	Rua de José de Carvalho	</item>
+        <item>	Rua de José Falcão	</item>
+        <item>	Rua de José Fontana	</item>
+        <item>	Rua de José Gomes Ferreira	</item>
+        <item>	Rua de José Maria Pedroto	</item>
+        <item>	Rua de José Monteiro da Costa	</item>
+        <item>	Rua de José Monteiro Salazar	</item>
+        <item>	Rua de José Teixeira Barreto	</item>
+        <item>	Rua de Justino Teixeira	</item>
+        <item>	Rua de La Couture	</item>
+        <item>	Rua de Latino Coelho	</item>
+        <item>	Rua de Leça	</item>
+        <item>	Rua de Leonardo Coimbra	</item>
+        <item>	Rua de Lima Júnior	</item>
+        <item>	Rua de Lopo Soares de Albergaria	</item>
+        <item>	Rua de Lousada	</item>
+        <item>	Rua de Luís de Aguiar	</item>
+        <item>	Rua de Luís Serrão Pimentel	</item>
+        <item>	Rua de Luís Veiga Leitão	</item>
+        <item>	Rua de Luis Cruz	</item>
+        <item>	Rua de Luis Woodhouse	</item>
+        <item>	Rua de Lumiar	</item>
+        <item>	Rua de Mário Bonito	</item>
+        <item>	Rua de Macau	</item>
+        <item>	Rua de Maio	</item>
+        <item>	Rua de Malaca	</item>
+        <item>	Rua de Manuel Bandeira	</item>
+        <item>	Rua de Manuel Carqueja	</item>
+        <item>	Rua de Manuel Gonçalves Pereira de Barros	</item>
+        <item>	Rua de Manuel Marques	</item>
+        <item>	Rua de Manuel Pinto de Azevedo	</item>
+        <item>	Rua de Maria Lamas	</item>
+        <item>	Rua de Maria Pia	</item>
+        <item>	Rua de Marques Abreu	</item>
+        <item>	Rua de Marques de Oliveira	</item>
+        <item>	Rua de Marques Marinho	</item>
+        <item>	Rua de Marracuene	</item>
+        <item>	Rua de Marta Mesquita da Câmara	</item>
+        <item>	Rua de Martim de Freitas	</item>
+        <item>	Rua de Martim Moniz	</item>
+        <item>	Rua de Martins Sarmento	</item>
+        <item>	Rua de Matapan	</item>
+        <item>	Rua de Matias de Albuquerque	</item>
+        <item>	Rua de Meinedo	</item>
+        <item>	Rua de Meixomil	</item>
+        <item>	Rua de Mem de Sá	</item>
+        <item>	Rua de Mestre Mendes da Silva	</item>
+        <item>	Rua de Miguel Bombarda	</item>
+        <item>	Rua de Miguel de Sousa Guedes	</item>
+        <item>	Rua de Miguel Torga	</item>
+        <item>	Rua de Miraflor	</item>
+        <item>	Rua de Miragaia	</item>
+        <item>	Rua de Miramar	</item>
+        <item>	Rua de Moçambique	</item>
+        <item>	Rua de Monchique	</item>
+        <item>	Rua de Monsanto	</item>
+        <item>	Rua de Monsenhor Fonseca Soares	</item>
+        <item>	Rua de Montes Claros	</item>
+        <item>	Rua de Moraes Caldas	</item>
+        <item>	Rua de Moreira da Assunção	</item>
+        <item>	Rua de Moreira de Sá	</item>
+        <item>	Rua de Mota Pinto	</item>
+        <item>	Rua de Mouzinho da Silveira	</item>
+        <item>	Rua de Nagasaki	</item>
+        <item>	Rua de Natália Correia	</item>
+        <item>	Rua de Naulila	</item>
+        <item>	Rua de Navas de Tolosa	</item>
+        <item>	Rua de Nazaré	</item>
+        <item>	Rua de N\'Dola	</item>
+        <item>	Rua de Nevala	</item>
+        <item>	Rua de Nevogilde	</item>
+        <item>	Rua de Nicolau Coelho	</item>
+        <item>	Rua de Nicolau Marques Guedes	</item>
+        <item>	Rua de Nossa Senhora da Silva	</item>
+        <item>	Rua de Nossa Senhora de Fátima	</item>
+        <item>	Rua de Nove de Abril	</item>
+        <item>	Rua de Nove de Julho	</item>
+        <item>	Rua de O Primeiro de Janeiro	</item>
+        <item>	Rua de Oliveira Martins	</item>
+        <item>	Rua de Oliveira Monteiro	</item>
+        <item>	Rua de Olivença	</item>
+        <item>	Rua de Ourique	</item>
+        <item>	Rua de Paço de Sousa	</item>
+        <item>	Rua de Paços de Ferreira	</item>
+        <item>	Rua de Paredes	</item>
+        <item>	Rua de Passos Manuel	</item>
+        <item>	Rua de Paula Vicente	</item>
+        <item>	Rua de Paulo da Gama	</item>
+        <item>	Rua de Paulo Dias de Novais	</item>
+        <item>	Rua de Pedras Salgadas	</item>
+        <item>	Rua de Pedro Escobar	</item>
+        <item>	Rua de Pedro Hispano	</item>
+        <item>	Rua de Pedro Homem de Mello	</item>
+        <item>	Rua de Pedro Ivo	</item>
+        <item>	Rua de Pedro Teixeira	</item>
+        <item>	Rua de Pelagio	</item>
+        <item>	Rua de Pena Ventosa	</item>
+        <item>	Rua de Penafiel	</item>
+        <item>	Rua de Penoucos	</item>
+        <item>	Rua de Pereira de Novais	</item>
+        <item>	Rua de Pereira Reis	</item>
+        <item>	Rua de Pereiró	</item>
+        <item>	Rua de Pero da Covilhã	</item>
+        <item>	Rua de Pero de Alenquer	</item>
+        <item>	Rua de Pero Vaz de Caminha	</item>
+        <item>	Rua de Pinho Leal	</item>
+        <item>	Rua de Pinto Bessa	</item>
+        <item>	Rua de Porto Santo	</item>
+        <item>	Rua de Quinze de Novembro	</item>
+        <item>	Rua de Raúl Brandrão	</item>
+        <item>	Rua de Raúl Caldevilla	</item>
+        <item>	Rua de Raúl Dória	</item>
+        <item>	Rua de Rafael Bordalo Pinheiro	</item>
+        <item>	Rua de Raimundo de Macedo	</item>
+        <item>	Rua de Ramalde do Meio	</item>
+        <item>	Rua de Ramalho Ortigão	</item>
+        <item>	Rua de Requezende	</item>
+        <item>	Rua de Ribeiro de Sousa	</item>
+        <item>	Rua de Ricardo Severo	</item>
+        <item>	Rua de Robert Auzelle	</item>
+        <item>	Rua de Rocha Martins	</item>
+        <item>	Rua de Rocha Peixoto	</item>
+        <item>	Rua de Rodolfo de Araújo	</item>
+        <item>	Rua de Rodrigo Álvares	</item>
+        <item>	Rua de Rodrigues Lobo	</item>
+        <item>	Rua de Rodrigues Sampaio	</item>
+        <item>	Rua de Rodrigues Semide	</item>
+        <item>	Rua de Roriz	</item>
+        <item>	Rua de Rovuma	</item>
+        <item>	Rua de Ruben A	</item>
+        <item>	Rua de Rui Barbosa	</item>
+        <item>	Rua de Rui de Pina	</item>
+        <item>	Rua de Rui Faleiro	</item>
+        <item>	Rua de Rui Lourenço de Távora	</item>
+        <item>	Rua de S. Bartolomeu	</item>
+        <item>	Rua de S. Bento da Vitória	</item>
+        <item>	Rua de S. Bernardo	</item>
+        <item>	Rua de S. Brás	</item>
+        <item>	Rua de S. Dinis	</item>
+        <item>	Rua de S. Dionísio	</item>
+        <item>	Rua de S. Filipe de Nery	</item>
+        <item>	Rua de S. Francisco	</item>
+        <item>	Rua de S. Francisco de Borja	</item>
+        <item>	Rua de S. Francisco Xavier	</item>
+        <item>	Rua de S. Frei Gil	</item>
+        <item>	Rua de S. Gonçalo	</item>
+        <item>	Rua de S. João	</item>
+        <item>	Rua de S. João Bosco	</item>
+        <item>	Rua de S. João da Foz	</item>
+        <item>	Rua de S. João de Brito	</item>
+        <item>	Rua de S. João Novo	</item>
+        <item>	Rua de S. Jorge	</item>
+        <item>	Rua de S. José	</item>
+        <item>	Rua de S. Luis	</item>
+        <item>	Rua de S. Martinho	</item>
+        <item>	Rua de S. Miguel	</item>
+        <item>	Rua de S. Nicolau	</item>
+        <item>	Rua de S. Paulo	</item>
+        <item>	Rua de S. Pedro	</item>
+        <item>	Rua de S. Pedro de Miragaia	</item>
+        <item>	Rua de S. Roque da Lameira	</item>
+        <item>	Rua de S. Rosendo	</item>
+        <item>	Rua de S. Salvador	</item>
+        <item>	Rua de S. Sebastião	</item>
+        <item>	Rua de S. Tomé	</item>
+        <item>	Rua de S. Veríssimo	</item>
+        <item>	Rua de S. Vicente	</item>
+        <item>	Rua de S. Victor	</item>
+        <item>	Rua de Sá da Bandeira	</item>
+        <item>	Rua de Sá de Albergaria	</item>
+        <item>	Rua de Sá de Miranda	</item>
+        <item>	Rua de Sá Noronha	</item>
+        <item>	Rua de Sabrosa	</item>
+        <item>	Rua de Sacadura Cabral	</item>
+        <item>	Rua de Sagres	</item>
+        <item>	Rua de Salazares	</item>
+        <item>	Rua de Salgueiro Maia	</item>
+        <item>	Rua de Salgueiros	</item>
+        <item>	Rua de Sampaio Bruno	</item>
+        <item>	Rua de Sande	</item>
+        <item>	Rua de Santa Anastácia	</item>
+        <item>	Rua de Santa Catarina	</item>
+        <item>	Rua de Santa Escolástica	</item>
+        <item>	Rua de Santa Helena	</item>
+        <item>	Rua de Santa Isabel	</item>
+        <item>	Rua de Santa Joana Princesa	</item>
+        <item>	Rua de Santa Justa	</item>
+        <item>	Rua de Santa Luzia	</item>
+        <item>	Rua de Santa Maria	</item>
+        <item>	Rua de Santa Marta de Penaguião	</item>
+        <item>	Rua de Santa Senhorinha	</item>
+        <item>	Rua de Santa Teresa	</item>
+        <item>	Rua de Sant\'ana	</item>
+        <item>	Rua de Santiago	</item>
+        <item>	Rua de Santo Antão	</item>
+        <item>	Rua de Santo António das Antas	</item>
+        <item>	Rua de Santo António de Contumil	</item>
+        <item>	Rua de Santo Antonino	</item>
+        <item>	Rua de Santo Ildefonso	</item>
+        <item>	Rua de Santo Isidro	</item>
+        <item>	Rua de Santo Tirso	</item>
+        <item>	Rua de Santos Pousada	</item>
+        <item>	Rua de Sarah Afonso	</item>
+        <item>	Rua de Saraiva de Carvalho	</item>
+        <item>	Rua de Sarmento de Beires	</item>
+        <item>	Rua de Serpa Pinto	</item>
+        <item>	Rua de Serralves	</item>
+        <item>	Rua de Silva Pereira	</item>
+        <item>	Rua de Silva Porto	</item>
+        <item>	Rua de Silva Tapada	</item>
+        <item>	Rua de Soares de Passos	</item>
+        <item>	Rua de Sobre-o-Douro	</item>
+        <item>	Rua de Soeiro Mendes	</item>
+        <item>	Rua de Soeiro Pereira Gomes	</item>
+        <item>	Rua de Sousa Pinto	</item>
+        <item>	Rua de Sousa Viterbo	</item>
+        <item>	Rua de Tânger	</item>
+        <item>	Rua de Teixeira de Vasconcelos	</item>
+        <item>	Rua de Teodoro de Sousa Maldonado	</item>
+        <item>	Rua de Teofilo Seyrig	</item>
+        <item>	Rua de Timor	</item>
+        <item>	Rua de Tirares	</item>
+        <item>	Rua de Tomás Gonzaga	</item>
+        <item>	Rua de Tomás Ribeiro	</item>
+        <item>	Rua de Tomás Soller	</item>
+        <item>	Rua de Tomé de Sousa	</item>
+        <item>	Rua de Toro	</item>
+        <item>	Rua de Trás	</item>
+        <item>	Rua de Trancoso	</item>
+        <item>	Rua de Trindade Coelho	</item>
+        <item>	Rua de Tristão da Cunha	</item>
+        <item>	Rua de Valdevez	</item>
+        <item>	Rua de Vale Formoso	</item>
+        <item>	Rua de Valongo	</item>
+        <item>	Rua de Valpaços	</item>
+        <item>	Rua de Vasco de Lobeira	</item>
+        <item>	Rua de Vasques de Mesquita	</item>
+        <item>	Rua de Veloso Salgado	</item>
+        <item>	Rua de Vera Cruz	</item>
+        <item>	Rua de Vermoim	</item>
+        <item>	Rua de Viana da Mota	</item>
+        <item>	Rua de Viana de Lima	</item>
+        <item>	Rua de Vieira da Silva	</item>
+        <item>	Rua de Vieira Portuense	</item>
+        <item>	Rua de Vila Cova	</item>
+        <item>	Rua de Vila do Conde	</item>
+        <item>	Rua de Vila Nova	</item>
+        <item>	Rua de Vila Nova de Foz Côa	</item>
+        <item>	Rua de Vilar	</item>
+        <item>	Rua de Vimioso	</item>
+        <item>	Rua de Virgínia Moura	</item>
+        <item>	Rua de Vitorino Damásio	</item>
+        <item>	Rua de Vitorino Nemésio	</item>
+        <item>	Rua Delfim de Brito Guimarães	</item>
+        <item>	Rua Delfim Pereira da Costa	</item>
+        <item>	Rua Diamantina	</item>
+        <item>	Rua Direita das Campinas	</item>
+        <item>	Rua Direita de Francos	</item>
+        <item>	Rua Direita de Pereiró	</item>
+        <item>	Rua Direita do Viso	</item>
+        <item>	Rua do Águeda	</item>
+        <item>	Rua do Abade Correia da Serra	</item>
+        <item>	Rua do Abade de Baçal	</item>
+        <item>	Rua do Abade de Faria	</item>
+        <item>	Rua do Académico Futebol Club	</item>
+        <item>	Rua do Actor Eduardo Brazão	</item>
+        <item>	Rua do Actor Ferreira da Silva	</item>
+        <item>	Rua do Actor Soares Correia	</item>
+        <item>	Rua do Adro	</item>
+        <item>	Rua do Adro da Foz	</item>
+        <item>	Rua do Alcaide de Faria	</item>
+        <item>	Rua do Alecrim	</item>
+        <item>	Rua do Aleixo	</item>
+        <item>	Rua do Alfageme de Santarém	</item>
+        <item>	Rua do Almada	</item>
+        <item>	Rua do Almirante Leote do Rego	</item>
+        <item>	Rua do Alto	</item>
+        <item>	Rua do Alto da Arrábida	</item>
+        <item>	Rua do Alto da Bela	</item>
+        <item>	Rua do Alto da Fontinha	</item>
+        <item>	Rua do Alto de Vila	</item>
+        <item>	Rua do Alto do Mato	</item>
+        <item>	Rua do Alto do Viso	</item>
+        <item>	Rua do Amial	</item>
+        <item>	Rua do Amparo	</item>
+        <item>	Rua do Arcediago Van Zeller	</item>
+        <item>	Rua do Arco de Noeda	</item>
+        <item>	Rua do Arquitecto Cassiano Barbosa	</item>
+        <item>	Rua do Arquitecto Lobão Vital	</item>
+        <item>	Rua do Arquitecto Marques da Silva	</item>
+        <item>	Rua do Arquitecto Nicolau Nazoni	</item>
+        <item>	Rua do Ateneu Comercial do Porto	</item>
+        <item>	Rua do Ave	</item>
+        <item>	Rua do Baça	</item>
+        <item>	Rua do Bacelo	</item>
+        <item>	Rua do Bairro da Areosa	</item>
+        <item>	Rua do Bairro do Bom Retiro	</item>
+        <item>	Rua do Bairro do Comércio do Porto	</item>
+        <item>	Rua do Barão de Forrester	</item>
+        <item>	Rua do Barão de Nova Sintra	</item>
+        <item>	Rua do Barão de S. Cosme	</item>
+        <item>	Rua do Barredo	</item>
+        <item>	Rua do Beato Inácio de Azevedo	</item>
+        <item>	Rua do Bicalho	</item>
+        <item>	Rua do Bolama	</item>
+        <item>	Rua do Bolhão	</item>
+        <item>	Rua do Bom Jesus	</item>
+        <item>	Rua do Bom Sucesso	</item>
+        <item>	Rua do Bonfim	</item>
+        <item>	Rua do Bonjardim	</item>
+        <item>	Rua do Breiner	</item>
+        <item>	Rua do Buçaco	</item>
+        <item>	Rua do Côa	</item>
+        <item>	Rua do Cónego Ferreira Pinto	</item>
+        <item>	Rua do Calvário	</item>
+        <item>	Rua do Campinho	</item>
+        <item>	Rua do Campo Alegre	</item>
+        <item>	Rua do Campo Lindo	</item>
+        <item>	Rua do Cantor Zeca Afonso	</item>
+        <item>	Rua do Capitão Henrique Galvão	</item>
+        <item>	Rua do Capitão Pombeiro	</item>
+        <item>	Rua do Cardeal D. Américo	</item>
+        <item>	Rua do Cardo	</item>
+        <item>	Rua do Carmo	</item>
+        <item>	Rua do Carriçal	</item>
+        <item>	Rua do Carvalhido	</item>
+        <item>	Rua do Carvalho	</item>
+        <item>	Rua do Casal	</item>
+        <item>	Rua do Casal do Pedro	</item>
+        <item>	Rua do Castelo da Feira	</item>
+        <item>	Rua do Castelo de Faria	</item>
+        <item>	Rua do Castelo de Guimarães	</item>
+        <item>	Rua do Castelo de Lanhoso	</item>
+        <item>	Rua do Castelo de Numão	</item>
+        <item>	Rua do Castelo de Penedono	</item>
+        <item>	Rua do Cativo	</item>
+        <item>	Rua do Cerco do Porto	</item>
+        <item>	Rua do Cidral de Baixo	</item>
+        <item>	Rua do Cidral de Cima	</item>
+        <item>	Rua do Clube dos Fenianos	</item>
+        <item>	Rua do Clube Fluvial Portuense	</item>
+        <item>	Rua do Comércio do Porto	</item>
+        <item>	Rua do Conde da Covilhã	</item>
+        <item>	Rua do Conde de Avranches	</item>
+        <item>	Rua do Conde de Burnay	</item>
+        <item>	Rua do Conde de Castelo Melhor	</item>
+        <item>	Rua do Conde de Ferreira	</item>
+        <item>	Rua do Conde de Vilas Boas	</item>
+        <item>	Rua do Conde de Vizela	</item>
+        <item>	Rua do Conselheiro Correia de Barros	</item>
+        <item>	Rua do Corgo	</item>
+        <item>	Rua do Coronel Almeida Valente	</item>
+        <item>	Rua do Coronel Helder Ribeiro	</item>
+        <item>	Rua do Coronel Raúl Peres	</item>
+        <item>	Rua do Corpo da Guarda	</item>
+        <item>	Rua do Corvo	</item>
+        <item>	Rua do Covelo	</item>
+        <item>	Rua do Crasto	</item>
+        <item>	Rua do Cristelo	</item>
+        <item>	Rua do Cunha	</item>
+        <item>	Rua do Douro	</item>
+        <item>	Rua do Dr. Aarão de Lacerda	</item>
+        <item>	Rua do Dr. Aíres de Gouveia Osório	</item>
+        <item>	Rua do Dr. Adriano de Paiva	</item>
+        <item>	Rua do Dr. Aires Borges	</item>
+        <item>	Rua do Dr. Alberto de Aguiar	</item>
+        <item>	Rua do Dr. Alberto de Macedo	</item>
+        <item>	Rua do Dr. Alberto de Sousa Costa	</item>
+        <item>	Rua do Dr. Alfredo de Magalhães	</item>
+        <item>	Rua do Dr. Alves da Veiga	</item>
+        <item>	Rua do Dr. Angêlo das Neves	</item>
+        <item>	Rua do Dr. António Bernardino de Almeida	</item>
+        <item>	Rua do Dr. António Coelho	</item>
+        <item>	Rua do Dr. António Cupertino de Miranda	</item>
+        <item>	Rua do Dr. António de Sousa Macedo	</item>
+        <item>	Rua do Dr. António Emílio de Magalhães	</item>
+        <item>	Rua do Dr. António Luis Gomes	</item>
+        <item>	Rua do Dr. António Ramos de Almeida	</item>
+        <item>	Rua do Dr. Artur de Magalhães Basto	</item>
+        <item>	Rua do Dr. Barbosa de Castro	</item>
+        <item>	Rua do Dr. Carlos Cal Brandão	</item>
+        <item>	Rua do Dr. Carlos Passos	</item>
+        <item>	Rua do Dr. Carlos Ramos	</item>
+        <item>	Rua do Dr. Carteado Mena	</item>
+        <item>	Rua do Dr. Correia Pinto	</item>
+        <item>	Rua do Dr. Cruz Malpique	</item>
+        <item>	Rua do Dr. Deniz Jacinto	</item>
+        <item>	Rua do Dr. Eduardo Santos Silva	</item>
+        <item>	Rua do Dr. Ferreira da Silva	</item>
+        <item>	Rua do Dr. Gil da Costa	</item>
+        <item>	Rua do Dr. Henrique de Miranda	</item>
+        <item>	Rua do Dr. Jacinto Nunes	</item>
+        <item>	Rua do Dr. Júlio de Matos	</item>
+        <item>	Rua do Dr. Joaquim Costa	</item>
+        <item>	Rua do Dr. Joaquim Pires de Lima	</item>
+        <item>	Rua do Dr. José António Marques	</item>
+        <item>	Rua do Dr. José de Figueiredo	</item>
+        <item>	Rua do Dr. José Marques	</item>
+        <item>	Rua do Dr. Lopo de Carvalho	</item>
+        <item>	Rua do Dr. Luis Pinto da Fonseca	</item>
+        <item>	Rua do Dr. Mário Cal Brandão	</item>
+        <item>	Rua do Dr. Mário de Vasconcelos e Sá	</item>
+        <item>	Rua do Dr. Magalhães Lemos	</item>
+        <item>	Rua do Dr. Manuel Figueiredo	</item>
+        <item>	Rua do Dr. Manuel Laranjeira	</item>
+        <item>	Rua do Dr. Manuel Monterroso	</item>
+        <item>	Rua do Dr. Manuel Pereira da Silva	</item>
+        <item>	Rua do Dr. Marques de Carvalho	</item>
+        <item>	Rua do Dr. Maurício Esteves Pereira Pinto	</item>
+        <item>	Rua do Dr. Melo Leote	</item>
+        <item>	Rua do Dr. Nunes da Ponte	</item>
+        <item>	Rua do Dr. Nuno Pinheiro Torres	</item>
+        <item>	Rua do Dr. Paulo Pombo	</item>
+        <item>	Rua do Dr. Pedro Augusto Ferreira	</item>
+        <item>	Rua do Dr. Pedro de Sousa	</item>
+        <item>	Rua do Dr. Pedro Dias	</item>
+        <item>	Rua do Dr. Plácido da Costa	</item>
+        <item>	Rua do Dr. Ramalho Fontes	</item>
+        <item>	Rua do Dr. Ricardo Jorge	</item>
+        <item>	Rua do Dr. Roberto Frias	</item>
+        <item>	Rua do Dr. Santana Dionísio	</item>
+        <item>	Rua do Dr. Sousa Avides	</item>
+        <item>	Rua do Dr. Sousa Rosa	</item>
+        <item>	Rua do Dr. Tiago de Almeida	</item>
+        <item>	Rua do Dr. Vasco Valente	</item>
+        <item>	Rua do Duque da Terceira	</item>
+        <item>	Rua do Duque de Loulé	</item>
+        <item>	Rua do Duque de Palmela	</item>
+        <item>	Rua do Duque de Saldanha	</item>
+        <item>	Rua do Encontro	</item>
+        <item>	Rua do Engenheiro António de Almeida	</item>
+        <item>	Rua do Engenheiro Carlos Amarante	</item>
+        <item>	Rua do Engenheiro Custódio Guimarães	</item>
+        <item>	Rua do Engenheiro Ezequiel de Campos	</item>
+        <item>	Rua do Engenheiro Ferreira Dias	</item>
+        <item>	Rua do Engenheiro Guilherme Bonfim Barreiros	</item>
+        <item>	Rua do Engenheiro Luís Delgado dos Santos	</item>
+        <item>	Rua do Engenheiro Machado Vaz	</item>
+        <item>	Rua do Engenheiro Mem Verdial	</item>
+        <item>	Rua do Engenheiro Pedro Inácio Lopes	</item>
+        <item>	Rua do Escritor Nuno de Bragança	</item>
+        <item>	Rua do Estádio	</item>
+        <item>	Rua do Esteiro de Campanhã	</item>
+        <item>	Rua do Estevão	</item>
+        <item>	Rua do Estoril	</item>
+        <item>	Rua do Estrela e Vigorosa Sport	</item>
+        <item>	Rua do Faial	</item>
+        <item>	Rua do Falcão	</item>
+        <item>	Rua do Farol	</item>
+        <item>	Rua do Ferraz	</item>
+        <item>	Rua do Fogo	</item>
+        <item>	Rua do Freixo	</item>
+        <item>	Rua do Funchal	</item>
+        <item>	Rua do Furadouro	</item>
+        <item>	Rua do Furriel Guilherme Dantas	</item>
+        <item>	Rua do Gólgota	</item>
+        <item>	Rua do General Norton de Matos	</item>
+        <item>	Rua do General Silveira	</item>
+        <item>	Rua do General Sousa Dias	</item>
+        <item>	Rua do Gerez	</item>
+        <item>	Rua do Giestal	</item>
+        <item>	Rua do Girassol	</item>
+        <item>	Rua do Grão Magriço	</item>
+        <item>	Rua do Grupo 10 de Maio	</item>
+        <item>	Rua do Guadiana	</item>
+        <item>	Rua do Heroísmo	</item>
+        <item>	Rua do Infante D. Henrique	</item>
+        <item>	Rua do Infante Santo	</item>
+        <item>	Rua do Instituto de Cegos de S. Manuel	</item>
+        <item>	Rua do Jornal de Notícias	</item>
+        <item>	Rua do Lagarteiro	</item>
+        <item>	Rua do Lidador	</item>
+        <item>	Rua do Lima	</item>
+        <item>	Rua do Limpopo	</item>
+        <item>	Rua do Lindo Vale	</item>
+        <item>	Rua do Liz	</item>
+        <item>	Rua do Loureiro	</item>
+        <item>	Rua do Lourenço	</item>
+        <item>	Rua do Lugarinho	</item>
+        <item>	Rua do Maestro Raúl Casimiro	</item>
+        <item>	Rua do Maestro Virgílio Pereira	</item>
+        <item>	Rua do Major David Magno	</item>
+        <item>	Rua do Marão	</item>
+        <item>	Rua do Marco de Canaveses	</item>
+        <item>	Rua do Marechal Saldanha	</item>
+        <item>	Rua do Meiral	</item>
+        <item>	Rua do Melo	</item>
+        <item>	Rua do Melro	</item>
+        <item>	Rua do Mestre Afonso Domingues	</item>
+        <item>	Rua do Mestre Guilherme Camarinha	</item>
+        <item>	Rua do Miradouro	</item>
+        <item>	Rua do Mirante	</item>
+        <item>	Rua do Molhe	</item>
+        <item>	Rua do Mondego	</item>
+        <item>	Rua do Monsenhor Manuel Marinho	</item>
+        <item>	Rua do Monte Alegre	</item>
+        <item>	Rua do Monte Aventino	</item>
+        <item>	Rua do Monte Cativo	</item>
+        <item>	Rua do Monte da Bela	</item>
+        <item>	Rua do Monte da Costa	</item>
+        <item>	Rua do Monte da Estação	</item>
+        <item>	Rua do Monte da Luz	</item>
+        <item>	Rua do Monte de Campanhã	</item>
+        <item>	Rua do Monte de Ramalde	</item>
+        <item>	Rua do Monte de S. João	</item>
+        <item>	Rua do Monte do Bonfim	</item>
+        <item>	Rua do Monte do Tadeu	</item>
+        <item>	Rua do Monte dos Burgos	</item>
+        <item>	Rua do Monte dos Congregados	</item>
+        <item>	Rua do Monte dos Judeus	</item>
+        <item>	Rua do Monte Pedral	</item>
+        <item>	Rua do Montebelo	</item>
+        <item>	Rua do Montijo	</item>
+        <item>	Rua do Moreira	</item>
+        <item>	Rua do Morgado de Mateus	</item>
+        <item>	Rua do Neiva	</item>
+        <item>	Rua do Niassa	</item>
+        <item>	Rua do Orfeão do Porto	</item>
+        <item>	Rua do Ouro	</item>
+        <item>	Rua do Outeirinho	</item>
+        <item>	Rua do Outeiro	</item>
+        <item>	Rua do Outeiro de Ramalde	</item>
+        <item>	Rua do Outeiro do Tine	</item>
+        <item>	Rua do Pêgo Negro	</item>
+        <item>	Rua do Padrão	</item>
+        <item>	Rua do Padre Alexandre	</item>
+        <item>	Rua do Padre Américo	</item>
+        <item>	Rua do Padre António Coutinho	</item>
+        <item>	Rua do Padre António Soares Pacheco	</item>
+        <item>	Rua do Padre António Vieira	</item>
+        <item>	Rua do Padre Cruz	</item>
+        <item>	Rua do Padre Domingos Azevedo	</item>
+        <item>	Rua do Padre Fernão Cardim	</item>
+        <item>	Rua do Padre Francisco Rangel	</item>
+        <item>	Rua do Padre Himalaya	</item>
+        <item>	Rua do Padre José de Anchieta	</item>
+        <item>	Rua do Padre José Pacheco do Monte	</item>
+        <item>	Rua do Padre Leonardo Nunes	</item>
+        <item>	Rua do Padre Luís Cabral	</item>
+        <item>	Rua do Padre Luís de Almeida	</item>
+        <item>	Rua do Padre Manuel da Nóbrega	</item>
+        <item>	Rua do Padre Rebelo da Costa	</item>
+        <item>	Rua do Padre Xavier Coutinho	</item>
+        <item>	Rua do Paraíso	</item>
+        <item>	Rua do Paraíso da Foz	</item>
+        <item>	Rua do Paraíso do Freixo	</item>
+        <item>	Rua do Passeio Alegre	</item>
+        <item>	Rua do Peso da Régua	</item>
+        <item>	Rua do Pico	</item>
+        <item>	Rua do Pinheiro	</item>
+        <item>	Rua do Pinheiro de Campanhã	</item>
+        <item>	Rua do Pinheiro Grande	</item>
+        <item>	Rua do Pinheiro Manso	</item>
+        <item>	Rua do Pintor António Cruz	</item>
+        <item>	Rua do Pintor Arpad Szenes	</item>
+        <item>	Rua do Porto Feliz	</item>
+        <item>	Rua do Principe	</item>
+        <item>	Rua do Professor Abílio Cardoso	</item>
+        <item>	Rua do Professor Abel Salazar	</item>
+        <item>	Rua do Professor Agostinho da Silva	</item>
+        <item>	Rua do Professor Alberto Saavedra	</item>
+        <item>	Rua do Professor Antão de Almeida Garret	</item>
+        <item>	Rua do Professor António Cruz	</item>
+        <item>	Rua do Professor Armando Castro	</item>
+        <item>	Rua do Professor Augusto Nobre	</item>
+        <item>	Rua do Professor Bento de Jesus Caraça	</item>
+        <item>	Rua do Professor Bonfim Barreiros	</item>
+        <item>	Rua do Professor Câmara Sinval	</item>
+        <item>	Rua do Professor Carlos Alberto Ferreira de Almeida	</item>
+        <item>	Rua do Professor Carlos Lima	</item>
+        <item>	Rua do Professor Carlos Teixeira	</item>
+        <item>	Rua do Professor Correia de Araújo	</item>
+        <item>	Rua do Professor Damião Peres	</item>
+        <item>	Rua do Professor Duarte Leite	</item>
+        <item>	Rua do Professor Henrique David	</item>
+        <item>	Rua do Professor Jaime Rios de Sousa	</item>
+        <item>	Rua do Professor João Baptista Machado	</item>
+        <item>	Rua do Professor José Valente	</item>
+        <item>	Rua do Professor Luís Costa	</item>
+        <item>	Rua do Professor Luís de Pina	</item>
+        <item>	Rua do Professor Melo Adrião	</item>
+        <item>	Rua do Professor Mendes Correia	</item>
+        <item>	Rua do Professor Rodolfo de Abreu	</item>
+        <item>	Rua do Professor Sousa Júnior	</item>
+        <item>	Rua do Professor Vicente José de Carvalho	</item>
+        <item>	Rua do Progresso	</item>
+        <item>	Rua do Quanza	</item>
+        <item>	Rua do Régulo Megauanha	</item>
+        <item>	Rua do Rêgo Lameiro	</item>
+        <item>	Rua do Relógio	</item>
+        <item>	Rua do Revilão	</item>
+        <item>	Rua do Ribeirinho	</item>
+        <item>	Rua do Rio da Vila	</item>
+        <item>	Rua do Rio Tinto	</item>
+        <item>	Rua do Rio Torto	</item>
+        <item>	Rua do Rosário	</item>
+        <item>	Rua do Sacramento	</item>
+        <item>	Rua do Sado	</item>
+        <item>	Rua do Sal	</item>
+        <item>	Rua do Salado	</item>
+        <item>	Rua do Salgueiral	</item>
+        <item>	Rua do Sargento Abilio	</item>
+        <item>	Rua do Seixal	</item>
+        <item>	Rua do Senhor da Boa Morte	</item>
+        <item>	Rua do Soajo	</item>
+        <item>	Rua do Sol	</item>
+        <item>	Rua do Souto	</item>
+        <item>	Rua do Souto de Contumil	</item>
+        <item>	Rua do Sport Comércio e Salgueiros	</item>
+        <item>	Rua do Tâmega	</item>
+        <item>	Rua do Túnel	</item>
+        <item>	Rua do Teatro	</item>
+        <item>	Rua do Tejo	</item>
+        <item>	Rua do Tenente Mário Grilo	</item>
+        <item>	Rua do Tenente Valadim	</item>
+        <item>	Rua do Tenente Vidal Pinheiro	</item>
+        <item>	Rua do Trevo	</item>
+        <item>	Rua do Tronco	</item>
+        <item>	Rua do Tua	</item>
+        <item>	Rua do Universo	</item>
+        <item>	Rua do Veludo	</item>
+        <item>	Rua do Vez	</item>
+        <item>	Rua do Vidago	</item>
+        <item>	Rua do Vimeiro	</item>
+        <item>	Rua do Visconde de Bóbeda	</item>
+        <item>	Rua do Visconde de Setúbal	</item>
+        <item>	Rua do Viso	</item>
+        <item>	Rua do Vouga	</item>
+        <item>	Rua do Zêzere	</item>
+        <item>	Rua do Zaire	</item>
+        <item>	Rua do Zambeze	</item>
+        <item>	Rua dos Açores	</item>
+        <item>	Rua dos Abetos	</item>
+        <item>	Rua dos Abraços	</item>
+        <item>	Rua dos Amigos do Porto	</item>
+        <item>	Rua dos Anjos	</item>
+        <item>	Rua dos Arcos	</item>
+        <item>	Rua dos Armazéns	</item>
+        <item>	Rua dos Azinheiros	</item>
+        <item>	Rua dos Bem-Me-Queres	</item>
+        <item>	Rua dos Bragas	</item>
+        <item>	Rua dos Burgães	</item>
+        <item>	Rua dos Caldeireiros	</item>
+        <item>	Rua dos Campeões Europeus	</item>
+        <item>	Rua dos Canastreiros	</item>
+        <item>	Rua dos Capuchinhos	</item>
+        <item>	Rua dos Castelos	</item>
+        <item>	Rua dos Cedros	</item>
+        <item>	Rua dos Choupos	</item>
+        <item>	Rua dos Ciclames	</item>
+        <item>	Rua dos Clérigos	</item>
+        <item>	Rua dos Cravos	</item>
+        <item>	Rua dos Crisântemos	</item>
+        <item>	Rua dos Gerânios	</item>
+        <item>	Rua dos Heróis e dos Mártires de Angola	</item>
+        <item>	Rua dos Jasmins	</item>
+        <item>	Rua dos Junquilhos	</item>
+        <item>	Rua dos Lírios	</item>
+        <item>	Rua dos Lilazes	</item>
+        <item>	Rua dos Luzares	</item>
+        <item>	Rua dos Mártires da Liberdade	</item>
+        <item>	Rua dos Manjericos	</item>
+        <item>	Rua dos Mercadores	</item>
+        <item>	Rua dos Miosótis	</item>
+        <item>	Rua dos Moinhos	</item>
+        <item>	Rua dos Navegantes	</item>
+        <item>	Rua dos Olivais	</item>
+        <item>	Rua dos Olmeiros	</item>
+        <item>	Rua dos Pelames	</item>
+        <item>	Rua dos Pintassilgos	</item>
+        <item>	Rua dos Plátanos	</item>
+        <item>	Rua dos Prazeres	</item>
+        <item>	Rua dos Rainúnculos	</item>
+        <item>	Rua dos Vanzeleres	</item>
+        <item>	Rua Dr. Albino Aroso	</item>
+        <item>	Rua Dr. António Ferreira Braga	</item>
+        <item>	Rua Dr. Corino de Andrade	</item>
+        <item>	Rua Dr. Emílio Peres	</item>
+        <item>	Rua Dr. Eugénio da Cunha e Freitas	</item>
+        <item>	Rua Dr. João Saraiva	</item>
+        <item>	Rua Duruelo de la Sierra	</item>
+        <item>	Rua Emílio Biel	</item>
+        <item>	Rua Engenheiro Nuno de Meireles	</item>
+        <item>	Rua Escura	</item>
+        <item>	Rua Estreita dos Loios	</item>
+        <item>	Rua Fernando Cabral	</item>
+        <item>	Rua Fernando Moreira da Silva	</item>
+        <item>	Rua Ferreira dos Santos	</item>
+        <item>	Rua Ferrer Loureiro	</item>
+        <item>	Rua Formosa	</item>
+        <item>	Rua François Guichard	</item>
+        <item>	Rua Francisco Sena Esteves	</item>
+        <item>	Rua Gustavo de Sousa	</item>
+        <item>	Rua Helena Sá Costa	</item>
+        <item>	Rua Henrique Alves Costa	</item>
+        <item>	Rua Henrique de Sousa Reis	</item>
+        <item>	Rua Hernâni Torres	</item>
+        <item>	Rua Horácio Marçal	</item>
+        <item>	Rua Ilse Losa	</item>
+        <item>	Rua Interior Agrupamento Habitacional da Pasteleira	</item>
+        <item>	Rua Interior Agrupamento Habitacional das Condominhas	</item>
+        <item>	Rua Interior Agrupamento Habitacional do Falcão	</item>
+        <item>	Rua Interior Agrupamento Habitacional Pasteleira Sul	</item>
+        <item>	Rua Interior Bairro Agra do Amial	</item>
+        <item>	Rua Interior Bairro Aldoar	</item>
+        <item>	Rua Interior Bairro Aleixo	</item>
+        <item>	Rua Interior Bairro Antas	</item>
+        <item>	Rua Interior Bairro Associação de Moradores de Francos	</item>
+        <item>	Rua Interior Bairro Associação de Moradores do Campo Alegre	</item>
+        <item>	Rua Interior Bairro Associação Moradores Francos	</item>
+        <item>	Rua Interior Bairro Bessa Leite	</item>
+        <item>	Rua Interior Bairro Bom Pastor	</item>
+        <item>	Rua Interior Bairro Bom Sucesso	</item>
+        <item>	Rua Interior Bairro Bouça	</item>
+        <item>	Rua Interior Bairro Campinas	</item>
+        <item>	Rua Interior Bairro Carriçal	</item>
+        <item>	Rua Interior Bairro Carvalhido	</item>
+        <item>	Rua Interior Bairro Central de Francos	</item>
+        <item>	Rua Interior Bairro Central Francos	</item>
+        <item>	Rua Interior Bairro Cerco do Porto	</item>
+        <item>	Rua Interior Bairro Contumil	</item>
+        <item>	Rua Interior Bairro Duque de Saldanha	</item>
+        <item>	Rua Interior Bairro Falcão	</item>
+        <item>	Rua Interior Bairro Fernão Magalhães	</item>
+        <item>	Rua Interior Bairro Fonte da Moura	</item>
+        <item>	Rua Interior Bairro Francos	</item>
+        <item>	Rua Interior Bairro Ilhéu	</item>
+        <item>	Rua Interior Bairro Lagarteiro	</item>
+        <item>	Rua Interior Bairro Lordelo	</item>
+        <item>	Rua Interior Bairro Maceda	</item>
+        <item>	Rua Interior Bairro Machado Vaz	</item>
+        <item>	Rua Interior Bairro Monte da Bela	</item>
+        <item>	Rua Interior Bairro Monte de S. João	</item>
+        <item>	Rua Interior Bairro Mouteira	</item>
+        <item>	Rua Interior Bairro Nuno Pinheiro Torres	</item>
+        <item>	Rua Interior Bairro Outeiro	</item>
+        <item>	Rua Interior Bairro Pasteleira	</item>
+        <item>	Rua Interior Bairro Pio XII	</item>
+        <item>	Rua Interior Bairro Policia	</item>
+        <item>	Rua Interior Bairro Previdencia	</item>
+        <item>	Rua Interior Bairro Rainha D. Leonor	</item>
+        <item>	Rua Interior Bairro Ramalde	</item>
+        <item>	Rua Interior Bairro Ramalde do Meio	</item>
+        <item>	Rua Interior Bairro Regado	</item>
+        <item>	Rua Interior Bairro S. Roque da Lameira	</item>
+        <item>	Rua Interior Bairro S. Tomé	</item>
+        <item>	Rua Interior Bairro Santa Luzia	</item>
+        <item>	Rua Interior Bairro Torres Vermelhas da Pasteleira	</item>
+        <item>	Rua Interior Bairro Travessa de Salgueiros	</item>
+        <item>	Rua Interior Bairro Vilar	</item>
+        <item>	Rua Interior Bairro Viso	</item>
+        <item>	Rua Interior Cooperativa Ceta	</item>
+        <item>	Rua Interior do Bairro da Previdência	</item>
+        <item>	Rua Invicta Filmes	</item>
+        <item>	Rua Irmã Maria Droste	</item>
+        <item>	Rua Irmã Rita de Jesus	</item>
+        <item>	Rua Jaime Brasil	</item>
+        <item>	Rua Júlio Amaral de Carvalho	</item>
+        <item>	Rua Júlio Lourenço Pinto	</item>
+        <item>	Rua João Allen	</item>
+        <item>	Rua João Andresen	</item>
+        <item>	Rua João Araújo Correia	</item>
+        <item>	Rua João Lúcio de Azevedo	</item>
+        <item>	Rua João Marques Pinto	</item>
+        <item>	Rua João Paulo Seara Cardoso	</item>
+        <item>	Rua Joaquim Vasconcelos	</item>
+        <item>	Rua Jonh Whitehead	</item>
+        <item>	Rua José da Silva Passos	</item>
+        <item>	Rua José Fontes Rocha	</item>
+        <item>	Rua José Saraiva	</item>
+        <item>	Rua Lameira de Cima	</item>
+        <item>	Rua Luís Neves Real	</item>
+        <item>	Rua Luis Ferreira	</item>
+        <item>	Rua Luz Soriano	</item>
+        <item>	Rua Manuel Nunes	</item>
+        <item>	Rua Manuel Pacheco de Miranda	</item>
+        <item>	Rua Manuel Pinheiro da Rocha	</item>
+        <item>	Rua Maria Adelaide Freitas Gonçalves	</item>
+        <item>	Rua Maria Peregrina de Sousa	</item>
+        <item>	Rua Marta Sampaio	</item>
+        <item>	Rua Mestre Albino Moreira	</item>
+        <item>	Rua Monte da Lapa	</item>
+        <item>	Rua Nascente da Colónia Dr. Manuel Laranjeira	</item>
+        <item>	Rua Nascente da Quinta do Almor 	</item>
+        <item>	Rua Nau Catrineta	</item>
+        <item>	Rua Nossa Senhora do Calvário	</item>
+        <item>	Rua Nova da Alfândega	</item>
+        <item>	Rua Nova da Corujeira	</item>
+        <item>	Rua Nova das Areias	</item>
+        <item>	Rua Nova de Azevedo	</item>
+        <item>	Rua Nova de S. Crispim	</item>
+        <item>	Rua Nova do Regado	</item>
+        <item>	Rua Nova do Rio	</item>
+        <item>	Rua Nova do Tronco	</item>
+        <item>	Rua Nun\' Álvares Pereira	</item>
+        <item>	Rua Ofélia Diogo da Costa	</item>
+        <item>	Rua Oito de Setembro	</item>
+        <item>	Rua Oliveira Santos	</item>
+        <item>	Rua Padre Diamantino Gomes	</item>
+        <item>	Rua Padre Luís Rodrigues	</item>
+        <item>	Rua Particular da Arroteia	</item>
+        <item>	Rua Particular da Tapada de Santo António	</item>
+        <item>	Rua Particular de Bonjóia	</item>
+        <item>	Rua Particular de Francos	</item>
+        <item>	Rua Particular de Justino Teixeira	</item>
+        <item>	Rua Particular de Monsanto	</item>
+        <item>	Rua Particular de Santo Isídro	</item>
+        <item>	Rua Particular Diamantina	</item>
+        <item>	Rua Particular dos Ferroviários	</item>
+        <item>	Rua Particular Novais da Cunha	</item>
+        <item>	Rua Paulo Sarmento	</item>
+        <item>	Rua Pedro Olaio	</item>
+        <item>	Rua Pedro Veiga	</item>
+        <item>	Rua Pirmin Treku	</item>
+        <item>	Rua Poente da Colónia Dr. Manuel Laranjeira	</item>
+        <item>	Rua Poente da Quinta do Almor 	</item>
+        <item>	Rua Prof. Ernesto Morais	</item>
+        <item>	Rua Professor Fernando Magano	</item>
+        <item>	Rua Professor Joaquim Bastos	</item>
+        <item>	Rua Professor José Augusto Seabra	</item>
+        <item>	Rua Professor Manuel Baganha	</item>
+        <item>	Rua Professor Rocha Pereira	</item>
+        <item>	Rua Raul Castro	</item>
+        <item>	Rua Reinaldo Oudinot	</item>
+        <item>	Rua Robert Smith	</item>
+        <item>	Rua Rogério de Azevedo	</item>
+        <item>	Rua Rui de Serpa Pinto	</item>
+        <item>	Rua S. João do Porto	</item>
+        <item>	Rua Silva Ramos	</item>
+        <item>	Rua Sousa Caldas	</item>
+        <item>	Rua Stephen R. Stoer	</item>
+        <item>	Rua Tareija Vaz de Altaro	</item>
+        <item>	Rua Vasco Lima Couto	</item>
+        <item>	Sem Designação	</item>
+        <item>	Túnel da Ribeira	</item>
+        <item>	Túnel das Antas I	</item>
+        <item>	Túnel das Antas II	</item>
+        <item>	Túnel de Faria Guimarães	</item>
+        <item>	Túnel do Campo Alegre	</item>
+        <item>	Túnel dos Almadas	</item>
+        <item>	Túnel Goelas de Pau	</item>
+        <item>	Terreiro da Sé	</item>
+        <item>	Travessa Alegre	</item>
+        <item>	Travessa Armando Alves Tavares	</item>
+        <item>	Travessa Central de Francos	</item>
+        <item>	Travessa Central do Viso	</item>
+        <item>	Travessa da Aldeia	</item>
+        <item>	Travessa da Areosa	</item>
+        <item>	Travessa da Arrábida	</item>
+        <item>	Travessa da Asprela	</item>
+        <item>	Travessa da Bainharia	</item>
+        <item>	Travessa da Bela Vista	</item>
+        <item>	Travessa da Bica Velha	</item>
+        <item>	Travessa da Boa Viagem	</item>
+        <item>	Travessa da Bouça	</item>
+        <item>	Travessa da Calçada	</item>
+        <item>	Travessa da Carvalhosa	</item>
+        <item>	Travessa da Cerca	</item>
+        <item>	Travessa da China	</item>
+        <item>	Travessa da Corujeira de Baixo	</item>
+        <item>	Travessa da Cruz	</item>
+        <item>	Travessa da Ferreira	</item>
+        <item>	Travessa da Figueiroa	</item>
+        <item>	Travessa da Fonte Arcada	</item>
+        <item>	Travessa da Fonte da Moura	</item>
+        <item>	Travessa da Fonte de Contumil	</item>
+        <item>	Travessa da Fonte do Outeiro	</item>
+        <item>	Travessa da Fonte Velha	</item>
+        <item>	Travessa da Fontinha	</item>
+        <item>	Travessa da Formiga	</item>
+        <item>	Travessa da Granja	</item>
+        <item>	Travessa da Igreja de Nevogilde	</item>
+        <item>	Travessa da Laje	</item>
+        <item>	Travessa da Lapa	</item>
+        <item>	Travessa da Levada	</item>
+        <item>	Travessa da Lomba	</item>
+        <item>	Travessa da Maceda	</item>
+        <item>	Travessa da Mazorra	</item>
+        <item>	Travessa da Mouteira	</item>
+        <item>	Travessa da Natária	</item>
+        <item>	Travessa da Póvoa	</item>
+        <item>	Travessa da Palheta	</item>
+        <item>	Travessa da Paz	</item>
+        <item>	Travessa da Pena	</item>
+        <item>	Travessa da Pisca	</item>
+        <item>	Travessa da Ponte do Gato	</item>
+        <item>	Travessa da Praia	</item>
+        <item>	Travessa da Prelada	</item>
+        <item>	Travessa da Presa da Agra	</item>
+        <item>	Travessa da Presa de Contumil	</item>
+        <item>	Travessa da Presa Velha	</item>
+        <item>	Travessa da Quinta Amarela	</item>
+        <item>	Travessa da Ranha	</item>
+        <item>	Travessa da Regeneração	</item>
+        <item>	Travessa da Rua Chã	</item>
+        <item>	Travessa da Rua Formosa	</item>
+        <item>	Travessa da Senhora da Conceição	</item>
+        <item>	Travessa da Senhora da Lapa	</item>
+        <item>	Travessa da Senhora da Luz	</item>
+        <item>	Travessa da Senhora do Porto	</item>
+        <item>	Travessa da Tapada de Santo António	</item>
+        <item>	Travessa da Travagem	</item>
+        <item>	Travessa da Via-Sacra	</item>
+        <item>	Travessa da Vigorosa	</item>
+        <item>	Travessa das Águas	</item>
+        <item>	Travessa das Águas Férreas	</item>
+        <item>	Travessa das Águas Férreas de Campanhã	</item>
+        <item>	Travessa das Almas	</item>
+        <item>	Travessa das Antas	</item>
+        <item>	Travessa das Areias	</item>
+        <item>	Travessa das Barrocas	</item>
+        <item>	Travessa das Campinas	</item>
+        <item>	Travessa das Condominhas	</item>
+        <item>	Travessa das Cruzes	</item>
+        <item>	Travessa das Eirinhas	</item>
+        <item>	Travessa das Laranjeiras	</item>
+        <item>	Travessa das Liceiras	</item>
+        <item>	Travessa das Oliveirinhas	</item>
+        <item>	Travessa das Taipas	</item>
+        <item>	Travessa de Álvaro Castelões	</item>
+        <item>	Travessa de Anselmo Braamcamp	</item>
+        <item>	Travessa de Antero de Quental	</item>
+        <item>	Travessa de Arouca	</item>
+        <item>	Travessa de Augusto Lessa	</item>
+        <item>	Travessa de Azevedo	</item>
+        <item>	Travessa de Baixo de Pereiró	</item>
+        <item>	Travessa de Bonjóia	</item>
+        <item>	Travessa de Cadouços	</item>
+        <item>	Travessa de Cartes	</item>
+        <item>	Travessa de Cedofeita	</item>
+        <item>	Travessa de Chaves de Oliveira	</item>
+        <item>	Travessa de Cima de Pereiró	</item>
+        <item>	Travessa de Cimo de Vila	</item>
+        <item>	Travessa de Contumil	</item>
+        <item>	Travessa de Cortes	</item>
+        <item>	Travessa de Costibela	</item>
+        <item>	Travessa de Dionísio dos Santos Silva	</item>
+        <item>	Travessa de Entre Campos	</item>
+        <item>	Travessa de Faria Guimarães	</item>
+        <item>	Travessa de Felgueiras	</item>
+        <item>	Travessa de Felizardo de Lima	</item>
+        <item>	Travessa de Fernão de Magalhães	</item>
+        <item>	Travessa de Ferreira dos Santos	</item>
+        <item>	Travessa de Francos	</item>
+        <item>	Travessa de Furamontes	</item>
+        <item>	Travessa de Gomes Leal	</item>
+        <item>	Travessa de Lamas	</item>
+        <item>	Travessa de Luis Cruz	</item>
+        <item>	Travessa de Luz Soriano	</item>
+        <item>	Travessa de Marracuene	</item>
+        <item>	Travessa de Miraflor	</item>
+        <item>	Travessa de Monsanto	</item>
+        <item>	Travessa de Nevogilde	</item>
+        <item>	Travessa de Nova Sintra	</item>
+        <item>	Travessa de Nove de Abril	</item>
+        <item>	Travessa de Oliveira Martins	</item>
+        <item>	Travessa de Paços de Ferreira	</item>
+        <item>	Travessa de Passos	</item>
+        <item>	Travessa de Pego Negro	</item>
+        <item>	Travessa de Pena Ventosa	</item>
+        <item>	Travessa de Penafiel	</item>
+        <item>	Travessa de Pinto Bessa	</item>
+        <item>	Travessa de Requezende	</item>
+        <item>	Travessa de Ribeiro de Sousa	</item>
+        <item>	Travessa de S. Bartolomeu	</item>
+        <item>	Travessa de S. Bento	</item>
+        <item>	Travessa de S. Brás	</item>
+        <item>	Travessa de S. Carlos	</item>
+        <item>	Travessa de S. Dinis	</item>
+        <item>	Travessa de S. João da Foz	</item>
+        <item>	Travessa de S. José	</item>
+        <item>	Travessa de S. Marcos	</item>
+        <item>	Travessa de S. Nicolau	</item>
+        <item>	Travessa de S. Pedro	</item>
+        <item>	Travessa de S. Pedro de Miragaia	</item>
+        <item>	Travessa de S. Sebastião	</item>
+        <item>	Travessa de S. Victor	</item>
+        <item>	Travessa de Salgueiros	</item>
+        <item>	Travessa de Santa Clara	</item>
+        <item>	Travessa de Sant\'Ana	</item>
+        <item>	Travessa de Santo Amaro	</item>
+        <item>	Travessa de Santo Isidro	</item>
+        <item>	Travessa de Silva Porto	</item>
+        <item>	Travessa de Tirares	</item>
+        <item>	Travessa de Vasques de Mesquita	</item>
+        <item>	Travessa de Vera Cruz	</item>
+        <item>	Travessa de Vila Cova	</item>
+        <item>	Travessa Diamantina	</item>
+        <item>	Travessa do Adro da Foz	</item>
+        <item>	Travessa do Alferes Malheiro	</item>
+        <item>	Travessa do Alto da Arrábida	</item>
+        <item>	Travessa do Alto da Vila	</item>
+        <item>	Travessa do Arco da Noeda	</item>
+        <item>	Travessa do Bacêlo	</item>
+        <item>	Travessa do Bairro da Areosa	</item>
+        <item>	Travessa do Barredo	</item>
+        <item>	Travessa do Bom Retiro	</item>
+        <item>	Travessa do Bonfim	</item>
+        <item>	Travessa do Bonjardim	</item>
+        <item>	Travessa do Calvário	</item>
+        <item>	Travessa do Campo de Vinte e Quatro de Agosto	</item>
+        <item>	Travessa do Campo do Paiva	</item>
+        <item>	Travessa do Campo do Rou	</item>
+        <item>	Travessa do Campo Lindo	</item>
+        <item>	Travessa do Carmo	</item>
+        <item>	Travessa do Carregal	</item>
+        <item>	Travessa do Carvalhido	</item>
+        <item>	Travessa do Castelo	</item>
+        <item>	Travessa do Cativo	</item>
+        <item>	Travessa do Coronel Pacheco	</item>
+        <item>	Travessa do Covelo	</item>
+        <item>	Travessa do Dr. Barros	</item>
+        <item>	Travessa do Falcão	</item>
+        <item>	Travessa do Ferraz	</item>
+        <item>	Travessa do Freixo	</item>
+        <item>	Travessa do Gólgota	</item>
+        <item>	Travessa do Ilhéu	</item>
+        <item>	Travessa do Leal	</item>
+        <item>	Travessa do Loureiro	</item>
+        <item>	Travessa do Meiral	</item>
+        <item>	Travessa do Monte da Bela	</item>
+        <item>	Travessa do Monte da Estação	</item>
+        <item>	Travessa do Monte da Lapa	</item>
+        <item>	Travessa do Monte da Luz	</item>
+        <item>	Travessa do Monte de Ramalde	</item>
+        <item>	Travessa do Monte de S. João	</item>
+        <item>	Travessa do Monte do Tadeu	</item>
+        <item>	Travessa do Monte dos Congregados	</item>
+        <item>	Travessa do Monte Louro	</item>
+        <item>	Travessa do Outeirinho	</item>
+        <item>	Travessa do Outeiro de Ramalde	</item>
+        <item>	Travessa do Outeiro do Tine	</item>
+        <item>	Travessa do Paiol	</item>
+        <item>	Travessa do Passeio Alegre	</item>
+        <item>	Travessa do Pinheiro de Campanhã	</item>
+        <item>	Travessa do Pinheiro Grande	</item>
+        <item>	Travessa do Poço das Patas	</item>
+        <item>	Travessa do Poeta	</item>
+        <item>	Travessa do Regado	</item>
+        <item>	Travessa do Ribeiro	</item>
+        <item>	Travessa do Rio	</item>
+        <item>	Travessa do Roleto	</item>
+        <item>	Travessa do Sacramento	</item>
+        <item>	Travessa do Senhor da Boa Morte	</item>
+        <item>	Travessa do Souto	</item>
+        <item>	Travessa do Souto de Contumil</item>
+        <item>	Travessa do Veloso</item>
+        <item>	Travessa do Viso</item>
+        <item>	Travessa dos Banhos</item>
+        <item>	Travessa dos Caldeireiros</item>
+        <item>	Travessa dos Campos</item>
+        <item>	Travessa dos Canastreiros</item>
+        <item>	Travessa dos Congregados</item>
+        <item>	Travessa dos Navegantes</item>
+        <item>	Travessa dos Olivais</item>
+        <item>	Travessa Nova da Estação</item>
+        <item>	Travessa Nova de Currais</item>
+        <item>	Travessa Nova do Covelo</item>
+        <item>	Travessa Nova do Pinheiro de Campanhã</item>
+        <item>	Travessa Particular do Pinheiro Manso</item>
+        <item>	Travessa Particular Novais da Cunha</item>
+        <item>	Via de Cintura Interna</item>
+        <item>	Via do Castelo do Queijo</item>
+        <item>	Via Futebol Clube do Porto</item>
+        <item>	Via Norte</item>
+        <item>	Via Panorâmica Edgar Cardoso</item>
+        <item>	Via Panoramica</item>
+        <item>	Viaduto do Cais das Pedras</item>
+        <item>	Viaduto Gonçalo Cristóvão</item>
+        <item>	Viela da Aldeia</item>
+        <item>	Viela da Baleia</item>
+        <item>	Viela da Bouça</item>
+        <item>	Viela da Carvalhosa</item>
+        <item>	Viela da Companhia</item>
+        <item>	Viela da Ilha do Ferro</item>
+        <item>	Viela da Maceda</item>
+        <item>	Viela da Pedreira</item>
+        <item>	Viela da Senhora da Lapa</item>
+        <item>	Viela das Andrezas</item>
+        <item>	Viela de Bonjóia</item>
+        <item>	Viela de Grijó</item>
+        <item>	Viela de Lamas</item>
+        <item>	Viela de S. Brás</item>
+        <item>	Viela de Sant\'Ana</item>
+        <item>	Viela do Anjo</item>
+        <item>	Viela do Anjo da Guarda</item>
+        <item>	Viela do Arco</item>
+        <item>	Viela do Buraco</item>
+        <item>	Viela do Calvário</item>
+        <item>	Viela do Caminho Novo</item>
+        <item>	Viela do Falcão</item>
+        <item>	Viela do José da Mestra</item>
+        <item>	Viela do Meiral</item>
+        <item>	Viela do Monte da Costa</item>
+        <item>	Viela do Monte da Pena</item>
+        <item>	Viela do Picoto</item>
+        <item>	Viela do Sobreirinho</item>
+        <item>	Viela dos Abraços de Ramalde</item>
     </string-array>
 
 

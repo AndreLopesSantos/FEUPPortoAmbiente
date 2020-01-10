@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     DatabaseHelper mDatabaseHelper;
 
     //Ruas, Residuos, Areas
-    private EditText mRuas;
+    private String mRuas;
     private EditText mResiduos;
     private EditText mAreas;
 
@@ -283,15 +283,14 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         tabs.setup();
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
 
-        Spinner spinner = (Spinner) findViewById(R.id.spinner_search);
-        // Creating ArrayAdapter using the string array and default spinner layout
+        Spinner ruas = findViewById(R.id.spinnerRuas);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-                R.array.mobile_manufacturers, android.R.layout.simple_spinner_item);
-        // Specify layout to be used when list of choices appears
+                R.array.ruas, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        // Applying the adapter to our spinner
-        spinner.setAdapter(adapter);
-        spinner.setOnItemSelectedListener(this);
+        ruas.setAdapter(adapter);
+        ruas.setOnItemSelectedListener(this);
+
+
 
 
 
@@ -419,7 +418,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         count_papeleirastotal_bl = (TextView) findViewById(R.id.papeleirastotal_bl);
 
 
-        mRuas = findViewById(R.id.editText_rua);
+
         mResiduos = findViewById(R.id.editText_amostra);
         mAreas = findViewById(R.id.editText_area);
 
@@ -481,47 +480,14 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        String selectedItem = parent.getItemAtPosition(position).toString();
-        switch (selectedItem) {
-            case "Select one Item":
-                break;
-            case "Samsung":
-                Toast.makeText(getApplicationContext(), selectedItem + " in Korean means 3 Stars!", Toast.LENGTH_SHORT).show();
-                break;
-            case "Foxconn":
-                Toast.makeText(getApplicationContext(), selectedItem + " is world's largest contract electronics manufacturer", Toast.LENGTH_SHORT).show();
-                break;
-            case "Apple":
-                Toast.makeText(getApplicationContext(), selectedItem + " was founded in 1976!", Toast.LENGTH_SHORT).show();
-                break;
-            case "Oppo":
-                Toast.makeText(getApplicationContext(), selectedItem + " made first phone that can make 50MP photos", Toast.LENGTH_SHORT).show();
-                break;
-            case "Nokia":
-                Toast.makeText(getApplicationContext(), selectedItem + " was founded 151 years ago!", Toast.LENGTH_SHORT).show();
-                break;
-            case "LYF":
-                Toast.makeText(getApplicationContext(), selectedItem + " is an Indian Mobile Handset company", Toast.LENGTH_SHORT).show();
-                break;
-            case "Xiaomi":
-                Toast.makeText(getApplicationContext(), selectedItem + " is world's 4th largest smartphone maker!", Toast.LENGTH_SHORT).show();
-                break;
-            case "Huawei":
-                Toast.makeText(getApplicationContext(), selectedItem + " is largest telecommunications equipment manufacturer in the World! ", Toast.LENGTH_SHORT).show();
-                break;
-            case "Asus":
-                Toast.makeText(getApplicationContext(), selectedItem + " name came from word PEGASUS", Toast.LENGTH_SHORT).show();
-                break;
-            case "Lenovo":
-                Toast.makeText(getApplicationContext(), selectedItem + " is largest PC vendor by unit sales", Toast.LENGTH_SHORT).show();
-                break;
-        }
+        mRuas = parent.getItemAtPosition(position).toString();
     }
 
     @Override
     public void onNothingSelected(AdapterView<?> parent) {
 
     }
+
 
 
     public void stopPlaying(){
@@ -1984,7 +1950,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                         int outros_metais_pa, int pea_pequeno_cf, int pea_medio_cf,int pea_grande_cf, int pena_pequeno_cf, int pena_medio_cf, int pena_grande_cf, int pedacos_vidro_cf, int garrafapeq_vidro_cf,
                         int garrafagra_vidro_cf, int cigarros_cf, int dejetos_cf,int indiferenciados_cf,int folhas_cf, int rampequenas_cf, int ramgrandes_cf, int pastilhas_cf, int past_ate500_cf,
                         int past_maior500_cf, int ra_pequeno_cf, int ra_medio_cf,int ra_grande_cf, int oro_pequeno_cf, int oro_medio_cf, int oro_grande_cf, int latas_metais_cf, int outros_metais_cf,
-                        int bocalobolimpa_bl, int bocalobosuja_bl, int bocalobototal_bl, int papeleirasvazia_bl, int papeleirascheias_bl, int papeleirastotal_bl, int pan, int cfn, int bln, String datahora, int ajardinadas_pa, int caldeiras_cf) {
+                        int bocalobolimpa_bl, int bocalobosuja_bl, int bocalobototal_bl, int papeleirasvazia_bl, int papeleirascheias_bl, int papeleirastotal_bl, int pan, int cfn, int bln, String datahora, int ajardinadas_pa, int caldeiras_cf, String limpeza) {
         boolean insertData = mDatabaseHelper.addData(rua, residuos, area, pea_pequeno_rua, pea_medio_rua,  pea_grande_rua, pena_pequeno_rua, pena_medio_rua, pena_grande_rua, pedacos_vidro_rua,
          garrafapeq_vidro_rua, garrafagra_vidro_rua,  cigarros_rua,  dejetos_rua,  indiferenciados_rua,  folhas_rua,  rampequenas_rua,  ramgrandes_rua,
          pastilhas_rua,  past_ate500_rua,  past_maior500_rua,  ra_pequeno_rua,  ra_medio_rua,  ra_grande_rua,  oro_pequeno_rua,  oro_medio_rua,  oro_grande_rua,
@@ -1994,7 +1960,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
          outros_metais_pa,  pea_pequeno_cf,  pea_medio_cf, pea_grande_cf,  pena_pequeno_cf,  pena_medio_cf,  pena_grande_cf,  pedacos_vidro_cf,  garrafapeq_vidro_cf,
          garrafagra_vidro_cf,  cigarros_cf,  dejetos_cf, indiferenciados_cf, folhas_cf,  rampequenas_cf,  ramgrandes_cf,  pastilhas_cf,  past_ate500_cf,
          past_maior500_cf,  ra_pequeno_cf,  ra_medio_cf, ra_grande_cf,  oro_pequeno_cf,  oro_medio_cf,  oro_grande_cf,  latas_metais_cf,  outros_metais_cf,
-         bocalobolimpa_bl,  bocalobosuja_bl,  bocalobototal_bl,  papeleirasvazia_bl,  papeleirascheias_bl,  papeleirastotal_bl, pan, cfn, bln, datahora, ajardinadas_pa, caldeiras_cf);
+         bocalobolimpa_bl,  bocalobosuja_bl,  bocalobototal_bl,  papeleirasvazia_bl,  papeleirascheias_bl,  papeleirastotal_bl, pan, cfn, bln, datahora, ajardinadas_pa, caldeiras_cf, limpeza);
 
         if (insertData) {
             toastMessage("Foi adicionado com sucesso!");
@@ -2013,7 +1979,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 + indiferenciados_cf + folhas_cf + rampequenas_cf + ramgrandes_cf + pastilhas_cf + past_ate500_cf + past_maior500_cf + ra_pequeno_cf + ra_medio_cf + ra_grande_cf + oro_pequeno_cf + oro_medio_cf
                 + oro_grande_cf + latas_metais_cf + outros_metais_cf + caldeiras_cf;
 
-        String trua = mRuas.getText().toString();
+
+
+        String trua = mRuas;
         String tresiduos = mResiduos.getText().toString();
         String tarea = mAreas.getText().toString();
 
@@ -2021,7 +1989,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         Date now = new Date();
         String datahora = formatter.format(now);
 
-        if(trua.isEmpty() || tresiduos.isEmpty() || tarea.isEmpty()){
+        if(trua.contentEquals("Escolha uma Rua:") || tresiduos.isEmpty() || tarea.isEmpty()){
             toastMessage("Tem valores em falta no primeiro tab : Ruas, Amostra ou Area");
         } else if (pa == false && verificapa >0){
             toastMessage("Tem valores nas Placas Ajardinadas mas o checkbox não esta ativo");
@@ -2052,21 +2020,12 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             }
 
 
-            String rua = mRuas.getText().toString();
+            String rua = mRuas;
             String residuos = mResiduos.getText().toString();
             String area = mAreas.getText().toString();
 
 
-            AddData(rua, residuos, area, pea_pequeno_rua, pea_medio_rua, pea_grande_rua, pena_pequeno_rua, pena_medio_rua, pena_grande_rua, pedacos_vidro_rua,
-                    garrafapeq_vidro_rua, garrafagra_vidro_rua, cigarros_rua, dejetos_rua, indiferenciados_rua, folhas_rua, rampequenas_rua, ramgrandes_rua,
-                    pastilhas_rua, past_ate500_rua, past_maior500_rua, ra_pequeno_rua, ra_medio_rua, ra_grande_rua, oro_pequeno_rua, oro_medio_rua, oro_grande_rua,
-                    latas_metais_rua, outros_metais_rua, pea_pequeno_pa, pea_medio_pa, pea_grande_pa, pena_pequeno_pa, pena_medio_pa, pena_grande_pa, pedacos_vidro_pa,
-                    garrafapeq_vidro_pa, garrafagra_vidro_pa, cigarros_pa, dejetos_pa, indiferenciados_pa, folhas_pa, rampequenas_pa, ramgrandes_pa, pastilhas_pa,
-                    past_ate500_pa, past_maior500_pa, ra_pequeno_pa, ra_medio_pa, ra_grande_pa, oro_pequeno_pa, oro_medio_pa, oro_grande_pa, latas_metais_pa,
-                    outros_metais_pa, pea_pequeno_cf, pea_medio_cf, pea_grande_cf, pena_pequeno_cf, pena_medio_cf, pena_grande_cf, pedacos_vidro_cf, garrafapeq_vidro_cf,
-                    garrafagra_vidro_cf, cigarros_cf, dejetos_cf, indiferenciados_cf, folhas_cf, rampequenas_cf, ramgrandes_cf, pastilhas_cf, past_ate500_cf,
-                    past_maior500_cf, ra_pequeno_cf, ra_medio_cf, ra_grande_cf, oro_pequeno_cf, oro_medio_cf, oro_grande_cf, latas_metais_cf, outros_metais_cf,
-                    bocalobolimpa_bl, bocalobosuja_bl, bocalobototal_bl, papeleirasvazia_bl, papeleirascheias_bl, papeleirastotal_bl, pan, cfn, bln, datahora, ajardinadas_pa, caldeiras_cf);
+
 
 
             Double areanum = Double.parseDouble(area);
@@ -2082,11 +2041,24 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                     past_maior500_cf, ra_pequeno_cf, ra_medio_cf, ra_grande_cf, oro_pequeno_cf, oro_medio_cf, oro_grande_cf, latas_metais_cf, outros_metais_cf,
                     bocalobolimpa_bl, bocalobosuja_bl, bocalobototal_bl, papeleirasvazia_bl, papeleirascheias_bl, papeleirastotal_bl, pan, cfn, bln);
 
+            String ilbase= Double.toString(il);
+
+
+            AddData(rua, residuos, area, pea_pequeno_rua, pea_medio_rua, pea_grande_rua, pena_pequeno_rua, pena_medio_rua, pena_grande_rua, pedacos_vidro_rua,
+                    garrafapeq_vidro_rua, garrafagra_vidro_rua, cigarros_rua, dejetos_rua, indiferenciados_rua, folhas_rua, rampequenas_rua, ramgrandes_rua,
+                    pastilhas_rua, past_ate500_rua, past_maior500_rua, ra_pequeno_rua, ra_medio_rua, ra_grande_rua, oro_pequeno_rua, oro_medio_rua, oro_grande_rua,
+                    latas_metais_rua, outros_metais_rua, pea_pequeno_pa, pea_medio_pa, pea_grande_pa, pena_pequeno_pa, pena_medio_pa, pena_grande_pa, pedacos_vidro_pa,
+                    garrafapeq_vidro_pa, garrafagra_vidro_pa, cigarros_pa, dejetos_pa, indiferenciados_pa, folhas_pa, rampequenas_pa, ramgrandes_pa, pastilhas_pa,
+                    past_ate500_pa, past_maior500_pa, ra_pequeno_pa, ra_medio_pa, ra_grande_pa, oro_pequeno_pa, oro_medio_pa, oro_grande_pa, latas_metais_pa,
+                    outros_metais_pa, pea_pequeno_cf, pea_medio_cf, pea_grande_cf, pena_pequeno_cf, pena_medio_cf, pena_grande_cf, pedacos_vidro_cf, garrafapeq_vidro_cf,
+                    garrafagra_vidro_cf, cigarros_cf, dejetos_cf, indiferenciados_cf, folhas_cf, rampequenas_cf, ramgrandes_cf, pastilhas_cf, past_ate500_cf,
+                    past_maior500_cf, ra_pequeno_cf, ra_medio_cf, ra_grande_cf, oro_pequeno_cf, oro_medio_cf, oro_grande_cf, latas_metais_cf, outros_metais_cf,
+                    bocalobolimpa_bl, bocalobosuja_bl, bocalobototal_bl, papeleirasvazia_bl, papeleirascheias_bl, papeleirastotal_bl, pan, cfn, bln, datahora, ajardinadas_pa, caldeiras_cf, ilbase);
 
             //Caixa de Dialogo para mostrar Indice de Limpeza
             AlertDialog.Builder indice = new AlertDialog.Builder(this);
             indice.setTitle("Indice de Limpeza:")
-                    .setMessage("O indice de limpeza é: " + il)
+                    .setMessage("O indice de limpeza é: " + il + "%")
                     .setPositiveButton("ok", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
@@ -2342,7 +2314,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 "ORO grande" + "," +"Latas refrigerantes"+ "," +"Outros metais" + "," + "PEA pequeno" + "," + "PEA medio" + "," + "PEA grande" + "," + "PENA pequeno" + "," + "PENA medio" + "," + "PENA grande" + ","+
                 "Pedacos vidro"+ "," + "Garrafas de 25 a 50 cL"+ "," +"Garrafas de 75 cL a 1 L"+ "," +"Pontas de cigarro" + "," +"Dejetos caninos" + "," +"Sacos de indiferenciados" + "," +"Folhas"+ "," +"Ramagens pequenas"
                 + "," +"Ramagens grandes"+ "," +"Pastilhas elasticas"+ "," +"Ate 500 cm2" + "," +"Maior que 500 cm2" + "," +"RA pequeno" + "," +"RA medio" + "," + "RA grande" + "," +"ORO pequeno" + "," +"ORO medio"+ "," +
-                "ORO grande" + "," +"Latas refrigerantes"+ "," +"Outros metais" + "," + "Bocas de lobo totais" + "," +"Bocas de lobo limpas" + "," +"Papeleiras" + "," +"Papeleiras vazias" + "," + "Numero de placas ajardinadas" + "," + "Numero de caldeiras/floreiras" + "\n";
+                "ORO grande" + "," +"Latas refrigerantes"+ "," +"Outros metais" + "," + "Bocas de lobo totais" + "," +"Bocas de lobo limpas" + "," +"Papeleiras" + "," +"Papeleiras vazias" + "," + "Numero de placas ajardinadas" + "," + "Numero de caldeiras/floreiras" +
+                "," + "Indice de Limpeza" + "\n";
 
         bld.append(header);
 
@@ -2443,6 +2416,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                     String spapeleirasvazia_bl= Integer.toString(cursor.getInt(cursor.getColumnIndex( "papeleirasvazia_bl")));
                     String spapeleirascheias_bl= Integer.toString(cursor.getInt(cursor.getColumnIndex( "papeleirascheias_bl")));
                     String spapeleirastotal_bl= Integer.toString(cursor.getInt(cursor.getColumnIndex( "papeleirastotal_bl")));
+                    String limpeza = cursor.getString(cursor.getColumnIndex("limpeza"));
+
                     int spa= cursor.getInt(cursor.getColumnIndex( "pa"));
                     int scf= cursor.getInt(cursor.getColumnIndex( "cf"));
                     int sbl= cursor.getInt(cursor.getColumnIndex( "bl"));
@@ -2534,7 +2509,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                             spena_medio_pa+ "," +  spena_grande_pa+ "," + spedacos_vidro_pa+ "," + sgarrafapeq_vidro_pa+ "," +  sgarrafagra_vidro_pa+ "," + scigarros_pa+ "," + sdejetos_pa+ "," +
                             sindiferenciados_pa+ "," + sfolhas_pa+ "," + srampequenas_pa+ "," + sramgrandes_pa+ "," + spastilhas_pa+ "," + spast_ate500_pa+ "," + spast_maior500_pa+ "," +
                             sra_pequeno_pa + "," + sra_medio_pa+ "," + sra_grande_pa+ "," + soro_pequeno_pa+ "," +  soro_medio_pa+ "," +  soro_grande_pa+ "," + slatas_metais_pa+ "," + soutros_metais_pa+ "," +
-                            sbocalobototal_bl+ "," + sbocalobolimpa_bl + "," +spapeleirastotal_bl + "," + spapeleirasvazia_bl + "," + sajardinadas_pa + "," + scaldeiras_cf +"\n");
+                            sbocalobototal_bl+ "," + sbocalobolimpa_bl + "," +spapeleirastotal_bl + "," + spapeleirasvazia_bl + "," + sajardinadas_pa + "," + scaldeiras_cf + "," + limpeza +"\n");
 
 
                 } while (cursor.moveToNext());
@@ -2576,7 +2551,22 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     }
 
-
+    /**
+     * Função para calcular o Fator de Limpeza.
+     * @param pea Valor Ri para "Papeis e Embalagens Alimentares" (PEA)
+     * @param pena Valor Ri para "Papeis e Embalagens Não Alimentares" (PENA)
+     * @param ra Valor Ri para "Resíduos Alimentares" (RA)
+     * @param oro Valor Ri para "Outros Resíduos Orgânicos" (ORO)
+     * @param cigarros Valor Ri para "Pontas de Cigarro" (cigarros)
+     * @param dejetos Valor Ri para "Dejetos caninos" (dejetos)
+     * @param indiferenciados Valor Ri para "Sacos de Indiferenciados" (indiferenciados)
+     * @param folhas Valor Ri para "Folhas e Ramagens" (folhas)
+     * @param incrustacoes Valor Ri para "Incrustações" (incrustacoes)
+     * @param vidro Valor Ri para "Vidro e pedaços de Vidro" (Vidro)
+     * @param metais Valor Ri para "Metais" (Metais)
+     * @param pg Verificar se se está a calcular o fator para "Passeios Guia" (True) ou não (False)
+     * @return Valor do Fator de Limpeza
+     */
     public double calculoFactor(double pea, double pena, double ra, double oro, double cigarros, double dejetos, double indiferenciados, double folhas, double incrustacoes, double vidro, double metais, boolean pg){
         double li_pea=0;
         double li_pena=0;
@@ -2622,8 +2612,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             wi_cigarros = 0.099;
             wi_dejetos = 0.131;
             wi_indiferenciados = 0.115;
-            wi_folhas = 1;
-            wi_incrustacoes = 1;
+            wi_folhas = 0;
+            wi_incrustacoes = 0;
             wi_vidro = 0.122;
             wi_metais = 0.108;
         }
@@ -2632,65 +2622,65 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         if (pea > 3 && pea < 22){
             li_pea = (-5.3 * pea) + 115.8;
         }else if (pea <= 3){
-            li_pea = 3;
+            li_pea = 100;
         }else if (pea >= 22 ){
-            li_pea = 22;
+            li_pea = 0;
         }
 
         if (pena > 5 && pena < 30){
             li_pena = (-4 * pena) + 120;
         }else if (pena <= 5){
-            li_pena = 5;
+            li_pena = 100;
         }else if (pena >= 30 ){
-            li_pena = 30;
+            li_pena = 0;
         }
 
         if (ra > 1 && ra < 6){
             li_ra = (-20 * ra) + 120;
         }else if (ra <= 1){
-            li_ra = 1;
+            li_ra = 100;
         }else if (ra >= 6 ){
-            li_ra = 6;
+            li_ra = 0;
         }
 
         if (oro > 1 && oro < 4){
             li_oro = (-33.3 * oro) + 133.3;
         }else if (oro <= 1){
-            li_oro = 1;
+            li_oro = 100;
         }else if (oro >= 4 ){
-            li_oro = 4;
+            li_oro = 0;
         }
 
         if (cigarros > 40 && cigarros < 300){
             li_cigarros = (-0.4 * cigarros) + 115.4;
         }else if (cigarros <= 40){
-            li_cigarros = 40;
+            li_cigarros = 100;
         }else if (cigarros >= 300 ){
-            li_cigarros = 300;
+            li_cigarros = 0;
         }
 
         if (dejetos > 0 && dejetos < 2){
             li_dejetos = (-50 * dejetos) + 100;
         }else if (dejetos <= 0){
-            li_dejetos = 0;
+            li_dejetos = 100;
         }else if (dejetos >= 2 ){
-            li_dejetos = 2;
+            li_dejetos = 0;
         }
 
         if (indiferenciados > 0 && indiferenciados < 2){
             li_indiferenciados = (-50 * indiferenciados) + 100;
         }else if (indiferenciados <= 0){
-            li_indiferenciados = 0;
+            li_indiferenciados = 100;
         }else if (indiferenciados >= 2 ){
-            li_indiferenciados = 2;
+            li_indiferenciados = 0;
         }
 
         if (folhas > 80 && folhas < 200){
             li_folhas = (-0.8 * folhas) + 166.7;
         }else if (folhas <= 80){
-            li_folhas = 80;
+            li_folhas = 100;
         }else if (folhas >= 200 ){
-            li_folhas = 200;
+            li_folhas = 0;
         }
 
         if (incrustacoes > 100 && incrustacoes < 900){
@@ -2698,23 +2688,23 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         }else if (incrustacoes <= 100){
             li_incrustacoes = 100;
         }else if (incrustacoes >= 900 ){
-            li_incrustacoes = 900;
+            li_incrustacoes = 0;
         }
 
         if (vidro > 10 && vidro < 60){
             li_vidro = (-2 * vidro) + 120;
         }else if (vidro <= 10){
-            li_vidro = 10;
+            li_vidro = 100;
         }else if (vidro >= 60 ){
-            li_vidro = 60;
+            li_vidro = 0;
         }
 
         if (metais > 5 && metais < 18){
             li_metais = (-7.7 * metais) + 138.56;
         }else if (metais <= 5){
-            li_metais = 5;
+            li_metais = 100;
         }else if (metais >= 18 ){
-            li_metais = 18;
+            li_metais = 0;
         }
 
         double factor;
@@ -2778,41 +2768,41 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         double vidro_cf;
         double metais_cf;
 
-        pea_rua = pea_pequeno_rua + (pea_medio_rua * 3) + (pea_grande_rua * 9) / (area/100);
-        pena_rua = pena_pequeno_rua + (pena_medio_rua * 3) + (pena_grande_rua * 9) / (area/100);
-        ra_rua = ra_pequeno_rua + (ra_medio_rua * 3) + (ra_grande_rua *9) / (area/100);
-        oro_rua = oro_pequeno_rua + (oro_medio_rua *3) + (oro_grande_rua * 9) / (area/100);
+        pea_rua = (pea_pequeno_rua + (pea_medio_rua * 3) + (pea_grande_rua * 9)) / (area/100);
+        pena_rua = (pena_pequeno_rua + (pena_medio_rua * 3) + (pena_grande_rua * 9)) / (area/100);
+        ra_rua = (ra_pequeno_rua + (ra_medio_rua * 3) + (ra_grande_rua *9)) / (area/100);
+        oro_rua = (oro_pequeno_rua + (oro_medio_rua *3) + (oro_grande_rua * 9)) / (area/100);
         cigarros_rua_norm = cigarros_rua / (area/100);
         dejetos_rua_norm = dejetos_rua / (area/100);
         indiferenciados_rua_norm = indiferenciados_rua / (area/100);
-        folhas_rua_norm = folhas_rua + rampequenas_rua + ramgrandes_rua / (area/100);
-        incrustacoes_rua = (pastilhas_rua * 0.5) + (past_ate500_rua * 0.8) + past_maior500_rua / (area/100);
-        vidro_rua = pedacos_vidro_rua + (garrafapeq_vidro_rua * 6) + (garrafagra_vidro_rua * 9) / (area/100);
-        metais_rua = (latas_metais_rua * 6) + outros_metais_rua / (area/100);
+        folhas_rua_norm = (folhas_rua + rampequenas_rua + ramgrandes_rua)/ (area/100);
+        incrustacoes_rua = ((pastilhas_rua * 0.5) + (past_ate500_rua * 0.8) + past_maior500_rua) / (area/100);
+        vidro_rua = (pedacos_vidro_rua + (garrafapeq_vidro_rua * 6) + (garrafagra_vidro_rua * 9)) / (area/100);
+        metais_rua = ((latas_metais_rua * 6) + outros_metais_rua) / (area/100);
 
-        pea_pa = pea_pequeno_pa + (pea_medio_pa * 3) + (pea_grande_pa * 9) / (area/100);
-        pena_pa = pena_pequeno_pa + (pena_medio_pa * 3) + (pena_grande_pa * 9) / (area/100);
-        ra_pa = ra_pequeno_pa + (ra_medio_pa * 3) + (ra_grande_pa *9) / (area/100);
-        oro_pa = oro_pequeno_pa + (oro_medio_pa *3) + (oro_grande_pa * 9) / (area/100);
+        pea_pa = (pea_pequeno_pa + (pea_medio_pa * 3) + (pea_grande_pa * 9)) / (area/100);
+        pena_pa = (pena_pequeno_pa + (pena_medio_pa * 3) + (pena_grande_pa * 9)) / (area/100);
+        ra_pa = (ra_pequeno_pa + (ra_medio_pa * 3) + (ra_grande_pa *9)) / (area/100);
+        oro_pa = (oro_pequeno_pa + (oro_medio_pa *3) + (oro_grande_pa * 9)) / (area/100);
         cigarros_pa_norm = cigarros_pa / (area/100);
         dejetos_pa_norm = dejetos_pa / (area/100);
         indiferenciados_pa_norm = indiferenciados_pa / (area/100);
-        folhas_pa_norm = folhas_pa + rampequenas_pa + ramgrandes_pa / (area/100);
-        incrustacoes_pa = (pastilhas_pa * 0.5) + (past_ate500_pa * 0.8) + past_maior500_pa / (area/100);
-        vidro_pa = pedacos_vidro_pa + (garrafapeq_vidro_pa * 6) + (garrafagra_vidro_pa * 9) / (area/100);
-        metais_pa = (latas_metais_pa * 6) + outros_metais_pa / (area/100);
+        folhas_pa_norm = (folhas_pa + rampequenas_pa + ramgrandes_pa) / (area/100);
+        incrustacoes_pa = ((pastilhas_pa * 0.5) + (past_ate500_pa * 0.8) + past_maior500_pa) / (area/100);
+        vidro_pa = (pedacos_vidro_pa + (garrafapeq_vidro_pa * 6) + (garrafagra_vidro_pa * 9))/ (area/100);
+        metais_pa = ((latas_metais_pa * 6) + outros_metais_pa) / (area/100);
 
-        pea_cf = pea_pequeno_cf + (pea_medio_cf * 3) + (pea_grande_cf * 9) / (area/100);
-        pena_cf = pena_pequeno_cf + (pena_medio_cf * 3) + (pena_grande_cf * 9) / (area/100);
-        ra_cf = ra_pequeno_cf + (ra_medio_cf * 3) + (ra_grande_cf *9) / (area/100);
-        oro_cf = oro_pequeno_cf + (oro_medio_cf *3) + (oro_grande_cf * 9) / (area/100);
+        pea_cf = (pea_pequeno_cf + (pea_medio_cf * 3) + (pea_grande_cf * 9)) / (area/100);
+        pena_cf = (pena_pequeno_cf + (pena_medio_cf * 3) + (pena_grande_cf * 9)) / (area/100);
+        ra_cf = (ra_pequeno_cf + (ra_medio_cf * 3) + (ra_grande_cf *9)) / (area/100);
+        oro_cf = (oro_pequeno_cf + (oro_medio_cf *3) + (oro_grande_cf * 9)) / (area/100);
         cigarros_cf_norm = cigarros_cf / (area/100);
         dejetos_cf_norm = dejetos_cf / (area/100);
         indiferenciados_cf_norm = indiferenciados_cf / (area/100);
-        folhas_cf_norm = folhas_cf + rampequenas_cf + ramgrandes_cf / (area/100);
-        incrustacoes_cf = (pastilhas_cf * 0.5) + (past_ate500_cf * 0.8) + past_maior500_cf / (area/100);
-        vidro_cf = pedacos_vidro_cf + (garrafapeq_vidro_cf * 6) + (garrafagra_vidro_cf * 9) / (area/100);
-        metais_cf = (latas_metais_cf * 6) + outros_metais_cf / (area/100);
+        folhas_cf_norm = (folhas_cf + rampequenas_cf + ramgrandes_cf) / (area/100);
+        incrustacoes_cf = ((pastilhas_cf * 0.5) + (past_ate500_cf * 0.8) + past_maior500_cf) / (area/100);
+        vidro_cf = (pedacos_vidro_cf + (garrafapeq_vidro_cf * 6) + (garrafagra_vidro_cf * 9)) / (area/100);
+        metais_cf = ((latas_metais_cf * 6) + outros_metais_cf) / (area/100);
         
         double pgfactor = calculoFactor(pea_rua, pena_rua, ra_rua, oro_rua, cigarros_rua_norm, dejetos_rua_norm, indiferenciados_rua_norm, folhas_rua_norm, incrustacoes_rua, vidro_rua, metais_rua,true);
 
@@ -2825,54 +2815,50 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
         double papfactor = 0;
 
-        double Ppg=0;
-        double Ppa=0;
-        double Pcf=0;
-        double Pbl=0;
-        double Pp=0;
+        double Ppg=0.229;
+        double Ppa=0.192;
+        double Pcf=0.150;
+        double Pbl=0.150;
+        double Pp=0.279;
 
-        if(pan == 1 && cfn == 1 && bln == 1){
-            Ppg = 0.029;
-            Ppa = 0.192;
-            Pcf = 0.150;
-            Pbl = 0.150;
-            Pp = 0.279;
-            blfactor = (bocalobolimpa_bl/bocalobototal_bl)*100;
-            papfactor = (papeleirasvazia_bl/papeleirastotal_bl) * 100;
-        }else if (pan == 0 && cfn == 0 && bln == 1){
-            Ppg = 0.348;
-            Ppa = 0.000;
-            Pcf = 0.000;
-            Pbl = 0.228;
-            Pp = 0.424;
-            blfactor = (bocalobolimpa_bl/bocalobototal_bl)*100;
-            papfactor = (papeleirasvazia_bl/papeleirastotal_bl) * 100;
-        }else if (pan == 0 && cfn == 1 && bln == 1){
-            Ppg = 0.283;
-            Ppa = 0.000;
-            Pcf = 0.186;
-            Pbl = 0.186;
-            Pp = 0.345;
-            blfactor = (bocalobolimpa_bl/bocalobototal_bl)*100;
-            papfactor = (papeleirasvazia_bl/papeleirastotal_bl) * 100;
-        }else if (pan == 0 && cfn == 0 && bocalobototal_bl == 0 && papeleirastotal_bl > 0){
-            Ppg = 0.451;
-            Ppa = 0.000;
-            Pcf = 0.000;
-            Pbl = 0.000;
-            Pp = 0.549;
-            papfactor = (papeleirasvazia_bl/papeleirastotal_bl) * 100;
-        }else if (pan == 0 && cfn == 0 && bln == 0) {
-            Ppg = 1;
-            Ppa = 0.000;
-            Pcf = 0.000;
-            Pbl = 0.000;
-            Pp = 0.000;
+        if(pan == 0){
+            Ppa = 0;
         }
 
-        double il = (pgfactor*Ppg) + (pafactor * Ppa) + (cffactor * Pcf) + (blfactor * Pbl) + (papfactor* Pp);
+        if(cfn == 0){
+            Pcf = 0;
+        }
 
-        return il;
+        if(bocalobototal_bl == 0){
+            Pbl = 0;
+            blfactor = 0;
+        }else{
+            blfactor = (bocalobolimpa_bl/bocalobototal_bl)*100;
+        }
+
+        if(papeleirastotal_bl == 0){
+            Pp = 0;
+            papfactor = 0;
+        }else{
+            papfactor = (papeleirasvazia_bl/papeleirastotal_bl) * 100;
+        }
+
+        double fPpg = Ppg/(Ppg+Ppa+Pcf+Pbl+Pp);
+        double fPpa = Ppa/(Ppg+Ppa+Pcf+Pbl+Pp);
+        double fPcf = Pcf/(Ppg+Ppa+Pcf+Pbl+Pp);
+        double fPbl = Pbl/(Ppg+Ppa+Pcf+Pbl+Pp);
+        double fPp = Pp/(Ppg+Ppa+Pcf+Pbl+Pp);
+
+
+
+
+
+
+        double il = (pgfactor*fPpg) + (pafactor * fPpa) + (cffactor * fPcf) + (blfactor * fPbl) + (papfactor* fPp);
+
+        double ilfinal = Math.round(il*100.0)/100.0;
+
+        return ilfinal;
 
 
 

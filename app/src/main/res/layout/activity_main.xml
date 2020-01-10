@@ -41,18 +41,12 @@
                         android:textColor="@android:color/white"
                         android:textStyle="bold" />
 
-                    <EditText
-                        android:id="@+id/editText_rua"
+
+                    <Spinner
+                        android:id="@+id/spinnerRuas"
                         android:layout_width="match_parent"
-                        android:layout_height="@dimen/tamanho_botoes"
-                        android:hint="@string/rua_hint_text"
+                        android:layout_height="40dp"
                         android:background="@color/branco"/>
-
-                    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
-                            android:id="@+id/spinner_search"
-                            android:layout_width="wrap_content"
-                            android:layout_height="50dp" />
-
                     <TextView
                         android:id="@+id/titulo_amostra"
                         android:layout_width="match_parent"
@@ -85,7 +79,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/tamanho_botoes"
                         android:hint="@string/area_hint_text"
-                        android:background="@color/branco"/>
+                        android:background="@color/branco"
+                        android:inputType="number"/>
 
                     <RelativeLayout
                         android:layout_width="wrap_content"

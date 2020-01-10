@@ -114,6 +114,7 @@ class DatabaseHelper extends SQLiteOpenHelper {
     private static final String COL92 = "data";
     private static final String COL93 = "ajardinadas_pa";
     private static final String COL94 = "caldeiras_cf";
+    private static final String COL95 = "limpeza";
 
 
 
@@ -141,7 +142,7 @@ class DatabaseHelper extends SQLiteOpenHelper {
                 + COL62 + " INTEGER, "+ COL63 + " INTEGER, "+ COL64 + " INTEGER, "+ COL65 + " INTEGER, "+ COL66 + " INTEGER, "+ COL67 + " INTEGER, "+ COL68 + " INTEGER, "+ COL69 + " INTEGER, "+ COL70 + " INTEGER, "
                 + COL71 + " INTEGER, "+ COL72 + " INTEGER, "+ COL73 + " INTEGER, "+ COL74 + " INTEGER, "+ COL75 + " INTEGER, "+ COL76 + " INTEGER, "+ COL77 + " INTEGER, "+ COL78 + " INTEGER, "+ COL79 + " INTEGER, "
                 + COL80 + " INTEGER, "+ COL81 + " INTEGER, "+ COL82 + " INTEGER, "+ COL83 + " INTEGER, "+ COL84 + " INTEGER, "+ COL85 + " INTEGER, "+ COL86 + " INTEGER, "+ COL87 + " INTEGER, "+ COL88 + " INTEGER, "
-                + COL89 + " INTEGER, "+ COL90 + " INTEGER, "+ COL91 + " INTEGER, " + COL92 + " TEXT, " + COL93 + " INTEGER, "+ COL94 + " INTEGER)";
+                + COL89 + " INTEGER, "+ COL90 + " INTEGER, "+ COL91 + " INTEGER, " + COL92 + " TEXT, " + COL93 + " INTEGER, "+ COL94 + " INTEGER, " + COL95 + " TEXT)";
 
 
         db.execSQL(CreateTable);
@@ -163,7 +164,8 @@ class DatabaseHelper extends SQLiteOpenHelper {
                            int outros_metais_pa, int pea_pequeno_cf, int pea_medio_cf,int pea_grande_cf, int pena_pequeno_cf, int pena_medio_cf, int pena_grande_cf, int pedacos_vidro_cf, int garrafapeq_vidro_cf,
                            int garrafagra_vidro_cf, int cigarros_cf, int dejetos_cf,int indiferenciados_cf,int folhas_cf, int rampequenas_cf, int ramgrandes_cf, int pastilhas_cf, int past_ate500_cf,
                            int past_maior500_cf, int ra_pequeno_cf, int ra_medio_cf,int ra_grande_cf, int oro_pequeno_cf, int oro_medio_cf, int oro_grande_cf, int latas_metais_cf, int outros_metais_cf,
-                           int bocalobolimpa_bl, int bocalobosuja_bl, int bocalobototal_bl, int papeleirasvazia_bl, int papeleirascheias_bl, int papeleirastotal_bl, int pa, int cf, int bl, String data, int ajardinadas_pa, int caldeiras_cf){
+                           int bocalobolimpa_bl, int bocalobosuja_bl, int bocalobototal_bl, int papeleirasvazia_bl, int papeleirascheias_bl, int papeleirastotal_bl, int pa, int cf, int bl, String data, int ajardinadas_pa, int caldeiras_cf,
+                           String limpeza){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put(COL2, rua);
@@ -270,6 +272,7 @@ class DatabaseHelper extends SQLiteOpenHelper {
         contentValues.put(COL92 , data);
         contentValues.put(COL93 , ajardinadas_pa);
         contentValues.put(COL94 , caldeiras_cf);
+        contentValues.put(COL95 , limpeza);
 
 
         long result = db.insert(TABLE_NAME,null,contentValues);
