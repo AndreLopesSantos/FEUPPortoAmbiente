@@ -51,7 +51,7 @@
     <string name="bocas_lobo_papeleiras_checkbox">Bocas de Lobo/Papeleiras</string>
     <string name="gravar_base_dados_botao">Adicionar Dados</string>
     <string name="criar_ficheiro_csv_botao">Criar Ficheiro CSV</string>
-    <string name="reset_base_de_dados_botao">Reset Base de dados</string>
+    <string name="reset_base_de_dados_botao">Apagar registos</string>
     <string name="menos_cinco">-5</string>
     <string name="mais_cinco">+5</string>
     <string name="num_ajardinadas_label">Nº Placas Ajardinadas</string>
@@ -60,6 +60,8 @@
     <string name="papeleira_vazia">Vazia</string>
     <string name="papeleira_cheia">Cheia</string>
     <string name="title_bar"><b>Contabilização de resíduos</b></string>
+    <string name="alert_title"><b>Índice de Limpeza</b></string>
+    <string name="botao_calculo_indice_limpeza">Cálculo do Índice de Limpeza</string>
 
 
     <string-array name="ruas">

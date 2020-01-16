@@ -16,4 +16,11 @@
         <!-- <item name="colorPrimaryDark">@android:color/white</item> -->
     </style>
 
+    <style name="AlertDialogCustom" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColor">@color/porto_ambiente</item>
+        <item name="android:textColorPrimary">#000000</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/porto_ambiente</item>
+    </style>
+
 </resources>

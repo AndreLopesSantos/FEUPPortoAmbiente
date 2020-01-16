@@ -14,6 +14,7 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.AutoCompleteTextView;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TabHost;
@@ -33,10 +34,13 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.util.Arrays;
 import java.util.Date;
+import java.util.HashSet;
 import java.util.Locale;
+import java.util.Set;
 
-public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
+public class MainActivity extends AppCompatActivity{
 
 
     private static final String LOG_TAG = "Teste";
@@ -44,7 +48,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     DatabaseHelper mDatabaseHelper;
 
     //Ruas, Residuos, Areas
-    private String mRuas;
+    private AutoCompleteTextView mRuas;
     private EditText mResiduos;
     private EditText mAreas;
 
@@ -270,7 +274,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -283,12 +286,22 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         tabs.setup();
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
 
-        Spinner ruas = findViewById(R.id.spinnerRuas);
+        /*Spinner ruas = findViewById(R.id.spinnerRuas);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.ruas, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         ruas.setAdapter(adapter);
         ruas.setOnItemSelectedListener(this);
+
+         */
+
+        String[] RUAS = getResources().getStringArray(R.array.ruas);
+        AutoCompleteTextView textView = findViewById(R.id.auto_complete_textview_ruas);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_dropdown_item_1line,RUAS);
+
+        textView.setAdapter(adapter);
+
 
 
 
@@ -421,6 +434,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
         mResiduos = findViewById(R.id.editText_amostra);
         mAreas = findViewById(R.id.editText_area);
+        mRuas = findViewById(R.id.auto_complete_textview_ruas);
 
 
 
@@ -478,15 +492,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     }
 
-    @Override
-    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        mRuas = parent.getItemAtPosition(position).toString();
-    }
 
-    @Override
-    public void onNothingSelected(AdapterView<?> parent) {
-
-    }
 
 
 
@@ -1981,16 +1987,22 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
 
 
-        String trua = mRuas;
+        String trua = mRuas.getText().toString();
         String tresiduos = mResiduos.getText().toString();
         String tarea = mAreas.getText().toString();
+
+        String[] ruasAux = getResources().getStringArray(R.array.ruas);
+
+        Set<String> setRuas = new HashSet<>(Arrays.asList(ruasAux));
+
+
 
         SimpleDateFormat formatter = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss", Locale.US);
         Date now = new Date();
         String datahora = formatter.format(now);
 
         if(trua.contentEquals("Escolha uma Rua:") || tresiduos.isEmpty() || tarea.isEmpty()){
-            toastMessage("Tem valores em falta no primeiro tab : Ruas, Amostra ou Area");
+            toastMessage("Tem valores em falta no primeiro tab : Ruas, Amostra ou Área");
         } else if (pa == false && verificapa >0){
             toastMessage("Tem valores nas Placas Ajardinadas mas o checkbox não esta ativo");
             
@@ -2000,6 +2012,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             toastMessage("Tem valores nas Bocas de Lobo mas o checkbox não esta ativo");
         }else if (bl == false && papeleirastotal_bl>0){
             toastMessage("Tem valores nas Papeleiras mas o checkbox não esta ativo");
+        }else if (!(setRuas.contains(trua))) {
+            toastMessage("O valor da rua não corresponde a nenhum da lista");
         }else {
             
             if (pa){
@@ -2020,7 +2034,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             }
 
 
-            String rua = mRuas;
+            String rua = mRuas.getText().toString();
             String residuos = mResiduos.getText().toString();
             String area = mAreas.getText().toString();
 
@@ -2054,21 +2068,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                     garrafagra_vidro_cf, cigarros_cf, dejetos_cf, indiferenciados_cf, folhas_cf, rampequenas_cf, ramgrandes_cf, pastilhas_cf, past_ate500_cf,
                     past_maior500_cf, ra_pequeno_cf, ra_medio_cf, ra_grande_cf, oro_pequeno_cf, oro_medio_cf, oro_grande_cf, latas_metais_cf, outros_metais_cf,
                     bocalobolimpa_bl, bocalobosuja_bl, bocalobototal_bl, papeleirasvazia_bl, papeleirascheias_bl, papeleirastotal_bl, pan, cfn, bln, datahora, ajardinadas_pa, caldeiras_cf, ilbase);
-
-            //Caixa de Dialogo para mostrar Indice de Limpeza
-            AlertDialog.Builder indice = new AlertDialog.Builder(this);
-            indice.setTitle("Indice de Limpeza:")
-                    .setMessage("O indice de limpeza é: " + il + "%")
-                    .setPositiveButton("ok", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-
-                        }
-                    });
-
-            indice.show();
-            // FIM CAIXA DIALOGO
-
 
 
 
@@ -2293,6 +2292,48 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     public void reset(View view) {
         mDatabaseHelper.deleteData();
         toastMessage("Base de Dados Limpa!");
+    }
+
+    public void mostra_indice(View view){
+
+        String area = mAreas.getText().toString();
+
+        if(area.isEmpty()){
+            toastMessage("Falta o valor da área para se poder calcular o índice de limpeza");
+        }else{
+
+
+            Double areanum = Double.parseDouble(area);
+
+            double il = CalculoIl(areanum, pea_pequeno_rua, pea_medio_rua, pea_grande_rua, pena_pequeno_rua, pena_medio_rua, pena_grande_rua, pedacos_vidro_rua,
+                    garrafapeq_vidro_rua, garrafagra_vidro_rua, cigarros_rua, dejetos_rua, indiferenciados_rua, folhas_rua, rampequenas_rua, ramgrandes_rua,
+                    pastilhas_rua, past_ate500_rua, past_maior500_rua, ra_pequeno_rua, ra_medio_rua, ra_grande_rua, oro_pequeno_rua, oro_medio_rua, oro_grande_rua,
+                    latas_metais_rua, outros_metais_rua, pea_pequeno_pa, pea_medio_pa, pea_grande_pa, pena_pequeno_pa, pena_medio_pa, pena_grande_pa, pedacos_vidro_pa,
+                    garrafapeq_vidro_pa, garrafagra_vidro_pa, cigarros_pa, dejetos_pa, indiferenciados_pa, folhas_pa, rampequenas_pa, ramgrandes_pa, pastilhas_pa,
+                    past_ate500_pa, past_maior500_pa, ra_pequeno_pa, ra_medio_pa, ra_grande_pa, oro_pequeno_pa, oro_medio_pa, oro_grande_pa, latas_metais_pa,
+                    outros_metais_pa, pea_pequeno_cf, pea_medio_cf, pea_grande_cf, pena_pequeno_cf, pena_medio_cf, pena_grande_cf, pedacos_vidro_cf, garrafapeq_vidro_cf,
+                    garrafagra_vidro_cf, cigarros_cf, dejetos_cf, indiferenciados_cf, folhas_cf, rampequenas_cf, ramgrandes_cf, pastilhas_cf, past_ate500_cf,
+                    past_maior500_cf, ra_pequeno_cf, ra_medio_cf, ra_grande_cf, oro_pequeno_cf, oro_medio_cf, oro_grande_cf, latas_metais_cf, outros_metais_cf,
+                    bocalobolimpa_bl, bocalobosuja_bl, bocalobototal_bl, papeleirasvazia_bl, papeleirascheias_bl, papeleirastotal_bl, pan, cfn, bln);
+
+            //Caixa de Dialogo para mostrar Indice de Limpeza
+            AlertDialog.Builder indice = new AlertDialog.Builder(this, R.style.AlertDialogCustom);
+            indice.setTitle(R.string.alert_title)
+                    .setMessage("O índice de limpeza é: " + il + "%")
+                    .setPositiveButton("ok", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+
+                                }
+                            }
+                    )
+                    .setCancelable(false);
+
+            indice.show();
+            // FIM CAIXA DIALOGO
+
+        }
+
     }
 
 
