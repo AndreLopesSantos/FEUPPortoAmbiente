@@ -2014,6 +2014,8 @@ public class MainActivity extends AppCompatActivity{
             toastMessage("Tem valores nas Papeleiras mas o checkbox não esta ativo");
         }else if (!(setRuas.contains(trua))) {
             toastMessage("O valor da rua não corresponde a nenhum da lista");
+        }else if (Double.parseDouble(tarea)<= 0) {
+            toastMessage("O valor da area tem de ser superior a 0");
         }else {
             
             if (pa){
@@ -2298,8 +2300,10 @@ public class MainActivity extends AppCompatActivity{
 
         String area = mAreas.getText().toString();
 
-        if(area.isEmpty()){
+        if(area.isEmpty()) {
             toastMessage("Falta o valor da área para se poder calcular o índice de limpeza");
+        }else if (Double.parseDouble(area)<= 0) {
+                toastMessage("O valor da area tem de ser superior a 0");
         }else{
 
 
