@@ -2298,13 +2298,47 @@ public class MainActivity extends AppCompatActivity{
 
     public void mostra_indice(View view){
 
+        int verificapa = pea_pequeno_pa + pea_medio_pa + pea_grande_pa + pena_pequeno_pa + pena_medio_pa + pena_grande_pa + pedacos_vidro_pa + garrafapeq_vidro_pa + garrafagra_vidro_pa + cigarros_pa + dejetos_pa
+                + indiferenciados_pa + folhas_pa + rampequenas_pa + ramgrandes_pa + pastilhas_pa + past_ate500_pa + past_maior500_pa + ra_pequeno_pa + ra_medio_pa + ra_grande_pa + oro_pequeno_pa + oro_medio_pa
+                + oro_grande_pa + latas_metais_pa + outros_metais_pa + ajardinadas_pa;
+        int verificacf = pea_pequeno_cf + pea_medio_cf + pea_grande_cf + pena_pequeno_cf + pena_medio_cf + pena_grande_cf + pedacos_vidro_cf + garrafapeq_vidro_cf + garrafagra_vidro_cf + cigarros_cf + dejetos_cf
+                + indiferenciados_cf + folhas_cf + rampequenas_cf + ramgrandes_cf + pastilhas_cf + past_ate500_cf + past_maior500_cf + ra_pequeno_cf + ra_medio_cf + ra_grande_cf + oro_pequeno_cf + oro_medio_cf
+                + oro_grande_cf + latas_metais_cf + outros_metais_cf + caldeiras_cf;
+
         String area = mAreas.getText().toString();
+
 
         if(area.isEmpty()) {
             toastMessage("Falta o valor da área para se poder calcular o índice de limpeza");
+        }else if (pa == false && verificapa >0){
+            toastMessage("Tem valores nas Placas Ajardinadas mas o checkbox não esta ativo");
+
+        }else if (cf == false && verificacf >0){
+            toastMessage("Tem valores nas Caldeiras Floreiras mas o checkbox não esta ativo");
+        }else if (bl == false && bocalobototal_bl>0){
+            toastMessage("Tem valores nas Bocas de Lobo mas o checkbox não esta ativo");
+        }else if (bl == false && papeleirastotal_bl>0){
+            toastMessage("Tem valores nas Papeleiras mas o checkbox não esta ativo");
         }else if (Double.parseDouble(area)<= 0) {
-                toastMessage("O valor da area tem de ser superior a 0");
-        }else{
+            toastMessage("O valor da area tem de ser superior a 0");
+        }else {
+
+            if (pa){
+                pan = 1;
+            }else{
+                pan = 0;
+            }
+            if (cf){
+                cfn = 1;
+            }else{
+                cfn = 0;
+            }
+
+            if (bl){
+                bln = 1;
+            }else{
+                bln = 0;
+            }
 
 
             Double areanum = Double.parseDouble(area);
